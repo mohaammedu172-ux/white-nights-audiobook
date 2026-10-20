@@ -1,6 +1,7 @@
 """Jobs. On Kaggle the runner notebook calls:  python -m wn.run <job>
 
   audition   Nastenka candidates (A/B/C) + Russian names check, ~15 min
+  settings   one Nastenka voice, same lines at 10 steps/bf16 vs 25 and 50 steps/fp32, ~15 min
   chapter    the chapter in config.json: every line generated alone, checked, retaken, then assembled + mixed
 """
 import json, os, sys, time
@@ -18,14 +19,14 @@ def to_mp3(y, dst):
         .export(dst, format="mp3", bitrate="128k")
 
 
-def best_takes(lines, voice_of, folder, seeds, rates_from=None):
+def best_takes(lines, voice_of, folder, seeds, steps=None, dtype=None):
     """Generate seed after seed only for lines still failing. Returns {line id: (path, report, problems)}."""
     T, chosen = CFG["tts"], {}
     todo = list(lines)
     for round_, seed in enumerate(seeds):
         jobs = [dict(text=l["text"], voice=voice_of(l), seed=seed, path=f"{folder}/{l['id']}_{seed}.wav") for l in todo]
         print(f"round {round_ + 1}: {len(jobs)} lines, seed {seed}")
-        tts.generate(jobs, T["cfg_scale"], T["steps"])
+        tts.generate(jobs, T["cfg_scale"], steps or T["steps"], dtype or T.get("dtype", "bf16"))
         reps = {}
         for l, j in zip(todo, jobs):
             if os.path.exists(j["path"]): reps[l["id"]] = (j["path"], qc.check(j["path"], l["text"]))
@@ -73,6 +74,28 @@ def audition():
     print("Listen in the Output tab: audition/nastenka_*.mp3 (each starts with the reference voice itself)")
 
 
+def settings():
+    """Same voice + lines, different quality settings: does more refinement / full precision remove the artifacts?"""
+    out = f"{OUT}/settings"; os.makedirs(out, exist_ok=True)
+    vdir = voices.build(OUT)
+    voice = CFG["voices"].get("2") or "nastenka_B_lively"
+    N = ["A little! Here, for instance, why are you trembling?",
+         "Chances! What chances, of what? That's not so nice.",
+         "Don't be vexed; I am only laughing at your being your own enemy, and if you had tried you would have succeeded, perhaps, even in the street.",
+         "Goodbye till tomorrow!"]
+    report = {}
+    for name, steps, dtype in (("1_steps10_bf16_current", 10, "bf16"), ("2_steps25_fp32", 25, "fp32"), ("3_steps50_fp32", 50, "fp32")):
+        lines = [dict(id=f"{name}_{i}", speaker=2, text=t) for i, t in enumerate(N)]
+        ch = best_takes(lines, lambda l: f"{vdir}/{voice}.wav", f"{out}/takes", CFG["tts"]["seeds"][:1], steps, dtype)
+        audio = []
+        for l in lines: audio += [assemble.trim(sf.read(ch[l["id"]][0])[0]), np.zeros(int(1.2 * 24000))]
+        to_mp3(np.concatenate(audio), f"{out}/nastenka_{name}.mp3")          # generated lines only, no reference
+        report[name] = [dict(line=l["text"], **{k: ch[l["id"]][1][k] for k in ("clarity", "rate", "heard")}) for l in lines]
+    json.dump(report, open(f"{out}/settings_report.json", "w"), indent=1)
+    print(json.dumps(report, indent=1))
+    print("Listen: settings/nastenka_1_*, _2_*, _3_* (generated voice only, no reference recording at the start)")
+
+
 def chapter():
     chap = CFG["chapter"]
     if not CFG["voices"].get("2"): raise SystemExit("Pick Nastenka's voice first: set voices.2 in config.json (run the audition).")
@@ -110,4 +133,4 @@ def chapter():
 
 
 if __name__ == "__main__":
-    {"audition": audition, "chapter": chapter}[sys.argv[1] if len(sys.argv) > 1 else "audition"]()
+    {"audition": audition, "settings": settings, "chapter": chapter}[sys.argv[1] if len(sys.argv) > 1 else "audition"]()

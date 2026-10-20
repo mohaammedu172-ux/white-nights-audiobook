@@ -19,3 +19,5 @@ tts.generate=fake_gen; qc.check=fake_check; voices.build=fake_build
 run.audition()
 run.CFG["voices"]["2"]="nastenka_A_single"; run.CFG["paragraphs"]=[15,24]; run.CFG["mix"]["music"]=False
 run.chapter()
+run.CFG["voices"]["2"]=None
+run.settings()

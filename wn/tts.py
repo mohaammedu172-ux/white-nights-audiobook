@@ -14,7 +14,8 @@ from vibevoice.modular.modeling_vibevoice_inference import VibeVoiceForCondition
 from vibevoice.processor.vibevoice_processor import VibeVoiceProcessor
 cfg = json.load(open(sys.argv[1]))
 processor = VibeVoiceProcessor.from_pretrained(cfg["model"])
-model = VibeVoiceForConditionalGenerationInference.from_pretrained(cfg["model"], torch_dtype=torch.bfloat16, device_map="cuda", attn_implementation="sdpa")
+DT = {"bf16": torch.bfloat16, "fp16": torch.float16, "fp32": torch.float32}[cfg.get("dtype", "bf16")]
+model = VibeVoiceForConditionalGenerationInference.from_pretrained(cfg["model"], torch_dtype=DT, device_map="cuda", attn_implementation="sdpa")
 model.eval(); model.set_ddpm_inference_steps(num_steps=cfg["steps"])
 for job in cfg["jobs"]:
     if os.path.exists(job["path"]): continue
@@ -29,7 +30,7 @@ for job in cfg["jobs"]:
 '''
 
 
-def generate(jobs, cfg_scale=1.3, steps=10, log="/tmp/wn"):
+def generate(jobs, cfg_scale=1.3, steps=10, dtype="bf16", log="/tmp/wn"):
     jobs = [j for j in jobs if not os.path.exists(j["path"])]
     if not jobs: return 0
     os.makedirs(log, exist_ok=True); open(f"{log}/vv_worker.py", "w").write(WORKER)
@@ -41,7 +42,7 @@ def generate(jobs, cfg_scale=1.3, steps=10, log="/tmp/wn"):
     t0, procs = time.time(), []
     for g, bj in enumerate(buckets):
         if not bj: continue
-        json.dump({"model": MODEL, "steps": steps, "cfg_scale": cfg_scale, "jobs": bj}, open(f"{log}/jobs{g}.json", "w"))
+        json.dump({"model": MODEL, "steps": steps, "cfg_scale": cfg_scale, "dtype": dtype, "jobs": bj}, open(f"{log}/jobs{g}.json", "w"))
         procs.append(subprocess.Popen([sys.executable, f"{log}/vv_worker.py", f"{log}/jobs{g}.json"],
                                       env={**os.environ, "CUDA_VISIBLE_DEVICES": str(g)},
                                       stdout=open(f"{log}/worker{g}.log", "w"), stderr=subprocess.STDOUT))

@@ -4,10 +4,27 @@
     "1": "dreamer",
     "2": null
   },
-  "_voices_note": "Speaker 2 (Nastenka) is chosen by ear from the audition: nastenka_A_single, nastenka_B_lively or nastenka_C_current.",
-  "tts": {"cfg_scale": 1.3, "steps": 10, "seeds": [1001, 2002, 3003]},
-  "qc": {"min_clarity": 0.85, "max_extra": 0.25},
-  "mix": {"music": true, "music_db": -40, "duck_db": 15, "voice_rms_db": -20, "peak_db": -3},
+  "_voices_note": "Speaker 2 (Nastenka): audition favourite so far is nastenka_B_lively (least bad); all generated takes had artifacts at 10 steps/bf16.",
+  "tts": {
+    "cfg_scale": 1.3,
+    "steps": 10,
+    "seeds": [
+      1001,
+      2002,
+      3003
+    ]
+  },
+  "qc": {
+    "min_clarity": 0.85,
+    "max_extra": 0.25
+  },
+  "mix": {
+    "music": true,
+    "music_db": -40,
+    "duck_db": 15,
+    "voice_rms_db": -20,
+    "peak_db": -3
+  },
   "paragraphs": null,
   "_paragraphs_note": "null = whole chapter; [from, to] = only those paragraphs (for quick tests)"
 }

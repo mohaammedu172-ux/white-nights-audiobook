@@ -41,7 +41,7 @@ def music(cache):
     return dst
 
 
-def master(voice, dst, music_path=None, music_db=-40, duck_db=15, voice_rms_db=-20, peak_db=-3, lead=2.5, tail=4.0):
+def master(voice, dst, music_path=None, music_db=-40, duck_db=3, voice_rms_db=-20, peak_db=-3, lead=2.5, tail=4.0):
     from pydub import AudioSegment
     from scipy.signal import butter, sosfiltfilt
     v = sosfiltfilt(butter(2, 75, "hp", fs=SR, output="sos"), voice)
@@ -56,9 +56,10 @@ def master(voice, dst, music_path=None, music_db=-40, duck_db=15, voice_rms_db=-
         while len(bed) < len(v): bed = np.concatenate([bed, bed])
         bed = bed[:len(v)]
         bed *= 10 ** ((music_db - 20 * np.log10(np.sqrt(np.mean(bed ** 2)) + 1e-9)) / 20)
-        env = np.convolve((np.abs(v) > 0.02).astype(float), np.ones(int(0.6 * SR)), "same") > 0       # voice present (with hold)
+        # music stays almost level: a short break (< ~2.5 s) keeps the speech level; only long breaks rise, gently
+        env = np.convolve((np.abs(v) > 0.02).astype(float), np.ones(int(2.5 * SR)), "same") > 0       # voice present (2.5 s hold)
         g = np.where(env, 10 ** (-duck_db / 20), 1.0)
-        g = np.convolve(g, np.ones(int(0.4 * SR)) / int(0.4 * SR), "same")                          # smooth ducking
+        g = np.convolve(g, np.ones(int(1.5 * SR)) / int(1.5 * SR), "same")                          # slow, smooth change
         fi, fo = int(3 * SR), int(5 * SR)
         g[:fi] *= np.linspace(0, 1, fi); g[-fo:] *= np.linspace(1, 0, fo)
         out = v + bed * g

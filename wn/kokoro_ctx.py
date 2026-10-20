@@ -16,6 +16,8 @@ import numpy as np, librosa
 SR, HOP = 24000, 240
 MODEL_DIR = "/tmp/wn"
 NEUTRAL = "I remember it well."
+NEUTRALS = ["I remember it well.", "It was late, and the street was quiet.", "And so it went on."]
+INNER_PAUSE = {"!": 0.35, "?": 0.35, ".": 0.45, "…": 0.55}            # between sentences of one line
 _k = None
 
 
@@ -50,6 +52,26 @@ class Voice:
     def plain(self, text):
         return soft_trim(model().create(text, self.style, speed=self.speed, lang=self.lang, trim=False)[0])
 
+    def say_robust(self, text, lead_ins):
+        """Try each lead-in until a cut passes the check; plain take only if all fail."""
+        for li in lead_ins:
+            y, ok = self.say(text, li)
+            if ok: return y, True
+        return self.plain(text), False
+
+    def say_line(self, text, prev_text=None):
+        """A whole script line: every sentence generated with its own lead-in, joined with natural pauses."""
+        sents = [x for x in re.split(r'(?<=[.!?…])\s+', text.strip()) if x]
+        parts, ok_all, before = [], True, prev_text
+        for i, s in enumerate(sents):
+            lead = ([last_sentences(before)] if before else []) + NEUTRALS
+            y, ok = self.say_robust(s, lead); ok_all &= ok
+            if i:
+                end = sents[i - 1].rstrip()[-1]; end = "…" if sents[i - 1].rstrip().endswith("...") else end
+                parts.append(np.zeros(int(INNER_PAUSE.get(end, 0.4) * SR)))
+            parts.append(y); before = s
+        return np.concatenate(parts), ok_all
+
     def say(self, text, lead_in=None):
         """Returns (audio, ok). lead_in=None uses the neutral lead-in."""
         lead_in = lead_in or NEUTRAL
@@ -60,8 +82,11 @@ class Voice:
         _, wp = librosa.sequence.dtw(X, Y, subseq=True)
         s = lo + wp[-1][1] * HOP
         seg = both[max(0, s - int(0.04 * SR)):].copy(); f = int(0.03 * SR); seg[:f] *= np.linspace(0, 1, f) ** 2
-        ratio = len(seg) / max(1, len(alone))
-        if not 0.85 <= ratio <= 1.12: return alone, False          # suspicious cut: fall back to the plain take
+        # check: the cut piece vs the plain take. Read in context, a short sentence is naturally shorter
+        # (no end-of-utterance slow-down), so short pieces get a wider lower bound.
+        ratio = len(seg) / max(1, len(alone)); d = len(alone) / SR
+        lo_ok = 0.6 if d < 1.5 else (0.78 if d < 2.5 else 0.85)
+        if not lo_ok <= ratio <= 1.12: return alone, False
         return seg, True
 
 

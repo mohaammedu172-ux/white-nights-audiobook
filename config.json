@@ -21,7 +21,7 @@
   "mix": {
     "music": true,
     "music_db": -40,
-    "duck_db": 15,
+    "duck_db": 3,
     "voice_rms_db": -20,
     "peak_db": -3
   },

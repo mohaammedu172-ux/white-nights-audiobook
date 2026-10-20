@@ -26,7 +26,11 @@
     "music_db": -40,
     "duck_db": 3,
     "voice_rms_db": -20,
-    "peak_db": -3
+    "peak_db": -3,
+    "room_rt60": 0.32,
+    "room_wet_db": -16,
+    "vary_db": 1.2,
+    "interrupt_overlap": 0.35
   },
   "paragraphs": null,
   "_paragraphs_note": "null = whole chapter; [from, to] = only those paragraphs (for quick tests)",

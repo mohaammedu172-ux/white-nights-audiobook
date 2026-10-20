@@ -941,7 +941,8 @@
   "speaker": 1,
   "kind": "say",
   "text": "Listen, listen! Forgive me if I tell you something else...",
-  "pause_before": 0.45
+  "pause_before": 0.45,
+  "interrupts": true
  },
  {
   "id": "first_night_118",

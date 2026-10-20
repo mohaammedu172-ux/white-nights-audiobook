@@ -58,7 +58,9 @@ def kokoro_takes(lines, spec, folder):
     for n, l in enumerate(lines):
         name = spec(l).split(":", 1)[1]
         if name not in vox: vox[name] = K.Voice(name, style_row=styles.get(name, 250), speed=CFG.get("kokoro_speed", {}).get(name, 1.0))
-        p = f"{folder}/{l['id']}.wav"
+        import hashlib
+        key = hashlib.md5(json.dumps([l["text"], name, styles.get(name, 250), CFG.get("kokoro_speed", {}).get(name, 1.0), prev and K.last_sentences(prev)]).encode()).hexdigest()[:8]
+        p = f"{folder}/{l['id']}_{key}.wav"
         if os.path.exists(p): y = sf.read(p)[0]; ok = True
         else:
             y, ok = vox[name].say(l["text"], K.last_sentences(prev) if prev else None)
@@ -174,12 +176,13 @@ def chapter():
         chosen.update(best_takes(vv, lambda l: f"{vdir}/{spec(l)}.wav", f"{out}/takes", CFG["tts"]["seeds"]))
     if kok:                                          # Kokoro lines: deterministic, one take, checked
         chosen.update(kokoro_takes(kok, spec, f"{out}/takes"))
-    items = [(chosen[l["id"]][0], l["pause_before"] if i else 0.0) for i, l in enumerate(lines) if l["id"] in chosen]
-    voice, starts = assemble.voice_track(items)
+    items = [(chosen[l["id"]][0], l["pause_before"] if i else 0.0, bool(l.get("interrupts")) and i > 0)
+             for i, l in enumerate(lines) if l["id"] in chosen]
+    voice, starts = assemble.voice_track(items, vary_db=CFG["mix"].get("vary_db", 0), overlap=CFG["mix"].get("interrupt_overlap", 0.35))
     tag = f"_p{CFG['paragraphs'][0]}-{CFG['paragraphs'][1]}" if CFG["paragraphs"] else ""
     dst = f"{out}/white_nights_{chap}{tag}.mp3"
     m = assemble.music(f"{OUT}/cache") if CFG["mix"]["music"] else None
-    mx = {k: v for k, v in CFG["mix"].items() if k != "music"}
+    mx = {k: v for k, v in CFG["mix"].items() if k not in ("music", "vary_db", "interrupt_overlap")}
     secs = assemble.master(voice, dst, m, **mx)
     lead = 2.5; rows, flagged = [], []
     kept = [l for l in lines if l["id"] in chosen]

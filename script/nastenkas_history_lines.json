@@ -15,7 +15,8 @@
   "kind": "say",
   "text": "If the other half is as brief as that...",
   "pause_before": 0.6,
-  "guessed": false
+  "guessed": false,
+  "interrupts": true
  },
  {
   "id": "nastenkas_history_002",

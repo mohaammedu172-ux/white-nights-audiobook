@@ -10,7 +10,7 @@ Who speaks is worked out automatically, then corrected by hand in script/<chapte
   - speech tags are removed, real narration is kept (Dreamer = narrator; inside Nastenka's story, she narrates)
 """
 import json, os, re, sys
-from .text import ROOT, S, book, clean, chunks
+from .text import ROOT, S, book, clean, chunks, mark_interruptions
 
 CHAPTERS = {  # key: (heading, next heading, characters who can speak in quotes)
     "second_night": ("SECOND NIGHT", "NASTENKA'S HISTORY", (1, 2)),
@@ -156,6 +156,7 @@ def build(chapter):
             else: pause = 0.5
             prev = dict(id=f"{chapter}_{len(lines):03d}", p=p, speaker=s, kind=k, text=c, pause_before=pause, guessed=g)
             lines.append(prev)
+    mark_interruptions(lines, dropped)
     json.dump(lines, open(S(f"{chapter}_lines.json"), "w"), indent=1, ensure_ascii=False)
     md = [f"# White Nights — {chapter.replace('_', ' ').title()}: performance script\n",
           f"{len(lines)} lines. **(guessed)** = speaker worked out by alternation, please check. "

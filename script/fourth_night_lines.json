@@ -294,7 +294,8 @@
   "kind": "say",
   "text": "No, my friend, no.",
   "pause_before": 0.6,
-  "guessed": false
+  "guessed": false,
+  "interrupts": true
  },
  {
   "id": "fourth_night_033",
@@ -483,7 +484,8 @@
   "kind": "say",
   "text": "Well, what then?",
   "pause_before": 0.6,
-  "guessed": false
+  "guessed": false,
+  "interrupts": true
  },
  {
   "id": "fourth_night_054",

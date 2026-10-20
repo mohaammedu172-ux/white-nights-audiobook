@@ -136,6 +136,14 @@ def lines_for(chapter, turns):
     return lines
 
 
+def mark_interruptions(lines, dropped):
+    """The first line of a paragraph whose speech tag said 'interrupted' cuts in over the previous line."""
+    firsts = {}
+    for l in lines: firsts.setdefault(l["p"], l)
+    for p, tags in dropped.items():
+        if any("interrupt" in x.lower() for x in tags) and int(p) in firsts: firsts[int(p)]["interrupts"] = True
+
+
 def review_md(chapter, paras, lines, dropped):
     tags = {t["p"]: t for t in json.load(open(S(f"{chapter}_tags.json")))["tags"] if "p" in t}
     words = sum(len(l["text"].split()) for l in lines)
@@ -156,6 +164,7 @@ def build(chapter):
     paras = paragraphs(chapter)
     turns, dropped = turns_for(chapter, paras)
     lines = lines_for(chapter, apply_fixes(chapter, turns))
+    mark_interruptions(lines, dropped)
     json.dump(lines, open(S(f"{chapter}_lines.json"), "w"), indent=1, ensure_ascii=False)
     open(S(f"{chapter}_script.md"), "w").write(review_md(chapter, paras, lines, dropped))
     return lines

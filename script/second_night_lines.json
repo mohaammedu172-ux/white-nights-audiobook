@@ -114,7 +114,8 @@
   "kind": "say",
   "text": "Then how have you lived, if you have no history?",
   "pause_before": 0.6,
-  "guessed": false
+  "guessed": false,
+  "interrupts": true
  },
  {
   "id": "second_night_013",
@@ -1545,7 +1546,8 @@
   "kind": "say",
   "text": "No, no!",
   "pause_before": 0.6,
-  "guessed": false
+  "guessed": false,
+  "interrupts": true
  },
  {
   "id": "second_night_172",

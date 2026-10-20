@@ -48,6 +48,20 @@ def best_takes(lines, voice_of, folder, seeds, steps=None, dtype=None):
     return chosen
 
 
+def kokoro_takes(lines, spec, folder):
+    by_voice = {}
+    for l in lines: by_voice.setdefault(spec(l).split(":", 1)[1], []).append(l)
+    reps, rates = {}, {}
+    for v, ls in by_voice.items():
+        paths = alt_models.kokoro([l["text"] for l in ls], v, folder)
+        for l, p in zip(ls, paths):
+            if not os.path.exists(p): continue
+            r = qc.check(p, l["text"]) if qc.asr_available() else qc.basic(p, l["text"])
+            reps[l["id"]] = (p, r); rates.setdefault(l["speaker"], []).append(r["rate"])
+    return {i: (p, r, qc.verdict(r, rates[next(l for l in lines if l["id"] == i)["speaker"]], CFG["qc"]["min_clarity"], CFG["qc"]["max_extra"]))
+            for i, (p, r) in reps.items()}
+
+
 def audition():
     out = f"{OUT}/audition"; os.makedirs(out, exist_ok=True)
     vdir = voices.build(OUT)
@@ -136,10 +150,16 @@ def chapter():
     if CFG["paragraphs"]:
         a, b = CFG["paragraphs"]; lines = [l for l in lines if a <= l["p"] <= b]
     out = f"{OUT}/{chap}"; os.makedirs(out, exist_ok=True)
-    vdir = voices.build(OUT)
-    voice_of = lambda l: f"{vdir}/{CFG['voices'][str(l['speaker'])]}.wav"
     t0 = time.time()
-    chosen = best_takes(lines, voice_of, f"{out}/takes", CFG["tts"]["seeds"])
+    spec = lambda l: CFG["voices"][str(l["speaker"])]
+    kok = [l for l in lines if spec(l).startswith("kokoro:")]
+    vv = [l for l in lines if not spec(l).startswith("kokoro:")]
+    chosen = {}
+    if vv:                                           # VibeVoice lines: seeds + retakes
+        vdir = voices.build(OUT)
+        chosen.update(best_takes(vv, lambda l: f"{vdir}/{spec(l)}.wav", f"{out}/takes", CFG["tts"]["seeds"]))
+    if kok:                                          # Kokoro lines: deterministic, one take, checked
+        chosen.update(kokoro_takes(kok, spec, f"{out}/takes"))
     items = [(chosen[l["id"]][0], l["pause_before"] if i else 0.0) for i, l in enumerate(lines) if l["id"] in chosen]
     voice, starts = assemble.voice_track(items)
     tag = f"_p{CFG['paragraphs'][0]}-{CFG['paragraphs'][1]}" if CFG["paragraphs"] else ""
@@ -158,7 +178,7 @@ def chapter():
     missing = [l["id"] for l in lines if l["id"] not in chosen]
     json.dump(dict(lines=rows, missing=missing), open(f"{out}/qc_report.json", "w"), indent=1, ensure_ascii=False)
     md = [f"# QC — {chap}{tag}", f"{len(kept)} lines, {secs / 60:.1f} min, {(time.time() - t0) / 60:.0f} min to make.",
-          f"**{len(flagged)} lines still failing after {len(CFG['tts']['seeds'])} takes** (listen to these first):", ""]
+          f"**{len(flagged)} lines flagged** (listen to these first):", ""]
     md += [f"- {r['at']} ¶{r['p']} {'Dreamer' if r['speaker'] == 1 else 'Nastenka'}: {', '.join(r['problems'])} — \"{r['text'][:90]}\" — heard: \"{r['heard'][:90]}\"" for r in flagged]
     if missing: md.append(f"\nMissing (generation failed): {missing}")
     open(f"{out}/qc_report.md", "w").write("\n".join(md) + "\n")

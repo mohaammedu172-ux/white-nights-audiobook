@@ -32,6 +32,8 @@ def voice_track(items, lead=0.0):
 
 def music(cache):
     dst = f"{cache}/music_june.ogg"
+    local = os.environ.get("WN_MUSIC")                      # a local copy, when the site is unreachable
+    if local and os.path.exists(local): return local
     if not os.path.exists(dst):
         os.makedirs(cache, exist_ok=True)
         req = urllib.request.Request(MUSIC_URL, headers={"User-Agent": "WhiteNightsAudiobook/1.0 (personal project)"})

@@ -1,10 +1,10 @@
 {
   "chapter": "first_night",
   "voices": {
-    "1": "dreamer",
-    "2": null
+    "1": "kokoro:am_puck",
+    "2": "kokoro:af_heart"
   },
-  "_voices_note": "Speaker 2 (Nastenka): audition favourite so far is nastenka_B_lively (least bad); all generated takes had artifacts at 10 steps/bf16.",
+  "_voices_note": "Chosen by ear 2026-10-20: Kokoro am_puck (Dreamer), af_heart (Nastenka). VibeVoice references (dreamer, nastenka_*) still work: use the voice file name without 'kokoro:'.",
   "tts": {
     "cfg_scale": 1.3,
     "steps": 10,

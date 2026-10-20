@@ -1,23 +1,22 @@
-"""Kokoro with three fixes that came out of listening tests (2026-10-20):
+"""Kokoro with the fixes that came out of listening tests (2026-10-20):
 
 1. Fixed speaking style: Kokoro normally picks its style by text length, so pieces of different length had
    different pace. One style row is used for everything.
-2. Hidden lead-in: each piece is generated after a lead-in (the previous sentence, or a neutral one) which is
-   then cut off, so no piece starts with Kokoro's high, rushed "fresh start".
-3. Gentle trim: only true silence is cut, so first sounds stay whole.
-
-The cut point is found by matching the start of a plain take inside the lead-in take (DTW on MFCCs).
-Every cut is checked: if the cut piece is much shorter/longer than the plain take, the plain take is used and the
-line is flagged.
+2. Hidden lead-in, cut EXACTLY: each line is generated after a lead-in (the previous sentence, or a neutral one)
+   so it doesn't start with Kokoro's high, rushed "fresh start". The model-files-v1.1 export reports the time of
+   every phoneme, so the lead-in is cut at the first phoneme of the real line (no guessing).
+3. Sentence pauses inside a line come from Kokoro's own timings (sentence 0.35 s, clause 0.1 s), so short
+   sentences are neither glued together nor chopped apart.
+4. Gentle trim: only true silence is cut, so first sounds stay whole.
 """
-import os, re
-import numpy as np, librosa
+import os
+import numpy as np
 
-SR, HOP = 24000, 240
-MODEL_DIR = "/tmp/wn"
+SR = 24000
+MODEL_DIR = "/tmp/wn/kokoro11"
+RELEASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/"
 NEUTRAL = "I remember it well."
-NEUTRALS = ["I remember it well.", "It was late, and the street was quiet.", "And so it went on."]
-INNER_PAUSE = {"!": 0.35, "?": 0.35, ".": 0.45, "…": 0.55}            # between sentences of one line
+SENTENCE_PAUSE, CLAUSE_PAUSE = 0.35, 0.1
 _k = None
 
 
@@ -26,10 +25,9 @@ def model():
     if _k is None:
         import urllib.request
         from kokoro_onnx import Kokoro
-        base = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
         os.makedirs(MODEL_DIR, exist_ok=True)
         for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
-            if not os.path.exists(f"{MODEL_DIR}/{f}"): urllib.request.urlretrieve(base + f, f"{MODEL_DIR}/{f}")
+            if not os.path.exists(f"{MODEL_DIR}/{f}"): urllib.request.urlretrieve(RELEASE + f, f"{MODEL_DIR}/{f}")
         _k = Kokoro(f"{MODEL_DIR}/kokoro-v1.0.onnx", f"{MODEL_DIR}/voices-v1.0.bin")
     return _k
 
@@ -49,46 +47,39 @@ class Voice:
         self.style = np.repeat(base[style_row][None], len(base), axis=0).astype(np.float32)
         self.lang = "en-gb" if name.startswith("b") else "en-us"; self.speed = speed
 
+    def _timed(self, text):
+        return model().create_timed(text, self.style, speed=self.speed, lang=self.lang, trim=False,
+                                    sentence_pause=SENTENCE_PAUSE, clause_pause=CLAUSE_PAUSE)
+
+    def _phonemes(self, text):
+        return model()._prepare(text, self.style, self.speed, self.lang, False, SENTENCE_PAUSE, CLAUSE_PAUSE)[1]
+
     def plain(self, text):
-        return soft_trim(model().create(text, self.style, speed=self.speed, lang=self.lang, trim=False)[0])
-
-    def say_robust(self, text, lead_ins):
-        """Try each lead-in until a cut passes the check; plain take only if all fail."""
-        for li in lead_ins:
-            y, ok = self.say(text, li)
-            if ok: return y, True
-        return self.plain(text), False
-
-    def say_line(self, text, prev_text=None):
-        """A whole script line: every sentence generated with its own lead-in, joined with natural pauses."""
-        sents = [x for x in re.split(r'(?<=[.!?…])\s+', text.strip()) if x]
-        parts, ok_all, before = [], True, prev_text
-        for i, s in enumerate(sents):
-            lead = ([last_sentences(before)] if before else []) + NEUTRALS
-            y, ok = self.say_robust(s, lead); ok_all &= ok
-            if i:
-                end = sents[i - 1].rstrip()[-1]; end = "…" if sents[i - 1].rstrip().endswith("...") else end
-                parts.append(np.zeros(int(INNER_PAUSE.get(end, 0.4) * SR)))
-            parts.append(y); before = s
-        return np.concatenate(parts), ok_all
+        return soft_trim(self._timed(text)[0])
 
     def say(self, text, lead_in=None):
-        """Returns (audio, ok). lead_in=None uses the neutral lead-in."""
+        """Returns (audio, ok). ok=False means the lead-in could not be cut exactly and the plain take is used."""
         lead_in = lead_in or NEUTRAL
-        alone, both, ctx = self.plain(text), self.plain(lead_in + " " + text), self.plain(lead_in)
-        mf = lambda y: librosa.feature.mfcc(y=y.astype("float32"), sr=SR, n_mfcc=20, hop_length=HOP)
-        lo = int(0.6 * len(ctx))
-        X, Y = mf(alone[:int(0.8 * SR)]), mf(both[lo:lo + int(0.8 * len(ctx)) + 2 * SR])
-        _, wp = librosa.sequence.dtw(X, Y, subseq=True)
-        s = lo + wp[-1][1] * HOP
-        seg = both[max(0, s - int(0.04 * SR)):].copy(); f = int(0.03 * SR); seg[:f] *= np.linspace(0, 1, f) ** 2
-        # check: the cut piece vs the plain take. Read in context, a short sentence is naturally shorter
-        # (no end-of-utterance slow-down), so short pieces get a wider lower bound.
-        ratio = len(seg) / max(1, len(alone)); d = len(alone) / SR
-        lo_ok = 0.6 if d < 1.5 else (0.78 if d < 2.5 else 0.85)
-        if not lo_ok <= ratio <= 1.12: return alone, False
+        pl, pa = self._phonemes(lead_in), self._phonemes(lead_in + " " + text)
+        if not pa.startswith(pl): return self.plain(text), False
+        audio, sr, t = self._timed(lead_in + " " + text)
+        seq = "".join(x.phoneme for x in t)
+        if not seq.startswith(pl) or len(t) <= len(pl): return self.plain(text), False
+        i = len(pl)
+        while i < len(t) and not t[i].phoneme.strip(): i += 1               # skip the space after the lead-in
+        if i >= len(t): return self.plain(text), False
+        gap_start = t[len(pl) - 1].end                                       # end of the lead-in's last mark
+        start = t[i].start
+        cut = max(gap_start, start - 0.04)                                   # inside the silence, never inside a word
+        seg = audio[int(cut * SR):].astype(np.float64).copy()
+        f = min(int(0.02 * SR), max(1, int((start - cut) * SR)))
+        seg[:f] *= np.linspace(0, 1, f)
+        i_end = np.where(np.abs(seg) > 0.001)[0]
+        seg = seg[: i_end[-1] + int(0.15 * SR)] if len(i_end) else seg
+        g = int(0.02 * SR); seg[-g:] *= np.linspace(1, 0, g)
         return seg, True
 
 
 def last_sentences(text, n=1):
+    import re
     return " ".join(re.split(r'(?<=[.!?])\s+', text.strip())[-n:])

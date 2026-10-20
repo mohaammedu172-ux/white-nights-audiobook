@@ -49,17 +49,31 @@ def best_takes(lines, voice_of, folder, seeds, steps=None, dtype=None):
 
 
 def kokoro_takes(lines, spec, folder):
-    by_voice = {}
-    for l in lines: by_voice.setdefault(spec(l).split(":", 1)[1], []).append(l)
-    reps, rates = {}, {}
-    for v, ls in by_voice.items():
-        paths = alt_models.kokoro([l["text"] for l in ls], v, folder)
-        for l, p in zip(ls, paths):
-            if not os.path.exists(p): continue
-            r = qc.check(p, l["text"]) if qc.asr_available() else qc.basic(p, l["text"])
-            reps[l["id"]] = (p, r); rates.setdefault(l["speaker"], []).append(r["rate"])
-    return {i: (p, r, qc.verdict(r, rates[next(l for l in lines if l["id"] == i)["speaker"]], CFG["qc"]["min_clarity"], CFG["qc"]["max_extra"]))
-            for i, (p, r) in reps.items()}
+    """Kokoro: fixed style per voice, each line read after the previous line's last sentence (cut exactly)."""
+    from . import kokoro_ctx as K
+    os.makedirs(folder, exist_ok=True)
+    styles = CFG.get("kokoro_style", {})
+    vox = {}
+    reps, rates, prev = {}, {}, None
+    for n, l in enumerate(lines):
+        name = spec(l).split(":", 1)[1]
+        if name not in vox: vox[name] = K.Voice(name, style_row=styles.get(name, 250))
+        p = f"{folder}/{l['id']}.wav"
+        if os.path.exists(p): y = sf.read(p)[0]; ok = True
+        else:
+            y, ok = vox[name].say(l["text"], K.last_sentences(prev) if prev else None)
+            sf.write(p, y.astype(np.float32), 24000)
+        r = qc.check(p, l["text"]) if qc.asr_available() else qc.basic(p, l["text"])
+        if not ok: r["lead_in_failed"] = True
+        reps[l["id"]] = (p, r); rates.setdefault(l["speaker"], []).append(r["rate"]); prev = l["text"]
+        if n % 20 == 0: print(f"  {n}/{len(lines)} lines", flush=True)
+    out = {}
+    for i, (p, r) in reps.items():
+        spk = next(l for l in lines if l["id"] == i)["speaker"]
+        why = qc.verdict(r, rates[spk], CFG["qc"]["min_clarity"], CFG["qc"]["max_extra"])
+        if r.get("lead_in_failed"): why.append("lead-in not cut (plain take used)")
+        out[i] = (p, r, why)
+    return out
 
 
 def audition():

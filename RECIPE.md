@@ -16,7 +16,11 @@ Change one thing at a time, test it on a short passage first (`config.json` → 
 - **Dreamer: Kokoro `am_puck`. Nastenka: Kokoro `af_heart`.** Kokoro 82M (Apache-2.0) via kokoro-onnx, speed 1.0.
 - Why: every VibeVoice take of Nastenka had ticks, lag, muffling or an aged voice, whichever reference was used and
   even at 50 steps / full precision. Kokoro's built-in voices are clean. Trade-off: no cloning of the cast readers.
-- Kokoro runs on CPU (a whole chapter in ~13 min), so chapters no longer need Kaggle.
+- Kokoro runs on CPU (a whole chapter in ~20 min), so chapters no longer need Kaggle.
+- **Fixed style row per voice** (`config.json` → `kokoro_style`): Puck 60 (closest to the auditioned voice; 250 sounded deeper), Heart 250.
+- **Hidden lead-in, cut exactly:** each line is generated after the previous line's last sentence (first line: "I remember it well."),
+  then cut at the first phoneme of the real line using Kokoro's phoneme timings (model-files-v1.1). Fixes the high, rushed fresh start.
+- **Sentence pauses inside a line from Kokoro's timings:** 0.35 s after a sentence, 0.1 s after a clause.
 
 ## Known failures — never again
 | Tried | Result |
@@ -28,6 +32,10 @@ Change one thing at a time, test it on a short passage first (`config.json` → 
 | Stitched reference from many short quiet clips (Nastenka "soft") | Weird, unnatural voice |
 | Hard cuts + looped room tone in pauses | Ticks between lines |
 | VibeVoice 1.5B for Nastenka (any reference, 10–50 steps, bf16/fp32) | Ticks, lag, muffled, aged voice |
+| Lead-in cut by matching sound (DTW) instead of timings | Clipped words ("…lose my timidity"), scraps ("littles") |
+| One generation per short sentence | Choppy, deeper voice |
+| Punctuation "spice" (!!!!, ???????) | No real difference |
+| Music ducking 15 dB | Music swells in every short break; now 3 dB with a 2.5 s hold |
 | Whole-part QC score | Hid garbled lines (97% "match" on bad audio) — QC is per line now |
 | Dropping tags for laughs/cries and adding "The girl laughed" | Sounds like tags again — voices must carry it |
 

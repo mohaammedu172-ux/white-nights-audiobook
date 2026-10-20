@@ -1,0 +1,1658 @@
+[
+ {
+  "id": "second_night_000",
+  "p": 0,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, so you have survived!",
+  "pause_before": 0.0,
+  "guessed": false
+ },
+ {
+  "id": "second_night_001",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I've been here for the last two hours; you don't know what a state I have been in all day.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_002",
+  "p": 2,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I know, I know. But to business. Do you know why I have come? Not to talk nonsense, as I did yesterday. I tell you what, we must behave more sensibly in future. I thought a great deal about it last night.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_003",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "In what way, in what must we be more sensible? I am ready for my part; but, really, nothing more sensible has happened to me in my life than this, now.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_004",
+  "p": 4,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Really? In the first place, I beg you not to squeeze my hands so; secondly, I must tell you that I spent a long time thinking about you and feeling doubtful today.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_005",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And how did it end?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_006",
+  "p": 6,
+  "speaker": 2,
+  "kind": "say",
+  "text": "How did it end?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_007",
+  "p": 6,
+  "speaker": 2,
+  "kind": "say",
+  "text": "The upshot of it is that we must begin all over again, because the conclusion I reached today was that I don't know you at all; that I behaved like a baby last night, like a little girl; and, of course, the fact of it is, that it's my soft heart that is to blame, that is, I sang my own praises, as one always does in the end when one analyses one's conduct.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_008",
+  "p": 6,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And therefore to correct my mistake, I've made up my mind to find out all about you minutely. But as I have no one from whom I can find out anything, you must tell me everything fully yourself. Well, what sort of man are you?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_009",
+  "p": 6,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Come, make haste, begin, tell me your whole history.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_010",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "My history!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_011",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "My history! But who has told you I have a history? I have no history...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_012",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Then how have you lived, if you have no history?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_013",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Absolutely without any history! I have lived, as they say, keeping myself to myself, that is, utterly alone, alone, entirely alone. Do you know what it means to be alone?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_014",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But how alone? Do you mean you never saw any one?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_015",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh no, I see people, of course; but still I am alone.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_016",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why, do you never talk to any one?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_017",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Strictly speaking, with no one.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_018",
+  "p": 14,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Who are you then? Explain yourself! Stay, I guess: most likely, like me you have a grandmother.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_019",
+  "p": 14,
+  "speaker": 2,
+  "kind": "say",
+  "text": "She is blind and will never let me go anywhere, so that I have almost forgotten how to talk; and when I played some pranks two years ago, and she saw there was no holding me in, she called me up and pinned my dress to hers, and ever since we sit like that for days together; she knits a stocking, though she's blind, and I sit beside her, sew or read aloud to her, it's such a queer habit, here for two years I've been pinned to her...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_020",
+  "p": 15,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Good Heavens! what misery! But no, I haven't a grandmother like that.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_021",
+  "p": 16,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, if you haven't why do you sit at home?...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_022",
+  "p": 17,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen, do you want to know the sort of man I am?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_023",
+  "p": 18,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, yes!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_024",
+  "p": 19,
+  "speaker": 1,
+  "kind": "say",
+  "text": "In the strict sense of the word?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_025",
+  "p": 20,
+  "speaker": 2,
+  "kind": "say",
+  "text": "In the very strictest sense of the word.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_026",
+  "p": 21,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Very well, I am a type!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_027",
+  "p": 22,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Type, type! What sort of type?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_028",
+  "p": 22,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Laughing, as though she had not had a chance of laughing for a whole year.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_029",
+  "p": 22,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, it's very amusing talking to you. Look, here's a seat, let us sit down. No one is passing here, no one will hear us, and, begin your history.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_030",
+  "p": 22,
+  "speaker": 2,
+  "kind": "say",
+  "text": "For it's no good your telling me, I know you have a history; only you are concealing it. To begin with, what is a type?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_031",
+  "p": 23,
+  "speaker": 1,
+  "kind": "say",
+  "text": "A type? A type is an original, it's an absurd person!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_032",
+  "p": 23,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It's a character. Listen; do you know what is meant by a dreamer?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_033",
+  "p": 24,
+  "speaker": 2,
+  "kind": "say",
+  "text": "A dreamer! Indeed I should think I do know. I am a dreamer myself. Sometimes, as I sit by grandmother, all sorts of things come into my head.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_034",
+  "p": 24,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why, when one begins dreaming one lets one's fancy run away with one, why, I marry a Chinese Prince!... Though sometimes it is a good thing to dream! But, goodness knows! Especially when one has something to think of apart from dreams.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_035",
+  "p": 25,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Excellent! If you have been married to a Chinese Emperor, you will quite understand me. Come, listen... But one minute, I don't know your name yet.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_036",
+  "p": 26,
+  "speaker": 2,
+  "kind": "say",
+  "text": "At last! You have been in no hurry to think of it!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_037",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, my goodness! It never entered my head, I felt quite happy as it was...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_038",
+  "p": 28,
+  "speaker": 2,
+  "kind": "say",
+  "text": "My name is Nastenka.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_039",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka! And nothing else?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_040",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Nothing else! Why, is not that enough for you, you insatiable person?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_041",
+  "p": 31,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Not enough? On the contrary, it's a great deal, a very great deal, Nastenka; you kind girl, if you are Nastenka for me from the first.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_042",
+  "p": 32,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Quite so! Well?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_043",
+  "p": 33,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well, listen, Nastenka, now for this absurd history.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_044",
+  "p": 34,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I sat down beside her, assumed a pedantically serious attitude, and began as though reading from a manuscript.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "second_night_045",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "There are, Nastenka, though you may not know it, strange nooks in Petersburg.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_046",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It seems as though the same sun as shines for all Petersburg people does not peep into those spots, but some other different new one, bespoken expressly for those nooks, and it throws a different light on everything.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_047",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "In these corners, dear Nastenka, quite a different life is lived, quite unlike the life that is surging round us, but such as perhaps exists in some unknown realm, not among us in our serious, over-serious, time.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_048",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, that life is a mixture of something purely fantastic, fervently ideal, with something (alas! Nastenka) dingily prosaic and ordinary, not to say incredibly vulgar.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_049",
+  "p": 36,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Foo! Good Heavens! What a preface! What do I hear?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_050",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Listen, Nastenka. (It seems to me I shall never be tired of calling you Nastenka.) Let me tell you that in these corners live strange people, dreamers.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_051",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "The dreamer, if you want an exact definition, is not a human being, but a creature of an intermediate sort.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_052",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "For the most part he settles in some inaccessible corner, as though hiding from the light of day; once he slips into his corner, he grows to it like a snail, or, anyway, he is in that respect very much like that remarkable creature, which is an animal and a house both at once, and is called a tortoise.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_053",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why do you suppose he is so fond of his four walls, which are invariably painted green, grimy, dismal and reeking unpardonably of tobacco smoke?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_054",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why is it that when this absurd gentleman is visited by one of his few acquaintances (and he ends by getting rid of all his friends), why does this absurd person meet him with such embarrassment, changing countenance and overcome with confusion, as though he had only just committed some crime within his four walls;",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_055",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "as though he had been forging counterfeit notes, or as though he were writing verses to be sent to a journal with an anonymous letter, in which he states that the real poet is dead, and that his friend thinks it his sacred duty to publish his things?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_056",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why, tell me, Nastenka, why is it conversation is not easy between the two friends? Why is there no laughter?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_057",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why does no lively word fly from the tongue of the perplexed newcomer, who at other times may be very fond of laughter, lively words, conversation about the fair sex, and other cheerful subjects?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_058",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And why does this friend, probably a new friend and on his first visit, for there will hardly be a second, and the friend will never come again, why is the friend himself so confused, so tongue-tied, in spite of his wit (if he has any), as he looks at the downcast face of his host, who in his turn becomes utterly helpless and at his wits' end after gigantic but fruitless efforts to smooth things over and enliven the conversation, to show his knowledge of polite society, to talk, too, of the fair sex, and by such humble endeavour, to please the poor man, who like a fish out of water has mistakenly come to visit him?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_059",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why does the gentleman, all at once remembering some very necessary business which never existed, suddenly seize his hat and hurriedly make off, snatching away his hand from the warm grip of his host, who was trying his utmost to show his regret and retrieve the lost position?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_060",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why does the friend chuckle as he goes out of the door, and swear never to come and see this queer creature again, though the queer creature is really a very good fellow, and at the same time he cannot refuse his imagination the little diversion of comparing the queer fellow's countenance during their conversation with the expression of an unhappy kitten treacherously captured, roughly handled, frightened and subjected to all sorts of indignities by children, till, utterly crestfallen, it hides away from them under a chair in the dark, and there must needs at its leisure bristle up, spit, and wash its insulted face with both paws, and long afterwards look angrily at life and nature, and even at the bits saved from the master's dinner for it by the sympathetic housekeeper?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_061",
+  "p": 38,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Listen.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "second_night_062",
+  "p": 38,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Who had listened to me all the time in amazement, opening her eyes and her little mouth.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_063",
+  "p": 38,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Listen; I don't know in the least why it happened and why you ask me such absurd questions; all I know is, that this adventure must have happened word for word to you.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_064",
+  "p": 39,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Doubtless.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_065",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, since there is no doubt about it, go on.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_066",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "because I want very much to know how it will end.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_067",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You want to know, Nastenka, what our hero, that is I, for the hero of the whole business was my humble self, did in his corner?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_068",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You want to know why I lost my head and was upset for the whole day by the unexpected visit of a friend?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_069",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You want to know why I was so startled, why I blushed when the door of my room was opened, why I was not able to entertain my visitor, and why I was crushed under the weight of my own hospitality?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_070",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why, yes, yes.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_071",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "that's the point. Listen. You describe it all splendidly, but couldn't you perhaps describe it a little less splendidly? You talk as though you were reading it out of a book.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_072",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_073",
+  "p": 43,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "In a stern and dignified voice, hardly able to keep from laughing.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_074",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "dear Nastenka, I know I describe splendidly, but, excuse me, I don't know how else to do it.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_075",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "At this moment, dear Nastenka, at this moment I am like the spirit of King Solomon when, after lying a thousand years under seven seals in his urn, those seven seals were at last taken off.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_076",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "At this moment, Nastenka, when we have met at last after such a long separation, for I have known you for ages, Nastenka, because I have been looking for some one for ages, and that is a sign that it was you I was looking for, and it was ordained that we should meet now, at this moment a thousand valves have opened in my head, and I must let myself flow in a river of words, or I shall choke.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_077",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And so I beg you not to interrupt me, Nastenka, but listen humbly and obediently, or I will be silent.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_078",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, no, no! Not at all. Go on! I won't say a word!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_079",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I will continue. There is, my friend Nastenka, one hour in my day which I like extremely.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_080",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "That is the hour when almost all business, work and duties are over, and every one is hurrying home to dinner, to lie down, to rest, and on the way all are cogitating on other more cheerful subjects relating to their evenings, their nights, and all the rest of their free time.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_081",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "At that hour our hero, for allow me, Nastenka, to tell my story in the third person, for one feels awfully ashamed to tell it in the first person, and so at that hour our hero, who had his work too, was pacing along after the others.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_082",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But a strange feeling of pleasure set his pale, rather crumpled-looking face working. He looked not with indifference on the evening glow which was slowly fading on the cold Petersburg sky.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_083",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "When I say he looked, I am lying: he did not look at it, but saw it as it were without realizing, as though tired or preoccupied with some other more interesting subject, so that he could scarcely spare a glance for anything about him.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_084",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "He was pleased because till next day he was released from business irksome to him, and happy as a schoolboy let out from the class-room to his games and mischief.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_085",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Take a look at him, Nastenka; you will see at once that joyful emotion has already had an effect on his weak nerves and morbidly excited fancy. You see he is thinking of something... Of dinner, do you imagine? Of the evening?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_086",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What is he looking at like that? Is it at that gentleman of dignified appearance who is bowing so picturesquely to the lady who rolls by in a carriage drawn by prancing horses? No, Nastenka; what are all those trivialities to him now!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_087",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "He is rich now with his own individual life; he has suddenly become rich, and it is not for nothing that the fading sunset sheds its farewell gleams so gaily before him, and calls forth a swarm of impressions from his warmed heart.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_088",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now he hardly notices the road, on which the tiniest details at other times would strike him.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_089",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now 'the Goddess of Fancy' (if you have read Zhukovsky, dear Nastenka) has already with fantastic hand spun her golden warp and begun weaving upon it patterns of marvellous magic life, and who knows, maybe, her fantastic hand has borne him to the seventh crystal heaven far from the excellent granite pavement on which he was walking his way?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_090",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Try stopping him now, ask him suddenly where he is standing now, through what streets he is going, he will, probably remember nothing, neither where he is going nor where he is standing now, and flushing with vexation he will certainly tell some lie to save appearances.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_091",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "That is why he starts, almost cries out, and looks round with horror when a respectable old lady stops him politely in the middle of the pavement and asks her way.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_092",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Frowning with vexation he strides on, scarcely noticing that more than one passer-by smiles and turns round to look after him, and that a little girl, moving out of his way in alarm, laughs aloud, gazing open-eyed at his broad meditative smile and gesticulations.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_093",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But fancy catches up in its playful flight the old woman, the curious passers-by, and the laughing child, and the peasants spending their nights in their barges on Fontanka (our hero, let us suppose, is walking along the canal-side at that moment), and capriciously weaves every one and everything into the canvas like a fly in a spider's web.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_094",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And it is only after the queer fellow has returned to his comfortable den with fresh stores for his mind to work on, has sat down and finished his dinner, that he comes to himself, when Matrona who waits upon him, always thoughtful and depressed, clears the table and gives him his pipe; he comes to himself then and recalls with surprise that he has dined, though he has absolutely no notion how it has happened.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_095",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It has grown dark in the room; his soul is sad and empty; the whole kingdom of fancies drops to pieces about him, drops to pieces without a trace, without a sound, floats away like a dream, and he cannot himself remember what he was dreaming.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_096",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But a vague sensation faintly stirs his heart and sets it aching, some new desire temptingly tickles and excites his fancy, and imperceptibly evokes a swarm of fresh phantoms.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_097",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Stillness reigns in the little room; imagination is fostered by solitude and idleness; it is faintly smouldering, faintly simmering, like the water with which old Matrona is making her coffee as she moves quietly about in the kitchen close by.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_098",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now it breaks out spasmodically; and the book, picked up aimlessly and at random, drops from my dreamer's hand before he has reached the third page.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_099",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "His imagination is again stirred and at work, and again a new world, a new fascinating life opens vistas before him. A fresh dream, fresh happiness! A fresh rush of delicate, voluptuous poison! What is real life to him!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_100",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "To his corrupted eyes we live, you and I, Nastenka, so torpidly, slowly, insipidly; in his eyes we are all so dissatisfied with our fate, so exhausted by our life!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_101",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And, truly, see how at first sight everything is cold, morose, as though ill-humoured among us... Poor things! thinks our dreamer. And it is no wonder that he thinks it!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_102",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Look at these magic phantasms, which so enchantingly, so whimsically, so carelessly and freely group before him in such a magic, animated picture, in which the most prominent figure in the foreground is of course himself, our dreamer, in his precious person.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_103",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "See what varied adventures, what an endless swarm of ecstatic dreams. You ask, perhaps, what he is dreaming of. Why ask that? why, of everything... of the lot of the poet, first unrecognized, then crowned with laurels; of friendship with Hoffmann, St.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_104",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Bartholomew's Night, of Diana Vernon, of playing the hero at the taking of Kazan by Ivan Vassilyevitch, of Clara Mowbray, of Effie Deans, of the council of the prelates and Huss before them, of the rising of the dead in.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_105",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Robert the Devil.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_106",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "(do you remember the music, it smells of the churchyard!), of Minna and Brenda, of the battle of Berezina, of the reading of a poem at Countess V.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_107",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "D.'s, of Danton, of Cleopatra ei suoi amanti, of a little house in Kolomna, of a little home of one's own and beside one a dear creature who listens to one on a winter's evening, opening her little mouth and eyes as you are listening to me now, my angel...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_108",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "No, Nastenka, what is there, what is there for him, voluptuous sluggard, in this life, for which you and I have such a longing?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_109",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "He thinks that this is a poor pitiful life, not foreseeing that for him too, maybe, sometime the mournful hour may strike, when for one day of that pitiful life he would give all his years of phantasy, and would give them not only for joy and for happiness, but without caring to make distinctions in that hour of sadness, remorse and unchecked grief.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_110",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But so far that threatening has not arrived, he desires nothing, because he is superior to all desire, because he has everything, because he is satiated, because he is the artist of his own life, and creates it for himself every hour to suit his latest whim.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_111",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And you know this fantastic world of fairyland is so easily, so naturally created! As though it were not a delusion!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_112",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Indeed, he is ready to believe at some moments that all this life is not suggested by feeling, is not mirage, not a delusion of the imagination, but that it is concrete, real, substantial!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_113",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Why is it, Nastenka, why is it at such moments one holds one's breath?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_114",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Why, by what sorcery, through what incomprehensible caprice, is the pulse quickened, does a tear start from the dreamer's eye, while his pale moist cheeks glow, while his whole being is suffused with an inexpressible sense of consolation?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_115",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Why is it that whole sleepless nights pass like a flash in inexhaustible gladness and happiness, and when the dawn gleams rosy at the window and daybreak floods the gloomy room with uncertain, fantastic light, as in Petersburg, our dreamer, worn out and exhausted, flings himself on his bed and drops asleep with thrills of delight in his morbidly overwrought spirit, and with a weary sweet ache in his heart?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_116",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, Nastenka, one deceives oneself and unconsciously believes that real true passion is stirring one's soul; one unconsciously believes that there is something living, tangible in one's immaterial dreams! And is it delusion?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_117",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Here love, for instance, is bound up with all its fathomless joy, all its torturing agonies in his bosom... Only look at him, and you will be convinced!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_118",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Would you believe, looking at him, dear Nastenka, that he has never known her whom he loves in his ecstatic dreams? Can it be that he has only seen her in seductive visions, and that this passion has been nothing but a dream?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_119",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Surely they must have spent years hand in hand together, alone the two of them, casting off all the world and each uniting his or her life with the other's?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_120",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Surely when the hour of parting came she must have lain sobbing and grieving on his bosom, heedless of the tempest raging under the sullen sky, heedless of the wind which snatches and bears away the tears from her black eyelashes?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_121",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Can all of that have been a dream, and that garden, dejected, forsaken, run wild, with its little moss-grown paths, solitary, gloomy, where they used to walk so happily together, where they hoped, grieved, loved, loved each other so long.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_122",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And that queer ancestral house where she spent so many years lonely and sad with her morose old husband, always silent and splenetic, who frightened them, while timid as children they hid their love from each other?",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_123",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What torments they suffered, what agonies of terror, how innocent, how pure was their love, and how (I need hardly say, Nastenka) malicious people were!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_124",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And, good Heavens! surely he met her afterwards, far from their native shores, under alien skies, in the hot south in the divinely eternal city, in the dazzling splendour of the ball to the crash of music, in a palazzo (it must be in a palazzo), drowned in a sea of lights, on the balcony, wreathed in myrtle and roses, where, recognizing him, she hurriedly removes her mask and whispering.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_125",
+  "p": 45,
+  "speaker": 3,
+  "kind": "say",
+  "text": "I am free.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_126",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "flings herself trembling into his arms, and with a cry of rapture, clinging to one another, in one instant they forget their sorrow and their parting and all their agonies, and the gloomy house and the old man and the dismal garden in that distant land, and the seat on which with a last passionate kiss she tore herself away from his arms numb with anguish and despair...",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_127",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, Nastenka, you must admit that one would start, betray confusion, and blush like a schoolboy who has just stuffed in his pocket an apple stolen from a neighbour's garden, when your uninvited visitor, some stalwart, lanky fellow, a festive soul fond of a joke, opens your door and shouts out as though nothing were happening.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_128",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "My dear boy, I have this minute come from Pavlovsk.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_129",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "My goodness! the old count is dead, unutterable happiness is close at hand, and people arrive from Pavlovsk!",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "second_night_130",
+  "p": 46,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Finishing my pathetic appeal, I paused pathetically.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "second_night_131",
+  "p": 46,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I remembered that I had an intense desire to force myself to laugh, for I was already feeling that a malignant demon was stirring within me, that there was a lump in my throat, that my chin was beginning to twitch, and that my eyes were growing more and more moist.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_132",
+  "p": 47,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I expected Nastenka, who listened to me opening her clever eyes, would break into her childish, irrepressible laugh;",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "second_night_133",
+  "p": 47,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "and I was already regretting that I had gone so far, that I had unnecessarily described what had long been simmering in my heart, about which I could speak as though from a written account of it, because I had long ago passed judgment on myself and now could not resist reading it, making my confession, without expecting to be understood;",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_134",
+  "p": 47,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "but to my surprise she was silent, waiting a little, then she faintly pressed my hand and with timid sympathy asked.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_135",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Surely you haven't lived like that all your life?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_136",
+  "p": 49,
+  "speaker": 1,
+  "kind": "say",
+  "text": "All my life, Nastenka.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_137",
+  "p": 49,
+  "speaker": 1,
+  "kind": "say",
+  "text": "all my life, and it seems to me I shall go on so to the end.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_138",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, that won't do.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_139",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "that must not be; and so, maybe, I shall spend all my life beside grandmother. Do you know, it is not at all good to live like that?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_140",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I know, Nastenka, I know!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_141",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And I realize now, more than ever, that I have lost all my best years! And now I know it and feel it more painfully from recognizing that God has sent me you, my good angel, to tell me that and show it.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_142",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now that I sit beside you and talk to you it is strange for me to think of the future, for in the future, there is loneliness again, again this musty, useless life; and what shall I have to dream of when I have been so happy in reality beside you!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_143",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, may you be blessed, dear girl, for not having repulsed me at first, for enabling me to say that for two evenings, at least, I have lived.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_144",
+  "p": 52,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh, no, no!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_145",
+  "p": 52,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, it mustn't be so any more; we must not part like that! what are two evenings?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_146",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, Nastenka, Nastenka! Do you know how far you have reconciled me to myself? Do you know now that I shall not think so ill of myself, as I have at some moments?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_147",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Do you know that, maybe, I shall leave off grieving over the crime and sin of my life? for such a life is a crime and a sin.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_148",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And do not imagine that I have been exaggerating anything, for goodness' sake don't think that, Nastenka: for at times such misery comes over me, such misery...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_149",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Because it begins to seem to me at such times that I am incapable of beginning a life in real life, because it has seemed to me that I have lost all touch, all instinct for the actual, the real; because at last I have cursed myself; because after my fantastic nights I have moments of returning sobriety, which are awful!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_150",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Meanwhile, you hear the whirl and roar of the crowd in the vortex of life around you; you hear, you see, men living in reality;",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_151",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "you see that life for them is not forbidden, that their life does not float away like a dream, like a vision; that their life is being eternally renewed, eternally youthful, and not one hour of it is the same as another;",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_152",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "while fancy is so spiritless, monotonous to vulgarity and easily scared, the slave of shadows, of the idea, the slave of the first cloud that shrouds the sun, and overcasts with depression the true Petersburg heart so devoted to the sun, and what is fancy in depression!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_153",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "One feels that this inexhaustible fancy is weary at last and worn out with continual exercise, because one is growing into manhood, outgrowing one's old ideals: they are being shattered into fragments, into dust; if there is no other life one must build one up from the fragments.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_154",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And meanwhile the soul longs and craves for something else!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_155",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And in vain the dreamer rakes over his old dreams, as though seeking a spark among the embers, to fan them into flame, to warm his chilled heart by the rekindled fire, and to rouse up in it again all that was so sweet, that touched his heart, that set his blood boiling, drew tears from his eyes, and so luxuriously deceived him!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_156",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Do you know, Nastenka, the point I have reached?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_157",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Do you know that I am forced now to celebrate the anniversary of my own sensations, the anniversary of that which was once so sweet, which never existed in reality, for this anniversary is kept in memory of those same foolish, shadowy dreams, and to do this because those foolish dreams are no more, because I have nothing to earn them with; you know even dreams do not come for nothing!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_158",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Do you know that I love now to recall and visit at certain dates the places where I was once happy in my own way?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_159",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I love to build up my present in harmony with the irrevocable past, and I often wander like a shadow, aimless, sad and dejected, about the streets and crooked lanes of Petersburg. What memories they are!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_160",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "To remember, for instance, that here just a year ago, just at this time, at this hour, on this pavement, I wandered just as lonely, just as dejected as today.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_161",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And one remembers that then one's dreams were sad, and though the past was no better one feels as though it had somehow been better, and that life was more peaceful, that one was free from the black thoughts that haunt one now; that one was free from the gnawing of conscience, the gloomy, sullen gnawing which now gives me no rest by day or by night.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_162",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And one asks oneself where are one's dreams. And one shakes one's head and says how rapidly the years fly by! And again one asks oneself what has one done with one's years. Where have you buried your best days? Have you lived or not?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_163",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Look, one says to oneself, look how cold the world is growing. Some more years will pass, and after them will come gloomy solitude; then will come old age trembling on its crutch, and after it misery and desolation.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_164",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Your fantastic world will grow pale, your dreams will fade and die and will fall like the yellow leaves from the trees...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_165",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, Nastenka! you know it will be sad to be left alone, utterly alone, and to have not even anything to regret, nothing, absolutely nothing... for all that you have lost, all that, all was nothing, stupid, simple nullity, there has been nothing but dreams!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_166",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Come, don't work on my feelings any more.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_167",
+  "p": 54,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Wiping away a tear which was trickling down her cheek.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_168",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Now it's over! Now we shall be two together. Now, whatever happens to me, we will never part.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_169",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Listen; I am a simple girl, I have not had much education, though grandmother did get a teacher for me, but truly I understand you, for all that you have described I have been through myself, when grandmother pinned me to her dress.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_170",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Of course, I should not have described it so well as you have; I am not educated.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_171",
+  "p": 54,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Timidly, for she was still feeling a sort of respect for my pathetic eloquence and lofty style.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_172",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "but I am very glad that you have been quite open with me. Now I know you thoroughly, all of you. And do you know what? I want to tell you my history too, all without concealment, and after that you must give me advice.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_173",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "You are a very clever man; will you promise to give me advice?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_174",
+  "p": 55,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Ah, Nastenka.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_175",
+  "p": 55,
+  "speaker": 1,
+  "kind": "say",
+  "text": "though I have never given advice, still less sensible advice, yet I see now that if we always go on like this that it will be very sensible, and that each of us will give the other a great deal of sensible advice!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_176",
+  "p": 55,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well, my pretty Nastenka, what sort of advice do you want? Tell me frankly; at this moment I am so gay and happy, so bold and sensible, that it won't be difficult for me to find words.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_177",
+  "p": 56,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, no!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_178",
+  "p": 56,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I don't only want sensible advice, I want warm brotherly advice, as though you had been fond of me all your life!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_179",
+  "p": 57,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Agreed, Nastenka, agreed!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_180",
+  "p": 57,
+  "speaker": 1,
+  "kind": "say",
+  "text": "and if I had been fond of you for twenty years, I couldn't have been fonder of you than I am now.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "second_night_181",
+  "p": 58,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Your hand.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_182",
+  "p": 59,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Here it is.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "second_night_183",
+  "p": 60,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And so let us begin my history!",
+  "pause_before": 0.6,
+  "guessed": true
+ }
+]

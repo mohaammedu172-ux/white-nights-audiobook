@@ -1,0 +1,1496 @@
+[
+ {
+  "id": "fourth_night_000",
+  "p": 0,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "My God, how it has all ended! What it has all ended in! I arrived at nine o'clock. She was already there.",
+  "pause_before": 0.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_001",
+  "p": 0,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I noticed her a good way off; she was standing as she had been that first time, with her elbows on the railing, and she did not hear me coming up to her.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_002",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka!",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_003",
+  "p": 1,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I called to her, suppressing my agitation with an effort.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_004",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_005",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well? Make haste!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_006",
+  "p": 5,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, where is the letter? Have you brought the letter?",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_007",
+  "p": 6,
+  "speaker": 1,
+  "kind": "say",
+  "text": "No, there is no letter.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_008",
+  "p": 6,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Hasn't he been to you yet?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_009",
+  "p": 6,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "She turned fearfully pale and looked at me for a long time without moving. I had shattered her last hope.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_010",
+  "p": 7,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, God be with him.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_011",
+  "p": 7,
+  "speaker": 2,
+  "kind": "say",
+  "text": "God be with him if he leaves me like that.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_012",
+  "p": 8,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "She dropped her eyes, then tried to look at me and could not. For several minutes she was struggling with her emotion. All at once she turned away, leaning her elbows against the railing and burst into tears.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_013",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh don't, don't!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_014",
+  "p": 9,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But looking at her I had not the heart to go on, and what was I to say to her?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_015",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Don't try and comfort me.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_016",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "don't talk about him; don't tell me that he will come, that he has not cast me off so cruelly and so inhumanly as he has. What for, what for? Can there have been something in my letter, that unlucky letter?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_017",
+  "p": 11,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "At that point sobs stifled her voice; my heart was torn as I looked at her.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_018",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh, how inhumanly cruel it is!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_019",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And not a line, not a line! He might at least have written that he does not want me, that he rejects me, but not a line for three days!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_020",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "How easy it is for him to wound, to insult a poor, defenceless girl, whose only fault is that she loves him! Oh, what I've suffered during these three days! Oh, dear!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_021",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "When I think that I was the first to go to him, that I humbled myself before him, cried, that I begged of him a little love!... and after that! Listen.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_022",
+  "p": 12,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Turning to me, and her black eyes flashed.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_023",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "it isn't so! It can't be so; it isn't natural. Either you are mistaken or I; perhaps he has not received the letter? Perhaps he still knows nothing about it?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_024",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "How could any one, judge for yourself, tell me, for goodness' sake explain it to me, I can't understand it, how could any one behave with such barbarous coarseness as he has behaved to me? Not one word!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_025",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why, the lowest creature on earth is treated more compassionately. Perhaps he has heard something, perhaps some one has told him something about me.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_026",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What do you think?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_027",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen, Nastenka, I shall go to him tomorrow in your name.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_028",
+  "p": 14,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_029",
+  "p": 15,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I will question him about everything; I will tell him everything.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_030",
+  "p": 16,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, yes?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_031",
+  "p": 17,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You write a letter. Don't say no, Nastenka, don't say no! I will make him respect your action, he shall hear all about it, and if.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_032",
+  "p": 18,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, my friend, no.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_033",
+  "p": 18,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Enough! Not another word, not another line from me, enough! I don't know him; I don't love him any more. I will... forget him.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_034",
+  "p": 20,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Calm yourself, calm yourself! Sit here, Nastenka.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_035",
+  "p": 21,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I am calm. Don't trouble. It's nothing! It's only tears, they will soon dry. Why, do you imagine I shall do away with myself, that I shall throw myself into the river?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_036",
+  "p": 22,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "My heart was full: I tried to speak, but I could not.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_037",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Listen.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_038",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Tell me: you wouldn't have behaved like this, would you? You would not have abandoned a girl who had come to you of herself, you would not have thrown into her face a shameless taunt at her weak foolish heart?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_039",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "You would have taken care of her?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_040",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "You would have realized that she was alone, that she did not know how to look after herself, that she could not guard herself from loving you, that it was not her fault, not her fault, that she had done nothing... Oh dear, oh dear!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_041",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_042",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka, you torture me! You wound my heart, you are killing me, Nastenka! I cannot be silent! I must speak at last, give utterance to what is surging in my heart!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_043",
+  "p": 25,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "As I said this I got up from the seat. She took my hand and looked at me in surprise.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_044",
+  "p": 26,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What is the matter with you?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_045",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_046",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen to me, Nastenka! What I am going to say to you now is all nonsense, all impossible, all stupid! I know that this can never be, but I cannot be silent.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_047",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "For the sake of what you are suffering now, I beg you beforehand to forgive me!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_048",
+  "p": 28,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What is it? What is it?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_049",
+  "p": 28,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Drying her tears and looking at me intently, while a strange curiosity gleamed in her astonished eyes.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_050",
+  "p": 28,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What is the matter?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_051",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It's impossible, but I love you, Nastenka! There it is! Now everything is told.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_052",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now you will see whether you can go on talking to me as you did just now, whether you can listen to what I am going to say to you.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_053",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, what then?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_054",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What of it? I knew you loved me long ago, only I always thought that you simply liked me very much... Oh dear, oh dear!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_055",
+  "p": 31,
+  "speaker": 1,
+  "kind": "say",
+  "text": "At first it was simply liking, Nastenka, but now, now! I am just in the same position as you were when you went to him with your bundle. In a worse position than you, Nastenka, because he cared for no one else as you do.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_056",
+  "p": 32,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What are you saying to me! I don't understand you in the least. But tell me, what's this for; I don't mean what for, but why are you... so suddenly... Oh dear, I am talking nonsense! But you...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_057",
+  "p": 33,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "And Nastenka broke off in confusion. Her cheeks flamed; she dropped her eyes.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_058",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What's to be done, Nastenka, what am I to do? I am to blame. I have abused your...",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_059",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But no, no, I am not to blame, Nastenka; I feel that, I know that, because my heart tells me I am right, for I cannot hurt you in any way, I cannot wound you!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_060",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I was your friend, but I am still your friend, I have betrayed no trust. Here my tears are falling, Nastenka. Let them flow, let them flow, they don't hurt anybody. They will dry, Nastenka.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_061",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Sit down, sit down.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_062",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh, my God!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_063",
+  "p": 36,
+  "speaker": 1,
+  "kind": "say",
+  "text": "No, Nastenka, I won't sit down; I cannot stay here any longer, you cannot see me again; I will tell you everything and go away. I only want to say that you would never have found out that I loved you.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_064",
+  "p": 36,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I should have kept my secret. I would not have worried you at such a moment with my egoism. No! But I could not resist it now; you spoke of it yourself, it is your fault, your fault and not mine.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_065",
+  "p": 36,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You cannot drive me away from you.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_066",
+  "p": 37,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, no, I don't drive you away, no!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_067",
+  "p": 37,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Concealing her confusion as best she could, poor child.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_068",
+  "p": 38,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You don't drive me away? No! But I meant to run from you myself.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_069",
+  "p": 38,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I will go away, but first I will tell you all, for when you were crying here I could not sit unmoved, when you wept, when you were in torture at being, at being, I will speak of it, Nastenka, at being forsaken, at your love being repulsed, I felt that in my heart there was so much love for you, Nastenka, so much love!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_070",
+  "p": 38,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And it seemed so bitter that I could not help you with my love, that my heart was breaking and I... I could not be silent, I had to speak, Nastenka, I had to speak!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_071",
+  "p": 39,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, yes! tell me, talk to me.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_072",
+  "p": 39,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Perhaps you think it strange that I talk to you like this, but... speak! I will tell you afterwards! I will tell you everything.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_073",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You are sorry for me, Nastenka, you are simply sorry for me, my dear little friend! What's done can't be mended. What is said cannot be taken back. Isn't that so? Well, now you know. That's the starting-point. Very well.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_074",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now it's all right, only listen. When you were sitting crying I thought to myself (oh, let me tell you what I was thinking!), I thought, that (of course it cannot be, Nastenka), I thought that you...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_075",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I thought that you somehow... quite apart from me, had ceased to love him.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_076",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Then, I thought that yesterday and the day before yesterday, Nastenka, then I would, I certainly would, have succeeded in making you love me; you know, you said yourself, Nastenka, that you almost loved me. Well, what next?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_077",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well, that's nearly all I wanted to tell you; all that is left to say is how it would be if you loved me, only that, nothing more!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_078",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen, my friend, for any way you are my friend, I am, of course, a poor, humble man, of no great consequence; but that's not the point (I don't seem to be able to say what I mean, Nastenka, I am so confused), only I would love you, I would love you so, that even if you still loved him, even if you went on loving the man I don't know, you would never feel that my love was a burden to you.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_079",
+  "p": 40,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You would only feel every minute that at your side was beating a grateful, grateful heart, a warm heart ready for your sake... Oh Nastenka, Nastenka! What have you done to me?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_080",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Don't cry; I don't want you to cry.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_081",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Come along, get up, come with me, don't cry, don't cry.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_082",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "let us go now; maybe I will tell you something... If he has forsaken me now, if he has forgotten me, though I still love him (I do not want to deceive you)... but listen, answer me.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_083",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "If I were to love you, for instance, that is, if I only... Oh my friend, my friend! To think, to think how I wounded you, when I laughed at your love, when I praised you for not falling in love with me. Oh dear!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_084",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "How was it I did not foresee this, how was it I did not foresee this, how could I have been so stupid? But... Well, I have made up my mind, I will tell you.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_085",
+  "p": 42,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Look here, Nastenka, do you know what? I'll go away, that's what I'll do. I am simply tormenting you. Here you are remorseful for having laughed at me, and I won't have you... in addition to your sorrow...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_086",
+  "p": 42,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Of course it is my fault, Nastenka, but good-bye!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_087",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Stay, listen to me: can you wait?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_088",
+  "p": 44,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What for? How?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_089",
+  "p": 45,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I love him; but I shall get over it, I must get over it, I cannot fail to get over it; I am getting over it, I feel that... Who knows?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_090",
+  "p": 45,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Perhaps it will all end today, for I hate him, for he has been laughing at me, while you have been weeping here with me, for you have not repulsed me as he has, for you love me while he has never loved me, for in fact, I love you myself...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_091",
+  "p": 45,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, I love you! I love you as you love me; I have told you so before, you heard it yourself, I love you because you are better than he is, because you are nobler than he is, because, because he.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_092",
+  "p": 46,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "The poor girl's emotion was so violent that she could not say more; she laid her head upon my shoulder, then upon my bosom, and wept bitterly.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_093",
+  "p": 46,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I comforted her, I persuaded her, but she could not stop crying; she kept pressing my hand, and saying between her sobs.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_094",
+  "p": 46,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Wait, wait, it will be over in a minute! I want to tell you... you mustn't think that these tears, it's nothing, it's weakness, wait till it's over.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_095",
+  "p": 46,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "At last she left off crying, dried her eyes and we walked on again. I wanted to speak, but she still begged me to wait. We were silent... At last she plucked up courage and began to speak.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_096",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's like this.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_097",
+  "p": 47,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "In a weak and quivering voice, in which, however, there was a note that pierced my heart with a sweet pang.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_098",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "don't think that I am so light and inconstant, don't think that I can forget and change so quickly. I have loved him for a whole year, and I swear by God that I have never, never, even in thought, been unfaithful to him...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_099",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He has despised me, he has been laughing at me, God forgive him! But he has insulted me and wounded my heart. I...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_100",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I do not love him, for I can only love what is magnanimous, what understands me, what is generous; for I am like that myself and he is not worthy of me, well, that's enough of him.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_101",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He has done better than if he had deceived my expectations later, and shown me later what he was... Well, it's over! But who knows, my dear friend.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_102",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "who knows, perhaps my whole love was a mistaken feeling, a delusion, perhaps it began in mischief, in nonsense, because I was kept so strictly by grandmother?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_103",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Perhaps I ought to love another man, not him, a different man, who would have pity on me and... and... But don't let us say any more about that.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_104",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I only wanted to tell you... I wanted to tell you that if, although I love him (no, did love him), if, in spite of this you still say...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_105",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "If you feel that your love is so great that it may at last drive from my heart my old feeling, if you will have pity on me, if you do not want to leave me alone to my fate, without hope, without consolation, if you are ready to love me always as you do now, I swear to you that gratitude... that my love will be at last worthy of your love...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_106",
+  "p": 47,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Will you take my hand?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_107",
+  "p": 48,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_108",
+  "p": 48,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka, oh Nastenka!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_109",
+  "p": 49,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Enough, enough! Well, now it's quite enough.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_110",
+  "p": 49,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, now all has been said, hasn't it! Hasn't it? You are happy, I am happy too. Not another word about it, wait; spare me... talk of something else, for God's sake.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_111",
+  "p": 50,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, Nastenka, yes! Enough about that, now I am happy. I, , Yes, Nastenka, yes, let us talk of other things, let us make haste and talk. Yes! I am ready.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_112",
+  "p": 51,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "And we did not know what to say: we laughed, we wept, we said thousands of things meaningless and incoherent; at one moment we walked along the pavement, then suddenly turned back and crossed the road; then we stopped and went back again to the embankment; we were like children.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_113",
+  "p": 52,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I am living alone now, Nastenka.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_114",
+  "p": 52,
+  "speaker": 1,
+  "kind": "say",
+  "text": "but tomorrow! Of course you know, Nastenka, I am poor, I have only got twelve hundred roubles, but that doesn't matter.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_115",
+  "p": 53,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Of course not, and granny has her pension, so she will be no burden. We must take granny.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_116",
+  "p": 54,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Of course we must take granny. But there's Matrona.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_117",
+  "p": 55,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, and we've got Fyokla too!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_118",
+  "p": 56,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Matrona is a good woman, but she has one fault: she has no imagination, Nastenka, absolutely none; but that doesn't matter.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_119",
+  "p": 57,
+  "speaker": 2,
+  "kind": "say",
+  "text": "That's all right, they can live together; only you must move to us tomorrow.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_120",
+  "p": 58,
+  "speaker": 1,
+  "kind": "say",
+  "text": "To you? How so? All right, I am ready.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_121",
+  "p": 59,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, hire a room from us. We have a top floor, it's empty. We had an old lady lodging there, but she has gone away; and I know granny would like to have a young man. I said to her.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_122",
+  "p": 59,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Why a young man?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_123",
+  "p": 59,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And she said.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_124",
+  "p": 59,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Oh, because I am old; only don't you fancy, Nastenka, that I want him as a husband for you.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_125",
+  "p": 59,
+  "speaker": 2,
+  "kind": "say",
+  "text": "So I guessed it was with that idea.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_126",
+  "p": 60,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, Nastenka!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_127",
+  "p": 62,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Come, that's enough, that's enough. But where do you live? I've forgotten.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_128",
+  "p": 63,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Over that way, near X bridge, Barannikov's Buildings.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_129",
+  "p": 64,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's that big house?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_130",
+  "p": 65,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, that big house.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_131",
+  "p": 66,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh, I know, a nice house; only you know you had better give it up and come to us as soon as possible.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_132",
+  "p": 67,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Tomorrow, Nastenka, tomorrow; I owe a little for my rent there but that doesn't matter. I shall soon get my salary.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_133",
+  "p": 68,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And do you know I will perhaps give lessons; I will learn something myself and then give lessons.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_134",
+  "p": 69,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Capital! And I shall soon get a bonus.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_135",
+  "p": 70,
+  "speaker": 2,
+  "kind": "say",
+  "text": "So by tomorrow you will be my lodger.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_136",
+  "p": 71,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And we will go to The Barber of Seville, for they are soon going to give it again.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_137",
+  "p": 72,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, we'll go.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_138",
+  "p": 72,
+  "speaker": 2,
+  "kind": "say",
+  "text": "but better see something else and not The Barber of Seville.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_139",
+  "p": 73,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Very well, something else. Of course that will be better, I did not think.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_140",
+  "p": 74,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "As we talked like this we walked along in a sort of delirium, a sort of intoxication, as though we did not know what was happening to us.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_141",
+  "p": 74,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "At one moment we stopped and talked for a long time at the same place; then we went on again, and goodness knows where we went; and again tears and again laughter.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_142",
+  "p": 74,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "All of a sudden Nastenka would want to go home, and I would not dare to detain her but would want to see her to the house; we set off, and in a quarter of an hour found ourselves at the embankment by our seat.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_143",
+  "p": 74,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Then she would sigh, and tears would come into her eyes again; I would turn chill with dismay... But she would press my hand and force me to walk, to talk, to chatter as before.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_144",
+  "p": 75,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's time I was home at last; I think it must be very late.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_145",
+  "p": 75,
+  "speaker": 2,
+  "kind": "say",
+  "text": "We must give over being childish.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_146",
+  "p": 76,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, Nastenka, only I shan't sleep to-night; I am not going home.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_147",
+  "p": 77,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I don't think I shall sleep either; only see me home.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_148",
+  "p": 78,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I should think so!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_149",
+  "p": 79,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Only this time we really must get to the house.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_150",
+  "p": 80,
+  "speaker": 1,
+  "kind": "say",
+  "text": "We must, we must.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_151",
+  "p": 81,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Honour bright? For you know one must go home some time!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_152",
+  "p": 82,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Honour bright.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_153",
+  "p": 83,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, come along!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_154",
+  "p": 84,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Come along! Look at the sky, Nastenka. Look! Tomorrow it will be a lovely day; what a blue sky, what a moon! Look; that yellow cloud is covering it now, look, look! No, it has passed by. Look, look!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_155",
+  "p": 85,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But Nastenka did not look at the cloud; she stood mute as though turned to stone; a minute later she huddled timidly close up to me. Her hand trembled in my hand; I looked at her. She pressed still more closely to me.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_156",
+  "p": 86,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "At that moment a young man passed by us. He suddenly stopped, looked at us intently, and then again took a few steps on. My heart began throbbing.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_157",
+  "p": 87,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Who is it, Nastenka?",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_158",
+  "p": 88,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's he.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_159",
+  "p": 88,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "In a whisper, huddling up to me, still more closely, still more tremulously... I could hardly stand on my feet.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_160",
+  "p": 89,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka, Nastenka! It's you!",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "fourth_night_161",
+  "p": 89,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I heard a voice behind us and at the same moment the young man took several steps towards us.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_162",
+  "p": 90,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "My God, how she cried out! How she started! How she tore herself out of my arms and rushed to meet him! I stood and looked at them, utterly crushed.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_163",
+  "p": 90,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But she had hardly given him her hand, had hardly flung herself into his arms, when she turned to me again, was beside me again in a flash, and before I knew where I was she threw both arms round my neck and gave me a warm, tender kiss.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_164",
+  "p": 90,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Then, without saying a word to me, she rushed back to him again, took his hand, and drew him after her.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "fourth_night_165",
+  "p": 91,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I stood a long time looking after them. At last the two vanished from my sight.",
+  "pause_before": 1.0,
+  "guessed": false
+ }
+]

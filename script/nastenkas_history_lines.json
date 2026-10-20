@@ -1,0 +1,1586 @@
+[
+ {
+  "id": "nastenkas_history_000",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Half my story you know already, that is, you know that I have an old grandmother...",
+  "pause_before": 0.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_001",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "If the other half is as brief as that...",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_002",
+  "p": 2,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Be quiet and listen. First of all you must agree not to interrupt me, or else, perhaps I shall get in a muddle! Come, listen quietly.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_003",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I have an old grandmother. I came into her hands when I was quite a little girl, for my father and mother are dead. It must be supposed that grandmother was once richer, for now she recalls better days.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_004",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "She taught me French, and then got a teacher for me. When I was fifteen (and now I am seventeen) we gave up having lessons.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_005",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It was at that time that I got into mischief; what I did I won't tell you; it's enough to say that it wasn't very important.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_006",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But grandmother called me to her one morning and said that as she was blind she could not look after me; she took a pin and pinned my dress to hers, and said that we should sit like that for the rest of our lives if, of course, I did not become a better girl.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_007",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "In fact, at first it was impossible to get away from her: I had to work, to read and to study all beside grandmother. I tried to deceive her once, and persuaded Fekla to sit in my place. Fekla is our charwoman, she is deaf.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_008",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Fekla sat there instead of me; grandmother was asleep in her armchair at the time, and I went off to see a friend close by. Well, it ended in trouble.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_009",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Grandmother woke up while I was out, and asked some questions; she thought I was still sitting quietly in my place.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_010",
+  "p": 3,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Fekla saw that grandmother was asking her something, but could not tell what it was; she wondered what to do, undid the pin and ran away...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_011",
+  "p": 4,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "At this point Nastenka stopped and began laughing. I laughed with her. She left off at once.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_012",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I tell you what, don't you laugh at grandmother. I laugh because it's funny... What can I do, since grandmother is like that; but yet I am fond of her in a way. Oh, well, I did catch it that time.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_013",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I had to sit down in my place at once, and after that I was not allowed to stir.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_014",
+  "p": 6,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, I forgot to tell you that our house belongs to us, that is to grandmother; it is a little wooden house with three windows as old as grandmother herself, with a little upper storey; well, there moved into our upper storey a new lodger.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_015",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Then you had an old lodger.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_016",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, of course.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_017",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "and one who knew how to hold his tongue better than you do. In fact, he hardly ever used his tongue at all.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_018",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He was a dumb, blind, lame, dried-up little old man, so that at last he could not go on living, he died; so then we had to find a new lodger, for we could not live without a lodger, the rent, together with grandmother's pension, is almost all we have.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_019",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But the new lodger, as luck would have it, was a young man, a stranger not of these parts. As he did not haggle over the rent, grandmother accepted him, and only afterwards she asked me.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_020",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Tell me, Nastenka, what is our lodger like, is he young or old?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_021",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I did not want to lie, so I told grandmother that he wasn't exactly young and that he wasn't old.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_022",
+  "p": 9,
+  "speaker": 3,
+  "kind": "say",
+  "text": "And is he pleasant looking?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_023",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Again I did not want to tell a lie.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_024",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, he is pleasant looking, grandmother.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_025",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh, what a nuisance, what a nuisance! I tell you this, grandchild, that you may not be looking after him. What times these are! Why a paltry lodger like this, and he must be pleasant looking too; it was very different in the old days!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_026",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Grandmother was always regretting the old days, she was younger in old days, and the sun was warmer in old days, and cream did not turn so sour in old days, it was always the old days!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_027",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I would sit still and hold my tongue and think to myself: why did grandmother suggest it to me? Why did she ask whether the lodger was young and good-looking?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_028",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But that was all, I just thought it, began counting my stitches again, went on knitting my stocking, and forgot all about it.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_029",
+  "p": 12,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well, one morning the lodger came in to see us; he asked about a promise to paper his rooms. One thing led to another. Grandmother was talkative, and she said.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_030",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Go, Nastenka, into my bedroom and bring me my reckoner.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_031",
+  "p": 12,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I jumped up at once; I blushed all over, I don't know why, and forgot I was sitting pinned to grandmother; instead of quietly undoing the pin, so that the lodger should not see, I jumped so that grandmother's chair moved.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_032",
+  "p": 12,
+  "speaker": 1,
+  "kind": "say",
+  "text": "When I saw that the lodger knew all about me now, I blushed, stood still as though I had been shot, and suddenly began to cry, I felt so ashamed and miserable at that minute, that I didn't know where to look! Grandmother called out.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_033",
+  "p": 12,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What are you waiting for?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_034",
+  "p": 12,
+  "speaker": 1,
+  "kind": "say",
+  "text": "and I went on worse than ever. When the lodger saw, saw that I was ashamed on his account, he bowed and went away at once!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_035",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "After that I felt ready to die at the least sound in the passage.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_036",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It's the lodger.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_037",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I kept thinking; I stealthily undid the pin in case. But it always turned out not to be, he never came.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_038",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "A fortnight passed; the lodger sent word through Fyokla that he had a great number of French books, and that they were all good books that I might read, so would not grandmother like me to read them that I might not be dull?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_039",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Grandmother agreed with gratitude, but kept asking if they were moral books, for if the books were immoral it would be out of the question, one would learn evil from them.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_040",
+  "p": 14,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And what should I learn, grandmother? What is there written in them?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_041",
+  "p": 15,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Ah.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_042",
+  "p": 15,
+  "speaker": 2,
+  "kind": "say",
+  "text": "what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents' houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_043",
+  "p": 15,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I read a great many books,' said grandmother, 'and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka,' said she.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_044",
+  "p": 15,
+  "speaker": 3,
+  "kind": "say",
+  "text": "What books has he sent?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_045",
+  "p": 16,
+  "speaker": 2,
+  "kind": "say",
+  "text": "They are all Walter Scott's novels, grandmother.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_046",
+  "p": 17,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Walter Scott's novels! But stay, isn't there some trick about it? Look, hasn't he stuck a love-letter among them?",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_047",
+  "p": 18,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, grandmother.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_048",
+  "p": 19,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But look under the binding; they sometimes stuff it under the bindings, the rascals!",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_049",
+  "p": 20,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, grandmother, there is nothing under the binding.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_050",
+  "p": 21,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, that's all right.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_051",
+  "p": 22,
+  "speaker": 2,
+  "kind": "say",
+  "text": "So we began reading Walter Scott, and in a month or so we had read almost half. Then he sent us more and more.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_052",
+  "p": 22,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He sent us Pushkin, too; so that at last I could not get on without a book and left off dreaming of how fine it would be to marry a Chinese Prince.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_053",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "That's how things were when I chanced one day to meet our lodger on the stairs. Grandmother had sent me to fetch something. He stopped, I blushed and he blushed; he laughed, though, said good-morning to me, asked after grandmother, and said.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_054",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, have you read the books?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_055",
+  "p": 23,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Which did you like best?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_056",
+  "p": 23,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Ivanhoe, and Pushkin best of all.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_057",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "and so our talk ended for that time.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_058",
+  "p": 24,
+  "speaker": 2,
+  "kind": "say",
+  "text": "A week later I met him again on the stairs. That time grandmother had not sent me, I wanted to get something for myself. It was past two, and the lodger used to come home at that time.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_059",
+  "p": 24,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Good-afternoon.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_060",
+  "p": 25,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Aren't you dull.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_061",
+  "p": 26,
+  "speaker": 2,
+  "kind": "say",
+  "text": "When he asked that, I blushed, I don't know why; I felt ashamed, and again I felt offended, I suppose because other people had begun to ask me about that. I wanted to go away without answering, but I hadn't the strength.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_062",
+  "p": 27,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Listen.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_063",
+  "p": 27,
+  "speaker": 2,
+  "kind": "say",
+  "text": "you are a good girl. Excuse my speaking to you like that, but I assure you that I wish for your welfare quite as much as your grandmother. Have you no friends that you could go and visit?'.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_064",
+  "p": 28,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I hadn't any, that I had had no friend but Mashenka, and she had gone away to Pskov.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_065",
+  "p": 29,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Listen.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_066",
+  "p": 29,
+  "speaker": 2,
+  "kind": "say",
+  "text": "would you like to go to the theatre with me?'.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_067",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "To the theatre. What about grandmother?",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_068",
+  "p": 31,
+  "speaker": 4,
+  "kind": "say",
+  "text": "But you must go without your grandmother's knowing it.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_069",
+  "p": 32,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_070",
+  "p": 32,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I don't want to deceive grandmother. Goodbye.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_071",
+  "p": 33,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Well, good-bye.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_072",
+  "p": 34,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Only after dinner he came to see us; sat a long time talking to grandmother; asked her whether she ever went out anywhere, whether she had acquaintances, and suddenly said.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_073",
+  "p": 34,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I have taken a box at the opera for this evening; they are giving The Barber of Seville. My friends meant to go, but afterwards refused, so the ticket is left on my hands.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_074",
+  "p": 34,
+  "speaker": 3,
+  "kind": "say",
+  "text": "The Barber of Seville.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_075",
+  "p": 34,
+  "speaker": 2,
+  "kind": "say",
+  "text": "why, the same they used to act in old days?'.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_076",
+  "p": 35,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Yes, it's the same barber.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_077",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "and glanced at me. I saw what it meant and turned crimson, and my heart began throbbing with suspense.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_078",
+  "p": 36,
+  "speaker": 3,
+  "kind": "say",
+  "text": "To be sure, I know it.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_079",
+  "p": 36,
+  "speaker": 2,
+  "kind": "say",
+  "text": "why, I took the part of Rosina myself in old days, at a private performance!'.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_080",
+  "p": 37,
+  "speaker": 4,
+  "kind": "say",
+  "text": "So wouldn't you like to go today?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_081",
+  "p": 37,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Or my ticket will be wasted.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_082",
+  "p": 38,
+  "speaker": 3,
+  "kind": "say",
+  "text": "By all means let us go.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_083",
+  "p": 38,
+  "speaker": 2,
+  "kind": "say",
+  "text": "why shouldn't we? And my Nastenka here has never been to the theatre.'.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_084",
+  "p": 39,
+  "speaker": 2,
+  "kind": "say",
+  "text": "My goodness, what joy! We got ready at once, put on our best clothes, and set off.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_085",
+  "p": 39,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Though grandmother was blind, still she wanted to hear the music; besides, she is a kind old soul, what she cared most for was to amuse me, we should never have gone of ourselves.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_086",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What my impressions of The Barber of Seville were I won't tell you; but all that evening our lodger looked at me so nicely, talked so nicely, that I saw at once that he had meant to test me in the morning when he proposed that I should go with him alone.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_087",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, it was joy! I went to bed so proud, so gay, my heart beat so that I was a little feverish, and all night I was raving about The Barber of Seville.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_088",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I expected that he would come and see us more and more often after that, but it wasn't so at all. He almost entirely gave up coming. He would just come in about once a month, and then only to invite us to the theatre.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_089",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "We went twice again. Only I wasn't at all pleased with that; I saw that he was simply sorry for me because I was so hardly treated by grandmother, and that was all.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_090",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "As time went on, I grew more and more restless, I couldn't sit still, I couldn't read, I couldn't work; sometimes I laughed and did something to annoy grandmother, at another time I would cry. At last I grew thin and was very nearly ill.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_091",
+  "p": 41,
+  "speaker": 2,
+  "kind": "say",
+  "text": "The opera season was over, and our lodger had quite given up coming to see us; whenever we met, always on the same staircase, of course, he would bow so silently, so gravely, as though he did not want to speak, and go down to the front door, while I went on standing in the middle of the stairs, as red as a cherry, for all the blood rushed to my head at the sight of him.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_092",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Now the end is near. Just a year ago, in May, the lodger came to us and said to grandmother that he had finished his business here, and that he must go back to Moscow for a year.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_093",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "When I heard that, I sank into a chair half dead; grandmother did not notice anything; and having informed us that he should be leaving us, he bowed and went away.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_094",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What was I to do? I thought and thought and fretted and fretted, and at last I made up my mind. Next day he was to go away, and I made up my mind to end it all that evening when grandmother went to bed.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_095",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And so it happened. I made up all my clothes in a parcel, all the linen I needed, and with the parcel in my hand, more dead than alive, went upstairs to our lodger. I believe I must have stayed an hour on the staircase.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_096",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "When I opened his door he cried out as he looked at me. He thought I was a ghost, and rushed to give me some water, for I could hardly stand up.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_097",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "My heart beat so violently that my head ached, and I did not know what I was doing.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_098",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "When I recovered I began by laying my parcel on his bed, sat down beside it, hid my face in my hands and went into floods of tears.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_099",
+  "p": 43,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I think he understood it all at once, and looked at me so sadly that my heart was torn.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_100",
+  "p": 44,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Listen.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_101",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "listen, Nastenka, I can't do anything; I am a poor man, for I have nothing, not even a decent berth. How could we live, if I were to marry you?'.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_102",
+  "p": 45,
+  "speaker": 2,
+  "kind": "say",
+  "text": "We talked a long time; but at last I got quite frantic, I said I could not go on living with grandmother, that I should run away from her, that I did not want to be pinned to her, and that I would go to Moscow if he liked, because I could not live without him.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_103",
+  "p": 45,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Shame and pride and love were all clamouring in me at once, and I fell on the bed almost in convulsions, I was so afraid of a refusal.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_104",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He sat for some minutes in silence, then got up, came up to me and took me by the hand.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_105",
+  "p": 47,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Listen, my dear good Nastenka, listen; I swear to you that if I am ever in a position to marry, you shall make my happiness. I assure you that now you are the only one who could make me happy.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_106",
+  "p": 47,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Listen, I am going to Moscow and shall be there just a year; I hope to establish my position. When I come back, if you still love me, I swear that we will be happy.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_107",
+  "p": 47,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Now it is impossible, I am not able, I have not the right to promise anything.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_108",
+  "p": 47,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Well, I repeat, if it is not within a year it will certainly be some time; that is, of course, if you do not prefer any one else, for I cannot and dare not bind you by any sort of promise.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_109",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "That was what he said to me, and next day he went away. We agreed together not to say a word to grandmother: that was his wish. Well, my history is nearly finished now. Just a year has past.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_110",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He has arrived; he has been here three days, and, and.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_111",
+  "p": 49,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And what?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_112",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And up to now has not shown himself!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_113",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "There's no sign or sound of him.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_114",
+  "p": 51,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Here she stopped, paused for a minute, bent her head, and covering her face with her hands broke into such sobs that it sent a pang to my heart to hear them. I had not in the least expected such a dénouement.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_115",
+  "p": 52,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_116",
+  "p": 52,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Nastenka! For goodness' sake don't cry! How do you know? Perhaps he is not here yet...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_117",
+  "p": 53,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He is, he is.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_118",
+  "p": 53,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He is here, and I know it.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_119",
+  "p": 53,
+  "speaker": 2,
+  "kind": "say",
+  "text": "We made an agreement at the time, that evening, before he went away: when we said all that I have told you, and had come to an understanding, then we came out here for a walk on this embankment.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_120",
+  "p": 53,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It was ten o'clock; we sat on this seat. I was not crying then; it was sweet to me to hear what he said...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_121",
+  "p": 53,
+  "speaker": 2,
+  "kind": "say",
+  "text": "And he said that he would come to us directly he arrived, and if I did not refuse him, then we would tell grandmother about it all. Now he is here, I know it, and yet he does not come!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_122",
+  "p": 55,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Good God, can I do nothing to help you in your sorrow?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_123",
+  "p": 55,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Jumping up from the seat in utter despair.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_124",
+  "p": 55,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Tell me, Nastenka, wouldn't it be possible for me to go to him?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_125",
+  "p": 56,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Would that be possible?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_126",
+  "p": 57,
+  "speaker": 1,
+  "kind": "say",
+  "text": "No, of course not.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_127",
+  "p": 57,
+  "speaker": 1,
+  "kind": "say",
+  "text": "but I tell you what, write a letter.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_128",
+  "p": 58,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, that's impossible, I can't do that.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_129",
+  "p": 58,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "With decision, bending her head and not looking at me.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_130",
+  "p": 59,
+  "speaker": 1,
+  "kind": "say",
+  "text": "How impossible, why is it impossible?",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_131",
+  "p": 59,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But, Nastenka, it depends what sort of letter; there are letters and letters and... Ah, Nastenka, I am right; trust to me, trust to me, I will not give you bad advice. It can all be arranged! You took the first step, why not now?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_132",
+  "p": 60,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I can't. I can't! It would seem as though I were forcing myself on him...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_133",
+  "p": 61,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Ah, my good little Nastenka.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_134",
+  "p": 61,
+  "speaker": 1,
+  "kind": "say",
+  "text": "no, no, you have a right to, in fact, because he made you a promise. Besides, I can see from everything that he is a man of delicate feeling; that he behaved very well.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_135",
+  "p": 61,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "More and more carried away by the logic of my own arguments and convictions.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_136",
+  "p": 61,
+  "speaker": 1,
+  "kind": "say",
+  "text": "How did he behave? He bound himself by a promise: he said that if he married at all he would marry no one but you; he gave you full liberty to refuse him at once...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_137",
+  "p": 61,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Under such circumstances you may take the first step; you have the right; you are in the privileged position, if, for instance, you wanted to free him from his promise...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_138",
+  "p": 62,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Listen; how would you write?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_139",
+  "p": 63,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Write what?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_140",
+  "p": 64,
+  "speaker": 2,
+  "kind": "say",
+  "text": "This letter.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_141",
+  "p": 65,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I tell you how I would write.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_142",
+  "p": 65,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Dear Sir.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_143",
+  "p": 66,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Must I really begin like that.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_144",
+  "p": 66,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Dear Sir.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_145",
+  "p": 67,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You certainly must! Though, after all, I don't know, I imagine...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_146",
+  "p": 68,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, well, what next?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_147",
+  "p": 69,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Dear Sir,, I must apologize for.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_148",
+  "p": 69,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But, no, there's no need to apologize; the fact itself justifies everything. Write simply.",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_149",
+  "p": 70,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I am writing to you. Forgive me my impatience; but I have been happy for a whole year in hope; am I to blame for being unable to endure a day of doubt now? Now that you have come, perhaps you have changed your mind.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_150",
+  "p": 70,
+  "speaker": 1,
+  "kind": "say",
+  "text": "If so, this letter is to tell you that I do not repine, nor blame you. I do not blame you because I have no power over your heart, such is my fate!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_151",
+  "p": 71,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You are an honourable man. You will not smile or be vexed at these impatient lines.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_152",
+  "p": 71,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Remember they are written by a poor girl; that she is alone; that she has no one to direct her, no one to advise her, and that she herself could never control her heart.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_153",
+  "p": 71,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But forgive me that a doubt has stolen, if only for one instant, into my heart. You are not capable of insulting, even in thought, her who so loved and so loves you.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_154",
+  "p": 72,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, yes; that's exactly what I was thinking!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_155",
+  "p": 72,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh, you have solved my difficulties: God has sent you to me! Thank you, thank you!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_156",
+  "p": 73,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What for? What for? For God's sending me?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_157",
+  "p": 73,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Why, yes; for that too.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_158",
+  "p": 74,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Ah, Nastenka! Why, one thanks some people for being alive at the same time with one; I thank you for having met me, for my being able to remember you all my life!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_159",
+  "p": 75,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well, enough, enough!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_160",
+  "p": 75,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But now I tell you what, listen: we made an agreement then that as soon as he arrived he would let me know, by leaving a letter with some good simple people of my acquaintance who know nothing about it; or, if it were impossible to write a letter to me, for a letter does not always tell everything, he would be here at ten o'clock on the day he arrived, where we had arranged to meet.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_161",
+  "p": 75,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I know he has arrived already; but now it's the third day, and there's no sign of him and no letter. It's impossible for me to get away from grandmother in the morning.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_162",
+  "p": 75,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Give my letter tomorrow to those kind people I spoke to you about: they will send it on to him, and if there is an answer you bring it tomorrow at ten o'clock.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_163",
+  "p": 76,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But the letter, the letter! You see, you must write the letter first! So perhaps it must all be the day after tomorrow.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_164",
+  "p": 77,
+  "speaker": 2,
+  "kind": "say",
+  "text": "The letter...",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_165",
+  "p": 77,
+  "speaker": 2,
+  "kind": "say",
+  "text": "the letter... but...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_166",
+  "p": 78,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But she did not finish. At first she turned her little face away from me, flushed like a rose, and suddenly I felt in my hand a letter which had evidently been written long before, all ready and sealed up.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_167",
+  "p": 78,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "A familiar sweet and charming reminiscence floated through my mind.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_168",
+  "p": 79,
+  "speaker": 1,
+  "kind": "say",
+  "text": "R, o, Ro; s, i, si; n, a, na.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_169",
+  "p": 80,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Rosina!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_170",
+  "p": 80,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "We both hummed together; I almost embracing her with delight, while she blushed as only she could blush, and laughed through the tears which gleamed like pearls on her black eyelashes.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_171",
+  "p": 81,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Come, enough, enough! Goodbye now.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_172",
+  "p": 81,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Here is the letter, here is the address to which you are to take it. Goodbye, till we meet again! Till tomorrow!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_173",
+  "p": 82,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "She pressed both my hands warmly, nodded her head, and flew like an arrow down her side street. I stood still for a long time following her with my eyes.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_174",
+  "p": 83,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Till tomorrow! till tomorrow!",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "nastenkas_history_175",
+  "p": 83,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Was ringing in my ears as she vanished from my sight.",
+  "pause_before": 0.5,
+  "guessed": false
+ }
+]

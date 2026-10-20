@@ -1,0 +1,290 @@
+[
+ {
+  "id": "morning_000",
+  "p": 0,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "My night ended with the morning. It was a wet day. The rain was falling and beating disconsolately upon my window pane; it was dark in the room and grey outside. My head ached and I was giddy; fever was stealing over my limbs.",
+  "pause_before": 0.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_001",
+  "p": 1,
+  "speaker": 5,
+  "kind": "say",
+  "text": "There's a letter for you, sir; the postman brought it.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_002",
+  "p": 2,
+  "speaker": 1,
+  "kind": "say",
+  "text": "A letter? From whom?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_003",
+  "p": 3,
+  "speaker": 5,
+  "kind": "say",
+  "text": "I don't know, sir, better look, maybe it is written there whom it is from.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "morning_004",
+  "p": 4,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I broke the seal. It was from her!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_005",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, forgive me, forgive me! I beg you on my knees to forgive me! I deceived you and myself. It was a dream, a mirage... My heart aches for you today; forgive me, forgive me!",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "morning_006",
+  "p": 6,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Don't blame me, for I have not changed to you in the least. I told you that I would love you, I love you now, I more than love you. Oh, my God! If only I could love you both at once!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_007",
+  "p": 6,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, if only you were he!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_008",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, if only he were you.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_009",
+  "p": 7,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Echoed in my mind. I remembered your words, Nastenka!].",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "morning_010",
+  "p": 8,
+  "speaker": 5,
+  "kind": "say",
+  "text": "God knows what I would do for you now! I know that you are sad and dreary. I have wounded you, but you know when one loves a wrong is soon forgotten. And you love me.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "morning_011",
+  "p": 9,
+  "speaker": 5,
+  "kind": "say",
+  "text": "Thank you, yes, thank you for that love!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_012",
+  "p": 9,
+  "speaker": 5,
+  "kind": "say",
+  "text": "For it will live in my memory like a sweet dream which lingers long after awakening; for I shall remember for ever that instant when you opened your heart to me like a brother and so generously accepted the gift of my shattered heart to care for it, nurse it, and heal it...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_013",
+  "p": 9,
+  "speaker": 5,
+  "kind": "say",
+  "text": "If you forgive me, the memory of you will be exalted by a feeling of everlasting gratitude which will never be effaced from my soul...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_014",
+  "p": 9,
+  "speaker": 5,
+  "kind": "say",
+  "text": "I will treasure that memory: I will be true to it, I will not betray it, I will not betray my heart: it is too constant. It returned so quickly yesterday to him to whom it has always belonged.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_015",
+  "p": 10,
+  "speaker": 5,
+  "kind": "say",
+  "text": "We shall meet, you will come to us, you will not leave us, you will be for ever a friend, a brother to me. And when you see me you will give me your hand... yes?",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_016",
+  "p": 10,
+  "speaker": 5,
+  "kind": "say",
+  "text": "You will give it to me, you have forgiven me, haven't you? You love me as before?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_017",
+  "p": 11,
+  "speaker": 5,
+  "kind": "say",
+  "text": "Oh, love me, do not forsake me, because I love you so at this moment, because I am worthy of your love, because I will deserve it... my dear! Next week I am to be married to him.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_018",
+  "p": 11,
+  "speaker": 5,
+  "kind": "say",
+  "text": "He has come back in love, he has never forgotten me. You will not be angry at my writing about him. But I want to come and see you with him; you will like him, won't you?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_019",
+  "p": 12,
+  "speaker": 5,
+  "kind": "say",
+  "text": "Forgive me, remember and love your.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_020",
+  "p": 13,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I read that letter over and over again for a long time; tears gushed to my eyes. At last it fell from my hands and I hid my face.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_021",
+  "p": 14,
+  "speaker": 5,
+  "kind": "say",
+  "text": "Dearie! I say, dearie.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_022",
+  "p": 15,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What is it, Matrona?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "morning_023",
+  "p": 16,
+  "speaker": 5,
+  "kind": "say",
+  "text": "I have taken all the cobwebs off the ceiling; you can have a wedding or give a party.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "morning_024",
+  "p": 17,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I looked at Matrona. She was still a hearty, youngish old woman, but I don't know why all at once I suddenly pictured her with lustreless eyes, a wrinkled face, bent, decrepit... I don't know why I suddenly pictured my room grown old like Matrona.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_025",
+  "p": 17,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "The walls and the floors looked discoloured, everything seemed dingy; the spiders' webs were thicker than ever.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_026",
+  "p": 17,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I don't know why, but when I looked out of the window it seemed to me that the house opposite had grown old and dingy too, that the stucco on the columns was peeling off and crumbling, that the cornices were cracked and blackened, and that the walls, of a vivid deep yellow, were patchy.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_027",
+  "p": 18,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Either the sunbeams suddenly peeping out from the clouds for a moment were hidden again behind a veil of rain, and everything had grown dingy again before my eyes; or perhaps the whole vista of my future flashed before me so sad and forbidding, and I saw myself just as I was now, fifteen years hence, older, in the same room, just as solitary, with the same Matrona grown no cleverer for those fifteen years.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_028",
+  "p": 19,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But to imagine that I should bear you a grudge, Nastenka!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "morning_029",
+  "p": 19,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "That I should cast a dark cloud over your serene, untroubled happiness; that by my bitter reproaches I should cause distress to your heart, should poison it with secret remorse and should force it to throb with anguish at the moment of bliss; that I should crush a single one of those tender blossoms which you have twined in your dark tresses when you go with him to the altar...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_030",
+  "p": 19,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Oh never, never! May your sky be clear, may your sweet smile be bright and untroubled, and may you be blessed for that moment of blissful happiness which you gave to another, lonely and grateful heart!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "morning_031",
+  "p": 20,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "My God, a whole moment of happiness! Is that too little for the whole of a man's life?",
+  "pause_before": 1.0,
+  "guessed": false
+ }
+]

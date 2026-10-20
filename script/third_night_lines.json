@@ -1,0 +1,1064 @@
+[
+ {
+  "id": "third_night_000",
+  "p": 0,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "To-day was a gloomy, rainy day without a glimmer of sunlight, like the old age before me.",
+  "pause_before": 0.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_001",
+  "p": 0,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I am oppressed by such strange thoughts, such gloomy sensations; questions still so obscure to me are crowding into my brain, and I seem to have neither power nor will to settle them. It's not for me to settle all this!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_002",
+  "p": 1,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "To-day we shall not meet. Yesterday, when we said good-bye, the clouds began gathering over the sky and a mist rose.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_003",
+  "p": 1,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I said that tomorrow it would be a bad day; she made no answer, she did not want to speak against her wishes; for her that day was bright and clear, not one cloud should obscure her happiness.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_004",
+  "p": 2,
+  "speaker": 2,
+  "kind": "say",
+  "text": "If it rains we shall not see each other.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_005",
+  "p": 2,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I shall not come.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_006",
+  "p": 3,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "That she would not notice today's rain, and yet she has not come.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_007",
+  "p": 4,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Yesterday was our third interview, our third white night.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_008",
+  "p": 5,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But how fine joy and happiness makes any one! How brimming over with love the heart is! One seems longing to pour out one's whole heart; one wants everything to be gay, everything to be laughing. And how infectious that joy is!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_009",
+  "p": 5,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "There was such a softness in her words, such a kindly feeling in her heart towards me yesterday... How solicitous and friendly she was; how tenderly she tried to give me courage! Oh, the coquetry of happiness! While I...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_010",
+  "p": 5,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I took it all for the genuine thing, I thought that she.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_011",
+  "p": 6,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But, my God, how could I have thought it?",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_012",
+  "p": 6,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "How could I have been so blind, when everything had been taken by another already, when nothing was mine; when, in fact, her very tenderness to me, her anxiety, her love... yes, love for me, was nothing else but joy at the thought of seeing another man so soon, desire to include me, too, in her happiness?...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_013",
+  "p": 6,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "When he did not come, when we waited in vain, she frowned, she grew timid and discouraged.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_014",
+  "p": 6,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Her movements, her words, were no longer so light, so playful, so gay; and, strange to say, she redoubled her attentiveness to me, as though instinctively desiring to lavish on me what she desired for herself so anxiously, if her wishes were not accomplished.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_015",
+  "p": 6,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "My Nastenka was so downcast, so dismayed, that I think she realized at last that I loved her, and was sorry for my poor love. So when we are unhappy we feel the unhappiness of others more; feeling is not destroyed but concentrated.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_016",
+  "p": 7,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I went to meet her with a full heart, and was all impatience. I had no presentiment that I should feel as I do now, that it would not all end happily. She was beaming with pleasure; she was expecting an answer.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_017",
+  "p": 7,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "The answer was himself. He was to come, to run at her call. She arrived a whole hour before I did. At first she giggled at everything, laughed at every word I said. I began talking, but relapsed into silence.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_018",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Do you know why I am so glad.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_019",
+  "p": 8,
+  "speaker": 2,
+  "kind": "say",
+  "text": "so glad to look at you? why I like you so much today?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_020",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_021",
+  "p": 10,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I like you because you have not fallen in love with me. You know that some men in your place would have been pestering and worrying me, would have been sighing and miserable, while you are so nice!",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "third_night_022",
+  "p": 11,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Then she wrung my hand so hard that I almost cried out. She laughed.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_023",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Goodness, what a friend you are!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_024",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "God sent you to me. What would have happened to me if you had not been with me now? How disinterested you are! How truly you care for me!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_025",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "When I am married we will be great friends, more than brother and sister; I shall care almost as I do for him...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_026",
+  "p": 13,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I felt horribly sad at that moment, yet something like laughter was stirring in my soul.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_027",
+  "p": 14,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You are very much upset.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_028",
+  "p": 14,
+  "speaker": 1,
+  "kind": "say",
+  "text": "you are frightened; you think he won't come.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_029",
+  "p": 15,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh dear!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_030",
+  "p": 15,
+  "speaker": 2,
+  "kind": "say",
+  "text": "if I were less happy, I believe I should cry at your lack of faith, at your reproaches.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_031",
+  "p": 15,
+  "speaker": 2,
+  "kind": "say",
+  "text": "However, you have made me think and have given me a lot to think about; but I shall think later, and now I will own that you are right.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_032",
+  "p": 15,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, I am somehow not myself; I am all suspense, and feel everything as it were too lightly. But hush! that's enough about feelings...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_033",
+  "p": 16,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "At that moment we heard footsteps, and in the darkness we saw a figure coming towards us. We both started; she almost cried out; I dropped her hand and made a movement as though to walk away. But we were mistaken, it was not he.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_034",
+  "p": 17,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What are you afraid of? Why did you let go of my hand?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_035",
+  "p": 17,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Come, what is it? We will meet him together; I want him to see how fond we are of each other.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_036",
+  "p": 18,
+  "speaker": 1,
+  "kind": "say",
+  "text": "How fond we are of each other!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_037",
+  "p": 18,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, Nastenka, Nastenka.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_038",
+  "p": 18,
+  "speaker": 1,
+  "kind": "say",
+  "text": "how much you have told me in that saying! Such fondness at certain moments makes the heart cold and the soul heavy. Your hand is cold, mine burns like fire. How blind you are, Nastenka!... Oh, how unbearable a happy person is sometimes!",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_039",
+  "p": 18,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But I could not be angry with you!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_040",
+  "p": 20,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen, Nastenka!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_041",
+  "p": 20,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Do you know how it has been with me all day.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_042",
+  "p": 21,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why, how, how? Tell me quickly! Why have you said nothing all this time?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "third_night_043",
+  "p": 22,
+  "speaker": 1,
+  "kind": "say",
+  "text": "To begin with, Nastenka, when I had carried out all your commissions, given the letter, gone to see your good friends, then... then I went home and went to bed.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "third_night_044",
+  "p": 23,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Is that all?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_045",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, almost all.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_046",
+  "p": 24,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Restraining myself, for foolish tears were already starting into my eyes.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_047",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I woke an hour before our appointment, and yet, as it were, I had not been asleep. I don't know what happened to me.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_048",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I came to tell you all about it, feeling as though time were standing still, feeling as though one sensation, one feeling must remain with me from that time for ever; feeling as though one minute must go on for all eternity, and as though all life had come to a standstill for me...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_049",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "When I woke up it seemed as though some musical motive long familiar, heard somewhere in the past, forgotten and voluptuously sweet, had come back to me now.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_050",
+  "p": 24,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It seemed to me that it had been clamouring at my heart all my life, and only now...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_051",
+  "p": 25,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Oh my goodness, my goodness.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_052",
+  "p": 25,
+  "speaker": 2,
+  "kind": "say",
+  "text": "what does all that mean? I don't understand a word.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_053",
+  "p": 26,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Ah, Nastenka, I wanted somehow to convey to you that strange impression...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_054",
+  "p": 26,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "In a plaintive voice, in which there still lay hid a hope, though a very faint one.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_055",
+  "p": 27,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Leave off. Hush!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_056",
+  "p": 27,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "And in one instant the sly puss had guessed.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_057",
+  "p": 28,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Suddenly she became extraordinarily talkative, gay, mischievous; she took my arm, laughed, wanted me to laugh too, and every confused word I uttered evoked from her prolonged ringing laughter... I began to feel angry, she had suddenly begun flirting.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_058",
+  "p": 29,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Do you know.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_059",
+  "p": 29,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I feel a little vexed that you are not in love with me? There's no understanding human nature! But all the same, Mr. Unapproachable, you cannot blame me for being so simple; I tell you everything, everything, whatever foolish thought comes into my head.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_060",
+  "p": 30,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen! That's eleven, I believe.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_061",
+  "p": 30,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "As the slow chime of a bell rang out from a distant tower. She suddenly stopped, left off laughing and began to count.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_062",
+  "p": 31,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, it's eleven.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_063",
+  "p": 32,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I regretted at once that I had frightened her, making her count the strokes, and I cursed myself for my spiteful impulse; I felt sorry for her, and did not know how to atone for what I had done.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_064",
+  "p": 33,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Comforting her, seeking for reasons for his not coming, advancing various arguments, proofs.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_065",
+  "p": 33,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "No one could have been easier to deceive than she was at that moment; and, indeed, any one at such a moment listens gladly to any consolation, whatever it may be, and is overjoyed if a shadow of excuse can be found.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_066",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And indeed it's an absurd thing.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_067",
+  "p": 34,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Warming to my task and admiring the extraordinary clearness of my argument.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_068",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "why, he could not have come; you have muddled and confused me, Nastenka, so that I too, have lost count of the time...",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_069",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Only think: he can scarcely have received the letter; suppose he is not able to come, suppose he is going to answer the letter, could not come before tomorrow.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_070",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I will go for it as soon as it's light tomorrow and let you know at once. Consider, there are thousands of possibilities; perhaps he was not at home when the letter came, and may not have read it even now!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_071",
+  "p": 34,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Anything may happen, you know.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_072",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, yes!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_073",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I did not think of that. Of course anything may happen?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_074",
+  "p": 35,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "In a tone that offered no opposition, though some other far-away thought could be heard like a vexatious discord in it.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_075",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I tell you what you must do.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_076",
+  "p": 35,
+  "speaker": 2,
+  "kind": "say",
+  "text": "you go as early as possible tomorrow morning, and if you get anything let me know at once. You know where I live, don't you?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_077",
+  "p": 36,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "And she began repeating her address to me.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_078",
+  "p": 37,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Then she suddenly became so tender, so solicitous with me. She seemed to listen attentively to what I told her; but when I asked her some question she was silent, was confused, and turned her head away.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_079",
+  "p": 37,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I looked into her eyes, yes, she was crying.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_080",
+  "p": 38,
+  "speaker": 1,
+  "kind": "say",
+  "text": "How can you? How can you? Oh, what a baby you are! what childishness!... Come, come!",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "third_night_081",
+  "p": 39,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "She tried to smile, to calm herself, but her chin was quivering and her bosom was still heaving.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_082",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I was thinking about you.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_083",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "You are so kind that I should be a stone if I did not feel it. Do you know what has occurred to me now? I was comparing you two. Why isn't he you? Why isn't he like you?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_084",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "He is not as good as you, though I love him more than you.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_085",
+  "p": 41,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I made no answer. She seemed to expect me to say something.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_086",
+  "p": 42,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Of course, it may be that I don't understand him fully yet. You know I was always as it were afraid of him; he was always so grave, as it were so proud.",
+  "pause_before": 1.0,
+  "guessed": true
+ },
+ {
+  "id": "third_night_087",
+  "p": 42,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Of course I know it's only that he seems like that, I know there is more tenderness in his heart than in mine...",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "third_night_088",
+  "p": 42,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I remember how he looked at me when I went in to him, do you remember? with my bundle; but yet I respect him too much, and doesn't that show that we are not equals?",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "third_night_089",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "No, Nastenka, no.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_090",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "it shows that you love him more than anything in the world, and far more than yourself.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_091",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, supposing that is so.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_092",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But do you know what strikes me now? Only I am not talking about him now, but speaking generally; all this came into my mind some time ago. Tell me, how is it that we can't all be like brothers together?",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_093",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Why is it that even the best of men always seem to hide something from other people and to keep something back? Why not say straight out what is in one's heart, when one knows that one is not speaking idly?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_094",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "As it is every one seems harsher than he really is, as though all were afraid of doing injustice to their feelings, by being too quick to express them.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_095",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, Nastenka, what you say is true; but there are many reasons for that.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "third_night_096",
+  "p": 45,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I broke in suppressing my own feelings at that moment more than ever.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_097",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, no!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_098",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Here you, for instance, are not like other people! I really don't know how to tell you what I feel; but it seems to me that you, for instance... at the present moment... it seems to me that you are sacrificing something for me.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_099",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Forgive me for saying so, I am a simple girl you know. I have seen very little of life, and I really sometimes don't know how to say things.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_100",
+  "p": 46,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "In a voice that quivered with some hidden feeling, while she tried to smile.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_101",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "but I only wanted to tell you that I am grateful, that I feel it all too... Oh, may God give you happiness for it! What you told me about your dreamer is quite untrue now, that is, I mean, it's not true of you.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_102",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "You are recovering, you are quite a different man from what you described. If you ever fall in love with some one, God give you happiness with her! I won't wish anything for her, for she will be happy with you.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_103",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I know, I am a woman myself, so you must believe me when I tell you so.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_104",
+  "p": 47,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "She ceased speaking, and pressed my hand warmly. I too could not speak without emotion. Some minutes passed.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_105",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, it's clear he won't come to-night.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_106",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's late.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_107",
+  "p": 49,
+  "speaker": 1,
+  "kind": "say",
+  "text": "He will come tomorrow.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_108",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_109",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I see for myself now that he could not come till tomorrow. Well, good-bye, till tomorrow. If it rains perhaps I shall not come. But the day after tomorrow, I shall come.",
+  "pause_before": 0.5,
+  "guessed": false
+ },
+ {
+  "id": "third_night_110",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I shall come for certain, whatever happens; be sure to be here, I want to see you, I will tell you everything.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_111",
+  "p": 51,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "And then when we parted she gave me her hand and said, looking at me candidly.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_112",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "We shall always be together, shan't we?",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
+  "id": "third_night_113",
+  "p": 52,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Oh, Nastenka, Nastenka! If only you knew how lonely I am now!",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_114",
+  "p": 53,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "As soon as it struck nine o'clock I could not stay indoors, but put on my things, and went out in spite of the weather. I was there, sitting on our seat.",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "third_night_115",
+  "p": 53,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I went to her street, but I felt ashamed, and turned back without looking at their windows, when I was two steps from her door. I went home more depressed than I had ever been before. What a damp, dreary day!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_116",
+  "p": 53,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "If it had been fine I should have walked about all night.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "third_night_117",
+  "p": 54,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "But tomorrow, tomorrow! Tomorrow she will tell me everything. The letter has not come today, however. But that was to be expected. They are together by now.",
+  "pause_before": 1.0,
+  "guessed": false
+ }
+]

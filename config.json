@@ -31,5 +31,9 @@
     "am_puck": 60,
     "af_heart": 250
   },
-  "_kokoro_note": "Fixed style row per voice (Kokoro otherwise changes style with text length). Puck 60 = closest to the auditioned voice, chosen by ear 2026-10-20."
+  "_kokoro_note": "Fixed style row per voice (Kokoro otherwise changes style with text length). Puck 60 = closest to the auditioned voice, chosen by ear 2026-10-20.",
+  "kokoro_speed": {
+    "am_puck": 0.9,
+    "af_heart": 1.0
+  }
 }

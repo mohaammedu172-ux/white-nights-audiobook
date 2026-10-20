@@ -57,7 +57,7 @@ def kokoro_takes(lines, spec, folder):
     reps, rates, prev = {}, {}, None
     for n, l in enumerate(lines):
         name = spec(l).split(":", 1)[1]
-        if name not in vox: vox[name] = K.Voice(name, style_row=styles.get(name, 250))
+        if name not in vox: vox[name] = K.Voice(name, style_row=styles.get(name, 250), speed=CFG.get("kokoro_speed", {}).get(name, 1.0))
         p = f"{folder}/{l['id']}.wav"
         if os.path.exists(p): y = sf.read(p)[0]; ok = True
         else:

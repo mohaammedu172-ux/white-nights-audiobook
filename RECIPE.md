@@ -17,7 +17,7 @@ Change one thing at a time, test it on a short passage first (`config.json` → 
 - Why: every VibeVoice take of Nastenka had ticks, lag, muffling or an aged voice, whichever reference was used and
   even at 50 steps / full precision. Kokoro's built-in voices are clean. Trade-off: no cloning of the cast readers.
 - Kokoro runs on CPU (a whole chapter in ~20 min), so chapters no longer need Kaggle.
-- **Fixed style row per voice** (`config.json` → `kokoro_style`): Puck 60 (closest to the auditioned voice; 250 sounded deeper), Heart 250.
+- **Fixed style row per voice** (`config.json` → `kokoro_style`): Puck 60 (closest to the auditioned voice; 250 sounded deeper), Heart 250. **Speed:** Puck 0.9 (Kokoro's own speed setting, not stretching), Heart 1.0.
 - **Hidden lead-in, cut exactly:** each line is generated after the previous line's last sentence (first line: "I remember it well."),
   then cut at the first phoneme of the real line using Kokoro's phoneme timings (model-files-v1.1). Fixes the high, rushed fresh start.
 - **Sentence pauses inside a line from Kokoro's timings:** 0.35 s after a sentence, 0.1 s after a clause.

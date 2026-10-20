@@ -1,0 +1,583 @@
+{
+ "chapter": "first_night",
+ "pause_classes": {
+  "quick": 150,
+  "normal": 300,
+  "answer": 500,
+  "reflective": 900,
+  "dramatic": 1400,
+  "scene": 2000
+ },
+ "lines": [
+  {
+   "p": 0,
+   "who": "narr",
+   "text": "It was a wonderful night, such a night as is only possible when we are young, dear reader…",
+   "direction": "warm, reminiscing",
+   "pause": "scene",
+   "pause_ms": 2000,
+   "intention": "Invites the reader in; loneliness underneath",
+   "flag": false
+  },
+  {
+   "p": 1,
+   "who": "narr",
+   "text": "I know the houses too. As I walk along they seem to run forward in the streets to look out at me…",
+   "direction": "amused, fond",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Delights in his imaginary friends",
+   "flag": false
+  },
+  {
+   "p": 2,
+   "who": "narr",
+   "text": "So now you understand, reader, in what sense I am acquainted with all Petersburg.",
+   "direction": "dry, smiling",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Small wink at the reader",
+   "flag": false
+  },
+  {
+   "p": 3,
+   "who": "narr",
+   "text": "I have mentioned already that I had felt worried for three whole days…",
+   "direction": "rueful",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Hurt that nobody invited him",
+   "flag": false
+  },
+  {
+   "p": 4,
+   "who": "narr",
+   "text": "I took long walks… when I suddenly found myself at the city gates.",
+   "direction": "lighter, lifting",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Relief of escaping the city",
+   "flag": false
+  },
+  {
+   "p": 5,
+   "who": "narr",
+   "text": "There is something inexpressibly touching in nature round Petersburg…",
+   "direction": "tender, lyrical",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Beauty that fades too soon; foreshadowing",
+   "flag": false
+  },
+  {
+   "p": 6,
+   "who": "narr",
+   "text": "And yet my night was better than my day! This was how it happened.",
+   "direction": "brightening",
+   "pause": "dramatic",
+   "pause_ms": 1400,
+   "intention": "Turning point of the chapter",
+   "flag": true
+  },
+  {
+   "p": 7,
+   "who": "narr",
+   "text": "I came back to the town very late, and it had struck ten…",
+   "direction": "light, happy",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Humming, carefree",
+   "flag": false
+  },
+  {
+   "p": 8,
+   "who": "narr",
+   "text": "Leaning on the canal railing stood a woman… \"She's a girl, and I am sure she is dark,\" I thought.",
+   "direction": "curious, hushed",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "First sight of her; holding his breath",
+   "flag": false
+  },
+  {
+   "p": 9,
+   "who": "narr",
+   "text": "\"Strange,\" I thought… I heard a muffled sob. Yes! I was not mistaken, the girl was crying…",
+   "direction": "alarmed",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Heart sinks; too timid to act",
+   "flag": false
+  },
+  {
+   "p": 10,
+   "who": "narr",
+   "text": "Along the same side of the pavement there suddenly came into sight… a gentleman in evening dress…",
+   "direction": "wry",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Comic disdain for the drunk",
+   "flag": false
+  },
+  {
+   "p": 11,
+   "who": "narr",
+   "text": "Suddenly, without a word to any one, the gentleman set off and flew full speed in pursuit…",
+   "direction": "breathless, quickening",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "The chase and the rescue",
+   "flag": false
+  },
+  {
+   "p": 12,
+   "who": "D",
+   "text": "\"Give me your arm,\" I said to the girl. \"And he won't dare to annoy us further.\"",
+   "direction": "firm, gentle",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Protective, surprised by his own courage",
+   "flag": false
+  },
+  {
+   "p": 13,
+   "who": "narr",
+   "text": "She took my arm without a word, still trembling with excitement and terror…",
+   "direction": "glowing",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Quiet triumph",
+   "flag": false
+  },
+  {
+   "p": 14,
+   "who": "narr",
+   "text": "On her black eyelashes there still glistened a tear… a gleam of a smile on her lips.",
+   "direction": "tender, hushed",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Tenderness; the mood softens",
+   "flag": false
+  },
+  {
+   "p": 15,
+   "who": "D",
+   "text": "\"There, you see; why did you drive me away? If I had been here, nothing would have happened....\"",
+   "direction": "gently teasing",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "First words to her: lightly scolding, to hide his nerves",
+   "flag": false
+  },
+  {
+   "p": 16,
+   "who": "N",
+   "text": "\"But I did not know you; I thought that you too....\"",
+   "direction": "shy, hesitant",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Her only truly shy moment; still shaken",
+   "flag": true
+  },
+  {
+   "p": 17,
+   "who": "D",
+   "text": "\"Why, do you know me now?\"",
+   "direction": "playful",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Fishing for warmth",
+   "flag": false
+  },
+  {
+   "p": 18,
+   "who": "N",
+   "text": "\"A little! Here, for instance, why are you trembling?\"",
+   "direction": "teasing",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "She regains herself and turns the tables",
+   "flag": false
+  },
+  {
+   "p": 19,
+   "who": "D",
+   "text": "\"Oh, you are right at the first guess!\" I answered, delighted… \"I am shy with women, I am agitated…\"",
+   "direction": "eager, then flustered",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Delighted she noticed; then confesses",
+   "flag": true
+  },
+  {
+   "p": 20,
+   "who": "N",
+   "text": "\"What? Really?...\"",
+   "direction": "surprised, amused",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Disbelief with a smile",
+   "flag": false
+  },
+  {
+   "p": 21,
+   "who": "D",
+   "text": "\"Yes; if my arm trembles, it is because it has never been held by a pretty little hand like yours…\"",
+   "direction": "earnest",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Bares his loneliness, hoping not to offend",
+   "flag": false
+  },
+  {
+   "p": 22,
+   "who": "N",
+   "text": "\"No, nothing, nothing, quite the contrary… I like it too, and I won't drive you away till I get home.\"",
+   "direction": "warm, reassuring",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Decides to be kind; a little bold",
+   "flag": true
+  },
+  {
+   "p": 23,
+   "who": "D",
+   "text": "\"You will make me,\" I said, breathless with delight, \"lose my timidity, and then farewell to all my chances....\"",
+   "direction": "breathless, delighted",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Overflowing; blurts too much",
+   "flag": false
+  },
+  {
+   "p": 24,
+   "who": "N",
+   "text": "\"Chances! What chances--of what? That's not so nice.\"",
+   "direction": "mock-stern",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Pounces on the slip, half joking",
+   "flag": false
+  },
+  {
+   "p": 25,
+   "who": "D",
+   "text": "\"I beg your pardon, I am sorry, it was a slip of the tongue…\"",
+   "direction": "flustered",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Scrambling to recover",
+   "flag": false
+  },
+  {
+   "p": 26,
+   "who": "N",
+   "text": "\"To be liked, eh?\"",
+   "direction": "teasing",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Finishes his sentence for him",
+   "flag": false
+  },
+  {
+   "p": 27,
+   "who": "D",
+   "text": "\"Well, yes; but do, for goodness' sake, be kind. Think what I am! Here, I am twenty-six…\"",
+   "direction": "pleading, earnest",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Opens up completely",
+   "flag": false
+  },
+  {
+   "p": 28,
+   "who": "N",
+   "text": "\"How? With whom?...\"",
+   "direction": "curious",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Genuinely intrigued",
+   "flag": false
+  },
+  {
+   "p": 29,
+   "who": "D",
+   "text": "\"Why, with no one, with an ideal, with the one I dream of in my sleep…\"",
+   "direction": "rushing, dreamy",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Long monologue; carried away by his own fantasy",
+   "flag": true
+  },
+  {
+   "p": 30,
+   "who": "N",
+   "text": "\"Don't be vexed; I am only laughing at your being your own enemy…\"",
+   "direction": "laughing, kind",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Laughs, then wise beyond her years",
+   "flag": false
+  },
+  {
+   "p": 31,
+   "who": "D",
+   "text": "\"Oh, thank you,\" I cried; \"you don't know what you have done for me now!\"",
+   "direction": "grateful, moved",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Deeply touched",
+   "flag": false
+  },
+  {
+   "p": 32,
+   "who": "N",
+   "text": "\"I am glad! I am glad! But tell me how did you find out that I was the sort of woman…\"",
+   "direction": "glad, curious",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Pleased, a little flattered",
+   "flag": false
+  },
+  {
+   "p": 33,
+   "who": "D",
+   "text": "\"What made me?... But you were alone; that gentleman was too insolent; it's night…\"",
+   "direction": "flustered",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Dodging the real answer",
+   "flag": false
+  },
+  {
+   "p": 34,
+   "who": "N",
+   "text": "\"No, no; I mean before, on the other side--you know you meant to come up to me.\"",
+   "direction": "teasing",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Catches him out",
+   "flag": false
+  },
+  {
+   "p": 35,
+   "who": "D",
+   "text": "\"On the other side? Really I don't know how to answer; I am afraid to.... I fancied you were crying…\"",
+   "direction": "nervous, rambling",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Admits he saw her crying",
+   "flag": true
+  },
+  {
+   "p": 36,
+   "who": "N",
+   "text": "\"Stop, that's enough, don't talk of it,\" said the girl… \"But here I am home… Good-bye, thank you!...\"",
+   "direction": "moved, brisk",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Touched a nerve; deflects and says goodbye",
+   "flag": true
+  },
+  {
+   "p": 37,
+   "who": "D",
+   "text": "\"Surely ... surely you don't mean ... that we shall never see each other again?...\"",
+   "direction": "anxious, pleading",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Panic at losing her",
+   "flag": false
+  },
+  {
+   "p": 38,
+   "who": "N",
+   "text": "\"You see,\" said the girl, laughing, \"at first you only wanted two words, and now....\"",
+   "direction": "laughing",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Amused by his greed for more",
+   "flag": false
+  },
+  {
+   "p": 39,
+   "who": "D",
+   "text": "\"I shall come here to-morrow,\" I said. \"Oh, forgive me, I am already making demands....\"",
+   "direction": "eager, apologetic",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Can't help himself",
+   "flag": false
+  },
+  {
+   "p": 40,
+   "who": "N",
+   "text": "\"Yes, you are not very patient ... you are almost insisting.\"",
+   "direction": "teasing",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Light scolding",
+   "flag": false
+  },
+  {
+   "p": 41,
+   "who": "D",
+   "text": "\"Listen, listen!\" I interrupted her. \"…I am a dreamer; I have so little real life…\"",
+   "direction": "passionate, dreamy",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "His defining speech: \"I am a dreamer\"",
+   "flag": true
+  },
+  {
+   "p": 42,
+   "who": "N",
+   "text": "\"Very good,\" said the girl, \"perhaps I will come here to-morrow, too, at ten o'clock…\"",
+   "direction": "warm, guarded",
+   "pause": "reflective",
+   "pause_ms": 900,
+   "intention": "Agrees, but keeps a secret",
+   "flag": true
+  },
+  {
+   "p": 43,
+   "who": "D",
+   "text": "\"A compact! Speak, tell me, tell me all beforehand; I agree to anything…\"",
+   "direction": "eager",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Instant, total agreement",
+   "flag": false
+  },
+  {
+   "p": 44,
+   "who": "N",
+   "text": "\"It's just because I do know you that I ask you to come to-morrow,\" said the girl, laughing…",
+   "direction": "laughing, firm",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Sets her one rule: don't fall in love",
+   "flag": false
+  },
+  {
+   "p": 45,
+   "who": "D",
+   "text": "\"I swear,\" I cried, gripping her hand....",
+   "direction": "ardent",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Too quick, too passionate",
+   "flag": false
+  },
+  {
+   "p": 46,
+   "who": "N",
+   "text": "\"Hush, don't swear, I know you are ready to flare up like gunpowder… I, too, have no one…\"",
+   "direction": "gentle, then sincere",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Reveals her own loneliness",
+   "flag": true
+  },
+  {
+   "p": 47,
+   "who": "D",
+   "text": "\"You will see ... the only thing is, I don't know how I am going to survive the next twenty-four hours.\"",
+   "direction": "tender, wry",
+   "pause": "answer",
+   "pause_ms": 500,
+   "intention": "Half joke, half truth",
+   "flag": false
+  },
+  {
+   "p": 48,
+   "who": "N",
+   "text": "\"Sleep soundly. Good-night, and remember that I have trusted you already…\"",
+   "direction": "warm",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Trust, and a compliment",
+   "flag": false
+  },
+  {
+   "p": 49,
+   "who": "D",
+   "text": "\"For God's sake do; but about what? What is it?\"",
+   "direction": "eager",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "Can't wait",
+   "flag": false
+  },
+  {
+   "p": 50,
+   "who": "N",
+   "text": "\"Wait till to-morrow. Meanwhile, let that be a secret…\"",
+   "direction": "playful, mysterious",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Enjoys the suspense",
+   "flag": false
+  },
+  {
+   "p": 51,
+   "who": "D",
+   "text": "\"Oh yes, I will tell you all about myself to-morrow! … It is as though a miracle had befallen me....\"",
+   "direction": "overjoyed, rushing",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Happiness spilling over",
+   "flag": false
+  },
+  {
+   "p": 52,
+   "who": "N",
+   "text": "\"Very well, I consent; you shall begin....\"",
+   "direction": "warm",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "Gracious",
+   "flag": false
+  },
+  {
+   "p": 53,
+   "who": "D",
+   "text": "\"Agreed.\"",
+   "direction": "eager",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "",
+   "flag": false
+  },
+  {
+   "p": 54,
+   "who": "N",
+   "text": "\"Good-bye till to-morrow!\"",
+   "direction": "warm",
+   "pause": "normal",
+   "pause_ms": 300,
+   "intention": "",
+   "flag": false
+  },
+  {
+   "p": 55,
+   "who": "D",
+   "text": "\"Till to-morrow!\"",
+   "direction": "happy",
+   "pause": "quick",
+   "pause_ms": 150,
+   "intention": "",
+   "flag": false
+  },
+  {
+   "p": 56,
+   "who": "narr",
+   "text": "And we parted. I walked about all night; I could not make up my mind to go home. I was so happy.... To-morrow!",
+   "direction": "glowing, wistful",
+   "pause": "dramatic",
+   "pause_ms": 1400,
+   "intention": "Ends the night on pure happiness",
+   "flag": false
+  }
+ ]
+}

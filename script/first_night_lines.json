@@ -1,0 +1,1194 @@
+[
+ {
+  "id": "first_night_000",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It was a wonderful night, such a night as is only possible when we are young, dear listener.",
+  "pause_before": 0.0
+ },
+ {
+  "id": "first_night_001",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "The sky was so starry, so bright that, looking at it, one could not help asking oneself whether ill-humoured and capricious people could live under such a sky.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_002",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "That is a youthful question too, dear listener, very youthful, but may the Lord put it more frequently into your heart!... Speaking of capricious and ill-humoured people, I cannot help recalling my moral condition all that day.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_003",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "From early morning I had been oppressed by a strange despondency. It suddenly seemed to me that I was lonely, that every one was forsaking me and going away from me. Of course, any one is entitled to ask who every one was.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_004",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "For though I had been living almost eight years in Petersburg I had hardly an acquaintance. But what did I want with acquaintances?",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_005",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I was acquainted with all Petersburg as it was; that was why I felt as though they were all deserting me when all Petersburg packed up and went to its summer villa.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_006",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I felt afraid of being left alone, and for three whole days I wandered about the town in profound dejection, not knowing what to do with myself.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_007",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Whether I walked in the Nevsky, went to the Gardens or sauntered on the embankment, there was not one face of those I had been accustomed to meet at the same time and place all the year.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_008",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "They, of course, do not know me, but I know them. I know them intimately, I have almost made a study of their faces, and am delighted when they are gay, and downcast when they are under a cloud.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_009",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I have almost struck up a friendship with one old man whom I meet every blessed day, at the same hour in Fontanka.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_010",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Such a grave, pensive countenance; he is always whispering to himself and brandishing his left arm, while in his right hand he holds a long gnarled stick with a gold knob. He even notices me and takes a warm interest in me.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_011",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "If I happen not to be at a certain time in the same spot in Fontanka, I am certain he feels disappointed. That is how it is that we almost bow to each other, especially when we are both in good humour.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_012",
+  "p": 0,
+  "speaker": 1,
+  "kind": "say",
+  "text": "The other day, when we had not seen each other for two days and met on the third, we were actually touching our hats, but, realizing in time, dropped our hands and passed each other with a look of interest.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_013",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I know the houses too. As I walk along they seem to run forward in the streets to look out at me from every window, and almost to say: Good morning! How do you do?",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_014",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I am quite well, thank God, and I am to have a new storey in May. Or: How are you? I am being redecorated tomorrow. Or: I was almost burnt down and had such a fright, and so on.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_015",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I have my favourites among them, some are dear friends; one of them intends to be treated by the architect this summer. I shall go every day on purpose to see that the operation is not a failure. God forbid!",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_016",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But I shall never forget an incident with a very pretty little house of a light pink colour.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_017",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It was such a charming little brick house, it looked so hospitably at me, and so proudly at its ungainly neighbours, that my heart rejoiced whenever I happened to pass it.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_018",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Suddenly last week I walked along the street, and when I looked at my friend I heard a plaintive voice: They are painting me yellow! The villains! The barbarians!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_019",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "They had spared nothing, neither columns, nor cornices, and my poor little friend was as yellow as a canary. It almost made me bilious.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_020",
+  "p": 1,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And to this day I have not had the courage to visit my poor disfigured friend, painted the colour of the Celestial Empire.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_021",
+  "p": 2,
+  "speaker": 1,
+  "kind": "say",
+  "text": "So now you understand, listener, in what sense I am acquainted with all Petersburg.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_022",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I have mentioned already that I had felt worried for three whole days before I guessed the cause of my uneasiness.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_023",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And I felt ill at ease in the street, this one had gone and that one had gone, and what had become of the other? And at home I did not feel like myself either.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_024",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "For two evenings I was puzzling my brains to think what was amiss in my corner; why I felt so uncomfortable in it.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_025",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And in perplexity I scanned my grimy green walls, my ceiling covered with a spider's web, the growth of which Matrona has so successfully encouraged.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_026",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I looked over all my furniture, examined every chair, wondering whether the trouble lay there, for if one chair is not standing in the same position as it stood the day before, I am not myself.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_027",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I looked at the window, but it was all in vain... I was not a bit the better for it!",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_028",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I even bethought me to send for Matrona, and was giving her some fatherly admonitions in regard to the spider's web and sluttishness in general; but she simply stared at me in amazement and went away without saying a word, so that the spider's web is comfortably hanging in its place to this day.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_029",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I only at last this morning realized what was wrong. Ah! Why, they are giving me the slip and making off to their summer villas!",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_030",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Forgive the triviality of the expression, but I am in no mood for fine language... for everything that had been in Petersburg had gone or was going away for the holidays;",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_031",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "for every respectable gentleman of dignified appearance who took a cab was at once transformed, in my eyes, into a respectable head of a household who after his daily duties were over, was making his way to the bosom of his family, to the summer villa;",
+  "pause_before": 0.35
+ },
+ {
+  "id": "first_night_032",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "for all the passers-by had now quite a peculiar air which seemed to say to every one they met: We are only here for the moment, gentlemen, and in another two hours we shall be going off to the summer villa.",
+  "pause_before": 0.35
+ },
+ {
+  "id": "first_night_033",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "If a window opened after delicate fingers, white as snow, had tapped upon the pane, and the head of a pretty girl was thrust out, calling to a street-seller with pots of flowers, at once on the spot I fancied that those flowers were being bought not simply in order to enjoy the flowers and the spring in stuffy town lodgings, but because they would all be very soon moving into the country and could take the flowers with them.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_034",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What is more, I made such progress in my new peculiar sort of investigation that I could distinguish correctly from the mere air of each in what summer villa he was living.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_035",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "The inhabitants of Kamenny and Aptekarsky Islands or of the Peterhof Road were marked by the studied elegance of their manner, their fashionable summer suits, and the fine carriages in which they drove to town.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_036",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Visitors to Pargolovo and places further away impressed one at first sight by their reasonable and dignified air; the tripper to Krestovsky Island could be recognized by his look of irrepressible gaiety.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_037",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "If I chanced to meet a long procession of waggoners walking lazily with the reins in their hands beside waggons loaded with regular mountains of furniture, tables, chairs, ottomans and sofas and domestic utensils of all sorts, frequently with a decrepit cook sitting on the top of it all, guarding her master's property as though it were the apple of her eye;",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_038",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "or if I saw boats heavily loaded with household goods crawling along the Neva or Fontanka to the Black River or the Islands, the waggons and the boats were multiplied tenfold, a hundredfold, in my eyes.",
+  "pause_before": 0.35
+ },
+ {
+  "id": "first_night_039",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I fancied that everything was astir and moving, everything was going in regular caravans to the summer villas.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_040",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It seemed as though Petersburg threatened to become a wilderness, so that at last I felt ashamed, mortified and sad that I had nowhere to go for the holidays and no reason to go away.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_041",
+  "p": 3,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I was ready to go away with every waggon, to drive off with every gentleman of respectable appearance who took a cab; but no one, absolutely no one, invited me; it seemed they had forgotten me, as though really I were a stranger to them!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_042",
+  "p": 4,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I took long walks, succeeding, as I usually did, in quite forgetting where I was, when I suddenly found myself at the city gates.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_043",
+  "p": 4,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Instantly I felt lighthearted, and I passed the barrier and walked between cultivated fields and meadows, unconscious of fatigue, and feeling only all over as though a burden were falling off my soul.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_044",
+  "p": 4,
+  "speaker": 1,
+  "kind": "say",
+  "text": "All the passers-by gave me such friendly looks that they seemed almost greeting me, they all seemed so pleased at something. They were all smoking cigars, every one of them. And I felt pleased as I never had before.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_045",
+  "p": 4,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It was as though I had suddenly found myself in Italy, so strong was the effect of nature upon a half-sick townsman like me, almost stifling between city walls.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_046",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "There is something inexpressibly touching in nature round Petersburg, when at the approach of spring she puts forth all her might, all the powers bestowed on her by Heaven, when she breaks into leaf, decks herself out and spangles herself with flowers...",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_047",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Somehow I cannot help being reminded of a frail, consumptive girl, at whom one sometimes looks with compassion, sometimes with sympathetic love, whom sometimes one simply does not notice; though suddenly in one instant she becomes, as though by chance, inexplicably lovely and exquisite, and, impressed and intoxicated, one cannot help asking oneself what power made those sad, pensive eyes flash with such fire?",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_048",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What summoned the blood to those pale, wan cheeks? What bathed with passion those soft features? What set that bosom heaving?",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_049",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What so suddenly called strength, life and beauty into the poor girl's face, making it gleam with such a smile, kindle with such bright, sparkling laughter? You look round, you seek for some one, you conjecture...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_050",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But the moment passes, and next day you meet, maybe, the same pensive and preoccupied look as before, the same pale face, the same meek and timid movements, and even signs of remorse, traces of a mortal anguish and regret for the fleeting distraction...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_051",
+  "p": 5,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And you grieve that the momentary beauty has faded so soon never to return, that it flashed upon you so treacherously, so vainly, grieve because you had not even time to love her...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_052",
+  "p": 6,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And yet my night was better than my day! This was how it happened.",
+  "pause_before": 1.4
+ },
+ {
+  "id": "first_night_053",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I came back to the town very late, and it had struck ten as I was going towards my lodgings. My way lay along the canal embankment, where at that hour you never meet a soul.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_054",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It is true that I live in a very remote part of the town. I walked along singing, for when I am happy I am always humming to myself like every happy man who has no friend or acquaintance with whom to share his joy.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_055",
+  "p": 7,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Suddenly I had a most unexpected adventure.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_056",
+  "p": 8,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Leaning on the canal railing stood a woman with her elbows on the rail. She was apparently looking with great attention at the muddy water of the canal. She was wearing a very charming yellow hat and a jaunty little black mantle.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_057",
+  "p": 8,
+  "speaker": 1,
+  "kind": "say",
+  "text": "She's a girl, and I am sure she is dark, I thought. She did not seem to hear my footsteps, and did not even stir when I passed by with bated breath and loudly throbbing heart.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_058",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Strange, I thought. She must be deeply absorbed in something. And all at once I stopped as though petrified. I heard a muffled sob. Yes! I was not mistaken, the girl was crying, and a minute later I heard sob after sob. Good Heavens!",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_059",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "My heart sank. And timid as I was with women, yet this was such a moment!...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_060",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I turned, took a step towards her, and should certainly have pronounced the word, Madam!, if I had not known that that exclamation has been uttered a thousand times in every Russian society novel. It was only that reflection stopped me.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_061",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But while I was seeking for a word, the girl came to herself, looked round, started, cast down her eyes and slipped by me along the embankment.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_062",
+  "p": 9,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I at once followed her; but she, divining this, left the embankment, crossed the road and walked along the pavement. I dared not cross the street after her. My heart was fluttering like a captured bird. All at once a chance came to my aid.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_063",
+  "p": 10,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Along the same side of the pavement there suddenly came into sight, not far from the girl, a gentleman in evening dress, of dignified years, though by no means of dignified carriage; he was staggering and cautiously leaning against the wall.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_064",
+  "p": 10,
+  "speaker": 1,
+  "kind": "say",
+  "text": "The girl flew straight as an arrow, with the timid haste one sees in all girls who do not want any one to volunteer to accompany them home at night, and no doubt the staggering gentleman would not have pursued her, if my good luck had not prompted him.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_065",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Suddenly, without a word to any one, the gentleman set off and flew full speed in pursuit of my unknown lady. She was racing like the wind, but the staggering gentleman was overtaking her, overtook her. The girl uttered a shriek, and...",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_066",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I bless my luck for the excellent knotted stick, which happened on that occasion to be in my right hand.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_067",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "In a flash I was on the other side of the street; in a flash the obtrusive gentleman had taken in the position, had grasped the irresistible argument, fallen back without a word, and only when we were very far away protested against my action in rather vigorous language.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_068",
+  "p": 11,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But his words hardly reached us.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_069",
+  "p": 12,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Give me your arm. And he won't dare to annoy us further.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_070",
+  "p": 13,
+  "speaker": 1,
+  "kind": "say",
+  "text": "She took my arm without a word, still trembling with excitement and terror. Oh, obtrusive gentleman! How I blessed you at that moment! I stole a glance at her. She was very charming and dark. I had guessed right.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_071",
+  "p": 14,
+  "speaker": 1,
+  "kind": "say",
+  "text": "On her black eyelashes there still glistened a tear, from her recent terror or her former grief, I don't know. But there was already a gleam of a smile on her lips. She too stole a glance at me, faintly blushed and looked down.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_072",
+  "p": 15,
+  "speaker": 1,
+  "kind": "say",
+  "text": "There, you see... why did you drive me away? If I had been here, nothing would have happened...",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_073",
+  "p": 16,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But... I did not know you; I thought that you too...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_074",
+  "p": 17,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Why, do you know me now?",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_075",
+  "p": 18,
+  "speaker": 2,
+  "kind": "say",
+  "text": "A little! Here, for instance, why are you trembling?",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_076",
+  "p": 19,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, you are right at the first guess!",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_077",
+  "p": 19,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "Delighted that my girl had intelligence; that is never out of place in company with beauty.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_078",
+  "p": 19,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, from the first glance you have guessed the sort of man you have to do with. Precisely; I am shy with women, I am agitated, I don't deny it, as much so as you were a minute ago when that gentleman alarmed you.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_079",
+  "p": 19,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I am in some alarm now. It's like a dream, and I never guessed even in my sleep that I should ever talk with any woman.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_080",
+  "p": 20,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What? Really?",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_081",
+  "p": 21,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes; if my arm trembles, it is because it has never been held by a pretty little hand like yours. I am a complete stranger to women; that is, I have never been used to them. You see, I am alone...",
+  "pause_before": 0.75
+ },
+ {
+  "id": "first_night_082",
+  "p": 21,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I don't even know how to talk to them. Here, I don't know now whether I have not said something silly to you! Tell me frankly; I assure you beforehand that I am not quick to take offence...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_083",
+  "p": 22,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, nothing, nothing, quite the contrary. And if you insist on my speaking frankly, I will tell you that women like such timidity; and if you want to know more, I like it too, and I won't drive you away till I get home.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_084",
+  "p": 23,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You will make me lose my timidity, and then farewell to all my chances...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_085",
+  "p": 24,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Chances! What chances, of what? That's not so nice.",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_086",
+  "p": 25,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I beg your pardon, I am sorry, it was a slip of the tongue; but how can you expect one at such a moment to have no desire...",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_087",
+  "p": 26,
+  "speaker": 2,
+  "kind": "say",
+  "text": "To be liked, eh?",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_088",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Well, yes; but do, for goodness' sake, be kind. Think what I am! Here, I am twenty-six and I have never seen any one. How can I speak well, tactfully, and to the point?",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_089",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It will seem better to you when I have told you everything openly... I don't know how to be silent when my heart is speaking. Well, never mind... Believe me, not one woman, never, never! No acquaintance of any sort!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_090",
+  "p": 27,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And I do nothing but dream every day that at last I shall meet some one. Oh, if only you knew how often I have been in love in that way...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_091",
+  "p": 28,
+  "speaker": 2,
+  "kind": "say",
+  "text": "How? With whom?...",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_092",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Why, with no one, with an ideal, with the one I dream of in my sleep. I make up regular romances in my dreams. Ah, you don't know me!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_093",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "It's true, of course, I have met two or three women, but what sort of women were they? They were all landladies, that...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_094",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But I shall make you laugh if I tell you that I have several times thought of speaking, just simply speaking, to some aristocratic lady in the street, when she is alone, I need hardly say; speaking to her, of course, timidly, respectfully, passionately;",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_095",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "telling her that I am perishing in solitude, begging her not to send me away; saying that I have no chance of making the acquaintance of any woman;",
+  "pause_before": 0.35
+ },
+ {
+  "id": "first_night_096",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "impressing upon her that it is a positive duty for a woman not to repulse so timid a prayer from such a luckless man as me; that, in fact, all I ask is, that she should say two or three sisterly words with sympathy, should not repulse me at first sight;",
+  "pause_before": 0.35
+ },
+ {
+  "id": "first_night_097",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "should take me on trust and listen to what I say; should laugh at me if she likes, encourage me, say two words to me, only two words, even though we never meet again afterwards!...",
+  "pause_before": 0.35
+ },
+ {
+  "id": "first_night_098",
+  "p": 29,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But you are laughing; however, that is why I am telling you...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_099",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Don't be vexed; I am only laughing at your being your own enemy, and if you had tried you would have succeeded, perhaps, even though it had been in the street; the simpler the better...",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_100",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No kind-hearted woman, unless she were stupid or, still more, vexed about something at the moment, could bring herself to send you away without those two words which you ask for so timidly... But what am I saying?",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_101",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Of course she would take you for a madman. I was judging by myself; I know a good deal about other people's lives.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_102",
+  "p": 31,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh, thank you, you don't know what you have done for me now!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_103",
+  "p": 32,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I am glad! I am glad! But tell me how did you find out that I was the sort of woman with whom... well, whom you think worthy... of attention and friendship... in fact, not a landlady as you say?",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_104",
+  "p": 32,
+  "speaker": 2,
+  "kind": "say",
+  "text": "What made you decide to come up to me?",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_105",
+  "p": 33,
+  "speaker": 1,
+  "kind": "say",
+  "text": "What made me?... But you were alone; that gentleman was too insolent; it's night. You must admit that it was a duty...",
+  "pause_before": 0.75
+ },
+ {
+  "id": "first_night_106",
+  "p": 34,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, no; I mean before, on the other side, you know you meant to come up to me.",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_107",
+  "p": 35,
+  "speaker": 1,
+  "kind": "say",
+  "text": "On the other side? Really I don't know how to answer; I am afraid to... Do you know I have been happy today? I walked along singing; I went out into the country; I have never had such happy moments.",
+  "pause_before": 0.75
+ },
+ {
+  "id": "first_night_108",
+  "p": 35,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You... perhaps it was my fancy. Forgive me for referring to it; I fancied you were crying, and I... could not bear to hear it. It made my heart ache... Oh, my goodness! Surely I might be troubled about you?",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_109",
+  "p": 35,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Surely there was no harm in feeling brotherly compassion for you... I beg your pardon, I said compassion... Well, in short, surely you would not be offended at my involuntary impulse to go up to you?...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_110",
+  "p": 36,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Stop, that's enough, don't talk of it.",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_111",
+  "p": 36,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "She looked down, and pressed my hand.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_112",
+  "p": 36,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's my fault for having spoken of it; but I am glad I was not mistaken in you... But here I am home; I must go down this turning, it's two steps from here... Goodbye, thank you!...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_113",
+  "p": 37,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Surely... surely you don't mean... that we shall never see each other again?... Surely this is not to be the end?",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_114",
+  "p": 38,
+  "speaker": 2,
+  "kind": "say",
+  "text": "You see, at first you only wanted two words, and now... However, I won't say anything... perhaps we shall meet...",
+  "pause_before": 0.75
+ },
+ {
+  "id": "first_night_115",
+  "p": 39,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I shall come here tomorrow. Oh, forgive me, I am already making demands...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_116",
+  "p": 40,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Yes, you are not very patient... you are almost insisting.",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_117",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Listen, listen! Forgive me if I tell you something else...",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_118",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I tell you what, I can't help coming here tomorrow, I am a dreamer; I have so little real life that I look upon such moments as this now, as so rare, that I cannot help going over such moments again in my dreams.",
+  "pause_before": 0.5
+ },
+ {
+  "id": "first_night_119",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I shall be dreaming of you all night, a whole week, a whole year. I shall certainly come here tomorrow, just here to this place, just at the same hour, and I shall be happy remembering today. This place is dear to me already.",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_120",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I have already two or three such places in Petersburg. I once shed tears over memories... like you... Who knows, perhaps you were weeping ten minutes ago over some memory...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_121",
+  "p": 41,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But, forgive me, I have forgotten myself again; perhaps you have once been particularly happy here...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_122",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Very good, perhaps I will come here tomorrow, too, at ten o'clock. I see that I can't forbid you...",
+  "pause_before": 1.0
+ },
+ {
+  "id": "first_night_123",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "The fact is, I have to be here; don't imagine that I am making an appointment with you; I tell you beforehand that I have to be here on my own account.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_124",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But... well, I tell you straight out, I don't mind if you do come. To begin with, something unpleasant might happen as it did today, but never mind that... In short, I should simply like to see you... to say two words to you.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_125",
+  "p": 42,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Only, mind, you must not think the worse of me now! Don't think I make appointments so lightly. I shouldn't make it except that... But let that be my secret! Only a compact beforehand...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_126",
+  "p": 43,
+  "speaker": 1,
+  "kind": "say",
+  "text": "A compact! Speak, tell me, tell me all beforehand; I agree to anything, I am ready for anything, I answer for myself, I will be obedient, respectful... you know me...",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_127",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "It's just because I do know you that I ask you to come tomorrow. I know you perfectly.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_128",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But mind you will come on the condition, in the first place, only be good, do what I ask; you see, I speak frankly; you won't fall in love with me... That's impossible, I assure you. I am ready for friendship; here's my hand...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_129",
+  "p": 44,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But you mustn't fall in love with me, I beg you!",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_130",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "I swear.",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_131",
+  "p": 45,
+  "speaker": 1,
+  "kind": "narr",
+  "text": "I gripped her hand.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_132",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Hush, don't swear, I know you are ready to flare up like gunpowder. Don't think ill of me for saying so. If only you knew... I, too, have no one to whom I can say a word, whose advice I can ask.",
+  "pause_before": 0.75
+ },
+ {
+  "id": "first_night_133",
+  "p": 46,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Of course, one does not look for an adviser in the street; but you are an exception. I know you as though we had been friends for twenty years... You won't deceive me, will you?...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_134",
+  "p": 47,
+  "speaker": 1,
+  "kind": "say",
+  "text": "You will see... the only thing is, I don't know how I am going to survive the next twenty-four hours.",
+  "pause_before": 0.75
+ },
+ {
+  "id": "first_night_135",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Sleep soundly. Goodnight, and remember that I have trusted you already. But you exclaimed so nicely just now, Surely one can't be held responsible for every feeling, even for brotherly sympathy!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_136",
+  "p": 48,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Do you know, that was so nicely said, that the idea struck me at once, that I might confide in you?",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_137",
+  "p": 49,
+  "speaker": 1,
+  "kind": "say",
+  "text": "For God's sake do; but about what? What is it?",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_138",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Wait till tomorrow. Meanwhile, let that be a secret. So much the better for you; it will give it a faint flavour of romance. Perhaps I will tell you tomorrow, and perhaps not...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_139",
+  "p": 50,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I will talk to you a little more beforehand; we will get to know each other better...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_140",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Oh yes, I will tell you all about myself tomorrow! But what has happened? It is as though a miracle had befallen me... My God, where am I?",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_141",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Come, tell me, aren't you glad that you were not angry and did not drive me away at the first moment, as any other woman would have done? In two minutes you have made me happy for ever.",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_142",
+  "p": 51,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Yes, happy; who knows, perhaps, you have reconciled me with myself, solved my doubts!... Perhaps such moments come upon me... But there I will tell you all about it tomorrow, you shall know everything, everything...",
+  "pause_before": 0.7
+ },
+ {
+  "id": "first_night_143",
+  "p": 52,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Very well, I consent; you shall begin...",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_144",
+  "p": 53,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Agreed.",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_145",
+  "p": 54,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Goodbye till tomorrow!",
+  "pause_before": 0.6
+ },
+ {
+  "id": "first_night_146",
+  "p": 55,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Till tomorrow!",
+  "pause_before": 0.45
+ },
+ {
+  "id": "first_night_147",
+  "p": 56,
+  "speaker": 1,
+  "kind": "say",
+  "text": "And we parted. I walked about all night; I could not make up my mind to go home. I was so happy...",
+  "pause_before": 1.4
+ },
+ {
+  "id": "first_night_148",
+  "p": 56,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Tomorrow!",
+  "pause_before": 1.4
+ }
+]

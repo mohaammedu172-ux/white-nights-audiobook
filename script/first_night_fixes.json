@@ -1,0 +1,155 @@
+{
+ "replace": [
+  [
+   16,
+   "But I did not know you",
+   "But... I did not know you"
+  ],
+  [
+   1,
+   "almost to say: Good-morning! How do you do?",
+   "almost to say: Good morning! How do you do?"
+  ],
+  [
+   1,
+   "a new storey in May, or, How are you?",
+   "a new storey in May. Or: How are you?"
+  ],
+  [
+   1,
+   "redecorated tomorrow; or, I was almost",
+   "redecorated tomorrow. Or: I was almost"
+  ],
+  [
+   1,
+   "I heard a plaintive, They are painting me yellow!",
+   "I heard a plaintive voice: They are painting me yellow!"
+  ],
+  [
+   3,
+   "this one had gone and that one had gone, and what had become of the other? and at home",
+   "this one had gone and that one had gone, and what had become of the other? And at home"
+  ],
+  [
+   3,
+   "wondering whether the trouble lay there (for if one chair is not standing in the same position as it stood the day before, I am not myself)",
+   "wondering whether the trouble lay there, for if one chair is not standing in the same position as it stood the day before, I am not myself"
+  ],
+  [
+   8,
+   "on the rail, she was apparently",
+   "on the rail. She was apparently"
+  ],
+  [
+   9,
+   "Strange, I thought; she must be deeply absorbed in something, and all at once",
+   "Strange, I thought. She must be deeply absorbed in something. And all at once"
+  ],
+  [
+   9,
+   "pronounced the word Madam! if I had not known",
+   "pronounced the word, Madam!, if I had not known"
+  ],
+  [
+   11,
+   "was overtaking, overtook her.",
+   "was overtaking her, overtook her."
+  ],
+  [
+   12,
+   "Give me your arm, I said to the girl. And he won't",
+   "Give me your arm. And he won't"
+  ],
+  [
+   13,
+   "I stole a glance at her, she was very charming and dark, I had guessed right.",
+   "I stole a glance at her. She was very charming and dark. I had guessed right."
+  ],
+  [
+   20,
+   "What? Really?...",
+   "What? Really?"
+  ],
+  [
+   21,
+   "not quick to take offence?...",
+   "not quick to take offence..."
+  ],
+  [
+   23,
+   "You will make me, lose my timidity",
+   "You will make me lose my timidity"
+  ],
+  [
+   29,
+   "a luckless man as me. That, in fact, all I ask",
+   "a luckless man as me;~that, in fact, all I ask"
+  ],
+  [
+   35,
+   "You ... perhaps it was my fancy...",
+   "You... perhaps it was my fancy."
+  ],
+  [
+   35,
+   "and I ... could not bear to hear it ... it made my heart ache...",
+   "and I... could not bear to hear it. It made my heart ache..."
+  ],
+  [
+   42,
+   "Don't think I make appointments so lightly... I shouldn't make it except that... But let that be my secret!",
+   "Don't think I make appointments so lightly. I shouldn't make it except that...~But let that be my secret!"
+  ],
+  [
+   44,
+   "come tomorrow, I know you perfectly.",
+   "come tomorrow. I know you perfectly."
+  ],
+  [
+   44,
+   "in the first place (only be good, do what I ask, you see, I speak frankly), you won't fall in love",
+   "in the first place, only be good, do what I ask; you see, I speak frankly; you won't fall in love"
+  ],
+  [
+   48,
+   "'Surely one can't be held responsible for every feeling, even for brotherly sympathy!'",
+   "Surely one can't be held responsible for every feeling, even for brotherly sympathy!"
+  ],
+  [
+   51,
+   "Come, tell me aren't you glad",
+   "Come, tell me, aren't you glad"
+  ],
+  [
+   56,
+   "I was so happy... Tomorrow!",
+   "I was so happy...|Tomorrow!"
+  ]
+ ],
+ "insert_narration_after": [
+  [
+   36,
+   "Stop, that's enough, don't talk of it.",
+   "She looked down, and pressed my hand."
+  ],
+  [
+   45,
+   "I swear.",
+   "I gripped her hand."
+  ]
+ ],
+ "global": [
+  [
+   " ... ",
+   "... "
+  ],
+  [
+   " ...",
+   "..."
+  ],
+  [
+   "....",
+   "..."
+  ]
+ ]
+}

@@ -1,0 +1,471 @@
+{
+ "chapter": "first_night",
+ "title": "First Night",
+ "start": "FIRST NIGHT",
+ "end": "SECOND NIGHT",
+ "narrator": "dreamer",
+ "tags": [
+  {
+   "cue": "music",
+   "file": "music_white_nights",
+   "vol": -37,
+   "fade": 5000
+  },
+  {
+   "p": 0,
+   "speaker": "dreamer",
+   "emotion": "wistful",
+   "intensity": 1
+  },
+  {
+   "cue": "music_stop",
+   "fade": 9000
+  },
+  {
+   "p": 1,
+   "speaker": "dreamer",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 2,
+   "speaker": "dreamer",
+   "emotion": "wry",
+   "intensity": 1
+  },
+  {
+   "p": 3,
+   "speaker": "dreamer",
+   "emotion": "sad",
+   "intensity": 1,
+   "say": [
+    [
+     "Aie!",
+     "Ah!"
+    ]
+   ]
+  },
+  {
+   "cue": "music",
+   "file": "music_barcarolle",
+   "vol": -39,
+   "fade": 7000
+  },
+  {
+   "p": 4,
+   "speaker": "dreamer",
+   "emotion": "happy",
+   "intensity": 1
+  },
+  {
+   "p": 5,
+   "speaker": "dreamer",
+   "emotion": "wistful",
+   "intensity": 2
+  },
+  {
+   "cue": "music",
+   "file": "music_white_nights",
+   "vol": -37,
+   "fade": 4000
+  },
+  {
+   "p": 6,
+   "speaker": "dreamer",
+   "emotion": "wistful",
+   "intensity": 1
+  },
+  {
+   "cue": "amb",
+   "file": "amb_water",
+   "vol": -42,
+   "fade": 3000
+  },
+  {
+   "cue": "sfx",
+   "file": "sfx_footsteps",
+   "vol": -32,
+   "offset": 0
+  },
+  {
+   "p": 7,
+   "speaker": "dreamer",
+   "emotion": "wistful",
+   "intensity": 1
+  },
+  {
+   "p": 8,
+   "speaker": "dreamer",
+   "emotion": "curious",
+   "intensity": 1
+  },
+  {
+   "cue": "music",
+   "file": "music_autumn_song",
+   "vol": -37,
+   "fade": 3500
+  },
+  {
+   "p": 9,
+   "speaker": "dreamer",
+   "emotion": "anxious",
+   "intensity": 2
+  },
+  {
+   "cue": "amb_stop",
+   "fade": 4000
+  },
+  {
+   "cue": "music_stop",
+   "fade": 3000
+  },
+  {
+   "p": 10,
+   "speaker": "dreamer",
+   "emotion": "wry",
+   "intensity": 1
+  },
+  {
+   "cue": "sfx",
+   "file": "sfx_footsteps",
+   "vol": -26,
+   "offset": 1500
+  },
+  {
+   "p": 11,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 2
+  },
+  {
+   "cue": "music",
+   "file": "music_white_nights",
+   "vol": -38,
+   "fade": 5000
+  },
+  {
+   "p": 12,
+   "speaker": "dreamer",
+   "emotion": "tender",
+   "intensity": 2
+  },
+  {
+   "cue": "sfx",
+   "file": "sfx_footsteps",
+   "vol": -34,
+   "offset": 500
+  },
+  {
+   "p": 13,
+   "speaker": "dreamer",
+   "emotion": "tender",
+   "intensity": 2
+  },
+  {
+   "p": 14,
+   "speaker": "dreamer",
+   "emotion": "tender",
+   "intensity": 1
+  },
+  {
+   "p": 15,
+   "speaker": "dreamer",
+   "emotion": "playful",
+   "intensity": 2,
+   "say": [
+    [
+     "There, you see;",
+     "There, you see..."
+    ]
+   ]
+  },
+  {
+   "p": 16,
+   "speaker": "nastenka",
+   "emotion": "shy",
+   "intensity": 2
+  },
+  {
+   "cue": "music",
+   "file": "music_barcarolle",
+   "vol": -40,
+   "fade": 7000
+  },
+  {
+   "p": 17,
+   "speaker": "dreamer",
+   "emotion": "playful",
+   "intensity": 2
+  },
+  {
+   "p": 18,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 2
+  },
+  {
+   "p": 19,
+   "speaker": "dreamer",
+   "emotion": "anxious",
+   "intensity": 2
+  },
+  {
+   "p": 20,
+   "speaker": "nastenka",
+   "emotion": "surprised",
+   "intensity": 1
+  },
+  {
+   "p": 21,
+   "speaker": "dreamer",
+   "emotion": "tender",
+   "intensity": 2,
+   "take": 2
+  },
+  {
+   "p": 22,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 23,
+   "speaker": "dreamer",
+   "emotion": "happy",
+   "intensity": 2,
+   "take": 2
+  },
+  {
+   "p": 24,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 25,
+   "speaker": "dreamer",
+   "emotion": "shy",
+   "intensity": 1
+  },
+  {
+   "p": 26,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 2
+  },
+  {
+   "p": 27,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 2
+  },
+  {
+   "p": 28,
+   "speaker": "nastenka",
+   "emotion": "curious",
+   "intensity": 1
+  },
+  {
+   "p": 29,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 1
+  },
+  {
+   "cue": "music",
+   "file": "music_fireside",
+   "vol": -40,
+   "fade": 7000
+  },
+  {
+   "p": 30,
+   "speaker": "nastenka",
+   "emotion": "tender",
+   "intensity": 1
+  },
+  {
+   "p": 31,
+   "speaker": "dreamer",
+   "emotion": "happy",
+   "intensity": 2
+  },
+  {
+   "p": 32,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 33,
+   "speaker": "dreamer",
+   "emotion": "shy",
+   "intensity": 1
+  },
+  {
+   "p": 34,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 35,
+   "speaker": "dreamer",
+   "emotion": "anxious",
+   "intensity": 1
+  },
+  {
+   "p": 36,
+   "speaker": "nastenka",
+   "emotion": "tender",
+   "intensity": 1
+  },
+  {
+   "p": 37,
+   "speaker": "dreamer",
+   "emotion": "anxious",
+   "intensity": 2
+  },
+  {
+   "p": 38,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 39,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 1
+  },
+  {
+   "p": 40,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "cue": "music",
+   "file": "music_white_nights",
+   "vol": -38,
+   "fade": 6000
+  },
+  {
+   "p": 41,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 2
+  },
+  {
+   "cue": "music",
+   "file": "music_barcarolle",
+   "vol": -40,
+   "fade": 7000
+  },
+  {
+   "p": 42,
+   "speaker": "nastenka",
+   "emotion": "shy",
+   "intensity": 1
+  },
+  {
+   "p": 43,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 2
+  },
+  {
+   "p": 44,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 45,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 2
+  },
+  {
+   "p": 46,
+   "speaker": "nastenka",
+   "emotion": "tender",
+   "intensity": 2
+  },
+  {
+   "p": 47,
+   "speaker": "dreamer",
+   "emotion": "happy",
+   "intensity": 1
+  },
+  {
+   "p": 48,
+   "speaker": "nastenka",
+   "emotion": "tender",
+   "intensity": 1
+  },
+  {
+   "p": 49,
+   "speaker": "dreamer",
+   "emotion": "curious",
+   "intensity": 1
+  },
+  {
+   "p": 50,
+   "speaker": "nastenka",
+   "emotion": "playful",
+   "intensity": 1
+  },
+  {
+   "p": 51,
+   "speaker": "dreamer",
+   "emotion": "excited",
+   "intensity": 2
+  },
+  {
+   "p": 52,
+   "speaker": "nastenka",
+   "emotion": "happy",
+   "intensity": 1
+  },
+  {
+   "p": 53,
+   "speaker": "dreamer",
+   "emotion": "happy",
+   "intensity": 1
+  },
+  {
+   "p": 54,
+   "speaker": "nastenka",
+   "emotion": "tender",
+   "intensity": 1
+  },
+  {
+   "p": 55,
+   "speaker": "dreamer",
+   "emotion": "tender",
+   "intensity": 1
+  },
+  {
+   "cue": "music",
+   "file": "music_white_nights",
+   "vol": -36,
+   "fade": 4000
+  },
+  {
+   "cue": "sfx",
+   "file": "sfx_footsteps",
+   "vol": -32,
+   "offset": 2500
+  },
+  {
+   "p": 56,
+   "speaker": "dreamer",
+   "emotion": "happy",
+   "intensity": 2
+  },
+  {
+   "cue": "music_stop",
+   "fade": 9000
+  }
+ ]
+}

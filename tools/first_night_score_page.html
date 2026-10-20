@@ -1,0 +1,133 @@
+<title>First Night Score</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+<style>
+/* Layout: a radio-play prompt book: one column of script lines, each with its direction and the pause before it; sticky change bar at the bottom */
+:root{
+  --bg:#f3f5f8; --sheet:#ffffff; --ink:#1c2230; --muted:#5d6678; --rule:#dde2ea;
+  --accent:#2c5a86; --dreamer:#2c5a86; --nastenka:#9b3f63; --narr:#5f6b55; --flag:#b7791f; --changed:#e8f0f9;
+  --script:"Courier Prime","Courier New",monospace; --ui:"IBM Plex Sans",system-ui,sans-serif; --label:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f141c; --sheet:#171d28; --ink:#e4e8ef; --muted:#97a1b3; --rule:#2a3242;
+  --accent:#7fb0e0; --dreamer:#7fb0e0; --nastenka:#e08aac; --narr:#a9b89a; --flag:#e3a84a; --changed:#1d2a3b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --sheet:#171d28; --ink:#e4e8ef; --muted:#97a1b3; --rule:#2a3242;
+  --accent:#7fb0e0; --dreamer:#7fb0e0; --nastenka:#e08aac; --narr:#a9b89a; --flag:#e3a84a; --changed:#1d2a3b; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 120px}
+header h1{font-family:var(--script);font-weight:700;font-size:1.6rem;margin:0;letter-spacing:.01em;text-wrap:balance}
+header p{color:var(--muted);margin:.4rem 0 0;max-width:62ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:14px 0 4px;font-family:var(--label);font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.filters{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.filters button{font:500 .85rem var(--label);letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+li.line{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+li.line.changed{background:var(--changed)}
+.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.num{font-family:var(--script);color:var(--muted);font-size:.85rem;min-width:2.2em}
+.who{font:600 .75rem var(--label);text-transform:uppercase;letter-spacing:.08em;padding:2px 8px;border-radius:4px;color:var(--sheet)}
+.who.D{background:var(--dreamer)} .who.N{background:var(--nastenka)} .who.narr{background:var(--narr)}
+.flag{font:600 .72rem var(--label);text-transform:uppercase;letter-spacing:.08em;color:var(--flag);border:1px solid var(--flag);border-radius:4px;padding:1px 6px}
+.text{font-family:var(--script);font-size:.95rem;margin:0;overflow-wrap:anywhere}
+.intent{color:var(--muted);font-size:.85rem;margin:0}
+.controls{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end}
+@media (max-width:480px){.controls{grid-template-columns:1fr}}
+label{display:flex;flex-direction:column;gap:3px;font:500 .72rem var(--label);text-transform:uppercase;letter-spacing:.07em;color:var(--muted);min-width:0}
+input,select{font:400 .95rem var(--ui);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:7px 9px;min-width:0}
+input.cue{font-family:var(--script)}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pausebar{height:4px;background:var(--rule);border-radius:2px;overflow:hidden;margin-top:4px}
+.pausebar i{display:block;height:100%;background:var(--accent)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--sheet);border-top:1px solid var(--rule);padding-bottom:env(safe-area-inset-bottom,0px)}
+.bar .in{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+.bar span{font-family:var(--label);color:var(--muted)}
+.bar button{font:600 .95rem var(--ui);background:var(--accent);color:var(--sheet);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+.bar button:disabled{opacity:.45;cursor:default}
+#fallback{width:100%;min-height:120px;font-family:var(--script);margin-top:8px}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>White Nights · First Night</h1>
+    <p>Each line has a direction (the short cue the voice model gets) and the pause before it. Change anything that feels wrong, then tap <b>Copy changes</b> and paste them to me in the chat.</p>
+    <div class="legend" id="legend"></div>
+  </header>
+  <div class="filters" role="group" aria-label="Show">
+    <button id="f-all" aria-pressed="true" data-f="all">All 57</button>
+    <button id="f-flag" aria-pressed="false" data-f="flag">Key moments</button>
+    <button id="f-dlg" aria-pressed="false" data-f="dlg">Dialogue</button>
+    <button id="f-chg" aria-pressed="false" data-f="chg">My changes</button>
+  </div>
+  <ol id="list"></ol>
+</div>
+<div class="bar"><div class="in"><span id="count">No changes yet</span><button id="copy" disabled>Copy changes</button></div>
+  <div class="in" id="fbwrap" hidden><textarea id="fallback" readonly aria-label="Changes to copy"></textarea></div></div>
+
+<script>
+const SCORE = {"chapter": "first_night", "pause_classes": {"quick": 150, "normal": 300, "answer": 500, "reflective": 900, "dramatic": 1400, "scene": 2000}, "lines": [{"p": 0, "who": "narr", "text": "It was a wonderful night, such a night as is only possible when we are young, dear reader…", "direction": "warm, reminiscing", "pause": "scene", "pause_ms": 2000, "intention": "Invites the reader in; loneliness underneath", "flag": false}, {"p": 1, "who": "narr", "text": "I know the houses too. As I walk along they seem to run forward in the streets to look out at me…", "direction": "amused, fond", "pause": "reflective", "pause_ms": 900, "intention": "Delights in his imaginary friends", "flag": false}, {"p": 2, "who": "narr", "text": "So now you understand, reader, in what sense I am acquainted with all Petersburg.", "direction": "dry, smiling", "pause": "normal", "pause_ms": 300, "intention": "Small wink at the reader", "flag": false}, {"p": 3, "who": "narr", "text": "I have mentioned already that I had felt worried for three whole days…", "direction": "rueful", "pause": "answer", "pause_ms": 500, "intention": "Hurt that nobody invited him", "flag": false}, {"p": 4, "who": "narr", "text": "I took long walks… when I suddenly found myself at the city gates.", "direction": "lighter, lifting", "pause": "reflective", "pause_ms": 900, "intention": "Relief of escaping the city", "flag": false}, {"p": 5, "who": "narr", "text": "There is something inexpressibly touching in nature round Petersburg…", "direction": "tender, lyrical", "pause": "reflective", "pause_ms": 900, "intention": "Beauty that fades too soon; foreshadowing", "flag": false}, {"p": 6, "who": "narr", "text": "And yet my night was better than my day! This was how it happened.", "direction": "brightening", "pause": "dramatic", "pause_ms": 1400, "intention": "Turning point of the chapter", "flag": true}, {"p": 7, "who": "narr", "text": "I came back to the town very late, and it had struck ten…", "direction": "light, happy", "pause": "normal", "pause_ms": 300, "intention": "Humming, carefree", "flag": false}, {"p": 8, "who": "narr", "text": "Leaning on the canal railing stood a woman… \"She's a girl, and I am sure she is dark,\" I thought.", "direction": "curious, hushed", "pause": "answer", "pause_ms": 500, "intention": "First sight of her; holding his breath", "flag": false}, {"p": 9, "who": "narr", "text": "\"Strange,\" I thought… I heard a muffled sob. Yes! I was not mistaken, the girl was crying…", "direction": "alarmed", "pause": "normal", "pause_ms": 300, "intention": "Heart sinks; too timid to act", "flag": false}, {"p": 10, "who": "narr", "text": "Along the same side of the pavement there suddenly came into sight… a gentleman in evening dress…", "direction": "wry", "pause": "normal", "pause_ms": 300, "intention": "Comic disdain for the drunk", "flag": false}, {"p": 11, "who": "narr", "text": "Suddenly, without a word to any one, the gentleman set off and flew full speed in pursuit…", "direction": "breathless, quickening", "pause": "quick", "pause_ms": 150, "intention": "The chase and the rescue", "flag": false}, {"p": 12, "who": "D", "text": "\"Give me your arm,\" I said to the girl. \"And he won't dare to annoy us further.\"", "direction": "firm, gentle", "pause": "normal", "pause_ms": 300, "intention": "Protective, surprised by his own courage", "flag": false}, {"p": 13, "who": "narr", "text": "She took my arm without a word, still trembling with excitement and terror…", "direction": "glowing", "pause": "answer", "pause_ms": 500, "intention": "Quiet triumph", "flag": false}, {"p": 14, "who": "narr", "text": "On her black eyelashes there still glistened a tear… a gleam of a smile on her lips.", "direction": "tender, hushed", "pause": "normal", "pause_ms": 300, "intention": "Tenderness; the mood softens", "flag": false}, {"p": 15, "who": "D", "text": "\"There, you see; why did you drive me away? If I had been here, nothing would have happened....\"", "direction": "gently teasing", "pause": "answer", "pause_ms": 500, "intention": "First words to her: lightly scolding, to hide his nerves", "flag": false}, {"p": 16, "who": "N", "text": "\"But I did not know you; I thought that you too....\"", "direction": "shy, hesitant", "pause": "normal", "pause_ms": 300, "intention": "Her only truly shy moment; still shaken", "flag": true}, {"p": 17, "who": "D", "text": "\"Why, do you know me now?\"", "direction": "playful", "pause": "normal", "pause_ms": 300, "intention": "Fishing for warmth", "flag": false}, {"p": 18, "who": "N", "text": "\"A little! Here, for instance, why are you trembling?\"", "direction": "teasing", "pause": "quick", "pause_ms": 150, "intention": "She regains herself and turns the tables", "flag": false}, {"p": 19, "who": "D", "text": "\"Oh, you are right at the first guess!\" I answered, delighted… \"I am shy with women, I am agitated…\"", "direction": "eager, then flustered", "pause": "quick", "pause_ms": 150, "intention": "Delighted she noticed; then confesses", "flag": true}, {"p": 20, "who": "N", "text": "\"What? Really?...\"", "direction": "surprised, amused", "pause": "quick", "pause_ms": 150, "intention": "Disbelief with a smile", "flag": false}, {"p": 21, "who": "D", "text": "\"Yes; if my arm trembles, it is because it has never been held by a pretty little hand like yours…\"", "direction": "earnest", "pause": "answer", "pause_ms": 500, "intention": "Bares his loneliness, hoping not to offend", "flag": false}, {"p": 22, "who": "N", "text": "\"No, nothing, nothing, quite the contrary… I like it too, and I won't drive you away till I get home.\"", "direction": "warm, reassuring", "pause": "reflective", "pause_ms": 900, "intention": "Decides to be kind; a little bold", "flag": true}, {"p": 23, "who": "D", "text": "\"You will make me,\" I said, breathless with delight, \"lose my timidity, and then farewell to all my chances....\"", "direction": "breathless, delighted", "pause": "normal", "pause_ms": 300, "intention": "Overflowing; blurts too much", "flag": false}, {"p": 24, "who": "N", "text": "\"Chances! What chances--of what? That's not so nice.\"", "direction": "mock-stern", "pause": "quick", "pause_ms": 150, "intention": "Pounces on the slip, half joking", "flag": false}, {"p": 25, "who": "D", "text": "\"I beg your pardon, I am sorry, it was a slip of the tongue…\"", "direction": "flustered", "pause": "quick", "pause_ms": 150, "intention": "Scrambling to recover", "flag": false}, {"p": 26, "who": "N", "text": "\"To be liked, eh?\"", "direction": "teasing", "pause": "quick", "pause_ms": 150, "intention": "Finishes his sentence for him", "flag": false}, {"p": 27, "who": "D", "text": "\"Well, yes; but do, for goodness' sake, be kind. Think what I am! Here, I am twenty-six…\"", "direction": "pleading, earnest", "pause": "normal", "pause_ms": 300, "intention": "Opens up completely", "flag": false}, {"p": 28, "who": "N", "text": "\"How? With whom?...\"", "direction": "curious", "pause": "quick", "pause_ms": 150, "intention": "Genuinely intrigued", "flag": false}, {"p": 29, "who": "D", "text": "\"Why, with no one, with an ideal, with the one I dream of in my sleep…\"", "direction": "rushing, dreamy", "pause": "normal", "pause_ms": 300, "intention": "Long monologue; carried away by his own fantasy", "flag": true}, {"p": 30, "who": "N", "text": "\"Don't be vexed; I am only laughing at your being your own enemy…\"", "direction": "laughing, kind", "pause": "reflective", "pause_ms": 900, "intention": "Laughs, then wise beyond her years", "flag": false}, {"p": 31, "who": "D", "text": "\"Oh, thank you,\" I cried; \"you don't know what you have done for me now!\"", "direction": "grateful, moved", "pause": "normal", "pause_ms": 300, "intention": "Deeply touched", "flag": false}, {"p": 32, "who": "N", "text": "\"I am glad! I am glad! But tell me how did you find out that I was the sort of woman…\"", "direction": "glad, curious", "pause": "normal", "pause_ms": 300, "intention": "Pleased, a little flattered", "flag": false}, {"p": 33, "who": "D", "text": "\"What made me?... But you were alone; that gentleman was too insolent; it's night…\"", "direction": "flustered", "pause": "answer", "pause_ms": 500, "intention": "Dodging the real answer", "flag": false}, {"p": 34, "who": "N", "text": "\"No, no; I mean before, on the other side--you know you meant to come up to me.\"", "direction": "teasing", "pause": "quick", "pause_ms": 150, "intention": "Catches him out", "flag": false}, {"p": 35, "who": "D", "text": "\"On the other side? Really I don't know how to answer; I am afraid to.... I fancied you were crying…\"", "direction": "nervous, rambling", "pause": "answer", "pause_ms": 500, "intention": "Admits he saw her crying", "flag": true}, {"p": 36, "who": "N", "text": "\"Stop, that's enough, don't talk of it,\" said the girl… \"But here I am home… Good-bye, thank you!...\"", "direction": "moved, brisk", "pause": "reflective", "pause_ms": 900, "intention": "Touched a nerve; deflects and says goodbye", "flag": true}, {"p": 37, "who": "D", "text": "\"Surely ... surely you don't mean ... that we shall never see each other again?...\"", "direction": "anxious, pleading", "pause": "quick", "pause_ms": 150, "intention": "Panic at losing her", "flag": false}, {"p": 38, "who": "N", "text": "\"You see,\" said the girl, laughing, \"at first you only wanted two words, and now....\"", "direction": "laughing", "pause": "answer", "pause_ms": 500, "intention": "Amused by his greed for more", "flag": false}, {"p": 39, "who": "D", "text": "\"I shall come here to-morrow,\" I said. \"Oh, forgive me, I am already making demands....\"", "direction": "eager, apologetic", "pause": "normal", "pause_ms": 300, "intention": "Can't help himself", "flag": false}, {"p": 40, "who": "N", "text": "\"Yes, you are not very patient ... you are almost insisting.\"", "direction": "teasing", "pause": "quick", "pause_ms": 150, "intention": "Light scolding", "flag": false}, {"p": 41, "who": "D", "text": "\"Listen, listen!\" I interrupted her. \"…I am a dreamer; I have so little real life…\"", "direction": "passionate, dreamy", "pause": "quick", "pause_ms": 150, "intention": "His defining speech: \"I am a dreamer\"", "flag": true}, {"p": 42, "who": "N", "text": "\"Very good,\" said the girl, \"perhaps I will come here to-morrow, too, at ten o'clock…\"", "direction": "warm, guarded", "pause": "reflective", "pause_ms": 900, "intention": "Agrees, but keeps a secret", "flag": true}, {"p": 43, "who": "D", "text": "\"A compact! Speak, tell me, tell me all beforehand; I agree to anything…\"", "direction": "eager", "pause": "quick", "pause_ms": 150, "intention": "Instant, total agreement", "flag": false}, {"p": 44, "who": "N", "text": "\"It's just because I do know you that I ask you to come to-morrow,\" said the girl, laughing…", "direction": "laughing, firm", "pause": "normal", "pause_ms": 300, "intention": "Sets her one rule: don't fall in love", "flag": false}, {"p": 45, "who": "D", "text": "\"I swear,\" I cried, gripping her hand....", "direction": "ardent", "pause": "quick", "pause_ms": 150, "intention": "Too quick, too passionate", "flag": false}, {"p": 46, "who": "N", "text": "\"Hush, don't swear, I know you are ready to flare up like gunpowder… I, too, have no one…\"", "direction": "gentle, then sincere", "pause": "answer", "pause_ms": 500, "intention": "Reveals her own loneliness", "flag": true}, {"p": 47, "who": "D", "text": "\"You will see ... the only thing is, I don't know how I am going to survive the next twenty-four hours.\"", "direction": "tender, wry", "pause": "answer", "pause_ms": 500, "intention": "Half joke, half truth", "flag": false}, {"p": 48, "who": "N", "text": "\"Sleep soundly. Good-night, and remember that I have trusted you already…\"", "direction": "warm", "pause": "normal", "pause_ms": 300, "intention": "Trust, and a compliment", "flag": false}, {"p": 49, "who": "D", "text": "\"For God's sake do; but about what? What is it?\"", "direction": "eager", "pause": "quick", "pause_ms": 150, "intention": "Can't wait", "flag": false}, {"p": 50, "who": "N", "text": "\"Wait till to-morrow. Meanwhile, let that be a secret…\"", "direction": "playful, mysterious", "pause": "normal", "pause_ms": 300, "intention": "Enjoys the suspense", "flag": false}, {"p": 51, "who": "D", "text": "\"Oh yes, I will tell you all about myself to-morrow! … It is as though a miracle had befallen me....\"", "direction": "overjoyed, rushing", "pause": "normal", "pause_ms": 300, "intention": "Happiness spilling over", "flag": false}, {"p": 52, "who": "N", "text": "\"Very well, I consent; you shall begin....\"", "direction": "warm", "pause": "normal", "pause_ms": 300, "intention": "Gracious", "flag": false}, {"p": 53, "who": "D", "text": "\"Agreed.\"", "direction": "eager", "pause": "quick", "pause_ms": 150, "intention": "", "flag": false}, {"p": 54, "who": "N", "text": "\"Good-bye till to-morrow!\"", "direction": "warm", "pause": "normal", "pause_ms": 300, "intention": "", "flag": false}, {"p": 55, "who": "D", "text": "\"Till to-morrow!\"", "direction": "happy", "pause": "quick", "pause_ms": 150, "intention": "", "flag": false}, {"p": 56, "who": "narr", "text": "And we parted. I walked about all night; I could not make up my mind to go home. I was so happy.... To-morrow!", "direction": "glowing, wistful", "pause": "dramatic", "pause_ms": 1400, "intention": "Ends the night on pure happiness", "flag": false}]};
+const PAUSES = SCORE.pause_classes;
+const PLABEL = {quick:"Quick reply",normal:"Normal",answer:"Thinks briefly",reflective:"Takes it in",dramatic:"Dramatic beat",scene:"Scene start"};
+const WHO = {D:"Dreamer",N:"Nastenka",narr:"Narrator"};
+let edits = {};
+try { edits = JSON.parse(localStorage.getItem("wn-score-edits") || "{}"); } catch (e) { edits = {}; }
+const save = () => { try { localStorage.setItem("wn-score-edits", JSON.stringify(edits)); } catch (e) {} };
+let filter = "all";
+
+document.getElementById("legend").innerHTML = Object.entries(PLABEL).map(([k,v]) => `<span>${v} · ${PAUSES[k]} ms</span>`).join("");
+
+function cur(l){ const e = edits[l.p] || {}; return {direction: e.direction ?? l.direction, pause: e.pause ?? l.pause, note: e.note ?? ""}; }
+function isChanged(l){ const c = cur(l); return c.direction !== l.direction || c.pause !== l.pause || c.note.trim() !== ""; }
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function render(){
+  const list = document.getElementById("list");
+  list.innerHTML = SCORE.lines.filter(l => filter === "all" || (filter === "flag" && l.flag) || (filter === "dlg" && l.who !== "narr") || (filter === "chg" && isChanged(l))).map(l => {
+    const c = cur(l), max = 2000;
+    return `<li class="line${isChanged(l) ? " changed" : ""}" data-p="${l.p}">
+      <div class="top"><span class="num">¶${l.p}</span><span class="who ${l.who}">${WHO[l.who]}</span>${l.flag ? '<span class="flag">Key moment</span>' : ""}</div>
+      <p class="text">${esc(l.text)}</p>
+      ${l.intention ? `<p class="intent">${esc(l.intention)}</p>` : ""}
+      <div class="controls">
+        <label for="d${l.p}">Direction<input class="cue" id="d${l.p}" value="${esc(c.direction)}" data-k="direction"></label>
+        <label for="s${l.p}">Pause before<select id="s${l.p}" data-k="pause">${Object.keys(PAUSES).map(k => `<option value="${k}"${k === c.pause ? " selected" : ""}>${PLABEL[k]} (${PAUSES[k]} ms)</option>`).join("")}</select>
+          <span class="pausebar"><i style="width:${Math.round(100 * PAUSES[c.pause] / max)}%"></i></span></label>
+      </div>
+      <label for="n${l.p}">Note (optional)<input id="n${l.p}" value="${esc(c.note)}" data-k="note" placeholder="e.g. she should sound annoyed here"></label>
+    </li>`;
+  }).join("") || '<li class="line"><p class="intent">Nothing here yet. Change a direction or pause and it will show up in this list.</p></li>';
+  updateBar();
+}
+function updateBar(){
+  const n = SCORE.lines.filter(isChanged).length;
+  document.getElementById("count").textContent = n ? `${n} line${n > 1 ? "s" : ""} changed` : "No changes yet";
+  document.getElementById("copy").disabled = !n;
+}
+document.getElementById("list").addEventListener("input", e => {
+  const li = e.target.closest("li.line"); if (!li || !e.target.dataset.k) return;
+  const p = +li.dataset.p, l = SCORE.lines[p];
+  edits[p] = Object.assign({}, edits[p], {[e.target.dataset.k]: e.target.value});
+  li.classList.toggle("changed", isChanged(l));
+  if (e.target.dataset.k === "pause") li.querySelector(".pausebar i").style.width = Math.round(100 * PAUSES[e.target.value] / 2000) + "%";
+  save(); updateBar();
+});
+document.querySelector(".filters").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  filter = b.dataset.f; document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b)); render();
+});
+document.getElementById("copy").addEventListener("click", async () => {
+  const lines = SCORE.lines.filter(isChanged).map(l => {
+    const c = cur(l), parts = [];
+    if (c.direction !== l.direction) parts.push(`direction "${l.direction}" -> "${c.direction}"`);
+    if (c.pause !== l.pause) parts.push(`pause ${l.pause} -> ${c.pause}`);
+    if (c.note.trim()) parts.push(`note: ${c.note.trim()}`);
+    return `¶${l.p} ${WHO[l.who]}: ${parts.join("; ")}`;
+  });
+  const txt = "First Night score changes:\n" + lines.join("\n");
+  const btn = document.getElementById("copy");
+  try { await navigator.clipboard.writeText(txt); btn.textContent = "Copied"; setTimeout(() => btn.textContent = "Copy changes", 1600); }
+  catch (e) { const fb = document.getElementById("fallback"); fb.value = txt; document.getElementById("fbwrap").hidden = false; fb.focus(); fb.select(); btn.textContent = "Select and copy below"; }
+});
+render();
+</script>

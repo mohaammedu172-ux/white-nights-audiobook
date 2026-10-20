@@ -42,58 +42,56 @@
 
 > **Book:** "Oh, forgive me, forgive me! I beg you on my knees to forgive me! I deceived you and myself. It was a dream, a mirage.... My heart aches for you to-day; forgive me, forgive me!
 
-- `⏸ 1.00s` **Dreamer (guessed):** Oh, forgive me, forgive me! I beg you on my knees to forgive me! I deceived you and myself. It was a dream, a mirage... My heart aches for you today; forgive me, forgive me!
+- `⏸ 0.60s` **Nastenka:** Oh, forgive me, forgive me! I beg you on my knees to forgive me! I deceived you and myself. It was a dream, a mirage... My heart aches for you today; forgive me, forgive me!
 
 ### ¶6
 
 > **Book:** "Don't blame me, for I have not changed to you in the least. I told you that I would love you, I love you now, I more than love you. Oh, my God! If only I could love you both at once! Oh, if only you were he!"
 
-- `⏸ 1.00s` **Dreamer:** Don't blame me, for I have not changed to you in the least. I told you that I would love you, I love you now, I more than love you. Oh, my God! If only I could love you both at once!
-- `⏸ 0.60s` **Dreamer:** Oh, if only you were he!
+- `⏸ 1.00s` **Nastenka:** Don't blame me, for I have not changed to you in the least. I told you that I would love you, I love you now, I more than love you. Oh, my God! If only I could love you both at once!
+- `⏸ 0.60s` **Nastenka:** Oh, if only you were he!
 
 ### ¶7
 
 > **Book:** ["Oh, if only he were you," echoed in my mind. I remembered your words, Nastenka!]
 
-- `⏸ 1.00s` **Dreamer:** Oh, if only he were you.
+- `⏸ 0.60s` **Dreamer:** Oh, if only he were you.
 - `⏸ 0.50s` **Dreamer (narration):** Echoed in my mind. I remembered your words, Nastenka!].
 
 ### ¶8
 
 > **Book:** "God knows what I would do for you now! I know that you are sad and dreary. I have wounded you, but you know when one loves a wrong is soon forgotten. And you love me.
 
-- `⏸ 0.60s` **Matrona (guessed):** God knows what I would do for you now! I know that you are sad and dreary. I have wounded you, but you know when one loves a wrong is soon forgotten. And you love me.
+- `⏸ 0.60s` **Nastenka:** God knows what I would do for you now! I know that you are sad and dreary. I have wounded you, but you know when one loves a wrong is soon forgotten. And you love me.
 
 ### ¶9
 
 > **Book:** "Thank you, yes, thank you for that love! For it will live in my memory like a sweet dream which lingers long after awakening; for I shall remember for ever that instant when you opened your heart to me like a brother and so generously accepted the gift of my shattered heart to care for it, nurse it, and heal it.... If you forgive me, the memory of you will be exalted by a feeling of everlasting gratitude which will never be effaced from my soul.... I will treasure that memory: I will be true to it, I will not betray it, I will not betray my heart: it is too constant. It returned so quickly yesterday to him to whom it has always belonged.
 
-- `⏸ 1.00s` **Matrona:** Thank you, yes, thank you for that love!
-- `⏸ 0.60s` **Matrona:** For it will live in my memory like a sweet dream which lingers long after awakening; for I shall remember for ever that instant when you opened your heart to me like a brother and so generously accepted the gift of my shattered heart to care for it, nurse it, and heal it...
-- `⏸ 0.60s` **Matrona:** If you forgive me, the memory of you will be exalted by a feeling of everlasting gratitude which will never be effaced from my soul...
-- `⏸ 0.60s` **Matrona:** I will treasure that memory: I will be true to it, I will not betray it, I will not betray my heart: it is too constant. It returned so quickly yesterday to him to whom it has always belonged.
+- `⏸ 1.00s` **Nastenka:** Thank you, yes, thank you for that love!
+- `⏸ 0.60s` **Nastenka:** For it will live in my memory like a sweet dream which lingers long after awakening; for I shall remember for ever that instant when you opened your heart to me like a brother and so generously accepted the gift of my shattered heart to care for it, nurse it, and heal it...
+- `⏸ 0.60s` **Nastenka:** If you forgive me, the memory of you will be exalted by a feeling of everlasting gratitude which will never be effaced from my soul...
+- `⏸ 0.60s` **Nastenka:** I will treasure that memory: I will be true to it, I will not betray it, I will not betray my heart: it is too constant. It returned so quickly yesterday to him to whom it has always belonged.
 
 ### ¶10
 
 > **Book:** "We shall meet, you will come to us, you will not leave us, you will be for ever a friend, a brother to me. And when you see me you will give me your hand ... yes? You will give it to me, you have forgiven me, haven't you? You love me _as before_?
 
-- `⏸ 1.00s` **Matrona:** We shall meet, you will come to us, you will not leave us, you will be for ever a friend, a brother to me. And when you see me you will give me your hand... yes?
-- `⏸ 0.60s` **Matrona:** You will give it to me, you have forgiven me, haven't you? You love me as before?
+- `⏸ 1.00s` **Nastenka:** We shall meet, you will come to us, you will not leave us, you will be for ever a friend, a brother to me. And when you see me you will give me your hand... yes?
+- `⏸ 0.60s` **Nastenka:** You will give it to me, you have forgiven me, haven't you? You love me as before?
 
 ### ¶11
 
 > **Book:** "Oh, love me, do not forsake me, because I love you so at this moment, because I am worthy of your love, because I will deserve it ... my dear! Next week I am to be married to him. He has come back in love, he has never forgotten me. You will not be angry at my writing about him. But I want to come and see you with him; you will like him, won't you?
 
-- `⏸ 1.00s` **Matrona:** Oh, love me, do not forsake me, because I love you so at this moment, because I am worthy of your love, because I will deserve it... my dear! Next week I am to be married to him.
-- `⏸ 0.60s` **Matrona:** He has come back in love, he has never forgotten me. You will not be angry at my writing about him. But I want to come and see you with him; you will like him, won't you?
+- `⏸ 1.00s` **Nastenka:** Oh, love me, do not forsake me, because I love you so at this moment, because I am worthy of your love, because I will deserve it... my dear! Next week I am to be married to him.
+- `⏸ 0.60s` **Nastenka:** He has come back in love, he has never forgotten me. You will not be angry at my writing about him. But I want to come and see you with him; you will like him, won't you?
 
 ### ¶12
 
-> **Book:** "Forgive me, remember and love your "NASTENKA."
+> **Book:** "Forgive me, remember and love your Nastenka."
 
-- `⏸ 1.00s` **Matrona:** Forgive me, remember and love your.
-
-*Removed (not spoken):* "NASTENKA"
+- `⏸ 1.00s` **Nastenka:** Forgive me, remember and love your Nastenka.
 
 ### ¶13
 

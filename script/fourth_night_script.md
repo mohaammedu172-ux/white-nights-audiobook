@@ -1,6 +1,6 @@
 # White Nights — Fourth Night: performance script
 
-166 lines. **(guessed)** = speaker worked out by alternation, please check. Corrections go in `script/fourth_night_fixes.json` (`speaker`: paragraph → 1 Dreamer, 2 Nastenka, 3 Grandmother, 4 Lodger, 5 Matrona).
+163 lines. **(guessed)** = speaker worked out by alternation, please check. Corrections go in `script/fourth_night_fixes.json` (`speaker`: paragraph → 1 Dreamer, 2 Nastenka, 3 Grandmother, 4 Lodger, 5 Matrona).
 
 ---
 
@@ -71,8 +71,8 @@
 
 > **Book:** "Don't try and comfort me," she said; "don't talk about him; don't tell me that he will come, that he has not cast me off so cruelly and so inhumanly as he has. What for--what for? Can there have been something in my letter, that unlucky letter?"
 
-- `⏸ 0.60s` **Nastenka:** Don't try and comfort me.
-- `⏸ 0.50s` **Nastenka:** don't talk about him; don't tell me that he will come, that he has not cast me off so cruelly and so inhumanly as he has. What for, what for? Can there have been something in my letter, that unlucky letter?
+- `⏸ 0.60s` **Nastenka:** Don't try and comfort me, don't talk about him; don't tell me that he will come, that he has not cast me off so cruelly and so inhumanly as he has. What for, what for?
+- `⏸ 0.60s` **Nastenka:** Can there have been something in my letter, that unlucky letter?
 
 *Removed (not spoken):* "she said"
 
@@ -311,9 +311,9 @@
 > **Book:** "Don't cry; I don't want you to cry," said Nastenka getting up quickly from the seat. "Come along, get up, come with me, don't cry, don't cry," she said, drying her tears with her handkerchief; "let us go now; maybe I will tell you something.... If he has forsaken me now, if he has forgotten me, though I still love him (I do not want to deceive you) ... but listen, answer me. If I were to love you, for instance, that is, if I only.... Oh my friend, my friend! To think, to think how I wounded you, when I laughed at your love, when I praised you for not falling in love with me. Oh dear! How was it I did not foresee this, how was it I did not foresee this, how could I have been so stupid? But.... Well, I have made up my mind, I will tell you."
 
 - `⏸ 0.60s` **Nastenka:** Don't cry; I don't want you to cry.
-- `⏸ 0.50s` **Nastenka:** Come along, get up, come with me, don't cry, don't cry.
-- `⏸ 0.50s` **Nastenka:** let us go now; maybe I will tell you something... If he has forsaken me now, if he has forgotten me, though I still love him (I do not want to deceive you)... but listen, answer me.
-- `⏸ 0.60s` **Nastenka:** If I were to love you, for instance, that is, if I only... Oh my friend, my friend! To think, to think how I wounded you, when I laughed at your love, when I praised you for not falling in love with me. Oh dear!
+- `⏸ 0.50s` **Nastenka:** Come along, get up, come with me, don't cry, don't cry, let us go now; maybe I will tell you something...
+- `⏸ 0.60s` **Nastenka:** If he has forsaken me now, if he has forgotten me, though I still love him (I do not want to deceive you)... but listen, answer me. If I were to love you, for instance, that is, if I only... Oh my friend, my friend!
+- `⏸ 0.60s` **Nastenka:** To think, to think how I wounded you, when I laughed at your love, when I praised you for not falling in love with me. Oh dear!
 - `⏸ 0.60s` **Nastenka:** How was it I did not foresee this, how was it I did not foresee this, how could I have been so stupid? But... Well, I have made up my mind, I will tell you.
 
 *Removed (not spoken):* "said Nastenka getting up quickly from the seat" · "she said, drying her tears with her handkerchief"
@@ -363,8 +363,8 @@
 - `⏸ 0.50s` **Nastenka:** don't think that I am so light and inconstant, don't think that I can forget and change so quickly. I have loved him for a whole year, and I swear by God that I have never, never, even in thought, been unfaithful to him...
 - `⏸ 0.60s` **Nastenka:** He has despised me, he has been laughing at me, God forgive him! But he has insulted me and wounded my heart. I...
 - `⏸ 0.60s` **Nastenka:** I do not love him, for I can only love what is magnanimous, what understands me, what is generous; for I am like that myself and he is not worthy of me, well, that's enough of him.
-- `⏸ 0.60s` **Nastenka:** He has done better than if he had deceived my expectations later, and shown me later what he was... Well, it's over! But who knows, my dear friend.
-- `⏸ 0.50s` **Nastenka:** who knows, perhaps my whole love was a mistaken feeling, a delusion, perhaps it began in mischief, in nonsense, because I was kept so strictly by grandmother?
+- `⏸ 0.60s` **Nastenka:** He has done better than if he had deceived my expectations later, and shown me later what he was... Well, it's over!
+- `⏸ 0.60s` **Nastenka:** But who knows, my dear friend, who knows, perhaps my whole love was a mistaken feeling, a delusion, perhaps it began in mischief, in nonsense, because I was kept so strictly by grandmother?
 - `⏸ 0.60s` **Nastenka:** Perhaps I ought to love another man, not him, a different man, who would have pity on me and... and... But don't let us say any more about that.
 - `⏸ 0.50s` **Nastenka:** I only wanted to tell you... I wanted to tell you that if, although I love him (no, did love him), if, in spite of this you still say...
 - `⏸ 0.60s` **Nastenka:** If you feel that your love is so great that it may at last drive from my heart my old feeling, if you will have pity on me, if you do not want to leave me alone to my fate, without hope, without consolation, if you are ready to love me always as you do now, I swear to you that gratitude... that my love will be at last worthy of your love...
@@ -394,7 +394,7 @@
 
 > **Book:** "Yes, Nastenka, yes! Enough about that, now I am happy. I---- Yes, Nastenka, yes, let us talk of other things, let us make haste and talk. Yes! I am ready."
 
-- `⏸ 0.60s` **Dreamer (guessed):** Yes, Nastenka, yes! Enough about that, now I am happy. I, , Yes, Nastenka, yes, let us talk of other things, let us make haste and talk. Yes! I am ready.
+- `⏸ 0.60s` **Dreamer (guessed):** Yes, Nastenka, yes! Enough about that, now I am happy. I, Yes, Nastenka, yes, let us talk of other things, let us make haste and talk. Yes! I am ready.
 
 ### ¶51
 
@@ -406,8 +406,7 @@
 
 > **Book:** "I am living alone now, Nastenka," I began, "but to-morrow! Of course you know, Nastenka, I am poor, I have only got twelve hundred roubles, but that doesn't matter."
 
-- `⏸ 1.00s` **Dreamer:** I am living alone now, Nastenka.
-- `⏸ 0.50s` **Dreamer:** but tomorrow! Of course you know, Nastenka, I am poor, I have only got twelve hundred roubles, but that doesn't matter.
+- `⏸ 1.00s` **Dreamer:** I am living alone now, Nastenka, but tomorrow! Of course you know, Nastenka, I am poor, I have only got twelve hundred roubles, but that doesn't matter.
 
 *Removed (not spoken):* "I began"
 
@@ -452,10 +451,11 @@
 > **Book:** "Yes, hire a room from us. We have a top floor, it's empty. We had an old lady lodging there, but she has gone away; and I know granny would like to have a young man. I said to her, 'Why a young man?' And she said, 'Oh, because I am old; only don't you fancy, Nastenka, that I want him as a husband for you.' So I guessed it was with that idea."
 
 - `⏸ 0.60s` **Nastenka (guessed):** Yes, hire a room from us. We have a top floor, it's empty. We had an old lady lodging there, but she has gone away; and I know granny would like to have a young man. I said to her.
-- `⏸ 0.50s` **Grandmother:** Why a young man?
-- `⏸ 0.50s` **Nastenka (guessed):** And she said.
+- `⏸ 0.50s` **Nastenka:** Why a young man?
 - `⏸ 0.50s` **Grandmother:** Oh, because I am old; only don't you fancy, Nastenka, that I want him as a husband for you.
 - `⏸ 0.50s` **Nastenka (guessed):** So I guessed it was with that idea.
+
+*Removed (not spoken):* "And she said"
 
 ### ¶60
 
@@ -527,8 +527,7 @@
 
 > **Book:** "Yes, we'll go," said Nastenka, "but better see something else and not _The Barber of Seville_."
 
-- `⏸ 0.60s` **Nastenka:** Yes, we'll go.
-- `⏸ 0.50s` **Nastenka:** but better see something else and not The Barber of Seville.
+- `⏸ 0.60s` **Nastenka:** Yes, we'll go, but better see something else and not The Barber of Seville.
 
 *Removed (not spoken):* "said Nastenka"
 
@@ -643,7 +642,7 @@
 
 > **Book:** "Nastenka, Nastenka! It's you!" I heard a voice behind us and at the same moment the young man took several steps towards us.
 
-- `⏸ 1.00s` **Dreamer (guessed):** Nastenka, Nastenka! It's you!
+- `⏸ 0.60s` **Lodger:** Nastenka, Nastenka! It's you!
 - `⏸ 0.50s` **Dreamer (narration):** I heard a voice behind us and at the same moment the young man took several steps towards us.
 
 ### ¶90

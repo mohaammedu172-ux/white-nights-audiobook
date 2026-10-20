@@ -22,7 +22,7 @@ CHAPTERS = {  # key: (heading, next heading, characters who can speak in quotes)
 NAME = {1: "Dreamer", 2: "Nastenka", 3: "Grandmother", 4: "Lodger", 5: "Matrona"}
 VERBS = r"(said|says|say|cried|answered|asked|interrupted|replied|added|began|exclaimed|whispered|went on|continued|repeated|observed|murmured|shouted|thought|called out|echoed|told \w+)"
 WHO_RE = r"(I|she|he|the girl|Nastenka|grandmother|granny|the lodger|our lodger|Matrona|my companion)"
-TAG = re.compile(rf"^\W*(({WHO_RE}\s+{VERBS})|({VERBS}\s+{WHO_RE}))\b(\s+(to|at)\s+(her|him|me|the girl|grandmother))?\W*", re.I)
+TAG = re.compile(rf"^\W*(and\s+)?(({WHO_RE}\s+{VERBS})|({VERBS}\s+{WHO_RE}))\b(\s+(to|at)\s+(her|him|me|the girl|grandmother))?\W*", re.I)
 WHO_OF = [(r"\bI\s+" + VERBS + r"|" + VERBS + r"\s+I\b", "I"), (r"Nastenka|the girl|\bshe\b", "she"),
           (r"grandmother|granny", "grandmother"), (r"lodger|\bhe\b", "he"), (r"Matrona", "matrona")]
 
@@ -47,7 +47,7 @@ def split_nested(s):
     out, buf, inside = [], "", False
     for i, ch in enumerate(s):
         prev = s[i - 1] if i else " "; nxt = s[i + 1] if i + 1 < len(s) else " "
-        if ch == "'" and not inside and not prev.isalpha() and (nxt.isupper() or nxt in "_"):
+        if ch == "'" and not inside and not prev.isalpha() and (nxt.isalpha() or nxt in "_"):
             if buf.strip(): out.append((False, buf))
             buf, inside = "", True; continue
         if ch == "'" and inside and not nxt.isalpha() and not prev.isspace():
@@ -65,7 +65,8 @@ def paragraphs(chapter, text=None):
     return [p for p in (re.sub(r"\s*\n\s*", " ", p).strip() for p in re.split(r"\n\s*\n", full[a:b])) if p and not set(p) <= set("* ")]
 
 
-def build_turns(chapter, paras, overrides):
+def build_turns(chapter, paras, overrides, nested_over=None):
+    nested_over = {int(k): list(v) for k, v in (nested_over or {}).items()}
     cast = CHAPTERS[chapter][2]
     turns, dropped, guessed = [], {}, set()
     open_spk, last_q = None, None
@@ -107,7 +108,10 @@ def build_turns(chapter, paras, overrides):
                 before = pieces[j - 1][1][-60:] if j and not pieces[j - 1][0] else ""
                 ns = tag_speaker(after, narrator) or tag_speaker(before, narrator)
                 g = False
-                if ns is None:
+                if nested_over.get(p): ns = nested_over[p].pop(0)
+                elif ns is None and chapter != "nastenkas_history":
+                    ns = narrator                                   # a quote within a speech, said by the speaker
+                elif ns is None:
                     if re.search(r",\s*(grandmother|granny)\b|\bgrandmother[?!.]", txt, re.I): ns = narrator
                     elif re.search(r"\bNastenka\b", txt): ns = 3 if "grandmother" in t.lower() and last_nested != 3 else (last_nested if last_nested not in (None, narrator) else 3)
                     elif last_nested is not None: ns = narrator if last_nested != narrator else (last_q_nested if (last_q_nested := getattr(build_turns, "_lqn", None)) else 3)
@@ -117,8 +121,15 @@ def build_turns(chapter, paras, overrides):
                 turns.append([ns, "say", clean(txt).strip(" ,"), p, g]); last_nested = ns
         if len(parts) > 1: last_q = spk
         open_spk = spk if (t.count('"') % 2 == 1) else None
+    # a quote interrupted only by a speech tag ("'Listen,' he said, 'you are a good girl'") becomes one line again
+    merged = []
+    for t in turns:
+        if not re.search(r"\w", t[2]): continue
+        if merged and t[0] == merged[-1][0] and t[3] == merged[-1][3] and t[1] == merged[-1][1] and t[2][:1].islower():
+            merged[-1][2] = merged[-1][2].rstrip(" .,;") + ", " + t[2]; continue
+        merged.append(t)
     fix = lambda x: x if x.endswith((".", "!", "?", "...")) else x.rstrip(",;: ") + "."
-    return [[s, k, fix(x), p, g] for s, k, x, p, g in turns if re.search(r"\w", x)], dropped
+    return [[s, k, fix(x), p, g] for s, k, x, p, g in merged], dropped
 
 
 def build(chapter):
@@ -126,7 +137,10 @@ def build(chapter):
     fx = json.load(open(fx_path)) if os.path.exists(fx_path) else {"speaker": {}, "replace": [], "global": [[" ... ", "... "], [" ...", "..."]]}
     if not os.path.exists(fx_path): json.dump(fx, open(fx_path, "w"), indent=1)
     paras = paragraphs(chapter)
-    turns, dropped = build_turns(chapter, paras, fx.get("speaker", {}))
+    for p, old, new in fx.get("book", []):                      # fixes to the book text itself (e.g. a missing quote mark)
+        if old not in paras[p]: raise SystemExit(f"book fix no longer matches: ¶{p} {old!r}")
+        paras[p] = paras[p].replace(old, new)
+    turns, dropped = build_turns(chapter, paras, fx.get("speaker", {}), fx.get("nested", {}))
     for p, old, new in fx.get("replace", []):
         hit = [t for t in turns if t[3] == p and old in t[2]]
         if not hit: raise SystemExit(f"fix no longer matches: ¶{p} {old!r}")

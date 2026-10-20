@@ -2,11 +2,11 @@
  {
   "id": "nastenkas_history_000",
   "p": 0,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Half my story you know already, that is, you know that I have an old grandmother...",
   "pause_before": 0.0,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "nastenkas_history_001",
@@ -14,7 +14,7 @@
   "speaker": 1,
   "kind": "say",
   "text": "If the other half is as brief as that...",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
@@ -24,7 +24,7 @@
   "kind": "say",
   "text": "Be quiet and listen. First of all you must agree not to interrupt me, or else, perhaps I shall get in a muddle! Come, listen quietly.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "nastenkas_history_003",
@@ -110,25 +110,25 @@
  {
   "id": "nastenkas_history_012",
   "p": 5,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "I tell you what, don't you laugh at grandmother. I laugh because it's funny... What can I do, since grandmother is like that; but yet I am fond of her in a way. Oh, well, I did catch it that time.",
-  "pause_before": 1.0,
-  "guessed": true
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
   "id": "nastenkas_history_013",
   "p": 5,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "I had to sit down in my place at once, and after that I was not allowed to stir.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "nastenkas_history_014",
   "p": 6,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Oh, I forgot to tell you that our house belongs to us, that is to grandmother; it is a little wooden house with three windows as old as grandmother herself, with a little upper storey; well, there moved into our upper storey a new lodger.",
   "pause_before": 1.0,
@@ -140,7 +140,7 @@
   "speaker": 1,
   "kind": "say",
   "text": "Then you had an old lodger.",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
@@ -148,7 +148,7 @@
   "p": 8,
   "speaker": 2,
   "kind": "say",
-  "text": "Yes, of course.",
+  "text": "Yes, of course, and one who knew how to hold his tongue better than you do. In fact, he hardly ever used his tongue at all.",
   "pause_before": 0.6,
   "guessed": false
  },
@@ -157,21 +157,12 @@
   "p": 8,
   "speaker": 2,
   "kind": "say",
-  "text": "and one who knew how to hold his tongue better than you do. In fact, he hardly ever used his tongue at all.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_018",
-  "p": 8,
-  "speaker": 2,
-  "kind": "say",
   "text": "He was a dumb, blind, lame, dried-up little old man, so that at last he could not go on living, he died; so then we had to find a new lodger, for we could not live without a lodger, the rent, together with grandmother's pension, is almost all we have.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_019",
+  "id": "nastenkas_history_018",
   "p": 8,
   "speaker": 2,
   "kind": "say",
@@ -180,7 +171,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_020",
+  "id": "nastenkas_history_019",
   "p": 8,
   "speaker": 2,
   "kind": "say",
@@ -189,7 +180,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_021",
+  "id": "nastenkas_history_020",
   "p": 8,
   "speaker": 2,
   "kind": "say",
@@ -198,7 +189,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_022",
+  "id": "nastenkas_history_021",
   "p": 9,
   "speaker": 3,
   "kind": "say",
@@ -207,7 +198,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_023",
+  "id": "nastenkas_history_022",
   "p": 10,
   "speaker": 2,
   "kind": "say",
@@ -216,7 +207,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_024",
+  "id": "nastenkas_history_023",
   "p": 10,
   "speaker": 2,
   "kind": "say",
@@ -225,48 +216,57 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_025",
+  "id": "nastenkas_history_024",
   "p": 10,
-  "speaker": 2,
+  "speaker": 3,
   "kind": "say",
   "text": "Oh, what a nuisance, what a nuisance! I tell you this, grandchild, that you may not be looking after him. What times these are! Why a paltry lodger like this, and he must be pleasant looking too; it was very different in the old days!",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_026",
+  "id": "nastenkas_history_025",
   "p": 11,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Grandmother was always regretting the old days, she was younger in old days, and the sun was warmer in old days, and cream did not turn so sour in old days, it was always the old days!",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_026",
+  "p": 11,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I would sit still and hold my tongue and think to myself: why did grandmother suggest it to me? Why did she ask whether the lodger was young and good-looking?",
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
   "id": "nastenkas_history_027",
   "p": 11,
-  "speaker": 1,
-  "kind": "say",
-  "text": "I would sit still and hold my tongue and think to myself: why did grandmother suggest it to me? Why did she ask whether the lodger was young and good-looking?",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_028",
-  "p": 11,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "But that was all, I just thought it, began counting my stitches again, went on knitting my stocking, and forgot all about it.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_028",
+  "p": 12,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Well, one morning the lodger came in to see us; he asked about a promise to paper his rooms. One thing led to another. Grandmother was talkative, and she said.",
+  "pause_before": 1.0,
+  "guessed": false
  },
  {
   "id": "nastenkas_history_029",
   "p": 12,
-  "speaker": 1,
+  "speaker": 3,
   "kind": "say",
-  "text": "Well, one morning the lodger came in to see us; he asked about a promise to paper his rooms. One thing led to another. Grandmother was talkative, and she said.",
-  "pause_before": 1.0,
+  "text": "Go, Nastenka, into my bedroom and bring me my reckoner.",
+  "pause_before": 0.5,
   "guessed": false
  },
  {
@@ -274,129 +274,111 @@
   "p": 12,
   "speaker": 2,
   "kind": "say",
-  "text": "Go, Nastenka, into my bedroom and bring me my reckoner.",
+  "text": "I jumped up at once; I blushed all over, I don't know why, and forgot I was sitting pinned to grandmother; instead of quietly undoing the pin, so that the lodger should not see, I jumped so that grandmother's chair moved.",
   "pause_before": 0.5,
   "guessed": false
  },
  {
   "id": "nastenkas_history_031",
   "p": 12,
-  "speaker": 1,
-  "kind": "say",
-  "text": "I jumped up at once; I blushed all over, I don't know why, and forgot I was sitting pinned to grandmother; instead of quietly undoing the pin, so that the lodger should not see, I jumped so that grandmother's chair moved.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_032",
-  "p": 12,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "When I saw that the lodger knew all about me now, I blushed, stood still as though I had been shot, and suddenly began to cry, I felt so ashamed and miserable at that minute, that I didn't know where to look! Grandmother called out.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_033",
+  "id": "nastenkas_history_032",
   "p": 12,
-  "speaker": 1,
+  "speaker": 3,
   "kind": "say",
   "text": "What are you waiting for?",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_034",
+  "id": "nastenkas_history_033",
   "p": 12,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
-  "text": "and I went on worse than ever. When the lodger saw, saw that I was ashamed on his account, he bowed and went away at once!",
+  "text": "worse than ever. When the lodger saw, saw that I was ashamed on his account, he bowed and went away at once!",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_035",
+  "id": "nastenkas_history_034",
   "p": 13,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "After that I felt ready to die at the least sound in the passage.",
   "pause_before": 1.0,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_036",
+  "id": "nastenkas_history_035",
   "p": 13,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "It's the lodger.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_037",
+  "id": "nastenkas_history_036",
   "p": 13,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "I kept thinking; I stealthily undid the pin in case. But it always turned out not to be, he never came.",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_038",
+  "id": "nastenkas_history_037",
   "p": 13,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "A fortnight passed; the lodger sent word through Fyokla that he had a great number of French books, and that they were all good books that I might read, so would not grandmother like me to read them that I might not be dull?",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_039",
+  "id": "nastenkas_history_038",
   "p": 13,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Grandmother agreed with gratitude, but kept asking if they were moral books, for if the books were immoral it would be out of the question, one would learn evil from them.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_040",
+  "id": "nastenkas_history_039",
   "p": 14,
   "speaker": 2,
   "kind": "say",
   "text": "And what should I learn, grandmother? What is there written in them?",
+  "pause_before": 1.0,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_040",
+  "p": 15,
+  "speaker": 3,
+  "kind": "say",
+  "text": "Ah, what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents’ houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "nastenkas_history_041",
   "p": 15,
   "speaker": 3,
   "kind": "say",
-  "text": "Ah.",
+  "text": "I read a great many books, and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
   "id": "nastenkas_history_042",
-  "p": 15,
-  "speaker": 2,
-  "kind": "say",
-  "text": "what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents' houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_043",
-  "p": 15,
-  "speaker": 2,
-  "kind": "say",
-  "text": "I read a great many books,' said grandmother, 'and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka,' said she.",
-  "pause_before": 0.6,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_044",
   "p": 15,
   "speaker": 3,
   "kind": "say",
@@ -405,70 +387,70 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_045",
+  "id": "nastenkas_history_043",
   "p": 16,
   "speaker": 2,
   "kind": "say",
   "text": "They are all Walter Scott's novels, grandmother.",
   "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_046",
-  "p": 17,
-  "speaker": 2,
-  "kind": "say",
-  "text": "Walter Scott's novels! But stay, isn't there some trick about it? Look, hasn't he stuck a love-letter among them?",
-  "pause_before": 1.0,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_047",
-  "p": 18,
-  "speaker": 2,
-  "kind": "say",
-  "text": "No, grandmother.",
-  "pause_before": 1.0,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_048",
-  "p": 19,
-  "speaker": 2,
+  "id": "nastenkas_history_044",
+  "p": 17,
+  "speaker": 3,
   "kind": "say",
-  "text": "But look under the binding; they sometimes stuff it under the bindings, the rascals!",
-  "pause_before": 1.0,
-  "guessed": true
+  "text": "Walter Scott's novels! But stay, isn't there some trick about it? Look, hasn't he stuck a love-letter among them?",
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_049",
+  "id": "nastenkas_history_045",
+  "p": 18,
+  "speaker": 2,
+  "kind": "say",
+  "text": "No, grandmother, there isn't a love-letter.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_046",
+  "p": 19,
+  "speaker": 3,
+  "kind": "say",
+  "text": "But look under the binding; they sometimes stuff it under the bindings, the rascals!",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_047",
   "p": 20,
   "speaker": 2,
   "kind": "say",
   "text": "No, grandmother, there is nothing under the binding.",
-  "pause_before": 1.0,
-  "guessed": true
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_050",
+  "id": "nastenkas_history_048",
   "p": 21,
-  "speaker": 2,
+  "speaker": 3,
   "kind": "say",
   "text": "Well, that's all right.",
-  "pause_before": 1.0,
-  "guessed": true
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_051",
+  "id": "nastenkas_history_049",
   "p": 22,
   "speaker": 2,
   "kind": "say",
   "text": "So we began reading Walter Scott, and in a month or so we had read almost half. Then he sent us more and more.",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_052",
+  "id": "nastenkas_history_050",
   "p": 22,
   "speaker": 2,
   "kind": "say",
@@ -477,7 +459,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_053",
+  "id": "nastenkas_history_051",
   "p": 23,
   "speaker": 2,
   "kind": "say",
@@ -486,16 +468,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_054",
+  "id": "nastenkas_history_052",
   "p": 23,
-  "speaker": 2,
+  "speaker": 4,
   "kind": "say",
   "text": "Well, have you read the books?",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_055",
+  "id": "nastenkas_history_053",
   "p": 23,
   "speaker": 4,
   "kind": "say",
@@ -504,25 +486,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_056",
-  "p": 23,
-  "speaker": 4,
-  "kind": "say",
-  "text": "Ivanhoe, and Pushkin best of all.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_057",
+  "id": "nastenkas_history_054",
   "p": 23,
   "speaker": 2,
   "kind": "say",
-  "text": "and so our talk ended for that time.",
+  "text": "Ivanhoe, and Pushkin best of all, and so our talk ended for that time.",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_058",
+  "id": "nastenkas_history_055",
   "p": 24,
   "speaker": 2,
   "kind": "say",
@@ -531,7 +504,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_059",
+  "id": "nastenkas_history_056",
   "p": 24,
   "speaker": 4,
   "kind": "say",
@@ -540,16 +513,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_060",
+  "id": "nastenkas_history_057",
   "p": 25,
   "speaker": 4,
   "kind": "say",
-  "text": "Aren't you dull.",
+  "text": "Aren't you dull, sitting all day with your grandmother?",
   "pause_before": 1.0,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_061",
+  "id": "nastenkas_history_058",
   "p": 26,
   "speaker": 2,
   "kind": "say",
@@ -558,61 +531,43 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_062",
+  "id": "nastenkas_history_059",
   "p": 27,
   "speaker": 4,
   "kind": "say",
-  "text": "Listen.",
+  "text": "Listen, you are a good girl. Excuse my speaking to you like that, but I assure you that I wish for your welfare quite as much as your grandmother. Have you no friends that you could go and visit?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_060",
+  "p": 28,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I hadn't any, that I had had no friend but Mashenka, and she had gone away to Pskov.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_061",
+  "p": 29,
+  "speaker": 4,
+  "kind": "say",
+  "text": "Listen, would you like to go to the theatre with me?",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_062",
+  "p": 30,
+  "speaker": 2,
+  "kind": "say",
+  "text": "To the theatre. What about grandmother?",
   "pause_before": 0.6,
   "guessed": false
  },
  {
   "id": "nastenkas_history_063",
-  "p": 27,
-  "speaker": 2,
-  "kind": "say",
-  "text": "you are a good girl. Excuse my speaking to you like that, but I assure you that I wish for your welfare quite as much as your grandmother. Have you no friends that you could go and visit?'.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_064",
-  "p": 28,
-  "speaker": 2,
-  "kind": "say",
-  "text": "I hadn't any, that I had had no friend but Mashenka, and she had gone away to Pskov.",
-  "pause_before": 1.0,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_065",
-  "p": 29,
-  "speaker": 4,
-  "kind": "say",
-  "text": "Listen.",
-  "pause_before": 0.6,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_066",
-  "p": 29,
-  "speaker": 2,
-  "kind": "say",
-  "text": "would you like to go to the theatre with me?'.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_067",
-  "p": 30,
-  "speaker": 2,
-  "kind": "say",
-  "text": "To the theatre. What about grandmother?",
-  "pause_before": 1.0,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_068",
   "p": 31,
   "speaker": 4,
   "kind": "say",
@@ -621,7 +576,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_069",
+  "id": "nastenkas_history_064",
   "p": 32,
   "speaker": 2,
   "kind": "say",
@@ -630,7 +585,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_070",
+  "id": "nastenkas_history_065",
   "p": 32,
   "speaker": 2,
   "kind": "say",
@@ -639,7 +594,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_071",
+  "id": "nastenkas_history_066",
   "p": 33,
   "speaker": 4,
   "kind": "say",
@@ -648,7 +603,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_072",
+  "id": "nastenkas_history_067",
   "p": 34,
   "speaker": 2,
   "kind": "say",
@@ -657,34 +612,25 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_073",
+  "id": "nastenkas_history_068",
   "p": 34,
-  "speaker": 2,
+  "speaker": 4,
   "kind": "say",
   "text": "I have taken a box at the opera for this evening; they are giving The Barber of Seville. My friends meant to go, but afterwards refused, so the ticket is left on my hands.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_074",
+  "id": "nastenkas_history_069",
   "p": 34,
   "speaker": 3,
   "kind": "say",
-  "text": "The Barber of Seville.",
+  "text": "The Barber of Seville, why, the same they used to act in old days?",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_075",
-  "p": 34,
-  "speaker": 2,
-  "kind": "say",
-  "text": "why, the same they used to act in old days?'.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_076",
+  "id": "nastenkas_history_070",
   "p": 35,
   "speaker": 4,
   "kind": "say",
@@ -693,7 +639,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_077",
+  "id": "nastenkas_history_071",
   "p": 35,
   "speaker": 2,
   "kind": "say",
@@ -702,25 +648,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_078",
+  "id": "nastenkas_history_072",
   "p": 36,
   "speaker": 3,
   "kind": "say",
-  "text": "To be sure, I know it.",
+  "text": "To be sure, I know it, why, I took the part of Rosina myself in old days, at a private performance!",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_079",
-  "p": 36,
-  "speaker": 2,
-  "kind": "say",
-  "text": "why, I took the part of Rosina myself in old days, at a private performance!'.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_080",
+  "id": "nastenkas_history_073",
   "p": 37,
   "speaker": 4,
   "kind": "say",
@@ -729,7 +666,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_081",
+  "id": "nastenkas_history_074",
   "p": 37,
   "speaker": 4,
   "kind": "say",
@@ -738,34 +675,25 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_082",
+  "id": "nastenkas_history_075",
   "p": 38,
   "speaker": 3,
   "kind": "say",
-  "text": "By all means let us go.",
+  "text": "By all means let us go, why shouldn't we? And my Nastenka here has never been to the theatre.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_083",
-  "p": 38,
-  "speaker": 2,
-  "kind": "say",
-  "text": "why shouldn't we? And my Nastenka here has never been to the theatre.'.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_084",
+  "id": "nastenkas_history_076",
   "p": 39,
   "speaker": 2,
   "kind": "say",
   "text": "My goodness, what joy! We got ready at once, put on our best clothes, and set off.",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_085",
+  "id": "nastenkas_history_077",
   "p": 39,
   "speaker": 2,
   "kind": "say",
@@ -774,7 +702,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_086",
+  "id": "nastenkas_history_078",
   "p": 40,
   "speaker": 2,
   "kind": "say",
@@ -783,7 +711,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_087",
+  "id": "nastenkas_history_079",
   "p": 40,
   "speaker": 2,
   "kind": "say",
@@ -792,7 +720,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_088",
+  "id": "nastenkas_history_080",
   "p": 41,
   "speaker": 2,
   "kind": "say",
@@ -801,7 +729,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_089",
+  "id": "nastenkas_history_081",
   "p": 41,
   "speaker": 2,
   "kind": "say",
@@ -810,7 +738,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_090",
+  "id": "nastenkas_history_082",
   "p": 41,
   "speaker": 2,
   "kind": "say",
@@ -819,7 +747,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_091",
+  "id": "nastenkas_history_083",
   "p": 41,
   "speaker": 2,
   "kind": "say",
@@ -828,7 +756,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_092",
+  "id": "nastenkas_history_084",
   "p": 42,
   "speaker": 2,
   "kind": "say",
@@ -837,7 +765,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_093",
+  "id": "nastenkas_history_085",
   "p": 42,
   "speaker": 2,
   "kind": "say",
@@ -846,7 +774,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_094",
+  "id": "nastenkas_history_086",
   "p": 43,
   "speaker": 2,
   "kind": "say",
@@ -855,7 +783,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_095",
+  "id": "nastenkas_history_087",
   "p": 43,
   "speaker": 2,
   "kind": "say",
@@ -864,7 +792,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_096",
+  "id": "nastenkas_history_088",
   "p": 43,
   "speaker": 2,
   "kind": "say",
@@ -873,7 +801,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_097",
+  "id": "nastenkas_history_089",
   "p": 43,
   "speaker": 2,
   "kind": "say",
@@ -882,7 +810,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_098",
+  "id": "nastenkas_history_090",
   "p": 43,
   "speaker": 2,
   "kind": "say",
@@ -891,7 +819,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_099",
+  "id": "nastenkas_history_091",
   "p": 43,
   "speaker": 2,
   "kind": "say",
@@ -900,34 +828,25 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_100",
+  "id": "nastenkas_history_092",
   "p": 44,
   "speaker": 4,
   "kind": "say",
-  "text": "Listen.",
+  "text": "Listen, listen, Nastenka, I can't do anything; I am a poor man, for I have nothing, not even a decent berth. How could we live, if I were to marry you?",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_101",
-  "p": 44,
-  "speaker": 2,
-  "kind": "say",
-  "text": "listen, Nastenka, I can't do anything; I am a poor man, for I have nothing, not even a decent berth. How could we live, if I were to marry you?'.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_102",
+  "id": "nastenkas_history_093",
   "p": 45,
   "speaker": 2,
   "kind": "say",
   "text": "We talked a long time; but at last I got quite frantic, I said I could not go on living with grandmother, that I should run away from her, that I did not want to be pinned to her, and that I would go to Moscow if he liked, because I could not live without him.",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_103",
+  "id": "nastenkas_history_094",
   "p": 45,
   "speaker": 2,
   "kind": "say",
@@ -936,7 +855,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_104",
+  "id": "nastenkas_history_095",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -945,43 +864,43 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_105",
+  "id": "nastenkas_history_096",
   "p": 47,
-  "speaker": 3,
+  "speaker": 4,
   "kind": "say",
   "text": "Listen, my dear good Nastenka, listen; I swear to you that if I am ever in a position to marry, you shall make my happiness. I assure you that now you are the only one who could make me happy.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_106",
+  "id": "nastenkas_history_097",
   "p": 47,
-  "speaker": 3,
+  "speaker": 4,
   "kind": "say",
   "text": "Listen, I am going to Moscow and shall be there just a year; I hope to establish my position. When I come back, if you still love me, I swear that we will be happy.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_107",
+  "id": "nastenkas_history_098",
   "p": 47,
-  "speaker": 3,
+  "speaker": 4,
   "kind": "say",
   "text": "Now it is impossible, I am not able, I have not the right to promise anything.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_108",
+  "id": "nastenkas_history_099",
   "p": 47,
-  "speaker": 3,
+  "speaker": 4,
   "kind": "say",
   "text": "Well, I repeat, if it is not within a year it will certainly be some time; that is, of course, if you do not prefer any one else, for I cannot and dare not bind you by any sort of promise.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_109",
+  "id": "nastenkas_history_100",
   "p": 48,
   "speaker": 2,
   "kind": "say",
@@ -990,7 +909,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_110",
+  "id": "nastenkas_history_101",
   "p": 48,
   "speaker": 2,
   "kind": "say",
@@ -999,7 +918,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_111",
+  "id": "nastenkas_history_102",
   "p": 49,
   "speaker": 1,
   "kind": "say",
@@ -1008,7 +927,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_112",
+  "id": "nastenkas_history_103",
   "p": 50,
   "speaker": 2,
   "kind": "say",
@@ -1017,7 +936,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_113",
+  "id": "nastenkas_history_104",
   "p": 50,
   "speaker": 2,
   "kind": "say",
@@ -1026,7 +945,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_114",
+  "id": "nastenkas_history_105",
   "p": 51,
   "speaker": 1,
   "kind": "narr",
@@ -1035,7 +954,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_115",
+  "id": "nastenkas_history_106",
   "p": 52,
   "speaker": 1,
   "kind": "say",
@@ -1044,7 +963,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_116",
+  "id": "nastenkas_history_107",
   "p": 52,
   "speaker": 1,
   "kind": "say",
@@ -1053,7 +972,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_117",
+  "id": "nastenkas_history_108",
   "p": 53,
   "speaker": 2,
   "kind": "say",
@@ -1062,7 +981,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_118",
+  "id": "nastenkas_history_109",
   "p": 53,
   "speaker": 2,
   "kind": "say",
@@ -1071,7 +990,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_119",
+  "id": "nastenkas_history_110",
   "p": 53,
   "speaker": 2,
   "kind": "say",
@@ -1080,7 +999,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_120",
+  "id": "nastenkas_history_111",
   "p": 53,
   "speaker": 2,
   "kind": "say",
@@ -1089,7 +1008,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_121",
+  "id": "nastenkas_history_112",
   "p": 53,
   "speaker": 2,
   "kind": "say",
@@ -1098,7 +1017,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_122",
+  "id": "nastenkas_history_113",
   "p": 55,
   "speaker": 1,
   "kind": "say",
@@ -1107,7 +1026,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_123",
+  "id": "nastenkas_history_114",
   "p": 55,
   "speaker": 1,
   "kind": "narr",
@@ -1116,7 +1035,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_124",
+  "id": "nastenkas_history_115",
   "p": 55,
   "speaker": 1,
   "kind": "say",
@@ -1125,7 +1044,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_125",
+  "id": "nastenkas_history_116",
   "p": 56,
   "speaker": 2,
   "kind": "say",
@@ -1134,25 +1053,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_126",
+  "id": "nastenkas_history_117",
   "p": 57,
   "speaker": 1,
   "kind": "say",
-  "text": "No, of course not.",
+  "text": "No, of course not, but I tell you what, write a letter.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_127",
-  "p": 57,
-  "speaker": 1,
-  "kind": "say",
-  "text": "but I tell you what, write a letter.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_128",
+  "id": "nastenkas_history_118",
   "p": 58,
   "speaker": 2,
   "kind": "say",
@@ -1161,7 +1071,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_129",
+  "id": "nastenkas_history_119",
   "p": 58,
   "speaker": 1,
   "kind": "narr",
@@ -1170,7 +1080,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_130",
+  "id": "nastenkas_history_120",
   "p": 59,
   "speaker": 1,
   "kind": "say",
@@ -1179,7 +1089,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_131",
+  "id": "nastenkas_history_121",
   "p": 59,
   "speaker": 1,
   "kind": "say",
@@ -1188,34 +1098,25 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_132",
+  "id": "nastenkas_history_122",
   "p": 60,
   "speaker": 2,
   "kind": "say",
   "text": "I can't. I can't! It would seem as though I were forcing myself on him...",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_133",
+  "id": "nastenkas_history_123",
   "p": 61,
   "speaker": 1,
   "kind": "say",
-  "text": "Ah, my good little Nastenka.",
+  "text": "Ah, my good little Nastenka, no, no, you have a right to, in fact, because he made you a promise. Besides, I can see from everything that he is a man of delicate feeling; that he behaved very well.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_134",
-  "p": 61,
-  "speaker": 1,
-  "kind": "say",
-  "text": "no, no, you have a right to, in fact, because he made you a promise. Besides, I can see from everything that he is a man of delicate feeling; that he behaved very well.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "nastenkas_history_135",
+  "id": "nastenkas_history_124",
   "p": 61,
   "speaker": 1,
   "kind": "narr",
@@ -1224,7 +1125,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_136",
+  "id": "nastenkas_history_125",
   "p": 61,
   "speaker": 1,
   "kind": "say",
@@ -1233,7 +1134,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_137",
+  "id": "nastenkas_history_126",
   "p": 61,
   "speaker": 1,
   "kind": "say",
@@ -1242,151 +1143,151 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_138",
+  "id": "nastenkas_history_127",
   "p": 62,
   "speaker": 2,
   "kind": "say",
   "text": "Listen; how would you write?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_139",
+  "id": "nastenkas_history_128",
   "p": 63,
   "speaker": 1,
   "kind": "say",
   "text": "Write what?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_140",
+  "id": "nastenkas_history_129",
   "p": 64,
   "speaker": 2,
   "kind": "say",
   "text": "This letter.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_141",
+  "id": "nastenkas_history_130",
   "p": 65,
   "speaker": 1,
   "kind": "say",
   "text": "I tell you how I would write.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_142",
+  "id": "nastenkas_history_131",
   "p": 65,
   "speaker": 1,
   "kind": "say",
   "text": "Dear Sir.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_143",
+  "id": "nastenkas_history_132",
   "p": 66,
   "speaker": 2,
   "kind": "say",
   "text": "Must I really begin like that.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_144",
+  "id": "nastenkas_history_133",
   "p": 66,
   "speaker": 2,
   "kind": "say",
   "text": "Dear Sir.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_145",
+  "id": "nastenkas_history_134",
   "p": 67,
   "speaker": 1,
   "kind": "say",
   "text": "You certainly must! Though, after all, I don't know, I imagine...",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_146",
+  "id": "nastenkas_history_135",
   "p": 68,
   "speaker": 2,
   "kind": "say",
   "text": "Well, well, what next?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_147",
+  "id": "nastenkas_history_136",
   "p": 69,
   "speaker": 1,
   "kind": "say",
-  "text": "Dear Sir,, I must apologize for.",
+  "text": "Dear Sir, I must apologize for.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_148",
+  "id": "nastenkas_history_137",
   "p": 69,
   "speaker": 1,
   "kind": "say",
   "text": "But, no, there's no need to apologize; the fact itself justifies everything. Write simply.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_149",
+  "id": "nastenkas_history_138",
   "p": 70,
   "speaker": 1,
   "kind": "say",
   "text": "I am writing to you. Forgive me my impatience; but I have been happy for a whole year in hope; am I to blame for being unable to endure a day of doubt now? Now that you have come, perhaps you have changed your mind.",
   "pause_before": 1.0,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_150",
+  "id": "nastenkas_history_139",
   "p": 70,
   "speaker": 1,
   "kind": "say",
   "text": "If so, this letter is to tell you that I do not repine, nor blame you. I do not blame you because I have no power over your heart, such is my fate!",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_151",
+  "id": "nastenkas_history_140",
   "p": 71,
   "speaker": 1,
   "kind": "say",
   "text": "You are an honourable man. You will not smile or be vexed at these impatient lines.",
   "pause_before": 1.0,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_152",
+  "id": "nastenkas_history_141",
   "p": 71,
   "speaker": 1,
   "kind": "say",
   "text": "Remember they are written by a poor girl; that she is alone; that she has no one to direct her, no one to advise her, and that she herself could never control her heart.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_153",
+  "id": "nastenkas_history_142",
   "p": 71,
   "speaker": 1,
   "kind": "say",
   "text": "But forgive me that a doubt has stolen, if only for one instant, into my heart. You are not capable of insulting, even in thought, her who so loved and so loves you.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_154",
+  "id": "nastenkas_history_143",
   "p": 72,
   "speaker": 2,
   "kind": "say",
@@ -1395,7 +1296,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_155",
+  "id": "nastenkas_history_144",
   "p": 72,
   "speaker": 2,
   "kind": "say",
@@ -1404,7 +1305,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_156",
+  "id": "nastenkas_history_145",
   "p": 73,
   "speaker": 1,
   "kind": "say",
@@ -1413,7 +1314,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_157",
+  "id": "nastenkas_history_146",
   "p": 73,
   "speaker": 1,
   "kind": "say",
@@ -1422,79 +1323,70 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_158",
+  "id": "nastenkas_history_147",
   "p": 74,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Ah, Nastenka! Why, one thanks some people for being alive at the same time with one; I thank you for having met me, for my being able to remember you all my life!",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_159",
-  "p": 75,
-  "speaker": 1,
-  "kind": "say",
-  "text": "Well, enough, enough!",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_160",
-  "p": 75,
-  "speaker": 1,
-  "kind": "say",
-  "text": "But now I tell you what, listen: we made an agreement then that as soon as he arrived he would let me know, by leaving a letter with some good simple people of my acquaintance who know nothing about it; or, if it were impossible to write a letter to me, for a letter does not always tell everything, he would be here at ten o'clock on the day he arrived, where we had arranged to meet.",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_161",
-  "p": 75,
-  "speaker": 1,
-  "kind": "say",
-  "text": "I know he has arrived already; but now it's the third day, and there's no sign of him and no letter. It's impossible for me to get away from grandmother in the morning.",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_162",
-  "p": 75,
-  "speaker": 1,
-  "kind": "say",
-  "text": "Give my letter tomorrow to those kind people I spoke to you about: they will send it on to him, and if there is an answer you bring it tomorrow at ten o'clock.",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_163",
-  "p": 76,
-  "speaker": 2,
-  "kind": "say",
-  "text": "But the letter, the letter! You see, you must write the letter first! So perhaps it must all be the day after tomorrow.",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "nastenkas_history_164",
-  "p": 77,
-  "speaker": 2,
-  "kind": "say",
-  "text": "The letter...",
   "pause_before": 1.0,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_165",
-  "p": 77,
+  "id": "nastenkas_history_148",
+  "p": 75,
   "speaker": 2,
   "kind": "say",
-  "text": "the letter... but...",
-  "pause_before": 0.5,
+  "text": "Well, enough, enough!",
+  "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "nastenkas_history_166",
+  "id": "nastenkas_history_149",
+  "p": 75,
+  "speaker": 2,
+  "kind": "say",
+  "text": "But now I tell you what, listen: we made an agreement then that as soon as he arrived he would let me know, by leaving a letter with some good simple people of my acquaintance who know nothing about it; or, if it were impossible to write a letter to me, for a letter does not always tell everything, he would be here at ten o'clock on the day he arrived, where we had arranged to meet.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_150",
+  "p": 75,
+  "speaker": 2,
+  "kind": "say",
+  "text": "I know he has arrived already; but now it's the third day, and there's no sign of him and no letter. It's impossible for me to get away from grandmother in the morning.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_151",
+  "p": 75,
+  "speaker": 2,
+  "kind": "say",
+  "text": "Give my letter tomorrow to those kind people I spoke to you about: they will send it on to him, and if there is an answer you bring it tomorrow at ten o'clock.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_152",
+  "p": 76,
+  "speaker": 1,
+  "kind": "say",
+  "text": "But the letter, the letter! You see, you must write the letter first! So perhaps it must all be the day after tomorrow.",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_153",
+  "p": 77,
+  "speaker": 2,
+  "kind": "say",
+  "text": "The letter, the letter... but...",
+  "pause_before": 0.6,
+  "guessed": false
+ },
+ {
+  "id": "nastenkas_history_154",
   "p": 78,
   "speaker": 1,
   "kind": "narr",
@@ -1503,7 +1395,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_167",
+  "id": "nastenkas_history_155",
   "p": 78,
   "speaker": 1,
   "kind": "narr",
@@ -1512,7 +1404,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_168",
+  "id": "nastenkas_history_156",
   "p": 79,
   "speaker": 1,
   "kind": "say",
@@ -1521,16 +1413,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_169",
+  "id": "nastenkas_history_157",
   "p": 80,
   "speaker": 2,
   "kind": "say",
   "text": "Rosina!",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_170",
+  "id": "nastenkas_history_158",
   "p": 80,
   "speaker": 1,
   "kind": "narr",
@@ -1539,7 +1431,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_171",
+  "id": "nastenkas_history_159",
   "p": 81,
   "speaker": 2,
   "kind": "say",
@@ -1548,7 +1440,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_172",
+  "id": "nastenkas_history_160",
   "p": 81,
   "speaker": 2,
   "kind": "say",
@@ -1557,7 +1449,7 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_173",
+  "id": "nastenkas_history_161",
   "p": 82,
   "speaker": 1,
   "kind": "narr",
@@ -1566,16 +1458,16 @@
   "guessed": false
  },
  {
-  "id": "nastenkas_history_174",
+  "id": "nastenkas_history_162",
   "p": 83,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Till tomorrow! till tomorrow!",
-  "pause_before": 1.0,
-  "guessed": true
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
-  "id": "nastenkas_history_175",
+  "id": "nastenkas_history_163",
   "p": 83,
   "speaker": 1,
   "kind": "narr",

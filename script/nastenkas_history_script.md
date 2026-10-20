@@ -1,6 +1,6 @@
 # White Nights — Nastenkas History: performance script
 
-176 lines. **(guessed)** = speaker worked out by alternation, please check. Corrections go in `script/nastenkas_history_fixes.json` (`speaker`: paragraph → 1 Dreamer, 2 Nastenka, 3 Grandmother, 4 Lodger, 5 Matrona).
+164 lines. **(guessed)** = speaker worked out by alternation, please check. Corrections go in `script/nastenkas_history_fixes.json` (`speaker`: paragraph → 1 Dreamer, 2 Nastenka, 3 Grandmother, 4 Lodger, 5 Matrona).
 
 ---
 
@@ -8,13 +8,13 @@
 
 > **Book:** "Half my story you know already--that is, you know that I have an old grandmother...."
 
-- `⏸ 0.00s` **Dreamer (guessed):** Half my story you know already, that is, you know that I have an old grandmother...
+- `⏸ 0.00s` **Nastenka:** Half my story you know already, that is, you know that I have an old grandmother...
 
 ### ¶1
 
 > **Book:** "If the other half is as brief as that ..." I interrupted, laughing.
 
-- `⏸ 1.00s` **Dreamer:** If the other half is as brief as that...
+- `⏸ 0.60s` **Dreamer:** If the other half is as brief as that...
 
 *Removed (not spoken):* "I interrupted, laughing"
 
@@ -22,7 +22,7 @@
 
 > **Book:** "Be quiet and listen. First of all you must agree not to interrupt me, or else, perhaps I shall get in a muddle! Come, listen quietly.
 
-- `⏸ 0.60s` **Nastenka (guessed):** Be quiet and listen. First of all you must agree not to interrupt me, or else, perhaps I shall get in a muddle! Come, listen quietly.
+- `⏸ 0.60s` **Nastenka:** Be quiet and listen. First of all you must agree not to interrupt me, or else, perhaps I shall get in a muddle! Come, listen quietly.
 
 ### ¶3
 
@@ -47,20 +47,20 @@
 
 > **Book:** "I tell you what, don't you laugh at grandmother. I laugh because it's funny.... What can I do, since grandmother is like that; but yet I am fond of her in a way. Oh, well, I did catch it that time. I had to sit down in my place at once, and after that I was not allowed to stir.
 
-- `⏸ 1.00s` **Dreamer (guessed):** I tell you what, don't you laugh at grandmother. I laugh because it's funny... What can I do, since grandmother is like that; but yet I am fond of her in a way. Oh, well, I did catch it that time.
-- `⏸ 0.60s` **Dreamer (guessed):** I had to sit down in my place at once, and after that I was not allowed to stir.
+- `⏸ 0.60s` **Nastenka:** I tell you what, don't you laugh at grandmother. I laugh because it's funny... What can I do, since grandmother is like that; but yet I am fond of her in a way. Oh, well, I did catch it that time.
+- `⏸ 0.60s` **Nastenka:** I had to sit down in my place at once, and after that I was not allowed to stir.
 
 ### ¶6
 
 > **Book:** "Oh, I forgot to tell you that our house belongs to us, that is to grandmother; it is a little wooden house with three windows as old as grandmother herself, with a little upper storey; well, there moved into our upper storey a new lodger."
 
-- `⏸ 1.00s` **Dreamer:** Oh, I forgot to tell you that our house belongs to us, that is to grandmother; it is a little wooden house with three windows as old as grandmother herself, with a little upper storey; well, there moved into our upper storey a new lodger.
+- `⏸ 1.00s` **Nastenka:** Oh, I forgot to tell you that our house belongs to us, that is to grandmother; it is a little wooden house with three windows as old as grandmother herself, with a little upper storey; well, there moved into our upper storey a new lodger.
 
 ### ¶7
 
 > **Book:** "Then you had an old lodger," I observed casually.
 
-- `⏸ 1.00s` **Dreamer:** Then you had an old lodger.
+- `⏸ 0.60s` **Dreamer:** Then you had an old lodger.
 
 *Removed (not spoken):* "I observed casually"
 
@@ -68,8 +68,7 @@
 
 > **Book:** "Yes, of course," answered Nastenka, "and one who knew how to hold his tongue better than you do. In fact, he hardly ever used his tongue at all. He was a dumb, blind, lame, dried-up little old man, so that at last he could not go on living, he died; so then we had to find a new lodger, for we could not live without a lodger--the rent, together with grandmother's pension, is almost all we have. But the new lodger, as luck would have it, was a young man, a stranger not of these parts. As he did not haggle over the rent, grandmother accepted him, and only afterwards she asked me: 'Tell me, Nastenka, what is our lodger like--is he young or old?' I did not want to lie, so I told grandmother that he wasn't exactly young and that he wasn't old.
 
-- `⏸ 0.60s` **Nastenka:** Yes, of course.
-- `⏸ 0.50s` **Nastenka:** and one who knew how to hold his tongue better than you do. In fact, he hardly ever used his tongue at all.
+- `⏸ 0.60s` **Nastenka:** Yes, of course, and one who knew how to hold his tongue better than you do. In fact, he hardly ever used his tongue at all.
 - `⏸ 0.60s` **Nastenka:** He was a dumb, blind, lame, dried-up little old man, so that at last he could not go on living, he died; so then we had to find a new lodger, for we could not live without a lodger, the rent, together with grandmother's pension, is almost all we have.
 - `⏸ 0.60s` **Nastenka:** But the new lodger, as luck would have it, was a young man, a stranger not of these parts. As he did not haggle over the rent, grandmother accepted him, and only afterwards she asked me.
 - `⏸ 0.50s` **Nastenka:** Tell me, Nastenka, what is our lodger like, is he young or old?
@@ -91,7 +90,7 @@
 
 - `⏸ 0.60s` **Nastenka:** Again I did not want to tell a lie.
 - `⏸ 0.50s` **Nastenka:** Yes, he is pleasant looking, grandmother.
-- `⏸ 0.50s` **Nastenka:** Oh, what a nuisance, what a nuisance! I tell you this, grandchild, that you may not be looking after him. What times these are! Why a paltry lodger like this, and he must be pleasant looking too; it was very different in the old days!
+- `⏸ 0.50s` **Grandmother:** Oh, what a nuisance, what a nuisance! I tell you this, grandchild, that you may not be looking after him. What times these are! Why a paltry lodger like this, and he must be pleasant looking too; it was very different in the old days!
 
 *Removed (not spoken):* "I said. And grandmother said"
 
@@ -99,89 +98,90 @@
 
 > **Book:** "Grandmother was always regretting the old days--she was younger in old days, and the sun was warmer in old days, and cream did not turn so sour in old days--it was always the old days! I would sit still and hold my tongue and think to myself: why did grandmother suggest it to me? Why did she ask whether the lodger was young and good-looking? But that was all, I just thought it, began counting my stitches again, went on knitting my stocking, and forgot all about it.
 
-- `⏸ 0.60s` **Dreamer (guessed):** Grandmother was always regretting the old days, she was younger in old days, and the sun was warmer in old days, and cream did not turn so sour in old days, it was always the old days!
-- `⏸ 0.60s` **Dreamer (guessed):** I would sit still and hold my tongue and think to myself: why did grandmother suggest it to me? Why did she ask whether the lodger was young and good-looking?
-- `⏸ 0.60s` **Dreamer (guessed):** But that was all, I just thought it, began counting my stitches again, went on knitting my stocking, and forgot all about it.
+- `⏸ 0.60s` **Nastenka:** Grandmother was always regretting the old days, she was younger in old days, and the sun was warmer in old days, and cream did not turn so sour in old days, it was always the old days!
+- `⏸ 0.60s` **Nastenka:** I would sit still and hold my tongue and think to myself: why did grandmother suggest it to me? Why did she ask whether the lodger was young and good-looking?
+- `⏸ 0.60s` **Nastenka:** But that was all, I just thought it, began counting my stitches again, went on knitting my stocking, and forgot all about it.
 
 ### ¶12
 
 > **Book:** "Well, one morning the lodger came in to see us; he asked about a promise to paper his rooms. One thing led to another. Grandmother was talkative, and she said: 'Go, Nastenka, into my bedroom and bring me my reckoner.' I jumped up at once; I blushed all over, I don't know why, and forgot I was sitting pinned to grandmother; instead of quietly undoing the pin, so that the lodger should not see--I jumped so that grandmother's chair moved. When I saw that the lodger knew all about me now, I blushed, stood still as though I had been shot, and suddenly began to cry--I felt so ashamed and miserable at that minute, that I didn't know where to look! Grandmother called out, 'What are you waiting for?' and I went on worse than ever. When the lodger saw, saw that I was ashamed on his account, he bowed and went away at once!
 
-- `⏸ 1.00s` **Dreamer:** Well, one morning the lodger came in to see us; he asked about a promise to paper his rooms. One thing led to another. Grandmother was talkative, and she said.
-- `⏸ 0.50s` **Nastenka:** Go, Nastenka, into my bedroom and bring me my reckoner.
-- `⏸ 0.50s` **Dreamer:** I jumped up at once; I blushed all over, I don't know why, and forgot I was sitting pinned to grandmother; instead of quietly undoing the pin, so that the lodger should not see, I jumped so that grandmother's chair moved.
-- `⏸ 0.60s` **Dreamer:** When I saw that the lodger knew all about me now, I blushed, stood still as though I had been shot, and suddenly began to cry, I felt so ashamed and miserable at that minute, that I didn't know where to look! Grandmother called out.
-- `⏸ 0.50s` **Dreamer:** What are you waiting for?
-- `⏸ 0.50s` **Dreamer:** and I went on worse than ever. When the lodger saw, saw that I was ashamed on his account, he bowed and went away at once!
+- `⏸ 1.00s` **Nastenka:** Well, one morning the lodger came in to see us; he asked about a promise to paper his rooms. One thing led to another. Grandmother was talkative, and she said.
+- `⏸ 0.50s` **Grandmother:** Go, Nastenka, into my bedroom and bring me my reckoner.
+- `⏸ 0.50s` **Nastenka:** I jumped up at once; I blushed all over, I don't know why, and forgot I was sitting pinned to grandmother; instead of quietly undoing the pin, so that the lodger should not see, I jumped so that grandmother's chair moved.
+- `⏸ 0.60s` **Nastenka:** When I saw that the lodger knew all about me now, I blushed, stood still as though I had been shot, and suddenly began to cry, I felt so ashamed and miserable at that minute, that I didn't know where to look! Grandmother called out.
+- `⏸ 0.50s` **Grandmother:** What are you waiting for?
+- `⏸ 0.50s` **Nastenka:** worse than ever. When the lodger saw, saw that I was ashamed on his account, he bowed and went away at once!
 
 ### ¶13
 
 > **Book:** "After that I felt ready to die at the least sound in the passage. 'It's the lodger,' I kept thinking; I stealthily undid the pin in case. But it always turned out not to be, he never came. A fortnight passed; the lodger sent word through Fyokla that he had a great number of French books, and that they were all good books that I might read, so would not grandmother like me to read them that I might not be dull? Grandmother agreed with gratitude, but kept asking if they were moral books, for if the books were immoral it would be out of the question, one would learn evil from them."
 
-- `⏸ 1.00s` **Dreamer:** After that I felt ready to die at the least sound in the passage.
-- `⏸ 0.50s` **Dreamer (guessed):** It's the lodger.
-- `⏸ 0.50s` **Dreamer:** I kept thinking; I stealthily undid the pin in case. But it always turned out not to be, he never came.
-- `⏸ 0.60s` **Dreamer:** A fortnight passed; the lodger sent word through Fyokla that he had a great number of French books, and that they were all good books that I might read, so would not grandmother like me to read them that I might not be dull?
-- `⏸ 0.60s` **Dreamer:** Grandmother agreed with gratitude, but kept asking if they were moral books, for if the books were immoral it would be out of the question, one would learn evil from them.
+- `⏸ 1.00s` **Nastenka:** After that I felt ready to die at the least sound in the passage.
+- `⏸ 0.50s` **Nastenka:** It's the lodger.
+- `⏸ 0.50s` **Nastenka:** I kept thinking; I stealthily undid the pin in case. But it always turned out not to be, he never came.
+- `⏸ 0.60s` **Nastenka:** A fortnight passed; the lodger sent word through Fyokla that he had a great number of French books, and that they were all good books that I might read, so would not grandmother like me to read them that I might not be dull?
+- `⏸ 0.60s` **Nastenka:** Grandmother agreed with gratitude, but kept asking if they were moral books, for if the books were immoral it would be out of the question, one would learn evil from them.
 
 ### ¶14
 
 > **Book:** "'And what should I learn, grandmother? What is there written in them?'
 
-- `⏸ 0.60s` **Nastenka (guessed):** And what should I learn, grandmother? What is there written in them?
+- `⏸ 1.00s` **Nastenka:** And what should I learn, grandmother? What is there written in them?
 
 ### ¶15
 
-> **Book:** "'Ah,' she said, 'what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents' houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way. I read a great many books,' said grandmother, 'and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka,' said she. 'What books has he sent?'
+> **Book:** "'Ah,' she said, 'what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents’ houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way. I read a great many books,' said grandmother, 'and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka,' said she. 'What books has he sent?'
 
-- `⏸ 0.60s` **Grandmother:** Ah.
-- `⏸ 0.50s` **Nastenka:** what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents' houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way.
-- `⏸ 0.60s` **Nastenka:** I read a great many books,' said grandmother, 'and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka,' said she.
+- `⏸ 0.60s` **Grandmother:** Ah, what's described in them, is how young men seduce virtuous girls; how, on the excuse that they want to marry them, they carry them off from their parents’ houses; how afterwards they leave these unhappy girls to their fate, and they perish in the most pitiful way.
+- `⏸ 0.60s` **Grandmother:** I read a great many books, and it is all so well described that one sits up all night and reads them on the sly. So mind you don't read them, Nastenka.
 - `⏸ 0.50s` **Grandmother:** What books has he sent?
+
+*Removed (not spoken):* "she said" · "said grandmother" · "said she."
 
 ### ¶16
 
 > **Book:** "'They are all Walter Scott's novels, grandmother.'
 
-- `⏸ 0.60s` **Nastenka (guessed):** They are all Walter Scott's novels, grandmother.
+- `⏸ 0.60s` **Nastenka:** They are all Walter Scott's novels, grandmother.
 
 ### ¶17
 
 > **Book:** "'Walter Scott's novels! But stay, isn't there some trick about it? Look, hasn't he stuck a love-letter among them?'
 
-- `⏸ 1.00s` **Nastenka (guessed):** Walter Scott's novels! But stay, isn't there some trick about it? Look, hasn't he stuck a love-letter among them?
+- `⏸ 0.60s` **Grandmother:** Walter Scott's novels! But stay, isn't there some trick about it? Look, hasn't he stuck a love-letter among them?
 
 ### ¶18
 
 > **Book:** "'No, grandmother,' I said, 'there isn't a love-letter.'
 
-- `⏸ 1.00s` **Nastenka:** No, grandmother.
+- `⏸ 0.60s` **Nastenka:** No, grandmother, there isn't a love-letter.
 
-*Removed (not spoken):* "I said, 'there isn't a love-letter.'"
+*Removed (not spoken):* "I said"
 
 ### ¶19
 
 > **Book:** "'But look under the binding; they sometimes stuff it under the bindings, the rascals!'
 
-- `⏸ 1.00s` **Nastenka (guessed):** But look under the binding; they sometimes stuff it under the bindings, the rascals!
+- `⏸ 0.60s` **Grandmother:** But look under the binding; they sometimes stuff it under the bindings, the rascals!
 
 ### ¶20
 
 > **Book:** "'No, grandmother, there is nothing under the binding.'
 
-- `⏸ 1.00s` **Nastenka (guessed):** No, grandmother, there is nothing under the binding.
+- `⏸ 0.60s` **Nastenka:** No, grandmother, there is nothing under the binding.
 
 ### ¶21
 
 > **Book:** "'Well, that's all right.'
 
-- `⏸ 1.00s` **Nastenka (guessed):** Well, that's all right.
+- `⏸ 0.60s` **Grandmother:** Well, that's all right.
 
 ### ¶22
 
 > **Book:** "So we began reading Walter Scott, and in a month or so we had read almost half. Then he sent us more and more. He sent us Pushkin, too; so that at last I could not get on without a book and left off dreaming of how fine it would be to marry a Chinese Prince.
 
-- `⏸ 1.00s` **Nastenka:** So we began reading Walter Scott, and in a month or so we had read almost half. Then he sent us more and more.
+- `⏸ 0.60s` **Nastenka:** So we began reading Walter Scott, and in a month or so we had read almost half. Then he sent us more and more.
 - `⏸ 0.60s` **Nastenka:** He sent us Pushkin, too; so that at last I could not get on without a book and left off dreaming of how fine it would be to marry a Chinese Prince.
 
 ### ¶23
@@ -189,10 +189,9 @@
 > **Book:** "That's how things were when I chanced one day to meet our lodger on the stairs. Grandmother had sent me to fetch something. He stopped, I blushed and he blushed; he laughed, though, said good-morning to me, asked after grandmother, and said, 'Well, have you read the books?' I answered that I had. 'Which did you like best?' he asked. I said, 'Ivanhoe, and Pushkin best of all,' and so our talk ended for that time.
 
 - `⏸ 1.00s` **Nastenka:** That's how things were when I chanced one day to meet our lodger on the stairs. Grandmother had sent me to fetch something. He stopped, I blushed and he blushed; he laughed, though, said good-morning to me, asked after grandmother, and said.
-- `⏸ 0.50s` **Nastenka:** Well, have you read the books?
+- `⏸ 0.50s` **Lodger:** Well, have you read the books?
 - `⏸ 0.50s` **Lodger:** Which did you like best?
-- `⏸ 0.50s` **Lodger:** Ivanhoe, and Pushkin best of all.
-- `⏸ 0.50s` **Nastenka:** and so our talk ended for that time.
+- `⏸ 0.50s` **Nastenka:** Ivanhoe, and Pushkin best of all, and so our talk ended for that time.
 
 *Removed (not spoken):* "I answered that I had." · "he asked. I said"
 
@@ -209,9 +208,9 @@
 
 > **Book:** "'Aren't you dull,' he said, 'sitting all day with your grandmother?'
 
-- `⏸ 1.00s` **Lodger:** Aren't you dull.
+- `⏸ 1.00s` **Lodger:** Aren't you dull, sitting all day with your grandmother?
 
-*Removed (not spoken):* "he said, 'sitting all day with your grandmother?'"
+*Removed (not spoken):* "he said"
 
 ### ¶26
 
@@ -223,27 +222,29 @@
 
 > **Book:** "'Listen,' he said, 'you are a good girl. Excuse my speaking to you like that, but I assure you that I wish for your welfare quite as much as your grandmother. Have you no friends that you could go and visit?'
 
-- `⏸ 0.60s` **Lodger:** Listen.
-- `⏸ 0.50s` **Nastenka:** you are a good girl. Excuse my speaking to you like that, but I assure you that I wish for your welfare quite as much as your grandmother. Have you no friends that you could go and visit?'.
+- `⏸ 0.60s` **Lodger:** Listen, you are a good girl. Excuse my speaking to you like that, but I assure you that I wish for your welfare quite as much as your grandmother. Have you no friends that you could go and visit?
+
+*Removed (not spoken):* "he said"
 
 ### ¶28
 
 > **Book:** "I told him I hadn't any, that I had had no friend but Mashenka, and she had gone away to Pskov.
 
-- `⏸ 1.00s` **Nastenka:** I hadn't any, that I had had no friend but Mashenka, and she had gone away to Pskov.
+- `⏸ 0.60s` **Nastenka:** I hadn't any, that I had had no friend but Mashenka, and she had gone away to Pskov.
 
 ### ¶29
 
 > **Book:** "'Listen,' he said, 'would you like to go to the theatre with me?'
 
-- `⏸ 0.60s` **Lodger:** Listen.
-- `⏸ 0.50s` **Nastenka:** would you like to go to the theatre with me?'.
+- `⏸ 0.60s` **Lodger:** Listen, would you like to go to the theatre with me?
+
+*Removed (not spoken):* "he said"
 
 ### ¶30
 
 > **Book:** "'To the theatre. What about grandmother?'
 
-- `⏸ 1.00s` **Nastenka (guessed):** To the theatre. What about grandmother?
+- `⏸ 0.60s` **Nastenka:** To the theatre. What about grandmother?
 
 ### ¶31
 
@@ -275,9 +276,10 @@
 > **Book:** "Only after dinner he came to see us; sat a long time talking to grandmother; asked her whether she ever went out anywhere, whether she had acquaintances, and suddenly said: 'I have taken a box at the opera for this evening; they are giving _The Barber of Seville_. My friends meant to go, but afterwards refused, so the ticket is left on my hands.' '_The Barber of Seville_,' cried grandmother; 'why, the same they used to act in old days?'
 
 - `⏸ 0.60s` **Nastenka:** Only after dinner he came to see us; sat a long time talking to grandmother; asked her whether she ever went out anywhere, whether she had acquaintances, and suddenly said.
-- `⏸ 0.50s` **Nastenka (guessed):** I have taken a box at the opera for this evening; they are giving The Barber of Seville. My friends meant to go, but afterwards refused, so the ticket is left on my hands.
-- `⏸ 0.50s` **Grandmother:** The Barber of Seville.
-- `⏸ 0.50s` **Nastenka:** why, the same they used to act in old days?'.
+- `⏸ 0.50s` **Lodger:** I have taken a box at the opera for this evening; they are giving The Barber of Seville. My friends meant to go, but afterwards refused, so the ticket is left on my hands.
+- `⏸ 0.50s` **Grandmother:** The Barber of Seville, why, the same they used to act in old days?
+
+*Removed (not spoken):* "cried grandmother"
 
 ### ¶35
 
@@ -290,8 +292,9 @@
 
 > **Book:** "'To be sure, I know it,' said grandmother; 'why, I took the part of Rosina myself in old days, at a private performance!'
 
-- `⏸ 0.60s` **Grandmother:** To be sure, I know it.
-- `⏸ 0.50s` **Nastenka:** why, I took the part of Rosina myself in old days, at a private performance!'.
+- `⏸ 0.60s` **Grandmother:** To be sure, I know it, why, I took the part of Rosina myself in old days, at a private performance!
+
+*Removed (not spoken):* "said grandmother"
 
 ### ¶37
 
@@ -304,16 +307,17 @@
 
 ### ¶38
 
-> **Book:** "'By all means let us go,' said grandmother; why shouldn't we? And my Nastenka here has never been to the theatre.'
+> **Book:** "'By all means let us go,' said grandmother; 'why shouldn't we? And my Nastenka here has never been to the theatre.'
 
-- `⏸ 0.60s` **Grandmother:** By all means let us go.
-- `⏸ 0.50s` **Nastenka:** why shouldn't we? And my Nastenka here has never been to the theatre.'.
+- `⏸ 0.60s` **Grandmother:** By all means let us go, why shouldn't we? And my Nastenka here has never been to the theatre.
+
+*Removed (not spoken):* "said grandmother"
 
 ### ¶39
 
 > **Book:** "My goodness, what joy! We got ready at once, put on our best clothes, and set off. Though grandmother was blind, still she wanted to hear the music; besides, she is a kind old soul, what she cared most for was to amuse me, we should never have gone of ourselves.
 
-- `⏸ 1.00s` **Nastenka:** My goodness, what joy! We got ready at once, put on our best clothes, and set off.
+- `⏸ 0.60s` **Nastenka:** My goodness, what joy! We got ready at once, put on our best clothes, and set off.
 - `⏸ 0.60s` **Nastenka:** Though grandmother was blind, still she wanted to hear the music; besides, she is a kind old soul, what she cared most for was to amuse me, we should never have gone of ourselves.
 
 ### ¶40
@@ -354,14 +358,15 @@
 
 > **Book:** "'Listen,' he began, 'listen, Nastenka, I can't do anything; I am a poor man, for I have nothing, not even a decent berth. How could we live, if I were to marry you?'
 
-- `⏸ 0.60s` **Lodger:** Listen.
-- `⏸ 0.50s` **Nastenka:** listen, Nastenka, I can't do anything; I am a poor man, for I have nothing, not even a decent berth. How could we live, if I were to marry you?'.
+- `⏸ 0.60s` **Lodger:** Listen, listen, Nastenka, I can't do anything; I am a poor man, for I have nothing, not even a decent berth. How could we live, if I were to marry you?
+
+*Removed (not spoken):* "he began"
 
 ### ¶45
 
 > **Book:** "We talked a long time; but at last I got quite frantic, I said I could not go on living with grandmother, that I should run away from her, that I did not want to be pinned to her, and that I would go to Moscow if he liked, because I could not live without him. Shame and pride and love were all clamouring in me at once, and I fell on the bed almost in convulsions, I was so afraid of a refusal.
 
-- `⏸ 1.00s` **Nastenka:** We talked a long time; but at last I got quite frantic, I said I could not go on living with grandmother, that I should run away from her, that I did not want to be pinned to her, and that I would go to Moscow if he liked, because I could not live without him.
+- `⏸ 0.60s` **Nastenka:** We talked a long time; but at last I got quite frantic, I said I could not go on living with grandmother, that I should run away from her, that I did not want to be pinned to her, and that I would go to Moscow if he liked, because I could not live without him.
 - `⏸ 0.60s` **Nastenka:** Shame and pride and love were all clamouring in me at once, and I fell on the bed almost in convulsions, I was so afraid of a refusal.
 
 ### ¶46
@@ -374,10 +379,10 @@
 
 > **Book:** "'Listen, my dear good Nastenka, listen; I swear to you that if I am ever in a position to marry, you shall make my happiness. I assure you that now you are the only one who could make me happy. Listen, I am going to Moscow and shall be there just a year; I hope to establish my position. When I come back, if you still love me, I swear that we will be happy. Now it is impossible, I am not able, I have not the right to promise anything. Well, I repeat, if it is not within a year it will certainly be some time; that is, of course, if you do not prefer any one else, for I cannot and dare not bind you by any sort of promise.'
 
-- `⏸ 0.60s` **Grandmother (guessed):** Listen, my dear good Nastenka, listen; I swear to you that if I am ever in a position to marry, you shall make my happiness. I assure you that now you are the only one who could make me happy.
-- `⏸ 0.60s` **Grandmother (guessed):** Listen, I am going to Moscow and shall be there just a year; I hope to establish my position. When I come back, if you still love me, I swear that we will be happy.
-- `⏸ 0.60s` **Grandmother (guessed):** Now it is impossible, I am not able, I have not the right to promise anything.
-- `⏸ 0.60s` **Grandmother (guessed):** Well, I repeat, if it is not within a year it will certainly be some time; that is, of course, if you do not prefer any one else, for I cannot and dare not bind you by any sort of promise.
+- `⏸ 0.60s` **Lodger:** Listen, my dear good Nastenka, listen; I swear to you that if I am ever in a position to marry, you shall make my happiness. I assure you that now you are the only one who could make me happy.
+- `⏸ 0.60s` **Lodger:** Listen, I am going to Moscow and shall be there just a year; I hope to establish my position. When I come back, if you still love me, I swear that we will be happy.
+- `⏸ 0.60s` **Lodger:** Now it is impossible, I am not able, I have not the right to promise anything.
+- `⏸ 0.60s` **Lodger:** Well, I repeat, if it is not within a year it will certainly be some time; that is, of course, if you do not prefer any one else, for I cannot and dare not bind you by any sort of promise.
 
 ### ¶48
 
@@ -450,8 +455,7 @@
 
 > **Book:** "No, of course not," I said pulling myself up; "but I tell you what, write a letter."
 
-- `⏸ 0.60s` **Dreamer:** No, of course not.
-- `⏸ 0.50s` **Dreamer:** but I tell you what, write a letter.
+- `⏸ 0.60s` **Dreamer:** No, of course not, but I tell you what, write a letter.
 
 *Removed (not spoken):* "I said pulling myself up"
 
@@ -475,14 +479,13 @@
 
 > **Book:** "I can't. I can't! It would seem as though I were forcing myself on him...."
 
-- `⏸ 0.60s` **Nastenka (guessed):** I can't. I can't! It would seem as though I were forcing myself on him...
+- `⏸ 0.60s` **Nastenka:** I can't. I can't! It would seem as though I were forcing myself on him...
 
 ### ¶61
 
 > **Book:** "Ah, my good little Nastenka," I said, hardly able to conceal a smile; "no, no, you have a right to, in fact, because he made you a promise. Besides, I can see from everything that he is a man of delicate feeling; that he behaved very well," I went on, more and more carried away by the logic of my own arguments and convictions. "How did he behave? He bound himself by a promise: he said that if he married at all he would marry no one but you; he gave you full liberty to refuse him at once.... Under such circumstances you may take the first step; you have the right; you are in the privileged position--if, for instance, you wanted to free him from his promise...."
 
-- `⏸ 0.60s` **Dreamer:** Ah, my good little Nastenka.
-- `⏸ 0.50s` **Dreamer:** no, no, you have a right to, in fact, because he made you a promise. Besides, I can see from everything that he is a man of delicate feeling; that he behaved very well.
+- `⏸ 0.60s` **Dreamer:** Ah, my good little Nastenka, no, no, you have a right to, in fact, because he made you a promise. Besides, I can see from everything that he is a man of delicate feeling; that he behaved very well.
 - `⏸ 0.50s` **Dreamer (narration):** More and more carried away by the logic of my own arguments and convictions.
 - `⏸ 0.50s` **Dreamer:** How did he behave? He bound himself by a promise: he said that if he married at all he would marry no one but you; he gave you full liberty to refuse him at once...
 - `⏸ 0.60s` **Dreamer:** Under such circumstances you may take the first step; you have the right; you are in the privileged position, if, for instance, you wanted to free him from his promise...
@@ -493,67 +496,67 @@
 
 > **Book:** "Listen; how would you write?"
 
-- `⏸ 0.60s` **Nastenka (guessed):** Listen; how would you write?
+- `⏸ 0.60s` **Nastenka:** Listen; how would you write?
 
 ### ¶63
 
 > **Book:** "Write what?"
 
-- `⏸ 0.60s` **Dreamer (guessed):** Write what?
+- `⏸ 0.60s` **Dreamer:** Write what?
 
 ### ¶64
 
 > **Book:** "This letter."
 
-- `⏸ 0.60s` **Nastenka (guessed):** This letter.
+- `⏸ 0.60s` **Nastenka:** This letter.
 
 ### ¶65
 
 > **Book:** "I tell you how I would write: 'Dear Sir.'..."
 
-- `⏸ 0.60s` **Dreamer (guessed):** I tell you how I would write.
-- `⏸ 0.50s` **Dreamer (guessed):** Dear Sir.
+- `⏸ 0.60s` **Dreamer:** I tell you how I would write.
+- `⏸ 0.50s` **Dreamer:** Dear Sir.
 
 ### ¶66
 
 > **Book:** "Must I really begin like that, 'Dear Sir'?"
 
-- `⏸ 0.60s` **Nastenka (guessed):** Must I really begin like that.
-- `⏸ 0.50s` **Nastenka (guessed):** Dear Sir.
+- `⏸ 0.60s` **Nastenka:** Must I really begin like that.
+- `⏸ 0.50s` **Nastenka:** Dear Sir.
 
 ### ¶67
 
 > **Book:** "You certainly must! Though, after all, I don't know, I imagine...."
 
-- `⏸ 0.60s` **Dreamer (guessed):** You certainly must! Though, after all, I don't know, I imagine...
+- `⏸ 0.60s` **Dreamer:** You certainly must! Though, after all, I don't know, I imagine...
 
 ### ¶68
 
 > **Book:** "Well, well, what next?"
 
-- `⏸ 0.60s` **Nastenka (guessed):** Well, well, what next?
+- `⏸ 0.60s` **Nastenka:** Well, well, what next?
 
 ### ¶69
 
 > **Book:** "'Dear Sir,--I must apologize for----' But, no, there's no need to apologize; the fact itself justifies everything. Write simply:--
 
-- `⏸ 0.60s` **Dreamer (guessed):** Dear Sir,, I must apologize for.
-- `⏸ 0.50s` **Dreamer (guessed):** But, no, there's no need to apologize; the fact itself justifies everything. Write simply.
+- `⏸ 0.60s` **Dreamer:** Dear Sir, I must apologize for.
+- `⏸ 0.50s` **Dreamer:** But, no, there's no need to apologize; the fact itself justifies everything. Write simply.
 
 ### ¶70
 
 > **Book:** "'I am writing to you. Forgive me my impatience; but I have been happy for a whole year in hope; am I to blame for being unable to endure a day of doubt now? Now that you have come, perhaps you have changed your mind. If so, this letter is to tell you that I do not repine, nor blame you. I do not blame you because I have no power over your heart, such is my fate!
 
-- `⏸ 1.00s` **Dreamer (guessed):** I am writing to you. Forgive me my impatience; but I have been happy for a whole year in hope; am I to blame for being unable to endure a day of doubt now? Now that you have come, perhaps you have changed your mind.
-- `⏸ 0.60s` **Dreamer (guessed):** If so, this letter is to tell you that I do not repine, nor blame you. I do not blame you because I have no power over your heart, such is my fate!
+- `⏸ 1.00s` **Dreamer:** I am writing to you. Forgive me my impatience; but I have been happy for a whole year in hope; am I to blame for being unable to endure a day of doubt now? Now that you have come, perhaps you have changed your mind.
+- `⏸ 0.60s` **Dreamer:** If so, this letter is to tell you that I do not repine, nor blame you. I do not blame you because I have no power over your heart, such is my fate!
 
 ### ¶71
 
 > **Book:** "'You are an honourable man. You will not smile or be vexed at these impatient lines. Remember they are written by a poor girl; that she is alone; that she has no one to direct her, no one to advise her, and that she herself could never control her heart. But forgive me that a doubt has stolen--if only for one instant--into my heart. You are not capable of insulting, even in thought, her who so loved and so loves you.'"
 
-- `⏸ 1.00s` **Dreamer (guessed):** You are an honourable man. You will not smile or be vexed at these impatient lines.
-- `⏸ 0.60s` **Dreamer (guessed):** Remember they are written by a poor girl; that she is alone; that she has no one to direct her, no one to advise her, and that she herself could never control her heart.
-- `⏸ 0.60s` **Dreamer (guessed):** But forgive me that a doubt has stolen, if only for one instant, into my heart. You are not capable of insulting, even in thought, her who so loved and so loves you.
+- `⏸ 1.00s` **Dreamer:** You are an honourable man. You will not smile or be vexed at these impatient lines.
+- `⏸ 0.60s` **Dreamer:** Remember they are written by a poor girl; that she is alone; that she has no one to direct her, no one to advise her, and that she herself could never control her heart.
+- `⏸ 0.60s` **Dreamer:** But forgive me that a doubt has stolen, if only for one instant, into my heart. You are not capable of insulting, even in thought, her who so loved and so loves you.
 
 ### ¶72
 
@@ -577,29 +580,28 @@
 
 > **Book:** "Ah, Nastenka! Why, one thanks some people for being alive at the same time with one; I thank you for having met me, for my being able to remember you all my life!"
 
-- `⏸ 0.60s` **Nastenka (guessed):** Ah, Nastenka! Why, one thanks some people for being alive at the same time with one; I thank you for having met me, for my being able to remember you all my life!
+- `⏸ 1.00s` **Dreamer:** Ah, Nastenka! Why, one thanks some people for being alive at the same time with one; I thank you for having met me, for my being able to remember you all my life!
 
 ### ¶75
 
 > **Book:** "Well, enough, enough! But now I tell you what, listen: we made an agreement then that as soon as he arrived he would let me know, by leaving a letter with some good simple people of my acquaintance who know nothing about it; or, if it were impossible to write a letter to me, for a letter does not always tell everything, he would be here at ten o'clock on the day he arrived, where we had arranged to meet. I know he has arrived already; but now it's the third day, and there's no sign of him and no letter. It's impossible for me to get away from grandmother in the morning. Give my letter to-morrow to those kind people I spoke to you about: they will send it on to him, and if there is an answer you bring it to-morrow at ten o'clock."
 
-- `⏸ 0.60s` **Dreamer (guessed):** Well, enough, enough!
-- `⏸ 0.60s` **Dreamer (guessed):** But now I tell you what, listen: we made an agreement then that as soon as he arrived he would let me know, by leaving a letter with some good simple people of my acquaintance who know nothing about it; or, if it were impossible to write a letter to me, for a letter does not always tell everything, he would be here at ten o'clock on the day he arrived, where we had arranged to meet.
-- `⏸ 0.60s` **Dreamer (guessed):** I know he has arrived already; but now it's the third day, and there's no sign of him and no letter. It's impossible for me to get away from grandmother in the morning.
-- `⏸ 0.60s` **Dreamer (guessed):** Give my letter tomorrow to those kind people I spoke to you about: they will send it on to him, and if there is an answer you bring it tomorrow at ten o'clock.
+- `⏸ 0.60s` **Nastenka:** Well, enough, enough!
+- `⏸ 0.60s` **Nastenka:** But now I tell you what, listen: we made an agreement then that as soon as he arrived he would let me know, by leaving a letter with some good simple people of my acquaintance who know nothing about it; or, if it were impossible to write a letter to me, for a letter does not always tell everything, he would be here at ten o'clock on the day he arrived, where we had arranged to meet.
+- `⏸ 0.60s` **Nastenka:** I know he has arrived already; but now it's the third day, and there's no sign of him and no letter. It's impossible for me to get away from grandmother in the morning.
+- `⏸ 0.60s` **Nastenka:** Give my letter tomorrow to those kind people I spoke to you about: they will send it on to him, and if there is an answer you bring it tomorrow at ten o'clock.
 
 ### ¶76
 
 > **Book:** "But the letter, the letter! You see, you must write the letter first! So perhaps it must all be the day after to-morrow."
 
-- `⏸ 0.60s` **Nastenka (guessed):** But the letter, the letter! You see, you must write the letter first! So perhaps it must all be the day after tomorrow.
+- `⏸ 0.60s` **Dreamer:** But the letter, the letter! You see, you must write the letter first! So perhaps it must all be the day after tomorrow.
 
 ### ¶77
 
 > **Book:** "The letter ..." said Nastenka, a little confused, "the letter ... but...."
 
-- `⏸ 1.00s` **Nastenka:** The letter...
-- `⏸ 0.50s` **Nastenka:** the letter... but...
+- `⏸ 0.60s` **Nastenka:** The letter, the letter... but...
 
 *Removed (not spoken):* "said Nastenka, a little confused"
 
@@ -622,7 +624,7 @@
 
 > **Book:** "Rosina!" we both hummed together; I almost embracing her with delight, while she blushed as only she could blush, and laughed through the tears which gleamed like pearls on her black eyelashes.
 
-- `⏸ 0.60s` **Nastenka (guessed):** Rosina!
+- `⏸ 0.60s` **Nastenka:** Rosina!
 - `⏸ 0.50s` **Dreamer (narration):** We both hummed together; I almost embracing her with delight, while she blushed as only she could blush, and laughed through the tears which gleamed like pearls on her black eyelashes.
 
 ### ¶81
@@ -644,5 +646,5 @@
 
 > **Book:** "Till to-morrow! till to-morrow!" was ringing in my ears as she vanished from my sight.
 
-- `⏸ 1.00s` **Dreamer (guessed):** Till tomorrow! till tomorrow!
+- `⏸ 0.60s` **Nastenka:** Till tomorrow! till tomorrow!
 - `⏸ 0.50s` **Dreamer (narration):** Was ringing in my ears as she vanished from my sight.

@@ -166,21 +166,12 @@
   "p": 8,
   "speaker": 2,
   "kind": "say",
-  "text": "Do you know why I am so glad.",
+  "text": "Do you know why I am so glad, so glad to look at you? why I like you so much today?",
   "pause_before": 0.6,
   "guessed": false
  },
  {
   "id": "third_night_019",
-  "p": 8,
-  "speaker": 2,
-  "kind": "say",
-  "text": "so glad to look at you? why I like you so much today?",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "third_night_020",
   "p": 9,
   "speaker": 1,
   "kind": "say",
@@ -189,7 +180,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_021",
+  "id": "third_night_020",
   "p": 10,
   "speaker": 2,
   "kind": "say",
@@ -198,7 +189,7 @@
   "guessed": true
  },
  {
-  "id": "third_night_022",
+  "id": "third_night_021",
   "p": 11,
   "speaker": 1,
   "kind": "narr",
@@ -207,7 +198,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_023",
+  "id": "third_night_022",
   "p": 12,
   "speaker": 2,
   "kind": "say",
@@ -216,7 +207,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_024",
+  "id": "third_night_023",
   "p": 12,
   "speaker": 2,
   "kind": "say",
@@ -225,7 +216,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_025",
+  "id": "third_night_024",
   "p": 12,
   "speaker": 2,
   "kind": "say",
@@ -234,7 +225,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_026",
+  "id": "third_night_025",
   "p": 13,
   "speaker": 1,
   "kind": "narr",
@@ -243,43 +234,25 @@
   "guessed": false
  },
  {
-  "id": "third_night_027",
+  "id": "third_night_026",
   "p": 14,
   "speaker": 1,
   "kind": "say",
-  "text": "You are very much upset.",
+  "text": "You are very much upset, you are frightened; you think he won't come.",
   "pause_before": 1.0,
   "guessed": false
  },
  {
-  "id": "third_night_028",
-  "p": 14,
-  "speaker": 1,
-  "kind": "say",
-  "text": "you are frightened; you think he won't come.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "third_night_029",
+  "id": "third_night_027",
   "p": 15,
   "speaker": 2,
   "kind": "say",
-  "text": "Oh dear!",
+  "text": "Oh dear!, if I were less happy, I believe I should cry at your lack of faith, at your reproaches.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "third_night_030",
-  "p": 15,
-  "speaker": 2,
-  "kind": "say",
-  "text": "if I were less happy, I believe I should cry at your lack of faith, at your reproaches.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "third_night_031",
+  "id": "third_night_028",
   "p": 15,
   "speaker": 2,
   "kind": "say",
@@ -288,7 +261,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_032",
+  "id": "third_night_029",
   "p": 15,
   "speaker": 2,
   "kind": "say",
@@ -297,7 +270,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_033",
+  "id": "third_night_030",
   "p": 16,
   "speaker": 1,
   "kind": "narr",
@@ -306,7 +279,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_034",
+  "id": "third_night_031",
   "p": 17,
   "speaker": 2,
   "kind": "say",
@@ -315,7 +288,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_035",
+  "id": "third_night_032",
   "p": 17,
   "speaker": 2,
   "kind": "say",
@@ -324,7 +297,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_036",
+  "id": "third_night_033",
   "p": 18,
   "speaker": 1,
   "kind": "say",
@@ -333,34 +306,25 @@
   "guessed": false
  },
  {
-  "id": "third_night_037",
+  "id": "third_night_034",
   "p": 18,
   "speaker": 1,
   "kind": "say",
-  "text": "Oh, Nastenka, Nastenka.",
+  "text": "Oh, Nastenka, Nastenka, how much you have told me in that saying! Such fondness at certain moments makes the heart cold and the soul heavy. Your hand is cold, mine burns like fire. How blind you are, Nastenka!...",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "third_night_038",
+  "id": "third_night_035",
   "p": 18,
   "speaker": 1,
   "kind": "say",
-  "text": "how much you have told me in that saying! Such fondness at certain moments makes the heart cold and the soul heavy. Your hand is cold, mine burns like fire. How blind you are, Nastenka!... Oh, how unbearable a happy person is sometimes!",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "third_night_039",
-  "p": 18,
-  "speaker": 1,
-  "kind": "say",
-  "text": "But I could not be angry with you!",
+  "text": "Oh, how unbearable a happy person is sometimes! But I could not be angry with you!",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "third_night_040",
+  "id": "third_night_036",
   "p": 20,
   "speaker": 1,
   "kind": "say",
@@ -369,7 +333,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_041",
+  "id": "third_night_037",
   "p": 20,
   "speaker": 1,
   "kind": "say",
@@ -378,7 +342,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_042",
+  "id": "third_night_038",
   "p": 21,
   "speaker": 2,
   "kind": "say",
@@ -387,7 +351,7 @@
   "guessed": true
  },
  {
-  "id": "third_night_043",
+  "id": "third_night_039",
   "p": 22,
   "speaker": 1,
   "kind": "say",
@@ -396,7 +360,7 @@
   "guessed": true
  },
  {
-  "id": "third_night_044",
+  "id": "third_night_040",
   "p": 23,
   "speaker": 2,
   "kind": "say",
@@ -405,7 +369,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_045",
+  "id": "third_night_041",
   "p": 24,
   "speaker": 1,
   "kind": "say",
@@ -414,7 +378,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_046",
+  "id": "third_night_042",
   "p": 24,
   "speaker": 1,
   "kind": "narr",
@@ -423,7 +387,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_047",
+  "id": "third_night_043",
   "p": 24,
   "speaker": 1,
   "kind": "say",
@@ -432,7 +396,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_048",
+  "id": "third_night_044",
   "p": 24,
   "speaker": 1,
   "kind": "say",
@@ -441,7 +405,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_049",
+  "id": "third_night_045",
   "p": 24,
   "speaker": 1,
   "kind": "say",
@@ -450,7 +414,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_050",
+  "id": "third_night_046",
   "p": 24,
   "speaker": 1,
   "kind": "say",
@@ -459,25 +423,16 @@
   "guessed": false
  },
  {
-  "id": "third_night_051",
+  "id": "third_night_047",
   "p": 25,
   "speaker": 2,
   "kind": "say",
-  "text": "Oh my goodness, my goodness.",
+  "text": "Oh my goodness, my goodness, what does all that mean? I don't understand a word.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "third_night_052",
-  "p": 25,
-  "speaker": 2,
-  "kind": "say",
-  "text": "what does all that mean? I don't understand a word.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "third_night_053",
+  "id": "third_night_048",
   "p": 26,
   "speaker": 1,
   "kind": "say",
@@ -486,7 +441,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_054",
+  "id": "third_night_049",
   "p": 26,
   "speaker": 1,
   "kind": "narr",
@@ -495,7 +450,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_055",
+  "id": "third_night_050",
   "p": 27,
   "speaker": 2,
   "kind": "say",
@@ -504,7 +459,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_056",
+  "id": "third_night_051",
   "p": 27,
   "speaker": 1,
   "kind": "narr",
@@ -513,7 +468,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_057",
+  "id": "third_night_052",
   "p": 28,
   "speaker": 1,
   "kind": "narr",
@@ -522,7 +477,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_058",
+  "id": "third_night_053",
   "p": 29,
   "speaker": 2,
   "kind": "say",
@@ -531,7 +486,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_059",
+  "id": "third_night_054",
   "p": 29,
   "speaker": 2,
   "kind": "say",
@@ -540,7 +495,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_060",
+  "id": "third_night_055",
   "p": 30,
   "speaker": 1,
   "kind": "say",
@@ -549,7 +504,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_061",
+  "id": "third_night_056",
   "p": 30,
   "speaker": 1,
   "kind": "narr",
@@ -558,7 +513,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_062",
+  "id": "third_night_057",
   "p": 31,
   "speaker": 2,
   "kind": "say",
@@ -567,7 +522,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_063",
+  "id": "third_night_058",
   "p": 32,
   "speaker": 1,
   "kind": "narr",
@@ -576,7 +531,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_064",
+  "id": "third_night_059",
   "p": 33,
   "speaker": 1,
   "kind": "narr",
@@ -585,7 +540,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_065",
+  "id": "third_night_060",
   "p": 33,
   "speaker": 1,
   "kind": "narr",
@@ -594,7 +549,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_066",
+  "id": "third_night_061",
   "p": 34,
   "speaker": 1,
   "kind": "say",
@@ -603,7 +558,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_067",
+  "id": "third_night_062",
   "p": 34,
   "speaker": 1,
   "kind": "narr",
@@ -612,7 +567,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_068",
+  "id": "third_night_063",
   "p": 34,
   "speaker": 1,
   "kind": "say",
@@ -621,7 +576,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_069",
+  "id": "third_night_064",
   "p": 34,
   "speaker": 1,
   "kind": "say",
@@ -630,7 +585,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_070",
+  "id": "third_night_065",
   "p": 34,
   "speaker": 1,
   "kind": "say",
@@ -639,7 +594,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_071",
+  "id": "third_night_066",
   "p": 34,
   "speaker": 1,
   "kind": "say",
@@ -648,7 +603,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_072",
+  "id": "third_night_067",
   "p": 35,
   "speaker": 2,
   "kind": "say",
@@ -657,7 +612,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_073",
+  "id": "third_night_068",
   "p": 35,
   "speaker": 2,
   "kind": "say",
@@ -666,7 +621,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_074",
+  "id": "third_night_069",
   "p": 35,
   "speaker": 1,
   "kind": "narr",
@@ -675,43 +630,25 @@
   "guessed": false
  },
  {
-  "id": "third_night_075",
+  "id": "third_night_070",
   "p": 35,
   "speaker": 2,
   "kind": "say",
-  "text": "I tell you what you must do.",
+  "text": "I tell you what you must do, you go as early as possible tomorrow morning, and if you get anything let me know at once. You know where I live, don't you?",
   "pause_before": 0.5,
   "guessed": false
  },
  {
-  "id": "third_night_076",
-  "p": 35,
-  "speaker": 2,
-  "kind": "say",
-  "text": "you go as early as possible tomorrow morning, and if you get anything let me know at once. You know where I live, don't you?",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "third_night_077",
-  "p": 36,
-  "speaker": 1,
-  "kind": "narr",
-  "text": "And she began repeating her address to me.",
-  "pause_before": 0.6,
-  "guessed": false
- },
- {
-  "id": "third_night_078",
+  "id": "third_night_071",
   "p": 37,
   "speaker": 1,
   "kind": "narr",
   "text": "Then she suddenly became so tender, so solicitous with me. She seemed to listen attentively to what I told her; but when I asked her some question she was silent, was confused, and turned her head away.",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "third_night_079",
+  "id": "third_night_072",
   "p": 37,
   "speaker": 1,
   "kind": "narr",
@@ -720,7 +657,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_080",
+  "id": "third_night_073",
   "p": 38,
   "speaker": 1,
   "kind": "say",
@@ -729,7 +666,7 @@
   "guessed": true
  },
  {
-  "id": "third_night_081",
+  "id": "third_night_074",
   "p": 39,
   "speaker": 1,
   "kind": "narr",
@@ -738,7 +675,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_082",
+  "id": "third_night_075",
   "p": 40,
   "speaker": 2,
   "kind": "say",
@@ -747,7 +684,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_083",
+  "id": "third_night_076",
   "p": 40,
   "speaker": 2,
   "kind": "say",
@@ -756,7 +693,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_084",
+  "id": "third_night_077",
   "p": 40,
   "speaker": 2,
   "kind": "say",
@@ -765,7 +702,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_085",
+  "id": "third_night_078",
   "p": 41,
   "speaker": 1,
   "kind": "narr",
@@ -774,52 +711,43 @@
   "guessed": false
  },
  {
-  "id": "third_night_086",
+  "id": "third_night_079",
   "p": 42,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Of course, it may be that I don't understand him fully yet. You know I was always as it were afraid of him; he was always so grave, as it were so proud.",
-  "pause_before": 1.0,
-  "guessed": true
+  "pause_before": 0.6,
+  "guessed": false
  },
  {
-  "id": "third_night_087",
+  "id": "third_night_080",
   "p": 42,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Of course I know it's only that he seems like that, I know there is more tenderness in his heart than in mine...",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "third_night_088",
+  "id": "third_night_081",
   "p": 42,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "I remember how he looked at me when I went in to him, do you remember? with my bundle; but yet I respect him too much, and doesn't that show that we are not equals?",
   "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "third_night_089",
-  "p": 43,
-  "speaker": 1,
-  "kind": "say",
-  "text": "No, Nastenka, no.",
-  "pause_before": 1.0,
   "guessed": false
  },
  {
-  "id": "third_night_090",
+  "id": "third_night_082",
   "p": 43,
   "speaker": 1,
   "kind": "say",
-  "text": "it shows that you love him more than anything in the world, and far more than yourself.",
-  "pause_before": 0.5,
+  "text": "No, Nastenka, no, it shows that you love him more than anything in the world, and far more than yourself.",
+  "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "third_night_091",
+  "id": "third_night_083",
   "p": 44,
   "speaker": 2,
   "kind": "say",
@@ -828,7 +756,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_092",
+  "id": "third_night_084",
   "p": 44,
   "speaker": 2,
   "kind": "say",
@@ -837,7 +765,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_093",
+  "id": "third_night_085",
   "p": 44,
   "speaker": 2,
   "kind": "say",
@@ -846,7 +774,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_094",
+  "id": "third_night_086",
   "p": 44,
   "speaker": 2,
   "kind": "say",
@@ -855,7 +783,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_095",
+  "id": "third_night_087",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -864,7 +792,7 @@
   "guessed": true
  },
  {
-  "id": "third_night_096",
+  "id": "third_night_088",
   "p": 45,
   "speaker": 1,
   "kind": "narr",
@@ -873,7 +801,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_097",
+  "id": "third_night_089",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -882,7 +810,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_098",
+  "id": "third_night_090",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -891,7 +819,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_099",
+  "id": "third_night_091",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -900,7 +828,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_100",
+  "id": "third_night_092",
   "p": 46,
   "speaker": 1,
   "kind": "narr",
@@ -909,7 +837,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_101",
+  "id": "third_night_093",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -918,7 +846,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_102",
+  "id": "third_night_094",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -927,7 +855,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_103",
+  "id": "third_night_095",
   "p": 46,
   "speaker": 2,
   "kind": "say",
@@ -936,7 +864,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_104",
+  "id": "third_night_096",
   "p": 47,
   "speaker": 1,
   "kind": "narr",
@@ -945,7 +873,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_105",
+  "id": "third_night_097",
   "p": 48,
   "speaker": 2,
   "kind": "say",
@@ -954,7 +882,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_106",
+  "id": "third_night_098",
   "p": 48,
   "speaker": 2,
   "kind": "say",
@@ -963,7 +891,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_107",
+  "id": "third_night_099",
   "p": 49,
   "speaker": 1,
   "kind": "say",
@@ -972,7 +900,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_108",
+  "id": "third_night_100",
   "p": 50,
   "speaker": 2,
   "kind": "say",
@@ -981,7 +909,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_109",
+  "id": "third_night_101",
   "p": 50,
   "speaker": 2,
   "kind": "say",
@@ -990,7 +918,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_110",
+  "id": "third_night_102",
   "p": 50,
   "speaker": 2,
   "kind": "say",
@@ -999,7 +927,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_111",
+  "id": "third_night_103",
   "p": 51,
   "speaker": 1,
   "kind": "narr",
@@ -1008,7 +936,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_112",
+  "id": "third_night_104",
   "p": 51,
   "speaker": 1,
   "kind": "say",
@@ -1017,7 +945,7 @@
   "guessed": true
  },
  {
-  "id": "third_night_113",
+  "id": "third_night_105",
   "p": 52,
   "speaker": 1,
   "kind": "narr",
@@ -1026,7 +954,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_114",
+  "id": "third_night_106",
   "p": 53,
   "speaker": 1,
   "kind": "narr",
@@ -1035,7 +963,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_115",
+  "id": "third_night_107",
   "p": 53,
   "speaker": 1,
   "kind": "narr",
@@ -1044,7 +972,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_116",
+  "id": "third_night_108",
   "p": 53,
   "speaker": 1,
   "kind": "narr",
@@ -1053,7 +981,7 @@
   "guessed": false
  },
  {
-  "id": "third_night_117",
+  "id": "third_night_109",
   "p": 54,
   "speaker": 1,
   "kind": "narr",

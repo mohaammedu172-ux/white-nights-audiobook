@@ -193,11 +193,22 @@ def chapter():
     json.dump(dict(lines=rows, missing=missing), open(f"{out}/qc_report.json", "w"), indent=1, ensure_ascii=False)
     md = [f"# QC — {chap}{tag}", f"{len(kept)} lines, {secs / 60:.1f} min, {(time.time() - t0) / 60:.0f} min to make.",
           f"**{len(flagged)} lines flagged** (listen to these first):", ""]
-    md += [f"- {r['at']} ¶{r['p']} {'Dreamer' if r['speaker'] == 1 else 'Nastenka'}: {', '.join(r['problems'])} — \"{r['text'][:90]}\" — heard: \"{r['heard'][:90]}\"" for r in flagged]
+    md += [f"- {r['at']} ¶{r['p']} {CFG.get('cast', {}).get(str(r['speaker']), r['speaker'])}: {', '.join(r['problems'])} — \"{r['text'][:90]}\" — heard: \"{r['heard'][:90]}\"" for r in flagged]
     if missing: md.append(f"\nMissing (generation failed): {missing}")
     open(f"{out}/qc_report.md", "w").write("\n".join(md) + "\n")
     print("\n".join(md)); print("Output:", dst)
 
 
+BOOK = ["first_night", "second_night", "nastenkas_history", "third_night", "fourth_night", "morning"]
+
+
+def book():
+    """Every chapter in order, one mp3 each (skips chapters already made)."""
+    global CFG
+    for ch in BOOK:
+        if os.path.exists(f"{OUT}/{ch}/white_nights_{ch}.mp3"): print(ch, "already made"); continue
+        CFG = dict(CFG, chapter=ch, paragraphs=None); print("=====", ch, flush=True); chapter()
+
+
 if __name__ == "__main__":
-    {"audition": audition, "settings": settings, "models": models, "chapter": chapter}[sys.argv[1] if len(sys.argv) > 1 else "audition"]()
+    {"audition": audition, "settings": settings, "models": models, "chapter": chapter, "book": book}[sys.argv[1] if len(sys.argv) > 1 else "audition"]()

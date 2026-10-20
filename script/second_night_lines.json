@@ -407,146 +407,146 @@
  {
   "id": "second_night_045",
   "p": 35,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "There are, Nastenka, though you may not know it, strange nooks in Petersburg.",
-  "pause_before": 0.6,
-  "guessed": true
+  "pause_before": 1.0,
+  "guessed": false
  },
  {
   "id": "second_night_046",
   "p": 35,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "It seems as though the same sun as shines for all Petersburg people does not peep into those spots, but some other different new one, bespoken expressly for those nooks, and it throws a different light on everything.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_047",
   "p": 35,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "In these corners, dear Nastenka, quite a different life is lived, quite unlike the life that is surging round us, but such as perhaps exists in some unknown realm, not among us in our serious, over-serious, time.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_048",
   "p": 35,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Well, that life is a mixture of something purely fantastic, fervently ideal, with something (alas! Nastenka) dingily prosaic and ordinary, not to say incredibly vulgar.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_049",
   "p": 36,
-  "speaker": 1,
+  "speaker": 2,
   "kind": "say",
   "text": "Foo! Good Heavens! What a preface! What do I hear?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_050",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Listen, Nastenka. (It seems to me I shall never be tired of calling you Nastenka.) Let me tell you that in these corners live strange people, dreamers.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_051",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "The dreamer, if you want an exact definition, is not a human being, but a creature of an intermediate sort.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_052",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "For the most part he settles in some inaccessible corner, as though hiding from the light of day; once he slips into his corner, he grows to it like a snail, or, anyway, he is in that respect very much like that remarkable creature, which is an animal and a house both at once, and is called a tortoise.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_053",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Why do you suppose he is so fond of his four walls, which are invariably painted green, grimy, dismal and reeking unpardonably of tobacco smoke?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_054",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Why is it that when this absurd gentleman is visited by one of his few acquaintances (and he ends by getting rid of all his friends), why does this absurd person meet him with such embarrassment, changing countenance and overcome with confusion, as though he had only just committed some crime within his four walls;",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_055",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "as though he had been forging counterfeit notes, or as though he were writing verses to be sent to a journal with an anonymous letter, in which he states that the real poet is dead, and that his friend thinks it his sacred duty to publish his things?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_056",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Why, tell me, Nastenka, why is it conversation is not easy between the two friends? Why is there no laughter?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_057",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Why does no lively word fly from the tongue of the perplexed newcomer, who at other times may be very fond of laughter, lively words, conversation about the fair sex, and other cheerful subjects?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_058",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "And why does this friend, probably a new friend and on his first visit, for there will hardly be a second, and the friend will never come again, why is the friend himself so confused, so tongue-tied, in spite of his wit (if he has any), as he looks at the downcast face of his host, who in his turn becomes utterly helpless and at his wits' end after gigantic but fruitless efforts to smooth things over and enliven the conversation, to show his knowledge of polite society, to talk, too, of the fair sex, and by such humble endeavour, to please the poor man, who like a fish out of water has mistakenly come to visit him?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_059",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Why does the gentleman, all at once remembering some very necessary business which never existed, suddenly seize his hat and hurriedly make off, snatching away his hand from the warm grip of his host, who was trying his utmost to show his regret and retrieve the lost position?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_060",
   "p": 37,
-  "speaker": 2,
+  "speaker": 1,
   "kind": "say",
   "text": "Why does the friend chuckle as he goes out of the door, and swear never to come and see this queer creature again, though the queer creature is really a very good fellow, and at the same time he cannot refuse his imagination the little diversion of comparing the queer fellow's countenance during their conversation with the expression of an unhappy kitten treacherously captured, roughly handled, frightened and subjected to all sorts of indignities by children, till, utterly crestfallen, it hides away from them under a chair in the dark, and there must needs at its leisure bristle up, spit, and wash its insulted face with both paws, and long afterwards look angrily at life and nature, and even at the bits saved from the master's dinner for it by the sympathetic housekeeper?",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
   "id": "second_night_061",
@@ -554,7 +554,7 @@
   "speaker": 2,
   "kind": "say",
   "text": "Listen.",
-  "pause_before": 1.0,
+  "pause_before": 0.6,
   "guessed": false
  },
  {
@@ -589,21 +589,12 @@
   "p": 40,
   "speaker": 2,
   "kind": "say",
-  "text": "Well, since there is no doubt about it, go on.",
+  "text": "Well, since there is no doubt about it, go on, because I want very much to know how it will end.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
   "id": "second_night_066",
-  "p": 40,
-  "speaker": 2,
-  "kind": "say",
-  "text": "because I want very much to know how it will end.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "second_night_067",
   "p": 41,
   "speaker": 1,
   "kind": "say",
@@ -612,7 +603,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_068",
+  "id": "second_night_067",
   "p": 41,
   "speaker": 1,
   "kind": "say",
@@ -621,7 +612,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_069",
+  "id": "second_night_068",
   "p": 41,
   "speaker": 1,
   "kind": "say",
@@ -630,25 +621,16 @@
   "guessed": true
  },
  {
-  "id": "second_night_070",
+  "id": "second_night_069",
   "p": 42,
   "speaker": 2,
   "kind": "say",
-  "text": "Why, yes, yes.",
+  "text": "Why, yes, yes, that's the point. Listen. You describe it all splendidly, but couldn't you perhaps describe it a little less splendidly? You talk as though you were reading it out of a book.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "second_night_071",
-  "p": 42,
-  "speaker": 2,
-  "kind": "say",
-  "text": "that's the point. Listen. You describe it all splendidly, but couldn't you perhaps describe it a little less splendidly? You talk as though you were reading it out of a book.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "second_night_072",
+  "id": "second_night_070",
   "p": 43,
   "speaker": 1,
   "kind": "say",
@@ -657,7 +639,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_073",
+  "id": "second_night_071",
   "p": 43,
   "speaker": 1,
   "kind": "narr",
@@ -666,7 +648,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_074",
+  "id": "second_night_072",
   "p": 43,
   "speaker": 1,
   "kind": "say",
@@ -675,7 +657,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_075",
+  "id": "second_night_073",
   "p": 43,
   "speaker": 1,
   "kind": "say",
@@ -684,7 +666,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_076",
+  "id": "second_night_074",
   "p": 43,
   "speaker": 1,
   "kind": "say",
@@ -693,7 +675,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_077",
+  "id": "second_night_075",
   "p": 43,
   "speaker": 1,
   "kind": "say",
@@ -702,7 +684,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_078",
+  "id": "second_night_076",
   "p": 44,
   "speaker": 2,
   "kind": "say",
@@ -711,7 +693,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_079",
+  "id": "second_night_077",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -720,7 +702,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_080",
+  "id": "second_night_078",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -729,7 +711,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_081",
+  "id": "second_night_079",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -738,7 +720,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_082",
+  "id": "second_night_080",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -747,7 +729,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_083",
+  "id": "second_night_081",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -756,7 +738,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_084",
+  "id": "second_night_082",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -765,7 +747,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_085",
+  "id": "second_night_083",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -774,7 +756,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_086",
+  "id": "second_night_084",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -783,7 +765,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_087",
+  "id": "second_night_085",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -792,25 +774,25 @@
   "guessed": true
  },
  {
+  "id": "second_night_086",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "Now he hardly notices the road, on which the tiniest details at other times would strike him. Now, the Goddess of Fancy.",
+  "pause_before": 0.6,
+  "guessed": true
+ },
+ {
+  "id": "second_night_087",
+  "p": 45,
+  "speaker": 1,
+  "kind": "say",
+  "text": "(if you have read Zhukovsky, dear Nastenka) has already with fantastic hand spun her golden warp and begun weaving upon it patterns of marvellous magic life, and who knows, maybe, her fantastic hand has borne him to the seventh crystal heaven far from the excellent granite pavement on which he was walking his way?",
+  "pause_before": 0.5,
+  "guessed": true
+ },
+ {
   "id": "second_night_088",
-  "p": 45,
-  "speaker": 1,
-  "kind": "say",
-  "text": "Now he hardly notices the road, on which the tiniest details at other times would strike him.",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "second_night_089",
-  "p": 45,
-  "speaker": 1,
-  "kind": "say",
-  "text": "Now 'the Goddess of Fancy' (if you have read Zhukovsky, dear Nastenka) has already with fantastic hand spun her golden warp and begun weaving upon it patterns of marvellous magic life, and who knows, maybe, her fantastic hand has borne him to the seventh crystal heaven far from the excellent granite pavement on which he was walking his way?",
-  "pause_before": 0.6,
-  "guessed": true
- },
- {
-  "id": "second_night_090",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -819,7 +801,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_091",
+  "id": "second_night_089",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -828,7 +810,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_092",
+  "id": "second_night_090",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -837,7 +819,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_093",
+  "id": "second_night_091",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -846,7 +828,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_094",
+  "id": "second_night_092",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -855,7 +837,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_095",
+  "id": "second_night_093",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -864,7 +846,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_096",
+  "id": "second_night_094",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -873,7 +855,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_097",
+  "id": "second_night_095",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -882,7 +864,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_098",
+  "id": "second_night_096",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -891,7 +873,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_099",
+  "id": "second_night_097",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -900,7 +882,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_100",
+  "id": "second_night_098",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -909,7 +891,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_101",
+  "id": "second_night_099",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -918,7 +900,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_102",
+  "id": "second_night_100",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -927,7 +909,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_103",
+  "id": "second_night_101",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -936,7 +918,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_104",
+  "id": "second_night_102",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -945,16 +927,16 @@
   "guessed": true
  },
  {
-  "id": "second_night_105",
+  "id": "second_night_103",
   "p": 45,
   "speaker": 1,
   "kind": "say",
   "text": "Robert the Devil.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "second_night_106",
+  "id": "second_night_104",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -963,16 +945,16 @@
   "guessed": true
  },
  {
-  "id": "second_night_107",
+  "id": "second_night_105",
   "p": 45,
   "speaker": 1,
   "kind": "say",
-  "text": "D.'s, of Danton, of Cleopatra ei suoi amanti, of a little house in Kolomna, of a little home of one's own and beside one a dear creature who listens to one on a winter's evening, opening her little mouth and eyes as you are listening to me now, my angel...",
+  "text": "D, s, of Danton, of Cleopatra ei suoi amanti, of a little house in Kolomna, of a little home of one's own and beside one a dear creature who listens to one on a winter's evening, opening her little mouth and eyes as you are listening to me now, my angel...",
   "pause_before": 0.6,
   "guessed": true
  },
  {
-  "id": "second_night_108",
+  "id": "second_night_106",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -981,7 +963,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_109",
+  "id": "second_night_107",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -990,7 +972,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_110",
+  "id": "second_night_108",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -999,7 +981,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_111",
+  "id": "second_night_109",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1008,7 +990,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_112",
+  "id": "second_night_110",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1017,7 +999,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_113",
+  "id": "second_night_111",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1026,7 +1008,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_114",
+  "id": "second_night_112",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1035,7 +1017,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_115",
+  "id": "second_night_113",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1044,7 +1026,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_116",
+  "id": "second_night_114",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1053,7 +1035,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_117",
+  "id": "second_night_115",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1062,7 +1044,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_118",
+  "id": "second_night_116",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1071,7 +1053,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_119",
+  "id": "second_night_117",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1080,7 +1062,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_120",
+  "id": "second_night_118",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1089,7 +1071,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_121",
+  "id": "second_night_119",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1098,7 +1080,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_122",
+  "id": "second_night_120",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1107,7 +1089,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_123",
+  "id": "second_night_121",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1116,7 +1098,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_124",
+  "id": "second_night_122",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1125,43 +1107,34 @@
   "guessed": true
  },
  {
-  "id": "second_night_125",
-  "p": 45,
-  "speaker": 3,
-  "kind": "say",
-  "text": "I am free.",
-  "pause_before": 0.5,
-  "guessed": true
- },
- {
-  "id": "second_night_126",
+  "id": "second_night_123",
   "p": 45,
   "speaker": 1,
   "kind": "say",
-  "text": "flings herself trembling into his arms, and with a cry of rapture, clinging to one another, in one instant they forget their sorrow and their parting and all their agonies, and the gloomy house and the old man and the dismal garden in that distant land, and the seat on which with a last passionate kiss she tore herself away from his arms numb with anguish and despair...",
+  "text": "I am free, flings herself trembling into his arms, and with a cry of rapture, clinging to one another, in one instant they forget their sorrow and their parting and all their agonies, and the gloomy house and the old man and the dismal garden in that distant land, and the seat on which with a last passionate kiss she tore herself away from his arms numb with anguish and despair...",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "second_night_127",
+  "id": "second_night_124",
   "p": 45,
   "speaker": 1,
   "kind": "say",
   "text": "Oh, Nastenka, you must admit that one would start, betray confusion, and blush like a schoolboy who has just stuffed in his pocket an apple stolen from a neighbour's garden, when your uninvited visitor, some stalwart, lanky fellow, a festive soul fond of a joke, opens your door and shouts out as though nothing were happening.",
   "pause_before": 0.6,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "second_night_128",
+  "id": "second_night_125",
   "p": 45,
   "speaker": 1,
   "kind": "say",
   "text": "My dear boy, I have this minute come from Pavlovsk.",
   "pause_before": 0.5,
-  "guessed": true
+  "guessed": false
  },
  {
-  "id": "second_night_129",
+  "id": "second_night_126",
   "p": 45,
   "speaker": 1,
   "kind": "say",
@@ -1170,7 +1143,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_130",
+  "id": "second_night_127",
   "p": 46,
   "speaker": 1,
   "kind": "narr",
@@ -1179,7 +1152,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_131",
+  "id": "second_night_128",
   "p": 46,
   "speaker": 1,
   "kind": "narr",
@@ -1188,7 +1161,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_132",
+  "id": "second_night_129",
   "p": 47,
   "speaker": 1,
   "kind": "narr",
@@ -1197,7 +1170,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_133",
+  "id": "second_night_130",
   "p": 47,
   "speaker": 1,
   "kind": "narr",
@@ -1206,7 +1179,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_134",
+  "id": "second_night_131",
   "p": 47,
   "speaker": 1,
   "kind": "narr",
@@ -1215,7 +1188,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_135",
+  "id": "second_night_132",
   "p": 48,
   "speaker": 2,
   "kind": "say",
@@ -1224,43 +1197,25 @@
   "guessed": true
  },
  {
-  "id": "second_night_136",
+  "id": "second_night_133",
   "p": 49,
   "speaker": 1,
   "kind": "say",
-  "text": "All my life, Nastenka.",
+  "text": "All my life, Nastenka, all my life, and it seems to me I shall go on so to the end.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "second_night_137",
-  "p": 49,
-  "speaker": 1,
-  "kind": "say",
-  "text": "all my life, and it seems to me I shall go on so to the end.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "second_night_138",
+  "id": "second_night_134",
   "p": 50,
   "speaker": 2,
   "kind": "say",
-  "text": "No, that won't do.",
+  "text": "No, that won't do, that must not be; and so, maybe, I shall spend all my life beside grandmother. Do you know, it is not at all good to live like that?",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "second_night_139",
-  "p": 50,
-  "speaker": 2,
-  "kind": "say",
-  "text": "that must not be; and so, maybe, I shall spend all my life beside grandmother. Do you know, it is not at all good to live like that?",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "second_night_140",
+  "id": "second_night_135",
   "p": 51,
   "speaker": 1,
   "kind": "say",
@@ -1269,7 +1224,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_141",
+  "id": "second_night_136",
   "p": 51,
   "speaker": 1,
   "kind": "say",
@@ -1278,7 +1233,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_142",
+  "id": "second_night_137",
   "p": 51,
   "speaker": 1,
   "kind": "say",
@@ -1287,7 +1242,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_143",
+  "id": "second_night_138",
   "p": 51,
   "speaker": 1,
   "kind": "say",
@@ -1296,7 +1251,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_144",
+  "id": "second_night_139",
   "p": 52,
   "speaker": 2,
   "kind": "say",
@@ -1305,7 +1260,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_145",
+  "id": "second_night_140",
   "p": 52,
   "speaker": 2,
   "kind": "say",
@@ -1314,7 +1269,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_146",
+  "id": "second_night_141",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1323,7 +1278,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_147",
+  "id": "second_night_142",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1332,7 +1287,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_148",
+  "id": "second_night_143",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1341,7 +1296,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_149",
+  "id": "second_night_144",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1350,7 +1305,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_150",
+  "id": "second_night_145",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1359,7 +1314,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_151",
+  "id": "second_night_146",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1368,7 +1323,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_152",
+  "id": "second_night_147",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1377,7 +1332,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_153",
+  "id": "second_night_148",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1386,7 +1341,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_154",
+  "id": "second_night_149",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1395,7 +1350,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_155",
+  "id": "second_night_150",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1404,7 +1359,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_156",
+  "id": "second_night_151",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1413,7 +1368,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_157",
+  "id": "second_night_152",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1422,7 +1377,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_158",
+  "id": "second_night_153",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1431,7 +1386,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_159",
+  "id": "second_night_154",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1440,7 +1395,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_160",
+  "id": "second_night_155",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1449,7 +1404,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_161",
+  "id": "second_night_156",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1458,7 +1413,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_162",
+  "id": "second_night_157",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1467,7 +1422,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_163",
+  "id": "second_night_158",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1476,7 +1431,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_164",
+  "id": "second_night_159",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1485,7 +1440,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_165",
+  "id": "second_night_160",
   "p": 53,
   "speaker": 1,
   "kind": "say",
@@ -1494,7 +1449,7 @@
   "guessed": true
  },
  {
-  "id": "second_night_166",
+  "id": "second_night_161",
   "p": 54,
   "speaker": 2,
   "kind": "say",
@@ -1503,7 +1458,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_167",
+  "id": "second_night_162",
   "p": 54,
   "speaker": 1,
   "kind": "narr",
@@ -1512,7 +1467,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_168",
+  "id": "second_night_163",
   "p": 54,
   "speaker": 2,
   "kind": "say",
@@ -1521,7 +1476,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_169",
+  "id": "second_night_164",
   "p": 54,
   "speaker": 2,
   "kind": "say",
@@ -1530,7 +1485,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_170",
+  "id": "second_night_165",
   "p": 54,
   "speaker": 2,
   "kind": "say",
@@ -1539,7 +1494,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_171",
+  "id": "second_night_166",
   "p": 54,
   "speaker": 1,
   "kind": "narr",
@@ -1548,7 +1503,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_172",
+  "id": "second_night_167",
   "p": 54,
   "speaker": 2,
   "kind": "say",
@@ -1557,7 +1512,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_173",
+  "id": "second_night_168",
   "p": 54,
   "speaker": 2,
   "kind": "say",
@@ -1566,25 +1521,16 @@
   "guessed": false
  },
  {
-  "id": "second_night_174",
+  "id": "second_night_169",
   "p": 55,
   "speaker": 1,
   "kind": "say",
-  "text": "Ah, Nastenka.",
+  "text": "Ah, Nastenka, though I have never given advice, still less sensible advice, yet I see now that if we always go on like this that it will be very sensible, and that each of us will give the other a great deal of sensible advice!",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "second_night_175",
-  "p": 55,
-  "speaker": 1,
-  "kind": "say",
-  "text": "though I have never given advice, still less sensible advice, yet I see now that if we always go on like this that it will be very sensible, and that each of us will give the other a great deal of sensible advice!",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "second_night_176",
+  "id": "second_night_170",
   "p": 55,
   "speaker": 1,
   "kind": "say",
@@ -1593,7 +1539,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_177",
+  "id": "second_night_171",
   "p": 56,
   "speaker": 2,
   "kind": "say",
@@ -1602,7 +1548,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_178",
+  "id": "second_night_172",
   "p": 56,
   "speaker": 2,
   "kind": "say",
@@ -1611,25 +1557,16 @@
   "guessed": false
  },
  {
-  "id": "second_night_179",
+  "id": "second_night_173",
   "p": 57,
   "speaker": 1,
   "kind": "say",
-  "text": "Agreed, Nastenka, agreed!",
+  "text": "Agreed, Nastenka, agreed!, and if I had been fond of you for twenty years, I couldn't have been fonder of you than I am now.",
   "pause_before": 0.6,
   "guessed": false
  },
  {
-  "id": "second_night_180",
-  "p": 57,
-  "speaker": 1,
-  "kind": "say",
-  "text": "and if I had been fond of you for twenty years, I couldn't have been fonder of you than I am now.",
-  "pause_before": 0.5,
-  "guessed": false
- },
- {
-  "id": "second_night_181",
+  "id": "second_night_174",
   "p": 58,
   "speaker": 2,
   "kind": "say",
@@ -1638,7 +1575,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_182",
+  "id": "second_night_175",
   "p": 59,
   "speaker": 1,
   "kind": "say",
@@ -1647,7 +1584,7 @@
   "guessed": false
  },
  {
-  "id": "second_night_183",
+  "id": "second_night_176",
   "p": 60,
   "speaker": 2,
   "kind": "say",

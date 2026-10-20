@@ -1,6 +1,6 @@
 # White Nights — Third Night: performance script
 
-118 lines. **(guessed)** = speaker worked out by alternation, please check. Corrections go in `script/third_night_fixes.json` (`speaker`: paragraph → 1 Dreamer, 2 Nastenka, 3 Grandmother, 4 Lodger, 5 Matrona).
+110 lines. **(guessed)** = speaker worked out by alternation, please check. Corrections go in `script/third_night_fixes.json` (`speaker`: paragraph → 1 Dreamer, 2 Nastenka, 3 Grandmother, 4 Lodger, 5 Matrona).
 
 ---
 
@@ -68,8 +68,7 @@
 
 > **Book:** "Do you know why I am so glad," she said, "so glad to look at you?--why I like you so much to-day?"
 
-- `⏸ 0.60s` **Nastenka:** Do you know why I am so glad.
-- `⏸ 0.50s` **Nastenka:** so glad to look at you? why I like you so much today?
+- `⏸ 0.60s` **Nastenka:** Do you know why I am so glad, so glad to look at you? why I like you so much today?
 
 *Removed (not spoken):* "she said"
 
@@ -113,8 +112,7 @@
 
 > **Book:** "You are very much upset," I said; "you are frightened; you think he won't come."
 
-- `⏸ 1.00s` **Dreamer:** You are very much upset.
-- `⏸ 0.50s` **Dreamer:** you are frightened; you think he won't come.
+- `⏸ 1.00s` **Dreamer:** You are very much upset, you are frightened; you think he won't come.
 
 *Removed (not spoken):* "I said"
 
@@ -122,8 +120,7 @@
 
 > **Book:** "Oh dear!" she answered; "if I were less happy, I believe I should cry at your lack of faith, at your reproaches. However, you have made me think and have given me a lot to think about; but I shall think later, and now I will own that you are right. Yes, I am somehow not myself; I am all suspense, and feel everything as it were too lightly. But hush! that's enough about feelings...."
 
-- `⏸ 0.60s` **Nastenka:** Oh dear!
-- `⏸ 0.50s` **Nastenka:** if I were less happy, I believe I should cry at your lack of faith, at your reproaches.
+- `⏸ 0.60s` **Nastenka:** Oh dear!, if I were less happy, I believe I should cry at your lack of faith, at your reproaches.
 - `⏸ 0.60s` **Nastenka:** However, you have made me think and have given me a lot to think about; but I shall think later, and now I will own that you are right.
 - `⏸ 0.60s` **Nastenka:** Yes, I am somehow not myself; I am all suspense, and feel everything as it were too lightly. But hush! that's enough about feelings...
 
@@ -149,9 +146,8 @@
 > **Book:** "How fond we are of each other!" I cried. ("Oh, Nastenka, Nastenka," I thought, "how much you have told me in that saying! Such fondness at _certain_ moments makes the heart cold and the soul heavy. Your hand is cold, mine burns like fire. How blind you are, Nastenka!... Oh, how unbearable a happy person is sometimes! But I could not be angry with you!")
 
 - `⏸ 0.60s` **Dreamer:** How fond we are of each other!
-- `⏸ 0.50s` **Dreamer:** Oh, Nastenka, Nastenka.
-- `⏸ 0.50s` **Dreamer:** how much you have told me in that saying! Such fondness at certain moments makes the heart cold and the soul heavy. Your hand is cold, mine burns like fire. How blind you are, Nastenka!... Oh, how unbearable a happy person is sometimes!
-- `⏸ 0.60s` **Dreamer:** But I could not be angry with you!
+- `⏸ 0.50s` **Dreamer:** Oh, Nastenka, Nastenka, how much you have told me in that saying! Such fondness at certain moments makes the heart cold and the soul heavy. Your hand is cold, mine burns like fire. How blind you are, Nastenka!...
+- `⏸ 0.60s` **Dreamer:** Oh, how unbearable a happy person is sometimes! But I could not be angry with you!
 
 *Removed (not spoken):* "I cried. (" · "I thought"
 
@@ -199,8 +195,7 @@
 
 > **Book:** "Oh my goodness, my goodness," Nastenka interrupted, "what does all that mean? I don't understand a word."
 
-- `⏸ 0.60s` **Nastenka:** Oh my goodness, my goodness.
-- `⏸ 0.50s` **Nastenka:** what does all that mean? I don't understand a word.
+- `⏸ 0.60s` **Nastenka:** Oh my goodness, my goodness, what does all that mean? I don't understand a word.
 
 *Removed (not spoken):* "Nastenka interrupted"
 
@@ -279,22 +274,15 @@
 - `⏸ 0.60s` **Nastenka:** Yes, yes!
 - `⏸ 0.50s` **Nastenka:** I did not think of that. Of course anything may happen?
 - `⏸ 0.50s` **Dreamer (narration):** In a tone that offered no opposition, though some other far-away thought could be heard like a vexatious discord in it.
-- `⏸ 0.50s` **Nastenka:** I tell you what you must do.
-- `⏸ 0.50s` **Nastenka:** you go as early as possible tomorrow morning, and if you get anything let me know at once. You know where I live, don't you?
+- `⏸ 0.50s` **Nastenka:** I tell you what you must do, you go as early as possible tomorrow morning, and if you get anything let me know at once. You know where I live, don't you?
 
 *Removed (not spoken):* "said Nastenka" · "she said"
-
-### ¶36
-
-> **Book:** And she began repeating her address to me.
-
-- `⏸ 0.60s` **Dreamer (narration):** And she began repeating her address to me.
 
 ### ¶37
 
 > **Book:** Then she suddenly became so tender, so solicitous with me. She seemed to listen attentively to what I told her; but when I asked her some question she was silent, was confused, and turned her head away. I looked into her eyes--yes, she was crying.
 
-- `⏸ 1.00s` **Dreamer (narration):** Then she suddenly became so tender, so solicitous with me. She seemed to listen attentively to what I told her; but when I asked her some question she was silent, was confused, and turned her head away.
+- `⏸ 0.60s` **Dreamer (narration):** Then she suddenly became so tender, so solicitous with me. She seemed to listen attentively to what I told her; but when I asked her some question she was silent, was confused, and turned her head away.
 - `⏸ 0.60s` **Dreamer (narration):** I looked into her eyes, yes, she was crying.
 
 ### ¶38
@@ -329,16 +317,15 @@
 
 > **Book:** "Of course, it may be that I don't understand him fully yet. You know I was always as it were afraid of him; he was always so grave, as it were so proud. Of course I know it's only that he seems like that, I know there is more tenderness in his heart than in mine.... I remember how he looked at me when I went in to him--do you remember?--with my bundle; but yet I respect him too much, and doesn't that show that we are not equals?"
 
-- `⏸ 1.00s` **Dreamer (guessed):** Of course, it may be that I don't understand him fully yet. You know I was always as it were afraid of him; he was always so grave, as it were so proud.
-- `⏸ 0.60s` **Dreamer (guessed):** Of course I know it's only that he seems like that, I know there is more tenderness in his heart than in mine...
-- `⏸ 0.60s` **Dreamer (guessed):** I remember how he looked at me when I went in to him, do you remember? with my bundle; but yet I respect him too much, and doesn't that show that we are not equals?
+- `⏸ 0.60s` **Nastenka:** Of course, it may be that I don't understand him fully yet. You know I was always as it were afraid of him; he was always so grave, as it were so proud.
+- `⏸ 0.60s` **Nastenka:** Of course I know it's only that he seems like that, I know there is more tenderness in his heart than in mine...
+- `⏸ 0.60s` **Nastenka:** I remember how he looked at me when I went in to him, do you remember? with my bundle; but yet I respect him too much, and doesn't that show that we are not equals?
 
 ### ¶43
 
 > **Book:** "No, Nastenka, no," I answered, "it shows that you love him more than anything in the world, and far more than yourself."
 
-- `⏸ 1.00s` **Dreamer:** No, Nastenka, no.
-- `⏸ 0.50s` **Dreamer:** it shows that you love him more than anything in the world, and far more than yourself.
+- `⏸ 0.60s` **Dreamer:** No, Nastenka, no, it shows that you love him more than anything in the world, and far more than yourself.
 
 *Removed (not spoken):* "I answered"
 

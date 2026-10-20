@@ -31,7 +31,7 @@ def best_takes(lines, voice_of, folder, seeds, rates_from=None):
             if os.path.exists(j["path"]): reps[l["id"]] = (j["path"], qc.check(j["path"], l["text"]))
         rates = {}
         for l in lines:
-            r = reps.get(l["id"]) or (chosen.get(l["id"]) or (None, None))[1]
+            r = reps[l["id"]][1] if l["id"] in reps else (chosen[l["id"]][1] if l["id"] in chosen else None)
             if r: rates.setdefault(l["speaker"], []).append(r["rate"])
         for l in todo:
             if l["id"] not in reps: continue

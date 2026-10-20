@@ -1,7 +1,7 @@
 """Other voice models for comparison. Each runs in its own subprocess so one failing doesn't stop the others.
 
 chatterbox  Resemble AI Chatterbox (MIT) - clones the reference recording
-kokoro      Kokoro 82M (Apache-2.0) - no cloning, built-in voices (very clean)
+kokoro      Kokoro 82M (Apache-2.0) via kokoro-onnx (works on Python 3.13) - no cloning, built-in voices (very clean)
 """
 import json, os, subprocess, sys
 
@@ -16,22 +16,23 @@ for j in cfg["jobs"]:
 '''
 
 KOKORO = r'''
-import json, sys, numpy as np, soundfile as sf
-from kokoro import KPipeline
+import json, sys, os, urllib.request, numpy as np, soundfile as sf
+from kokoro_onnx import Kokoro
 cfg = json.load(open(sys.argv[1]))
-pipes = {}
+base = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+    if not os.path.exists(f"/tmp/wn/{f}"): urllib.request.urlretrieve(base + f, f"/tmp/wn/{f}")
+k = Kokoro("/tmp/wn/kokoro-v1.0.onnx", "/tmp/wn/voices-v1.0.bin")
 for j in cfg["jobs"]:
-    lang = j["voice"][0]
-    if lang not in pipes: pipes[lang] = KPipeline(lang_code=lang)
-    audio = [np.asarray(a) for _, _, a in pipes[lang](j["text"], voice=j["voice"], speed=1.0)]
-    sf.write(j["path"], np.concatenate(audio), 24000); print("saved", j["path"], flush=True)
+    samples, sr = k.create(j["text"], voice=j["voice"], speed=1.0, lang="en-gb" if j["voice"].startswith("b") else "en-us")
+    sf.write(j["path"], samples, sr); print("saved", j["path"], flush=True)
 '''
 
 
 def _run(name, code, cfg, folder, pip):
     os.makedirs(folder, exist_ok=True)
     if pip: subprocess.run(f"pip -q install {pip}", shell=True)
-    script, cf = f"/tmp/wn/{name}.py", f"/tmp/wn/{name}.json"
+    script, cf = f"/tmp/wn/run_{name}.py", f"/tmp/wn/run_{name}.json"     # never name a script like the package it imports
     open(script, "w").write(code); json.dump(cfg, open(cf, "w"))
     r = subprocess.run([sys.executable, script, cf], capture_output=True, text=True)
     print(name, "exit", r.returncode); print(r.stdout[-600:]); print(r.stderr[-2500:] if r.returncode else "")
@@ -45,6 +46,5 @@ def chatterbox(texts, ref, folder):
 
 def kokoro(texts, voice, folder):
     jobs = [dict(text=t, voice=voice, path=f"{folder}/kokoro_{voice}_{i}.wav") for i, t in enumerate(texts)]
-    subprocess.run("apt-get -qq install -y espeak-ng > /dev/null 2>&1", shell=True)
-    _run(f"kokoro_{voice}", KOKORO, dict(jobs=jobs), folder, '"kokoro>=0.9.4" "misaki[en]"')
+    _run(f"kokoro_{voice}", KOKORO, dict(jobs=jobs), folder, "kokoro-onnx soundfile")
     return [j["path"] for j in jobs]

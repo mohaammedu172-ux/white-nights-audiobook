@@ -21,3 +21,11 @@ run.CFG["voices"]["2"]="nastenka_A_single"; run.CFG["paragraphs"]=[15,24]; run.C
 run.chapter()
 run.CFG["voices"]["2"]=None
 run.settings()
+from wn import alt_models
+def fake_alt(texts, *a):
+    folder=a[-1]; os.makedirs(folder,exist_ok=True); ps=[]
+    for i,t in enumerate(texts):
+        p=f"{folder}/{a[0] if len(a)>1 and isinstance(a[0],str) and '/' not in a[0] else 'cb'}_{i}.wav"; fake_gen([dict(text=t,path=p)]); ps.append(p)
+    return ps
+alt_models.kokoro=fake_alt; alt_models.chatterbox=fake_alt
+run.models()

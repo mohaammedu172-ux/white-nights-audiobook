@@ -1,12 +1,13 @@
 """Jobs. On Kaggle the runner notebook calls:  python -m wn.run <job>
 
   audition   Nastenka candidates (A/B/C) + Russian names check, ~15 min
+  models     the same Nastenka lines from Kokoro (built-in voices) and Chatterbox (cloned), ~15 min
   settings   one Nastenka voice, same lines at 10 steps/bf16 vs 25 and 50 steps/fp32, ~15 min
   chapter    the chapter in config.json: every line generated alone, checked, retaken, then assembled + mixed
 """
 import json, os, sys, time
 import numpy as np, soundfile as sf
-from . import text, voices, tts, qc, assemble
+from . import text, voices, tts, qc, assemble, alt_models
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.environ.get("WN_OUT", "/kaggle/working/out" if os.path.exists("/kaggle") else os.path.join(ROOT, "out"))
@@ -96,6 +97,38 @@ def settings():
     print("Listen: settings/nastenka_1_*, _2_*, _3_* (generated voice only, no reference recording at the start)")
 
 
+NASTENKA_TEST = ["A little! Here, for instance, why are you trembling?",
+                 "Chances! What chances, of what? That's not so nice.",
+                 "Don't be vexed; I am only laughing at your being your own enemy, and if you had tried you would have succeeded, perhaps, even in the street.",
+                 "Goodbye till tomorrow!"]
+
+
+def models():
+    """Same 4 Nastenka lines from other voice models: Kokoro (built-in voices) and Chatterbox (clones her recording)."""
+    out = f"{OUT}/models"; os.makedirs(out, exist_ok=True)
+    vdir = voices.build(OUT)
+    ref = f"{vdir}/{CFG['voices'].get('2') or 'nastenka_B_lively'}.wav"
+    sets = {}
+    for v in ("bf_emma", "bf_isabella", "af_heart"):
+        sets[f"kokoro_{v}"] = alt_models.kokoro(NASTENKA_TEST, v, f"{out}/takes")
+    sets["chatterbox"] = alt_models.chatterbox(NASTENKA_TEST, ref, f"{out}/takes")
+    report = {}
+    for name, paths in sets.items():
+        if not all(os.path.exists(p) for p in paths): report[name] = "failed"; continue
+        audio = []
+        for p in paths:
+            y, sr = sf.read(p)
+            if y.ndim > 1: y = y.mean(1)
+            if sr != 24000:
+                import librosa; y = librosa.resample(y, orig_sr=sr, target_sr=24000)
+            audio += [assemble.trim(y), np.zeros(int(1.2 * 24000))]
+        to_mp3(np.concatenate(audio), f"{out}/nastenka_{name}.mp3")
+        report[name] = [dict(line=t, **{k: v for k, v in qc.check(p, t).items() if k in ("clarity", "heard")}) for p, t in zip(paths, NASTENKA_TEST)]
+    json.dump(report, open(f"{out}/models_report.json", "w"), indent=1)
+    print(json.dumps(report, indent=1))
+    print("Listen: models/nastenka_kokoro_*.mp3 and models/nastenka_chatterbox.mp3")
+
+
 def chapter():
     chap = CFG["chapter"]
     if not CFG["voices"].get("2"): raise SystemExit("Pick Nastenka's voice first: set voices.2 in config.json (run the audition).")
@@ -133,4 +166,4 @@ def chapter():
 
 
 if __name__ == "__main__":
-    {"audition": audition, "settings": settings, "chapter": chapter}[sys.argv[1] if len(sys.argv) > 1 else "audition"]()
+    {"audition": audition, "settings": settings, "models": models, "chapter": chapter}[sys.argv[1] if len(sys.argv) > 1 else "audition"]()

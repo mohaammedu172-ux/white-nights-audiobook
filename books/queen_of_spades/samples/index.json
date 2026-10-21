@@ -1,0 +1,970 @@
+[
+ {
+  "role": "Narrator",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_adam.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_echo",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_echo.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_eric.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_fenrir",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_fenrir.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_liam.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_michael",
+  "current": true,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_michael.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_onyx.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_puck",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_puck.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_am_santa.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_bm_daniel.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "bm_fable",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_bm_fable.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "bm_george",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_bm_george.mp3"
+ },
+ {
+  "role": "Narrator",
+  "voice": "bm_lewis",
+  "current": false,
+  "speed": 0.95,
+  "text": "At the house of Naroumov, a cavalry officer, the long winter night had been passed in gambling.",
+  "file": "Narrator_bm_lewis.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_adam.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_echo",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_echo.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_eric.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_fenrir",
+  "current": true,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_fenrir.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_liam.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_michael",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_michael.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_onyx.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_puck",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_puck.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_am_santa.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_bm_daniel.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "bm_fable",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_bm_fable.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "bm_george",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_bm_george.mp3"
+ },
+ {
+  "role": "Herman",
+  "voice": "bm_lewis",
+  "current": false,
+  "speed": 1.0,
+  "text": "I didn't intend to kill her; the pistol was not even loaded.",
+  "file": "Herman_bm_lewis.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_adam.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_echo",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_echo.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_eric.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_fenrir",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_fenrir.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_liam.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_michael",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_michael.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_onyx.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_puck",
+  "current": true,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_puck.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_am_santa.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_bm_daniel.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "bm_fable",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_bm_fable.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "bm_george",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_bm_george.mp3"
+ },
+ {
+  "role": "Tomsky",
+  "voice": "bm_lewis",
+  "current": false,
+  "speed": 1.0,
+  "text": "Herman is a German, therefore economical; that explains it.",
+  "file": "Tomsky_bm_lewis.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_alloy",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_alloy.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_aoede",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_aoede.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_bella",
+  "current": true,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_bella.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_heart",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_heart.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_jessica",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_jessica.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_kore",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_kore.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_nicole",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_nicole.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_nova",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_nova.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_river",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_river.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_sarah",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_sarah.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "af_sky",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_af_sky.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "bf_alice",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_bf_alice.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "bf_emma",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_bf_emma.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "bf_isabella",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_bf_isabella.mp3"
+ },
+ {
+  "role": "Lisaveta",
+  "voice": "bf_lily",
+  "current": false,
+  "speed": 1.0,
+  "text": "You are a monster!",
+  "file": "Lisaveta_bf_lily.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_alloy",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_alloy.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_aoede",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_aoede.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_bella",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_bella.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_heart",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_heart.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_jessica",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_jessica.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_kore",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_kore.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_nicole",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_nicole.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_nova",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_nova.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_river",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_river.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_sarah",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_sarah.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "af_sky",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_af_sky.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "bf_alice",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_bf_alice.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "bf_emma",
+  "current": true,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_bf_emma.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "bf_isabella",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_bf_isabella.mp3"
+ },
+ {
+  "role": "Countess",
+  "voice": "bf_lily",
+  "current": false,
+  "speed": 0.88,
+  "text": "It was only a jest; I swear to you, it was only a jest.",
+  "file": "Countess_bf_lily.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_adam.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_echo",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_echo.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_eric.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_fenrir",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_fenrir.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_liam.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_michael",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_michael.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_onyx.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_puck",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_puck.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_am_santa.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_bm_daniel.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "bm_fable",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_bm_fable.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "bm_george",
+  "current": true,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_bm_george.mp3"
+ },
+ {
+  "role": "Tchekalinsky",
+  "voice": "bm_lewis",
+  "current": false,
+  "speed": 0.95,
+  "text": "Will you not take a card?",
+  "file": "Tchekalinsky_bm_lewis.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_adam.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_echo",
+  "current": true,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_echo.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_eric.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_fenrir",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_fenrir.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_liam.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_michael",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_michael.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_onyx.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_puck",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_puck.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_am_santa.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_bm_daniel.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "bm_fable",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_bm_fable.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "bm_george",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_bm_george.mp3"
+ },
+ {
+  "role": "Naroumov",
+  "voice": "bm_lewis",
+  "current": false,
+  "speed": 1.0,
+  "text": "What do you say, Herman?",
+  "file": "Naroumov_bm_lewis.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_adam.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_echo",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_echo.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_eric.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_fenrir",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_fenrir.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_liam.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_michael",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_michael.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_onyx.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_puck",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_puck.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_am_santa.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_bm_daniel.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "bm_fable",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_bm_fable.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "bm_george",
+  "current": false,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_bm_george.mp3"
+ },
+ {
+  "role": "Sourine",
+  "voice": "bm_lewis",
+  "current": true,
+  "speed": 1.0,
+  "text": "I have been unlucky again tonight.",
+  "file": "Sourine_bm_lewis.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_adam",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_adam.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_echo",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_echo.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_eric",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_eric.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_fenrir",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_fenrir.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_liam",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_liam.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_michael",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_michael.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_onyx",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_onyx.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_puck",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_puck.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "am_santa",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_am_santa.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "bm_daniel",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_bm_daniel.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "bm_fable",
+  "current": true,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_bm_fable.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "bm_george",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_bm_george.mp3"
+ },
+ {
+  "role": "Saint-Germain",
+  "voice": "bm_lewis",
+  "current": false,
+  "speed": 0.92,
+  "text": "I can show you how to win back all your money.",
+  "file": "Saint-Germain_bm_lewis.mp3"
+ }
+]

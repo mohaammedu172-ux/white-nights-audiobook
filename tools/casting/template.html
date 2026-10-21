@@ -1,0 +1,95 @@
+<title>Queen of Spades Casting</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@500;600&family=Spectral:ital@1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap">
+<style>
+/* Layout: a casting sheet — one band per character, voice tiles in a wrapping grid, picks tallied in a sticky bar */
+:root {
+  --bg: #f5f4f2; --panel: #ffffff; --fg: #1d1b20; --muted: #6b6670; --line: #dedad6;
+  --accent: #9b1c2c; --accent-soft: #f6e4e6; --pick: #1f5f4a; --pick-soft: #e2f0ea;
+  --display: "Spectral SC", Georgia, serif; --quote: "Spectral", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #17151a; --panel: #211e25; --fg: #ece8ef; --muted: #a39dab; --line: #34303a;
+  --accent: #e0707e; --accent-soft: #3a2228; --pick: #6fcfa8; --pick-soft: #1d3429; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #17151a; --panel: #211e25; --fg: #ece8ef; --muted: #a39dab; --line: #34303a;
+  --accent: #e0707e; --accent-soft: #3a2228; --pick: #6fcfa8; --pick-soft: #1d3429; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 120px; }
+h1 { font: 600 2rem/1.1 var(--display); margin: 0 0 6px; text-wrap: balance; }
+h1 .suit { color: var(--accent); }
+.intro { color: var(--muted); max-width: 62ch; margin: 0 0 18px; }
+nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 28px; }
+nav a { font-size: .82rem; color: var(--fg); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; background: var(--panel); }
+nav a.done { border-color: var(--pick); color: var(--pick); }
+section { display: grid; gap: 14px; padding-block: 22px; border-top: 1px solid var(--line); scroll-margin-top: 12px; }
+section header { display: grid; gap: 2px; }
+h2 { font: 600 1.45rem/1.2 var(--display); margin: 0; letter-spacing: .01em; }
+.who { margin: 0; color: var(--muted); }
+.line { margin: 6px 0 0; font: italic 1.08rem/1.45 var(--quote); max-width: 60ch; }
+.sp { margin: 0; font-size: .78rem; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.tile { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; min-width: 0; }
+.tile.chosen { border-color: var(--pick); background: var(--pick-soft); }
+.play { width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--accent); color: #fff; font-size: 14px; cursor: pointer; display: grid; place-items: center; }
+.play.on { background: var(--fg); color: var(--bg); }
+.meta { min-width: 0; }
+.vn { font-weight: 600; }
+.vn code { font: .74rem var(--mono); color: var(--muted); font-weight: 400; margin-left: 4px; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+.tags span { font-size: .7rem; letter-spacing: .03em; color: var(--muted); }
+.tags span + span::before { content: "· "; }
+.tags .was { color: var(--accent); }
+.pick { border: 1px solid var(--line); background: transparent; color: var(--fg); border-radius: 8px; padding: 6px 10px; font: 500 .8rem var(--body); cursor: pointer; }
+.pick[aria-pressed="true"] { background: var(--pick); border-color: var(--pick); color: var(--panel); }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.bar { position: fixed; left: 0; right: 0; bottom: 0; background: var(--panel); border-top: 1px solid var(--line);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-top: 10px; padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
+.bar .in { max-width: 1040px; margin: 0 auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+#summary { flex: 1 1 300px; min-width: 0; font: .78rem/1.4 var(--mono); color: var(--muted); }
+#copy { border: 0; background: var(--accent); color: #fff; border-radius: 8px; padding: 9px 14px; font: 600 .85rem var(--body); cursor: pointer; }
+#copied { font-size: .8rem; color: var(--pick); }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+<div class="wrap">
+<h1><span class="suit">♠</span> The Queen of Spades: casting</h1>
+<p class="intro">Every English Kokoro voice reading each character's line, made with the same method as White Nights. Press play to listen, then press <b>Pick</b> on the one you want. When you're done, press <b>Copy my picks</b> and paste the result into the chat. A red label marks Claude's first choice.</p>
+<nav>%%NAV%%</nav>
+%%SECTIONS%%
+</div>
+<div class="bar"><div class="in"><div id="summary">No picks yet</div><button id="copy">Copy my picks</button><span id="copied" hidden>Copied</span></div></div>
+<textarea id="fallback" hidden aria-label="Picks"></textarea>
+<script>
+const ROLES = %%ROLES%%;
+const audio = new Audio(); let playing = null;
+let picks = {}; try { picks = JSON.parse(localStorage.getItem("qos-picks") || "{}"); } catch (e) {}
+function save() { try { localStorage.setItem("qos-picks", JSON.stringify(picks)); } catch (e) {} }
+function render() {
+  document.querySelectorAll(".tile").forEach(t => {
+    const on = picks[t.dataset.role] === t.dataset.voice;
+    t.classList.toggle("chosen", on); t.querySelector(".pick").setAttribute("aria-pressed", on); t.querySelector(".pick").textContent = on ? "Picked" : "Pick";
+  });
+  document.querySelectorAll("nav a").forEach((a, i) => a.classList.toggle("done", !!picks[ROLES[i]]));
+  const n = Object.keys(picks).length;
+  document.getElementById("summary").textContent = n ? ROLES.filter(r => picks[r]).map(r => r + ": " + picks[r]).join(" · ") + `  (${n}/${ROLES.length})` : "No picks yet";
+}
+document.addEventListener("click", e => {
+  const play = e.target.closest(".play"), pick = e.target.closest(".pick");
+  if (play) {
+    if (playing === play) { audio.pause(); play.classList.remove("on"); play.firstChild.textContent = "▶"; playing = null; return; }
+    if (playing) { playing.classList.remove("on"); playing.firstChild.textContent = "▶"; }
+    audio.src = play.dataset.src; audio.play().catch(() => {}); playing = play; play.classList.add("on"); play.firstChild.textContent = "■";
+  }
+  if (pick) { const t = pick.closest(".tile"); picks[t.dataset.role] = picks[t.dataset.role] === t.dataset.voice ? undefined : t.dataset.voice;
+    if (!picks[t.dataset.role]) delete picks[t.dataset.role]; save(); render(); }
+});
+audio.addEventListener("ended", () => { if (playing) { playing.classList.remove("on"); playing.firstChild.textContent = "▶"; playing = null; } });
+document.getElementById("copy").addEventListener("click", () => {
+  const txt = "Queen of Spades voice picks:\n" + ROLES.map(r => `${r}: ${picks[r] || "(keep Claude's pick)"}`).join("\n");
+  const ok = () => { const c = document.getElementById("copied"); c.hidden = false; setTimeout(() => c.hidden = true, 1800); };
+  const fb = () => { const f = document.getElementById("fallback"); f.value = txt; f.hidden = false; f.select(); };
+  try { navigator.clipboard.writeText(txt).then(ok, fb); } catch (e) { fb(); }
+});
+render();
+</script>

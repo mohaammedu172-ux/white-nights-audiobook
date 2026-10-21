@@ -34,3 +34,8 @@ speaker IDs from the table above and narration as speaker 1. Then:
 ```bash
 WN_CONFIG=books/queen_of_spades/config.json WN_OUT=$PWD/out python -m wn.run chapter
 ```
+
+## All voice options
+`samples/` has 121 short MP3s: every English Kokoro voice reading each character's line (13 male voices per male role,
+15 female voices per female role), listed in `samples/README.md`. `casting_page.html` is a self-contained listening and
+picking page (open it in a browser). Rebuild both with `tools/casting/`.

@@ -1,6 +1,6 @@
 """
 Build the spoken script for The Queen of Spades (Pushkin, Twitchell tr., Gutenberg #23058).
-v2 — fixes header/footer, nested quotes, before/after tags, alternation.
+v3 — fixes apostrophes, unmatched quotes, nested anecdote, adds conversation-state inference.
 """
 from __future__ import annotations
 
@@ -40,9 +40,10 @@ NAME_TO_ROLE = {
     "sourine": SOURINE, "surin": SOURINE,
     "saint-germain": SAINT_GERMAIN, "saint germain": SAINT_GERMAIN,
     "st. germain": SAINT_GERMAIN, "st germain": SAINT_GERMAIN,
+    "the count": SAINT_GERMAIN,  # inside Tomsky's anecdote only
 }
 
-SPEECH_VERBS = r"(?:said|asked|replied|answered|cried|exclaimed|observed|remarked|continued|added|muttered|whispered|shouted|repeated|inquired|returned|remonstrated|insisted|murmured|interrupted|put in|went on|broke in)"
+SPEECH_VERBS = r"(?:said|asked|replied|answered|cried|exclaimed|observed|remarked|continued|added|muttered|whispered|shouted|repeated|inquired|returned|remonstrated|insisted|murmured|interrupted|put in|went on|broke in|reflected)"
 
 
 def fetch_book() -> str:
@@ -58,27 +59,20 @@ def fetch_book() -> str:
 
 
 def strip_gutenberg(text: str) -> str:
-    # Strip anything before the START marker (or before "The Queen of Spades" title)
     start = re.search(r"\*\*\*\s*START OF (THE|THIS) PROJECT GUTENBERG.*?\*\*\*", text, re.I)
     if start:
         text = text[start.end():]
     else:
-        # Fallback: find the first real paragraph
-        m = re.search(r"(AT the house of Naroumov|The Queen of Spades)", text)
+        m = re.search(r"(AT the house of Naroumov)", text)
         if m:
             text = text[m.start():]
-
-    # Strip anything from the END marker onward
     end = re.search(r"\*\*\*\s*END OF (THE|THIS) PROJECT GUTENBERG.*?\*\*\*", text, re.I)
     if end:
         text = text[:end.start()]
     else:
-        # Fallback: cut at the first "End of the Project Gutenberg" or "*** END"
         m = re.search(r"(End of (the )?Project Gutenberg|\*\*\*\s*END)", text, re.I)
         if m:
             text = text[:m.start()]
-
-    # Drop copyright line, transcriber notes, etc.
     text = re.sub(r"^Copyright,?\s+\d{4}.*$", "", text, flags=re.M)
     text = re.sub(r"^\s*Transcriber'?s? Note.*$", "", text, flags=re.M)
     return text.strip()
@@ -89,20 +83,18 @@ def split_paragraphs(text: str) -> list[str]:
     out = []
     for p in paras:
         p = " ".join(p.split())
-        if p and len(p.split()) > 2:  # skip 1-2 word fragments
+        if p and len(p.split()) > 2:
             out.append(p)
     return out
 
 
 def find_name_in(text: str) -> int | None:
-    """Look for a character name in text. Prefer the one closest to the speech verb."""
     low = text.lower()
     best_role = None
     best_pos = None
     for name, role in NAME_TO_ROLE.items():
         idx = low.find(name)
         if idx >= 0:
-            # Prefer a name immediately preceded by a speech verb
             before = low[max(0, idx - 30):idx]
             is_tagged = re.search(SPEECH_VERBS + r"\s*$", before) is not None
             score = (0 if is_tagged else 1, idx)
@@ -120,31 +112,63 @@ def is_letter_paragraph(para: str) -> bool:
     return any(m in low for m in markers)
 
 
-def split_nested(quote_text: str) -> list[tuple[int | None, str]]:
+def is_apostrophe(text: str, pos: int) -> bool:
+    """True if the ' at pos is an apostrophe inside a word, not a quote."""
+    before = text[pos - 1] if pos > 0 else " "
+    after = text[pos + 1] if pos + 1 < len(text) else " "
+    return before.isalpha() and after.isalpha()
+
+
+def find_closing_single(text: str, start: int) -> int:
+    """From start+1, find a ' that is not an apostrophe. Return -1 if none."""
+    i = start + 1
+    while i < len(text):
+        if text[i] == "'" and not is_apostrophe(text, i):
+            return i
+        i += 1
+    return -1
+
+
+def split_nested(quote_text: str, outer_role: int) -> list[tuple[int, str]]:
     """
-    Split a double-quoted passage into segments, treating single-quoted
-    inner speech as a nested speaker (Saint-Germain inside Tomsky, etc.).
-    Returns list of (role_hint, text). role_hint None = outer speaker.
+    Split a double-quoted passage into segments.
+    Single quotes '...' inside are nested speech.
+    Outer speech = outer_role; nested = find name in following 60 chars or default Saint-Germain.
     """
-    parts: list[tuple[int | None, str]] = []
-    pattern = re.compile(r"'([^']*)'")
-    last_end = 0
-    for m in pattern.finditer(quote_text):
-        before = quote_text[last_end:m.start()]
-        if before.strip():
-            parts.append((None, before.strip()))
-        inner = m.group(1).strip()
-        if inner:
-            after = quote_text[m.end():m.end() + 60].lower()
-            role = find_name_in(after)
-            if role is None:
-                role = SAINT_GERMAIN  # default for the Tomsky anecdote
-            parts.append((role, inner))
-        last_end = m.end()
-    rest = quote_text[last_end:].strip()
-    if rest:
-        parts.append((None, rest))
+    parts: list[tuple[int, str]] = []
+    i = 0
+    buf_start = 0
+    while i < len(quote_text):
+        if quote_text[i] == "'" and not is_apostrophe(quote_text, i):
+            close = find_closing_single(quote_text, i)
+            if close > i + 1:
+                # flush outer text
+                if quote_text[buf_start:i].strip():
+                    parts.append((outer_role, quote_text[buf_start:i].strip()))
+                inner = quote_text[i + 1:close].strip()
+                if inner:
+                    after = quote_text[close + 1:close + 80].lower()
+                    role = find_name_in(after)
+                    if role is None:
+                        role = COUNTESS if "grandmother" in after or "she" in after[:20] else SAINT_GERMAIN
+                    parts.append((role, inner))
+                buf_start = close + 1
+                i = close + 1
+                continue
+        i += 1
+    if quote_text[buf_start:].strip():
+        parts.append((outer_role, quote_text[buf_start:].strip()))
     return parts
+
+
+def clean_quotes(text: str) -> str:
+    """Remove unmatched leading/trailing double quotes."""
+    text = text.strip()
+    while text.startswith('"') and text.count('"') == 1:
+        text = text[1:].strip()
+    while text.endswith('"') and text.count('"') == 1:
+        text = text[:-1].strip()
+    return text
 
 
 def parse_paragraph(para: str, state: dict) -> list[dict]:
@@ -154,8 +178,32 @@ def parse_paragraph(para: str, state: dict) -> list[dict]:
         lines.append({"role": NARRATOR, "text": para, "guessed": False, "is_letter": True})
         return lines
 
+    # Tomsky anecdote special case: paragraph starts with a quote and contains nested "'...'"
+    has_nested = bool(re.search(r"\"'.*?'", para))
+    if has_nested:
+        outer = find_name_in(para[:80]) or state.get("last_speaker") or TOMSKY
+        # strip outer quotes
+        inner_text = para.strip()
+        if inner_text.startswith('"'):
+            inner_text = inner_text[1:]
+        if inner_text.endswith('"'):
+            inner_text = inner_text[:-1]
+        for role, seg in split_nested(inner_text, outer):
+            lines.append({"role": role, "text": clean_quotes(seg),
+                          "guessed": role != outer, "is_letter": False})
+        state["last_speaker"] = outer
+        return lines
+
     quote_re = re.compile(r'"([^"]*)"')
     last_end = 0
+    first_quote = quote_re.search(para)
+
+    # leading narration
+    if first_quote:
+        leading = para[:first_quote.start()].strip()
+        if leading and len(leading.split()) > 7:
+            lines.append({"role": NARRATOR, "text": leading, "guessed": False, "is_letter": False})
+
     for m in quote_re.finditer(para):
         before = para[last_end:m.start()]
         quote = m.group(1).strip()
@@ -165,39 +213,37 @@ def parse_paragraph(para: str, state: dict) -> list[dict]:
             last_end = m.end()
             continue
 
-        # Determine the outer speaker
-        speaker = find_name_in(after) or find_name_in(before)
-        guessed = False
-        if speaker is None:
-            speaker = state.get("expected_next") or state.get("last_speaker") or NARRATOR
-            guessed = True
+        # nested single quotes inside this double quote?
+        if "'" in quote and any(not is_apostrophe(quote, j) for j, c in enumerate(quote) if c == "'"):
+            outer = find_name_in(after) or find_name_in(before) or state.get("last_speaker") or NARRATOR
+            for role, seg in split_nested(quote, outer):
+                lines.append({"role": role, "text": clean_quotes(seg),
+                              "guessed": role != outer, "is_letter": False})
+                state["last_speaker"] = role
+        else:
+            speaker = find_name_in(after) or find_name_in(before)
+            guessed = False
+            if speaker is None:
+                # Plan A: infer from conversation state
+                speaker = state.get("expected_next") or state.get("last_speaker") or NARRATOR
+                guessed = True
+            lines.append({"role": speaker, "text": clean_quotes(quote),
+                          "guessed": guessed, "is_letter": False})
+            state["last_speaker"] = speaker
 
-        # Nested single quotes inside this quote
-        segments = split_nested(quote)
-        for role_hint, seg_text in segments:
-            role = role_hint if role_hint is not None else speaker
-            seg_guessed = guessed if role_hint is None else True
-            lines.append({"role": role, "text": seg_text, "guessed": seg_guessed, "is_letter": False})
-            state["last_speaker"] = role
-
-        # Update alternation state: the person just addressed
+        # update expected_next: person addressed in the "after" text
         after_low = after.lower()
         for name, role in NAME_TO_ROLE.items():
-            if name in after_low and role != speaker:
+            if name in after_low and role != state.get("last_speaker"):
                 state["expected_next"] = role
                 break
 
         last_end = m.end()
 
-    # Remaining narration outside quotes
     trailing = para[last_end:].strip()
-    # Also narration before the first quote
-    first_quote = quote_re.search(para)
-    leading = para[:first_quote.start()].strip() if first_quote else ""
+    if trailing and len(trailing.split()) > 7:
+        lines.append({"role": NARRATOR, "text": trailing, "guessed": False, "is_letter": False})
 
-    for nar in (leading, trailing):
-        if nar and len(nar.split()) > 7:
-            lines.append({"role": NARRATOR, "text": nar, "guessed": False, "is_letter": False})
     return lines
 
 
@@ -220,7 +266,6 @@ def chunk_line(text: str, max_words: int = 45) -> list[str]:
 
 
 def apply_fixes(lines: list[dict]) -> list[dict]:
-    """Apply manual corrections from _fixes.json (role by line id, or text replace)."""
     fixes_path = SCRIPT_DIR / "queen_of_spades_fixes.json"
     if not fixes_path.exists():
         return lines
@@ -262,8 +307,8 @@ def build() -> None:
     (SCRIPT_DIR / "queen_of_spades_lines.json").write_text(
         json.dumps(all_lines, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    md = ["# The Queen of Spades — script review (v2)\n",
-          "Guessed speakers are marked **(guessed)**. Check those first.\n"]
+    md = ["# The Queen of Spades — script review (v3)\n",
+          "Guessed speakers are marked **(guessed)**. Plan A: inferred from conversation, needs review.\n"]
     for line in all_lines:
         tag = " **(guessed)**" if line["guessed"] else ""
         letter = " [letter]" if line["is_letter"] else ""

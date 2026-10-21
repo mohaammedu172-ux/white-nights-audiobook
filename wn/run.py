@@ -11,7 +11,7 @@ from . import text, voices, tts, qc, assemble, alt_models
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.environ.get("WN_OUT", "/kaggle/working/out" if os.path.exists("/kaggle") else os.path.join(ROOT, "out"))
-CFG = json.load(open(os.path.join(ROOT, "config.json")))
+CFG = json.load(open(os.environ.get("WN_CONFIG") or os.path.join(ROOT, "config.json")))   # WN_CONFIG: another book's config
 
 
 def to_mp3(y, dst):

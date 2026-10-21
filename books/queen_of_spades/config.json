@@ -1,0 +1,42 @@
+{
+  "book": "The Queen of Spades, Alexander Pushkin, tr. H. Twitchell, Project Gutenberg #23058",
+  "chapter": "queen_of_spades",
+  "_note": "Experiment config. Use with: WN_CONFIG=books/queen_of_spades/config.json python -m wn.run chapter. The White Nights config.json is unchanged.",
+  "cast": {
+    "1": "Narrator",
+    "2": "Herman",
+    "3": "Tomsky",
+    "4": "Lisaveta",
+    "5": "Countess",
+    "6": "Tchekalinsky",
+    "7": "Naroumov",
+    "8": "Sourine",
+    "9": "Saint-Germain"
+  },
+  "voices": {
+    "1": "kokoro:am_michael",
+    "2": "kokoro:am_fenrir",
+    "3": "kokoro:am_puck",
+    "4": "kokoro:af_bella",
+    "5": "kokoro:bf_emma",
+    "6": "kokoro:bm_george",
+    "7": "kokoro:am_echo",
+    "8": "kokoro:bm_lewis",
+    "9": "kokoro:bm_fable"
+  },
+  "kokoro_style": {
+    "am_michael": 250, "am_fenrir": 250, "am_puck": 60, "af_bella": 250, "bf_emma": 250,
+    "bm_george": 250, "am_echo": 250, "bm_lewis": 250, "bm_fable": 250
+  },
+  "kokoro_speed": {
+    "am_michael": 0.95, "am_fenrir": 1.0, "am_puck": 1.0, "af_bella": 1.0, "bf_emma": 0.88,
+    "bm_george": 0.95, "am_echo": 1.0, "bm_lewis": 1.0, "bm_fable": 0.92
+  },
+  "tts": {"cfg_scale": 1.3, "steps": 10, "seeds": [1001, 2002, 3003]},
+  "qc": {"min_clarity": 0.85, "max_extra": 0.25},
+  "mix": {
+    "music": false, "music_db": -40, "duck_db": 3, "voice_rms_db": -20, "peak_db": -3,
+    "room_rt60": 0.32, "room_wet_db": -16, "vary_db": 1.2, "interrupt_overlap": 0.35
+  },
+  "paragraphs": null
+}

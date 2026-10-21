@@ -12,7 +12,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`am_eric`](Narrator_am_eric.mp3)
 - [`am_fenrir`](Narrator_am_fenrir.mp3)
 - [`am_liam`](Narrator_am_liam.mp3)
-- [`am_michael`](Narrator_am_michael.mp3) — first pick
+- [`am_michael`](Narrator_am_michael.mp3) — **picked** — first pick
 - [`am_onyx`](Narrator_am_onyx.mp3)
 - [`am_puck`](Narrator_am_puck.mp3)
 - [`am_santa`](Narrator_am_santa.mp3)
@@ -27,7 +27,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`am_adam`](Herman_am_adam.mp3)
 - [`am_echo`](Herman_am_echo.mp3)
 - [`am_eric`](Herman_am_eric.mp3)
-- [`am_fenrir`](Herman_am_fenrir.mp3) — first pick
+- [`am_fenrir`](Herman_am_fenrir.mp3) — **picked** — first pick
 - [`am_liam`](Herman_am_liam.mp3)
 - [`am_michael`](Herman_am_michael.mp3)
 - [`am_onyx`](Herman_am_onyx.mp3)
@@ -48,7 +48,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`am_liam`](Tomsky_am_liam.mp3)
 - [`am_michael`](Tomsky_am_michael.mp3)
 - [`am_onyx`](Tomsky_am_onyx.mp3)
-- [`am_puck`](Tomsky_am_puck.mp3) — first pick
+- [`am_puck`](Tomsky_am_puck.mp3) — **picked** — first pick
 - [`am_santa`](Tomsky_am_santa.mp3)
 - [`bm_daniel`](Tomsky_bm_daniel.mp3)
 - [`bm_fable`](Tomsky_bm_fable.mp3)
@@ -60,7 +60,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 
 - [`af_alloy`](Lisaveta_af_alloy.mp3)
 - [`af_aoede`](Lisaveta_af_aoede.mp3)
-- [`af_bella`](Lisaveta_af_bella.mp3) — first pick
+- [`af_bella`](Lisaveta_af_bella.mp3) — **picked** — first pick
 - [`af_heart`](Lisaveta_af_heart.mp3)
 - [`af_jessica`](Lisaveta_af_jessica.mp3)
 - [`af_kore`](Lisaveta_af_kore.mp3)
@@ -83,7 +83,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`af_heart`](Countess_af_heart.mp3)
 - [`af_jessica`](Countess_af_jessica.mp3)
 - [`af_kore`](Countess_af_kore.mp3)
-- [`af_nicole`](Countess_af_nicole.mp3)
+- [`af_nicole`](Countess_af_nicole.mp3) — **picked**
 - [`af_nova`](Countess_af_nova.mp3)
 - [`af_river`](Countess_af_river.mp3)
 - [`af_sarah`](Countess_af_sarah.mp3)
@@ -108,7 +108,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`bm_daniel`](Tchekalinsky_bm_daniel.mp3)
 - [`bm_fable`](Tchekalinsky_bm_fable.mp3)
 - [`bm_george`](Tchekalinsky_bm_george.mp3) — first pick
-- [`bm_lewis`](Tchekalinsky_bm_lewis.mp3)
+- [`bm_lewis`](Tchekalinsky_bm_lewis.mp3) — **picked**
 
 ## Naroumov (speed 1.0)
 > What do you say, Herman?
@@ -121,7 +121,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`am_michael`](Naroumov_am_michael.mp3)
 - [`am_onyx`](Naroumov_am_onyx.mp3)
 - [`am_puck`](Naroumov_am_puck.mp3)
-- [`am_santa`](Naroumov_am_santa.mp3)
+- [`am_santa`](Naroumov_am_santa.mp3) — **picked**
 - [`bm_daniel`](Naroumov_bm_daniel.mp3)
 - [`bm_fable`](Naroumov_bm_fable.mp3)
 - [`bm_george`](Naroumov_bm_george.mp3)
@@ -136,7 +136,7 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`am_fenrir`](Sourine_am_fenrir.mp3)
 - [`am_liam`](Sourine_am_liam.mp3)
 - [`am_michael`](Sourine_am_michael.mp3)
-- [`am_onyx`](Sourine_am_onyx.mp3)
+- [`am_onyx`](Sourine_am_onyx.mp3) — **picked**
 - [`am_puck`](Sourine_am_puck.mp3)
 - [`am_santa`](Sourine_am_santa.mp3)
 - [`bm_daniel`](Sourine_bm_daniel.mp3)
@@ -157,6 +157,6 @@ Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python to
 - [`am_puck`](Saint-Germain_am_puck.mp3)
 - [`am_santa`](Saint-Germain_am_santa.mp3)
 - [`bm_daniel`](Saint-Germain_bm_daniel.mp3)
-- [`bm_fable`](Saint-Germain_bm_fable.mp3) — first pick
+- [`bm_fable`](Saint-Germain_bm_fable.mp3) — **picked** — first pick
 - [`bm_george`](Saint-Germain_bm_george.mp3)
 - [`bm_lewis`](Saint-Germain_bm_lewis.mp3)

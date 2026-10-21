@@ -4,19 +4,21 @@ Text: H. Twitchell translation, Project Gutenberg #23058 (public domain).
 Purpose: a second book run by another agent, to compare results with White Nights.
 The White Nights settings (`/config.json`) are **not** changed by this experiment.
 
-## Voice map (Kokoro built-in voices, same method as White Nights)
+## Voice map (picked by ear by Mohammed, 2026-10-21, from `samples/`)
 
-| ID | Character | Voice | Style row | Speed | Why |
-|---|---|---|---|---|---|
-| 1 | **Narrator** | `am_michael` | 250 | 0.95 | The story has a **third-person narrator**, so narration needs its own voice. Calm and warm, and it doesn't compete with Herman |
-| 2 | Herman | `am_fenrir` | 250 | 1.0 | Deeper and harder than the narrator: intense, obsessive |
-| 3 | Tomsky | `am_puck` | 60 | 1.0 | Light, joking young officer. Approved by ear on White Nights; here at normal speed |
-| 4 | Lisaveta | `af_bella` | 250 | 1.0 | Young and emotional; one of Kokoro's best-rated female voices. Different from Nastenka |
-| 5 | Countess (and her ghost) | `bf_emma` | 250 | 0.88 | British, dry, older-sounding, slowed. Kokoro has no truly old voices |
-| 6 | Tchekalinsky | `bm_george` | 250 | 0.95 | Polished older host and banker |
-| 7 | Naroumov | `am_echo` | 250 | 1.0 | Minor card player |
-| 8 | Sourine | `bm_lewis` | 250 | 1.0 | One line; just needs to sound different |
-| 9 | Saint-Germain | `bm_fable` | 250 | 0.92 | Only inside Tomsky's story (nested quotes): an older foreign aristocrat |
+| ID | Character | Voice | Style row | Speed |
+|---|---|---|---|---|
+| 1 | Narrator (third person) | `am_michael` | 250 | 0.95 |
+| 2 | Herman | `am_fenrir` | 250 | 1.0 |
+| 3 | Tomsky | `am_puck` | 60 | 1.0 |
+| 4 | Lisaveta | `af_bella` | 250 | 1.0 |
+| 5 | Countess (and her ghost) | `af_nicole` | 250 | 0.88 |
+| 6 | Tchekalinsky | `bm_lewis` | 250 | 0.95 |
+| 7 | Naroumov | `am_santa` | 250 | 1.0 |
+| 8 | Sourine | `am_onyx` | 250 | 1.0 |
+| 9 | Saint-Germain (inside Tomsky's story) | `bm_fable` | 250 | 0.92 |
+
+Claude's first suggestions were the same except Countess `bf_emma`, Tchekalinsky `bm_george`, Naroumov `am_echo`, Sourine `bm_lewis`.
 
 Style rows other than Puck's 60 are the default and haven't been tuned by ear. If a voice sounds too deep or too fast,
 try rows 60–150 before changing the voice (see `RECIPE.md`).

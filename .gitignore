@@ -3,3 +3,4 @@ out/
 __pycache__/
 *.wav
 *.mp3
+*.mp4

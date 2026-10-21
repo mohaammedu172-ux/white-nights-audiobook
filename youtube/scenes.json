@@ -1,0 +1,13 @@
+{
+ "_note": "[seconds into the video, image]. Chapter starts: 1167 Second Night, 2637 Nastenka's History, 3809 Third Night, 4490 Fourth Night, 5465 Morning. All images public domain (19th century), graded with grade.py.",
+ "scenes": [
+  [0, "images/01_palace_title.png"],
+  [468, "images/02_aivazovsky_moon.png"],
+  [615, "images/03_sadovnikov_fontanka.png"],
+  [1167, "images/04_sadovnikov_moika.png"],
+  [2637, "images/05_sadovnikov_voznesensky.png"],
+  [3809, "images/06_neva_bridge.png"],
+  [4490, "images/07_aivazovsky_shore.png"],
+  [5465, "images/08_vereshchagin_neva.png"]
+ ]
+}

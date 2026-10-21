@@ -10,10 +10,10 @@ Change one thing at a time, test it on a short passage first (`config.json` → 
 - **"reader" → "listener".**
 - **Pauses:** breath 0.5–0.7 s between pieces of a passage (0.35 s inside a split long sentence); replies 0.45–0.75 s;
   new paragraph ≥ 1.0 s; dramatic beats 1.4 s. Silence is true silence with 12 ms fades.
-- **Mix:** voice RMS −20 dBFS, peaks ≤ −3 dBFS, music bed −40 dB ducked 15 dB under speech. No background noise.
+- **Mix:** voice RMS −20 dBFS, peaks ≤ −3 dBFS, music bed −40 dB ducked only 3 dB under speech (2.5 s hold). Light room reverb (RT60 0.32 s, −16 dB), ±1.2 dB per-line level, interruptions overlap 0.35 s. No background noise.
 
 ## Voices (chosen by ear, 2026-10-20)
-- **Dreamer: Kokoro `am_puck`. Nastenka: Kokoro `af_heart`.** Kokoro 82M (Apache-2.0) via kokoro-onnx, speed 1.0.
+- **Dreamer `am_puck`, Nastenka `af_heart`, Grandmother `af_nicole`, Lodger `am_echo`, Matrona `af_kore`.** Kokoro 82M (Apache-2.0) via kokoro-onnx.
 - Why: every VibeVoice take of Nastenka had ticks, lag, muffling or an aged voice, whichever reference was used and
   even at 50 steps / full precision. Kokoro's built-in voices are clean. Trade-off: no cloning of the cast readers.
 - Kokoro runs on CPU (a whole chapter in ~20 min), so chapters no longer need Kaggle.

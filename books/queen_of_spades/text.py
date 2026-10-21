@@ -1,10 +1,6 @@
 """
 Build the spoken script for The Queen of Spades (Pushkin, Twitchell tr., Gutenberg #23058).
-
-Run:  python -m books.queen_of_spades.text
-Writes:
-  books/queen_of_spades/script/queen_of_spades_lines.json
-  books/queen_of_spades/script/queen_of_spades_script.md
+v2 — fixes header/footer, nested quotes, before/after tags, alternation.
 """
 from __future__ import annotations
 
@@ -18,7 +14,6 @@ SCRIPT_DIR = HERE / "script"
 CACHE_DIR = HERE / ".cache"
 GUTENBERG_URL = "https://www.gutenberg.org/cache/epub/23058/pg23058.txt"
 
-# Role numbers, must match config.json "cast"
 NARRATOR = 1
 HERMAN = 2
 TOMSKY = 3
@@ -35,17 +30,19 @@ ROLE_NAMES = {
     NAROUMOV: "Naroumov", SOURINE: "Sourine", SAINT_GERMAIN: "Saint-Germain",
 }
 
-# Speech tags: (regex, role). Checked against the text after the closing quote.
-TAG_PATTERNS = [
-    (r"\bHerman\b", HERMAN),
-    (r"\bTomsky\b", TOMSKY),
-    (r"\bLisaveta\b|\bLizaveta\b", LISAVETA),
-    (r"\bCountess\b|\bold woman\b|\bAnna Fedotovna\b", COUNTESS),
-    (r"\bTchekalinsky\b|\bChekalinsky\b", TCHEKALINSKY),
-    (r"\bNaroumov\b|\bNarumov\b", NAROUMOV),
-    (r"\bSourine\b|\bSurin\b", SOURINE),
-    (r"\bSaint[- ]Germain\b|\bSt\.? Germain\b", SAINT_GERMAIN),
-]
+NAME_TO_ROLE = {
+    "herman": HERMAN, "hermann": HERMAN,
+    "tomsky": TOMSKY, "tomski": TOMSKY,
+    "lisaveta": LISAVETA, "lizaveta": LISAVETA, "lisa": LISAVETA,
+    "countess": COUNTESS, "anna fedorovna": COUNTESS, "anna fedotovna": COUNTESS,
+    "tchekalinsky": TCHEKALINSKY, "chekalinsky": TCHEKALINSKY,
+    "naroumov": NAROUMOV, "narumov": NAROUMOV,
+    "sourine": SOURINE, "surin": SOURINE,
+    "saint-germain": SAINT_GERMAIN, "saint germain": SAINT_GERMAIN,
+    "st. germain": SAINT_GERMAIN, "st germain": SAINT_GERMAIN,
+}
+
+SPEECH_VERBS = r"(?:said|asked|replied|answered|cried|exclaimed|observed|remarked|continued|added|muttered|whispered|shouted|repeated|inquired|returned|remonstrated|insisted|murmured|interrupted|put in|went on|broke in)"
 
 
 def fetch_book() -> str:
@@ -61,12 +58,29 @@ def fetch_book() -> str:
 
 
 def strip_gutenberg(text: str) -> str:
-    start = re.search(r"\*\*\* ?START OF (THE|THIS) PROJECT GUTENBERG.*?\*\*\*", text, re.I)
-    end = re.search(r"\*\*\* ?END OF (THE|THIS) PROJECT GUTENBERG.*?\*\*\*", text, re.I)
+    # Strip anything before the START marker (or before "The Queen of Spades" title)
+    start = re.search(r"\*\*\*\s*START OF (THE|THIS) PROJECT GUTENBERG.*?\*\*\*", text, re.I)
     if start:
         text = text[start.end():]
+    else:
+        # Fallback: find the first real paragraph
+        m = re.search(r"(AT the house of Naroumov|The Queen of Spades)", text)
+        if m:
+            text = text[m.start():]
+
+    # Strip anything from the END marker onward
+    end = re.search(r"\*\*\*\s*END OF (THE|THIS) PROJECT GUTENBERG.*?\*\*\*", text, re.I)
     if end:
         text = text[:end.start()]
+    else:
+        # Fallback: cut at the first "End of the Project Gutenberg" or "*** END"
+        m = re.search(r"(End of (the )?Project Gutenberg|\*\*\*\s*END)", text, re.I)
+        if m:
+            text = text[:m.start()]
+
+    # Drop copyright line, transcriber notes, etc.
+    text = re.sub(r"^Copyright,?\s+\d{4}.*$", "", text, flags=re.M)
+    text = re.sub(r"^\s*Transcriber'?s? Note.*$", "", text, flags=re.M)
     return text.strip()
 
 
@@ -75,36 +89,67 @@ def split_paragraphs(text: str) -> list[str]:
     out = []
     for p in paras:
         p = " ".join(p.split())
-        if p:
+        if p and len(p.split()) > 2:  # skip 1-2 word fragments
             out.append(p)
     return out
 
 
-def find_speaker_after(text_after: str) -> int | None:
-    snippet = text_after[:120]
-    for pattern, role in TAG_PATTERNS:
-        if re.search(pattern, snippet):
-            return role
-    return None
-
-
-def find_speaker_before(text_before: str) -> int | None:
-    snippet = text_before[-120:]
-    for pattern, role in TAG_PATTERNS:
-        if re.search(pattern, snippet):
-            return role
-    return None
+def find_name_in(text: str) -> int | None:
+    """Look for a character name in text. Prefer the one closest to the speech verb."""
+    low = text.lower()
+    best_role = None
+    best_pos = None
+    for name, role in NAME_TO_ROLE.items():
+        idx = low.find(name)
+        if idx >= 0:
+            # Prefer a name immediately preceded by a speech verb
+            before = low[max(0, idx - 30):idx]
+            is_tagged = re.search(SPEECH_VERBS + r"\s*$", before) is not None
+            score = (0 if is_tagged else 1, idx)
+            if best_pos is None or score < best_pos:
+                best_pos = score
+                best_role = role
+    return best_role
 
 
 def is_letter_paragraph(para: str) -> bool:
     low = para.lower()
-    markers = ["dear ", "my dear", "i am writing", "i write to you", "yours truly", "your obedient", "i have the honour"]
+    markers = ["dear ", "my dear", "i am writing", "i write to you",
+               "yours truly", "your obedient", "i have the honour",
+               "i have the honor"]
     return any(m in low for m in markers)
 
 
+def split_nested(quote_text: str) -> list[tuple[int | None, str]]:
+    """
+    Split a double-quoted passage into segments, treating single-quoted
+    inner speech as a nested speaker (Saint-Germain inside Tomsky, etc.).
+    Returns list of (role_hint, text). role_hint None = outer speaker.
+    """
+    parts: list[tuple[int | None, str]] = []
+    pattern = re.compile(r"'([^']*)'")
+    last_end = 0
+    for m in pattern.finditer(quote_text):
+        before = quote_text[last_end:m.start()]
+        if before.strip():
+            parts.append((None, before.strip()))
+        inner = m.group(1).strip()
+        if inner:
+            after = quote_text[m.end():m.end() + 60].lower()
+            role = find_name_in(after)
+            if role is None:
+                role = SAINT_GERMAIN  # default for the Tomsky anecdote
+            parts.append((role, inner))
+        last_end = m.end()
+    rest = quote_text[last_end:].strip()
+    if rest:
+        parts.append((None, rest))
+    return parts
+
+
 def parse_paragraph(para: str, state: dict) -> list[dict]:
-    """Return a list of {role, text, guessed, is_letter}."""
     lines: list[dict] = []
+
     if is_letter_paragraph(para):
         lines.append({"role": NARRATOR, "text": para, "guessed": False, "is_letter": True})
         return lines
@@ -112,22 +157,47 @@ def parse_paragraph(para: str, state: dict) -> list[dict]:
     quote_re = re.compile(r'"([^"]*)"')
     last_end = 0
     for m in quote_re.finditer(para):
-        quote = m.group(1).strip()
         before = para[last_end:m.start()]
+        quote = m.group(1).strip()
         after = para[m.end():]
-        if quote:
-            speaker = find_speaker_after(after) or find_speaker_before(before)
-            guessed = False
-            if speaker is None:
-                speaker = state["last_speaker"] if state["last_speaker"] else NARRATOR
-                guessed = True
-            lines.append({"role": speaker, "text": quote, "guessed": guessed, "is_letter": False})
-            state["last_speaker"] = speaker
+
+        if not quote:
+            last_end = m.end()
+            continue
+
+        # Determine the outer speaker
+        speaker = find_name_in(after) or find_name_in(before)
+        guessed = False
+        if speaker is None:
+            speaker = state.get("expected_next") or state.get("last_speaker") or NARRATOR
+            guessed = True
+
+        # Nested single quotes inside this quote
+        segments = split_nested(quote)
+        for role_hint, seg_text in segments:
+            role = role_hint if role_hint is not None else speaker
+            seg_guessed = guessed if role_hint is None else True
+            lines.append({"role": role, "text": seg_text, "guessed": seg_guessed, "is_letter": False})
+            state["last_speaker"] = role
+
+        # Update alternation state: the person just addressed
+        after_low = after.lower()
+        for name, role in NAME_TO_ROLE.items():
+            if name in after_low and role != speaker:
+                state["expected_next"] = role
+                break
+
         last_end = m.end()
 
+    # Remaining narration outside quotes
     trailing = para[last_end:].strip()
-    if trailing and len(trailing.split()) > 7:
-        lines.append({"role": NARRATOR, "text": trailing, "guessed": False, "is_letter": False})
+    # Also narration before the first quote
+    first_quote = quote_re.search(para)
+    leading = para[:first_quote.start()].strip() if first_quote else ""
+
+    for nar in (leading, trailing):
+        if nar and len(nar.split()) > 7:
+            lines.append({"role": NARRATOR, "text": nar, "guessed": False, "is_letter": False})
     return lines
 
 
@@ -146,31 +216,32 @@ def chunk_line(text: str, max_words: int = 45) -> list[str]:
             buf = s
     if buf:
         out.append(buf)
-    final = []
-    for c in out:
-        if len(c.split()) > max_words * 2:
-            parts = re.split(r"(?<=[,;:])\s+", c)
-            acc = ""
-            for p in parts:
-                if not acc:
-                    acc = p
-                elif len((acc + " " + p).split()) <= max_words:
-                    acc += " " + p
-                else:
-                    final.append(acc)
-                    acc = p
-            if acc:
-                final.append(acc)
-        else:
-            final.append(c)
-    return final
+    return out
+
+
+def apply_fixes(lines: list[dict]) -> list[dict]:
+    """Apply manual corrections from _fixes.json (role by line id, or text replace)."""
+    fixes_path = SCRIPT_DIR / "queen_of_spades_fixes.json"
+    if not fixes_path.exists():
+        return lines
+    fixes = json.loads(fixes_path.read_text(encoding="utf-8"))
+    by_id = {l["id"]: l for l in lines}
+    for fid, role in fixes.get("roles", {}).items():
+        if int(fid) in by_id:
+            by_id[int(fid)]["role"] = role
+            by_id[int(fid)]["speaker"] = ROLE_NAMES[role]
+            by_id[int(fid)]["guessed"] = False
+    for fid, new_text in fixes.get("replace", {}).items():
+        if int(fid) in by_id:
+            by_id[int(fid)]["text"] = new_text
+    return lines
 
 
 def build() -> None:
     raw = fetch_book()
     body = strip_gutenberg(raw)
     paras = split_paragraphs(body)
-    state = {"last_speaker": None}
+    state = {"last_speaker": None, "expected_next": None}
     all_lines: list[dict] = []
     for i, para in enumerate(paras):
         for line in parse_paragraph(para, state):
@@ -185,11 +256,13 @@ def build() -> None:
                     "is_letter": line["is_letter"],
                 })
 
+    all_lines = apply_fixes(all_lines)
+
     SCRIPT_DIR.mkdir(parents=True, exist_ok=True)
     (SCRIPT_DIR / "queen_of_spades_lines.json").write_text(
         json.dumps(all_lines, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    md = ["# The Queen of Spades — script review\n",
+    md = ["# The Queen of Spades — script review (v2)\n",
           "Guessed speakers are marked **(guessed)**. Check those first.\n"]
     for line in all_lines:
         tag = " **(guessed)**" if line["guessed"] else ""

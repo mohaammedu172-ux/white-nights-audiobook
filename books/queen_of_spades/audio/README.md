@@ -67,7 +67,7 @@ Times are in the current full test MP3 and will move when the script changes; th
 | E15 Herman steps out | 72 (9:12) | line start | `sfx/sfx_floorboard_creak.wav` 10 LU, -0.6 s | tested |
 | E16 The pistol | 83 (10:23) | "drew a pistol" | `sfx/sfx_pistol_cock.wav` 10 LU, +0.8 s | listen-check |
 | E17 Herman bursts into Lisaveta's room | 100 (12:06) | "the door of her apartment suddenly opened" | `sfx/sfx_door_squeaky.wav` 10 LU<br>backup: `sfx/sfx_door_sliding.wav` | proposed |
-| E18 He leaves by the street door | 113 (13:27) | "then went out" | `sfx/sfx_front_door_chime.wav` 12 LU, +0.3 s | listen-check |
+| E18 He leaves by the street door | 113 (13:27) | "then went out" | `sfx/sfx_front_door_nobeep.wav` 12 LU, +0.3 s<br>backup: `sfx/sfx_front_door_chime.wav` | proposed |
 | E19 Herman falls at the funeral | 117 (14:19) | "fell to the floor" | `sfx/sfx_body_fall.mp3` 10 LU<br>`sfx/sfx_men_murmur.wav` 18 LU after "He was picked up" | proposed |
 | E20 Footsteps in slippers | 121 (15:08) | "The step was" | `sfx/sfx_slippers.mp3` 12 LU | approved |
 | E21 The ghost enters | 122 (15:19) | line start | `sfx/sfx_door_open.wav` 8 LU, -1.2 s | approved |

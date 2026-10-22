@@ -240,23 +240,11 @@
     "speaker_name": "Saint-Germain"
   },
   {
-    "id": "21",
-    "speaker": "1",
-    "p": 16,
-    "kind": "narr",
-    "pause_before": 0.75,
-    "interrupts": false,
-    "text": "replied the Count, after a moment of thoughtfulness,",
-    "guessed": false,
-    "role": 1,
-    "speaker_name": "Narrator"
-  },
-  {
     "id": "22",
     "speaker": "9",
     "p": 16,
     "kind": "say",
-    "pause_before": 0.75,
+    "pause_before": 0.6,
     "interrupts": false,
     "text": "but I know that you would not enjoy a moment's rest until you had returned it; it would only add to your embarrassment. There is another way of freeing yourself.",
     "guessed": false,
@@ -630,7 +618,7 @@
     "kind": "narr",
     "pause_before": 1.0,
     "interrupts": false,
-    "text": "The reader need hardly be told that the officer was no other than Herman, the would-be gambler, whose imagination had been strongly excited by the story told by Tomsky of the three magic cards.",
+    "text": "The listener need hardly be told that the officer was no other than Herman, the would-be gambler, whose imagination had been strongly excited by the story told by Tomsky of the three magic cards.",
     "guessed": false,
     "role": 1,
     "speaker_name": "Narrator"
@@ -1650,7 +1638,7 @@
     "kind": "narr",
     "pause_before": 0.75,
     "interrupts": false,
-    "text": "said Herman, stretching out his hand over the head of a portly gentleman, to reach a livret. The banker bowed without replying.",
+    "text": "Herman stretched out his hand over the head of a portly gentleman to reach a livret. The banker bowed without replying.",
     "guessed": false,
     "role": 1,
     "speaker_name": "Narrator"
@@ -1830,7 +1818,7 @@
     "kind": "narr",
     "pause_before": 0.75,
     "interrupts": false,
-    "text": "said Herman, showing the card he held--a tray.",
+    "text": "Herman showed the card he held: a tray.",
     "guessed": false,
     "role": 1,
     "speaker_name": "Narrator"
@@ -1926,7 +1914,7 @@
     "kind": "narr",
     "pause_before": 0.75,
     "interrupts": false,
-    "text": "remarked Herman, turning up his card without glancing at it.",
+    "text": "Herman turned up his card without glancing at it.",
     "guessed": false,
     "role": 1,
     "speaker_name": "Narrator"

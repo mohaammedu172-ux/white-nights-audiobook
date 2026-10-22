@@ -215,7 +215,7 @@ Covers both `ambience/` and `../sfx/`.
   https://freesound.org/people/AceOfSpadesProduc100/sounds/332914/
   File: sfx/sfx_front_door_chime.wav
   License: [check Freesound page]
-  Note: Line 113 (13:27) street door. WARNING: has a modern alarm-system 'beep beep beep' — cut it out or don't use.
+  Note: Line 113 (13:27) street door. Has a modern alarm 'beep beep beep'. Cleaned copy: sfx/sfx_front_door_nobeep.wav (3,467 Hz beeps notched out, 1.0–1.7 s; derived from this sound, same credit).
 
 - "CHAIR, WOODEN SQUEAKS2.wav" by rightpurdy
   https://freesound.org/people/rightpurdy/sounds/159645/

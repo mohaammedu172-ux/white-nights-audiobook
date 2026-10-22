@@ -62,10 +62,7 @@ Guessed speakers are marked **(guessed)**. `⏸` = silence before the line in se
 **20. Saint-Germain** `⏸ 0.75s`  
 > I could lend you the money,
 
-**21. Narrator** `⏸ 0.75s`  
-> replied the Count, after a moment of thoughtfulness,
-
-**22. Saint-Germain** `⏸ 0.75s`  
+**22. Saint-Germain** `⏸ 0.60s`  
 > but I know that you would not enjoy a moment's rest until you had returned it; it would only add to your embarrassment. There is another way of freeing yourself.
 
 **23. Countess** `⏸ 0.75s`  
@@ -159,7 +156,7 @@ Guessed speakers are marked **(guessed)**. `⏸` = silence before the line in se
 > His persistence finally roused an interest entirely strange to her. One day, she even ventured to smile upon her admirer, for such he seemed to be.
 
 **53. Narrator** `⏸ 1.00s`  
-> The reader need hardly be told that the officer was no other than Herman, the would-be gambler, whose imagination had been strongly excited by the story told by Tomsky of the three magic cards.
+> The listener need hardly be told that the officer was no other than Herman, the would-be gambler, whose imagination had been strongly excited by the story told by Tomsky of the three magic cards.
 
 **54. Herman** `⏸ 0.75s`  
 > Ah,
@@ -414,7 +411,7 @@ Guessed speakers are marked **(guessed)**. `⏸` = silence before the line in se
 > Permit me to choose a card,
 
 **138. Narrator** `⏸ 0.75s`  
-> said Herman, stretching out his hand over the head of a portly gentleman, to reach a livret. The banker bowed without replying.
+> Herman stretched out his hand over the head of a portly gentleman to reach a livret. The banker bowed without replying.
 
 **139. Narrator** `⏸ 1.00s`  
 > Herman chose a card, and wrote the amount of his stake upon it with a piece of chalk.
@@ -459,7 +456,7 @@ Guessed speakers are marked **(guessed)**. `⏸` = silence before the line in se
 > The tray wins,
 
 **153. Narrator** `⏸ 0.75s`  
-> said Herman, showing the card he held--a tray.
+> Herman showed the card he held: a tray.
 
 **154. Narrator** `⏸ 1.00s`  
 > A murmur ran through the crowd. Tchekalinsky frowned for a second only, then his smile returned. He took a roll of bank-bills from his pocket and counted out the required sum. Herman received it and at once left the table.
@@ -483,7 +480,7 @@ Guessed speakers are marked **(guessed)**. `⏸` = silence before the line in se
 > The ace wins,
 
 **161. Narrator** `⏸ 0.75s`  
-> remarked Herman, turning up his card without glancing at it.
+> Herman turned up his card without glancing at it.
 
 **162. Tchekalinsky** `⏸ 0.75s`  
 > Your queen is killed,

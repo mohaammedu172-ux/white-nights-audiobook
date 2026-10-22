@@ -522,7 +522,7 @@
    "scene": "He leaves by the street door",
    "sounds": [
     {
-     "file": "sfx/sfx_front_door_chime.wav",
+     "file": "sfx/sfx_front_door_nobeep.wav",
      "at": {
       "line": "113",
       "phrase": "then went out",
@@ -531,8 +531,11 @@
      "lu_under_voice": 12
     }
    ],
-   "status": "listen-check",
-   "note": "Cut the modern alarm beeps first; old front door (adrianornhagen) pending as replacement."
+   "status": "proposed",
+   "note": "Alarm beeps removed (sfx_front_door_nobeep.wav, made from sfx_front_door_chime.wav); old front door (adrianornhagen) still a candidate.",
+   "backup": [
+    "sfx/sfx_front_door_chime.wav"
+   ]
   },
   {
    "id": "E19",

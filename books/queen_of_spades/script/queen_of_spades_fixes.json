@@ -1,5 +1,5 @@
 {
-  "_note": "v3 fixes for The Queen of Spades. Line IDs match v3 output (168 lines). Roles: 1=Narrator, 2=Herman, 3=Tomsky, 4=Lisaveta, 5=Countess, 6=Tchekalinsky, 7=Naroumov, 8=Sourine, 9=Saint-Germain",
+  "_note": "v3 fixes for The Queen of Spades. Line IDs match v3 output (168 lines). Roles: 1=Narrator, 2=Herman, 3=Tomsky, 4=Lisaveta, 5=Countess, 6=Tchekalinsky, 7=Naroumov, 8=Sourine, 9=Saint-Germain | drop: line ids removed from the script (other ids unchanged). 2026-10-22: speech tags removed (21 dropped; 138, 153, 161 rewritten as action), 53 reader -> listener.",
   "roles": {
     "3": 7,
     "4": 8,
@@ -65,6 +65,13 @@
   },
   "replace": {
     "15": "Well, then, listen to it. To begin with, sixty years ago my grandmother went to Paris, where she was all the fashion. People crowded each other in the streets to get a chance to see the 'Muscovite Venus,' as she was called.",
-    "109": "I didn't intend to kill her; the pistol was not even loaded."
-  }
+    "109": "I didn't intend to kill her; the pistol was not even loaded.",
+    "53": "The listener need hardly be told that the officer was no other than Herman, the would-be gambler, whose imagination had been strongly excited by the story told by Tomsky of the three magic cards.",
+    "138": "Herman stretched out his hand over the head of a portly gentleman to reach a livret. The banker bowed without replying.",
+    "153": "Herman showed the card he held: a tray.",
+    "161": "Herman turned up his card without glancing at it."
+  },
+  "drop": [
+    "21"
+  ]
 }

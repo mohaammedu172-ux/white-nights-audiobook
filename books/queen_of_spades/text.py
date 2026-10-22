@@ -287,7 +287,8 @@ def apply_fixes(lines: list[dict]) -> list[dict]:
     for fid, new_text in fixes.get("replace", {}).items():
         if int(fid) in by_id:
             by_id[int(fid)]["text"] = new_text
-    return lines
+    drop = {int(x) for x in fixes.get("drop", [])}          # remove lines; every other line keeps its id
+    return [l for l in lines if l["id"] not in drop]
 
 
 def pause_for(line: dict, prev: dict | None) -> float:

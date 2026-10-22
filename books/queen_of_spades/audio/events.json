@@ -1,0 +1,884 @@
+{
+ "_about": "Cue sheet for The Queen of Spades mix. Every sound is placed by line id + a phrase from that line (+ offset in s), so cues survive re-timing. Phrase time = line start + line duration x (characters before the phrase / total characters); phrase null = line start. Levels are LU (perceived loudness, LUFS) below the voice in the same span. Sounds inside one event may overlap. Loops use an equal-power crossfade. status: approved = Mohammed approved by ear; tested = rendered in a test; proposed; listen-check = check the file first.",
+ "line_ids": "script/queen_of_spades_lines.json (v4, 168 lines)",
+ "beds": [
+  {
+   "id": "B01",
+   "scene": "Card party at Naroumov's (dawn)",
+   "file": "ambience/amb_city_cold.flac",
+   "from_line": "1",
+   "to_line": "37",
+   "lu_under_voice": 18,
+   "loop_crossfade_s": 0.2,
+   "status": "proposed",
+   "note": "Snowy street outside the window; 46 s file, loop with crossfade."
+  },
+  {
+   "id": "B02",
+   "scene": "Card party chatter",
+   "file": "sfx/sfx_men_murmur.wav",
+   "from_line": "1",
+   "to_line": "4",
+   "lu_under_voice": 22,
+   "loop_crossfade_s": 0.2,
+   "status": "listen-check",
+   "note": "Only under the opening lines, before the dialogue starts; 1930s transfer, check noise."
+  },
+  {
+   "id": "B03",
+   "scene": "Lisaveta at the window / street (day)",
+   "file": "ambience/amb_street_havana.flac",
+   "from_line": "50",
+   "to_line": "61",
+   "lu_under_voice": 22,
+   "loop_crossfade_s": 0.2,
+   "status": "listen-check",
+   "note": "Modern Havana street: check for cars, scooters, Spanish speech."
+  },
+  {
+   "id": "B04",
+   "scene": "Night visit and Confrontation, Countess's house",
+   "file": "ambience/amb_winter_quiet.flac",
+   "from_line": "66",
+   "to_line": "86",
+   "lu_under_voice": 15,
+   "status": "approved",
+   "note": "Tested 9:18-10:58 and 7:50-9:20."
+  },
+  {
+   "id": "B05",
+   "scene": "Lisaveta's room, same night",
+   "file": "ambience/amb_winter_quiet.flac",
+   "from_line": "87",
+   "to_line": "113",
+   "lu_under_voice": 18,
+   "status": "proposed",
+   "note": "Same house, same night as B04, a little quieter."
+  },
+  {
+   "id": "B06",
+   "scene": "Funeral",
+   "file": "ambience/amb_hall_crowd.wav",
+   "from_line": "114",
+   "to_line": "117",
+   "lu_under_voice": 20,
+   "loop_crossfade_s": 0.2,
+   "status": "proposed",
+   "note": "Church hall full of people; keep low."
+  },
+  {
+   "id": "B07",
+   "scene": "Ghost in Herman's room",
+   "file": "ambience/amb_horror_cellar.flac",
+   "from_line": "119",
+   "to_line": "126",
+   "lu_under_voice": 14,
+   "highpass_hz": 100,
+   "status": "approved",
+   "note": "Tested 14:40-16:15. Set by LUFS after the high-pass; consider a gentle limiter."
+  },
+  {
+   "id": "B08",
+   "scene": "Herman's obsession, night streets",
+   "file": "ambience/amb_pirita_night.flac",
+   "from_line": "127",
+   "to_line": "129",
+   "lu_under_voice": 22,
+   "status": "proposed"
+  },
+  {
+   "id": "B09",
+   "scene": "Tchekalinsky's club",
+   "file": "ambience/amb_hall_crowd.wav",
+   "from_line": "130",
+   "to_line": "166",
+   "lu_under_voice": 18,
+   "loop_crossfade_s": 0.2,
+   "status": "proposed",
+   "automation": [
+    {
+     "at": {
+      "line": "158",
+      "phrase": "His appearance was the signal",
+      "offset_s": 0.0
+     },
+     "change_lu": -12,
+     "ramp_s": 2.0,
+     "note": "the room goes silent"
+    },
+    {
+     "at": {
+      "line": "166",
+      "phrase": "the cards were shuffled, and the gambling went on",
+      "offset_s": 0.0
+     },
+     "change_lu": 12,
+     "ramp_s": 2.0,
+     "note": "the room comes back"
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "scene": "Ending: Herman in the hospital",
+   "file": null,
+   "from_line": "167",
+   "to_line": "168",
+   "status": "proposed",
+   "note": "Near silence on purpose: no bed."
+  }
+ ],
+ "events": [
+  {
+   "id": "E01",
+   "scene": "Card party",
+   "sounds": [
+    {
+     "file": "sfx/sfx_cards.aif",
+     "at": {
+      "line": "1",
+      "phrase": null,
+      "offset_s": -1.5
+     },
+     "lu_under_voice": 16,
+     "len_s": 5,
+     "fade_in_s": 0.5,
+     "fade_out_s": 1.5
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "1",
+      "phrase": null,
+      "offset_s": -1.0
+     },
+     "lu_under_voice": 20,
+     "len_s": 4,
+     "fade_out_s": 1.5
+    }
+   ],
+   "status": "proposed",
+   "note": "Scene opener: the game is still going as the story begins."
+  },
+  {
+   "id": "E02",
+   "scene": "Breakfast",
+   "sounds": [
+    {
+     "file": "sfx/sfx_cutlery.wav",
+     "at": {
+      "line": "2",
+      "phrase": "pushed back their plates",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 16,
+     "len_s": 3,
+     "fade_out_s": 0.5
+    },
+    {
+     "file": "sfx/sfx_plates.wav",
+     "at": {
+      "line": "2",
+      "phrase": "pushed back their plates",
+      "offset_s": 0.3
+     },
+     "lu_under_voice": 16,
+     "len_s": 3,
+     "fade_out_s": 0.5
+    },
+    {
+     "file": "sfx/sfx_chair_scrape.wav",
+     "at": {
+      "line": "2",
+      "phrase": "pushed back their plates",
+      "offset_s": 1.0
+     },
+     "lu_under_voice": 16
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E03",
+   "scene": "Party breaks up",
+   "sounds": [
+    {
+     "file": "sfx/sfx_glass_set.wav",
+     "at": {
+      "line": "37",
+      "phrase": "draining his glass",
+      "offset_s": 0.5
+     },
+     "lu_under_voice": 14,
+     "len_s": 2
+    },
+    {
+     "file": "sfx/sfx_chair_scrape.wav",
+     "at": {
+      "line": "37",
+      "phrase": "taking his leave",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 16
+    },
+    {
+     "file": "sfx/sfx_people_leaving.ogg",
+     "at": {
+      "line": "37",
+      "phrase": "taking his leave",
+      "offset_s": 0.6
+     },
+     "lu_under_voice": 14
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E04",
+   "scene": "Countess at her mirror",
+   "sounds": [
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "38",
+      "phrase": "Three women were assisting",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 18,
+     "len_s": 6,
+     "fade_in_s": 0.5,
+     "fade_out_s": 1.5
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E05",
+   "scene": "Carriage, note thrust into her hand",
+   "sounds": [
+    {
+     "file": "sfx/sfx_horse_snort.wav",
+     "at": {
+      "line": "57",
+      "phrase": "about to enter the carriage",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 4,
+     "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_paper_flutter.wav",
+     "at": {
+      "line": "57",
+      "phrase": "a note was thrust",
+      "offset_s": 0.3
+     },
+     "lu_under_voice": 16,
+     "len_s": 1.2,
+     "fade_out_s": 0.3
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E06",
+   "scene": "Reads the note",
+   "sounds": [
+    {
+     "file": "sfx/sfx_paper_unfold.mp3",
+     "at": {
+      "line": "58",
+      "phrase": "to read the missive",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E07",
+   "scene": "Writes her reply",
+   "sounds": [
+    {
+     "file": "sfx/sfx_quill_writing.wav",
+     "at": {
+      "line": "60",
+      "phrase": "She therefore wrote a few lines",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 16,
+     "len_s": 5,
+     "fade_in_s": 0.3,
+     "fade_out_s": 1.0
+    }
+   ],
+   "backup": [
+    "sfx/sfx_pen_writing.wav"
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E08",
+   "scene": "Letter dropped from the window",
+   "sounds": [
+    {
+     "file": "sfx/sfx_paper_flutter.wav",
+     "at": {
+      "line": "60",
+      "phrase": "dropped it",
+      "offset_s": 0.4
+     },
+     "lu_under_voice": 14,
+     "len_s": 2.5,
+     "fade_out_s": 0.8
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E09",
+   "scene": "He enters a shop",
+   "sounds": [
+    {
+     "file": "sfx/sfx_shop_door_bell.wav",
+     "at": {
+      "line": "61",
+      "phrase": "entered a shop",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E10",
+   "scene": "Climbs to the bedchamber",
+   "sounds": [
+    {
+     "file": "sfx/sfx_stairs_boots.wav",
+     "at": {
+      "line": "66",
+      "phrase": "he reached the old lady",
+      "offset_s": -5.0
+     },
+     "lu_under_voice": 14,
+     "trim_s": [
+      0,
+      29
+     ],
+     "len_s": 6,
+     "fade_in_s": 0.5,
+     "fade_out_s": 1.5
+    }
+   ],
+   "status": "tested",
+   "note": "Bedchamber test 7:50-9:20."
+  },
+  {
+   "id": "E11",
+   "scene": "Waiting in the closet",
+   "sounds": [
+    {
+     "file": "sfx/sfx_clock_tick.mp3",
+     "at": {
+      "line": "67",
+      "phrase": "he concealed himself",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 18,
+     "loop_until": {
+      "line": "68",
+      "phrase": "at last he heard",
+      "offset_s": 4.0
+     },
+     "loop_crossfade_s": 0.2,
+     "fade_in_s": 1.5,
+     "fade_out_s": 3.0
+    }
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "E12",
+   "scene": "The carriage returns",
+   "sounds": [
+    {
+     "file": "sfx/sfx_carriage_path.wav",
+     "at": {
+      "line": "68",
+      "phrase": "at last he heard",
+      "offset_s": 0.4
+     },
+     "lu_under_voice": 10,
+     "len_s": 11,
+     "fade_in_s": 1.5,
+     "fade_out_s": 3.0
+    }
+   ],
+   "backup": [
+    "sfx/sfx_carriage_wedding.wav"
+   ],
+   "status": "approved",
+   "note": "Both carriages approved; path is the default."
+  },
+  {
+   "id": "E13",
+   "scene": "Servants move about",
+   "sounds": [
+    {
+     "file": "sfx/sfx_footsteps_group.mp3",
+     "at": {
+      "line": "68",
+      "phrase": "servants began",
+      "offset_s": 0.5
+     },
+     "lu_under_voice": 16,
+     "len_s": 6,
+     "fade_in_s": 1.0,
+     "fade_out_s": 2.0
+    }
+   ],
+   "status": "listen-check",
+   "note": "Outdoor concrete recording."
+  },
+  {
+   "id": "E14",
+   "scene": "The Countess sways in her chair",
+   "sounds": [
+    {
+     "file": "sfx/sfx_chair_creak.wav",
+     "at": {
+      "line": "71",
+      "phrase": "As the old lady sat swaying",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 16,
+     "len_s": 4,
+     "fade_in_s": 0.3,
+     "fade_out_s": 1.0
+    }
+   ],
+   "status": "tested"
+  },
+  {
+   "id": "E15",
+   "scene": "Herman steps out",
+   "sounds": [
+    {
+     "file": "sfx/sfx_floorboard_creak.wav",
+     "at": {
+      "line": "72",
+      "phrase": null,
+      "offset_s": -0.6
+     },
+     "lu_under_voice": 10
+    }
+   ],
+   "status": "tested"
+  },
+  {
+   "id": "E16",
+   "scene": "The pistol",
+   "sounds": [
+    {
+     "file": "sfx/sfx_pistol_cock.wav",
+     "at": {
+      "line": "83",
+      "phrase": "drew a pistol",
+      "offset_s": 0.8
+     },
+     "lu_under_voice": 10
+    }
+   ],
+   "status": "listen-check",
+   "note": "Modern semi-auto slide; period replacement (flintlock/percussion) pending."
+  },
+  {
+   "id": "E17",
+   "scene": "Herman bursts into Lisaveta's room",
+   "sounds": [
+    {
+     "file": "sfx/sfx_door_squeaky.wav",
+     "at": {
+      "line": "100",
+      "phrase": "the door of her apartment suddenly opened",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 10,
+     "len_s": 4,
+     "fade_out_s": 1.0
+    }
+   ],
+   "backup": [
+    "sfx/sfx_door_sliding.wav"
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E18",
+   "scene": "He leaves by the street door",
+   "sounds": [
+    {
+     "file": "sfx/sfx_front_door_chime.wav",
+     "at": {
+      "line": "113",
+      "phrase": "then went out",
+      "offset_s": 0.3
+     },
+     "lu_under_voice": 12
+    }
+   ],
+   "status": "listen-check",
+   "note": "Cut the modern alarm beeps first; old front door (adrianornhagen) pending as replacement."
+  },
+  {
+   "id": "E19",
+   "scene": "Herman falls at the funeral",
+   "sounds": [
+    {
+     "file": "sfx/sfx_body_fall.mp3",
+     "at": {
+      "line": "117",
+      "phrase": "fell to the floor",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 10,
+     "trim_s": [
+      0,
+      1.4
+     ]
+    },
+    {
+     "file": "sfx/sfx_men_murmur.wav",
+     "at": {
+      "line": "117",
+      "phrase": "He was picked up",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 18,
+     "len_s": 4,
+     "fade_in_s": 0.5,
+     "fade_out_s": 2.0
+    }
+   ],
+   "status": "proposed",
+   "note": "Use one of the three falls; the murmur is the crowd reacting."
+  },
+  {
+   "id": "E20",
+   "scene": "Footsteps in slippers",
+   "sounds": [
+    {
+     "file": "sfx/sfx_slippers.mp3",
+     "at": {
+      "line": "121",
+      "phrase": "The step was",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 12,
+     "len_s": 7.5,
+     "fade_in_s": 0.6,
+     "fade_out_s": 1.5
+    }
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "E21",
+   "scene": "The ghost enters",
+   "sounds": [
+    {
+     "file": "sfx/sfx_door_open.wav",
+     "at": {
+      "line": "122",
+      "phrase": null,
+      "offset_s": -1.2
+     },
+     "lu_under_voice": 8
+    }
+   ],
+   "status": "approved",
+   "note": "Align on the creak's onset (file has ~3.2 s lead-in)."
+  },
+  {
+   "id": "E22",
+   "scene": "The outside door closes",
+   "sounds": [
+    {
+     "file": "sfx/sfx_door_close_distant.wav",
+     "at": {
+      "line": "125",
+      "phrase": "Herman heard the outside door",
+      "offset_s": 1.2
+     },
+     "lu_under_voice": 10
+    }
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "E23",
+   "scene": "The club: whist and faro",
+   "sounds": [
+    {
+     "file": "sfx/sfx_cards.aif",
+     "at": {
+      "line": "132",
+      "phrase": "played whist",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 20,
+     "len_s": 6,
+     "fade_in_s": 0.5,
+     "fade_out_s": 1.5
+    },
+    {
+     "file": "sfx/sfx_glass_set.wav",
+     "at": {
+      "line": "132",
+      "phrase": "eating ices",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 20,
+     "len_s": 2
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "132",
+      "phrase": "playing faro",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 18,
+     "len_s": 4,
+     "fade_out_s": 1.5
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E24",
+   "scene": "The host returns to his dealing",
+   "sounds": [
+    {
+     "file": "sfx/sfx_deal.wav",
+     "at": {
+      "line": "134",
+      "phrase": "returned, to his dealing",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 16,
+     "len_s": 4,
+     "fade_out_s": 1.0
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E25",
+   "scene": "Cards shuffled",
+   "sounds": [
+    {
+     "file": "sfx/sfx_cards.aif",
+     "at": {
+      "line": "136",
+      "phrase": "the cards were shuffled",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 3,
+     "fade_out_s": 0.8
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E26",
+   "scene": "First deal",
+   "sounds": [
+    {
+     "file": "sfx/sfx_deal.wav",
+     "at": {
+      "line": "151",
+      "phrase": "He began dealing",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 3,
+     "fade_out_s": 0.8
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E27",
+   "scene": "A murmur ran through the crowd",
+   "sounds": [
+    {
+     "file": "sfx/sfx_men_murmur.wav",
+     "at": {
+      "line": "154",
+      "phrase": "A murmur ran through the crowd",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 5,
+     "fade_in_s": 0.5,
+     "fade_out_s": 2.0
+    },
+    {
+     "file": "sfx/sfx_paper_flutter.wav",
+     "at": {
+      "line": "154",
+      "phrase": "counted out the required sum",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 18,
+     "len_s": 2,
+     "fade_out_s": 0.5
+    }
+   ],
+   "status": "proposed",
+   "note": "Paper flutter stands in for counting bank-bills until a money-counting sound is found."
+  },
+  {
+   "id": "E28",
+   "scene": "Second deal",
+   "sounds": [
+    {
+     "file": "sfx/sfx_deal.wav",
+     "at": {
+      "line": "156",
+      "phrase": "The banker began dealing",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 3,
+     "fade_out_s": 0.8
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E29",
+   "scene": "The onlookers exclaimed",
+   "sounds": [
+    {
+     "file": "sfx/sfx_men_murmur.wav",
+     "at": {
+      "line": "157",
+      "phrase": "The onlookers exclaimed",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 12,
+     "len_s": 4,
+     "fade_in_s": 0.2,
+     "fade_out_s": 2.0
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E30",
+   "scene": "Third deal (the queen)",
+   "sounds": [
+    {
+     "file": "sfx/sfx_deal.wav",
+     "at": {
+      "line": "159",
+      "phrase": "The dealing began",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 3,
+     "fade_out_s": 0.8
+    }
+   ],
+   "status": "proposed"
+  },
+  {
+   "id": "E31",
+   "scene": "The croupier rakes in the money; the game goes on",
+   "sounds": [
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "166",
+      "phrase": "The croupier raked in the money",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "len_s": 3,
+     "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_cards.aif",
+     "at": {
+      "line": "166",
+      "phrase": "the cards were shuffled, and the gambling went on",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 16,
+     "len_s": 4,
+     "fade_out_s": 1.5
+    }
+   ],
+   "status": "proposed"
+  }
+ ],
+ "pending_sounds": [
+  {
+   "line": "114",
+   "phrase": "Her funeral",
+   "want": "one slow church bell toll"
+  },
+  {
+   "line": "126",
+   "phrase": "his orderly lay asleep",
+   "want": "snoring"
+  },
+  {
+   "line": "126",
+   "phrase": "lit his candle",
+   "want": "match strike / candle"
+  },
+  {
+   "line": "139",
+   "phrase": "with a piece of chalk",
+   "want": "chalk writing"
+  },
+  {
+   "line": "151/156/159",
+   "phrase": "to the right",
+   "want": "single card flips"
+  },
+  {
+   "line": "154",
+   "phrase": "counted out the required sum",
+   "want": "paper money counting"
+  },
+  {
+   "line": "157",
+   "phrase": "The onlookers exclaimed",
+   "want": "crowd gasp"
+  },
+  {
+   "line": "163-164",
+   "phrase": "the queen of spades",
+   "want": "slow low heartbeat"
+  },
+  {
+   "line": "83",
+   "phrase": "drew a pistol",
+   "want": "flintlock / percussion pistol cock (replace modern slide)"
+  },
+  {
+   "line": "113",
+   "phrase": "then went out",
+   "want": "old front door (adrianornhagen) without alarm beeps"
+  }
+ ]
+}

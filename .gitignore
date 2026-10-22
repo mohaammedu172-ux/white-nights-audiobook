@@ -5,3 +5,7 @@ __pycache__/
 *.mp3
 *.mp4
 !books/*/samples/*.mp3
+!books/*/audio/**/*.wav
+!books/*/audio/**/*.flac
+!books/*/audio/**/*.aif
+!books/*/audio/**/*.mp3

@@ -8,11 +8,12 @@ Do not reference these files in any pipeline until the mix step is built.
 ### Opening card table (lines 1–36)
 - Base ambience: `amb_city_cold.flac` (distant snowy street outside the window)
 - Action SFX: `sfx_cards.aif` (shuffle, deal, cut at card moments)
+- Extra card SFX: `sfx_deal.wav` (dealing out a deck), `sfx_chips.wav` (coins / chips spinning)
 - Optional background: `sfx_men_murmur.wav` (only if clean and license is clear)
 
 ### Confrontation — Herman and the living Countess (lines 73–86)
 - Base ambience: `amb_winter_quiet.wav` (cold room, wind, light snow outside)
-- Backup: `amb_snow_city.wav`, `amb_pirita_night.wav`
+- Backup: `amb_snow_city.wav`, `amb_pirita_night.flac`
 - Action SFX: `sfx_pistol_cock.wav` at the start of line 83
 
 ### Ghost — Countess appears in Herman's room (lines 122–125)
@@ -20,8 +21,26 @@ Do not reference these files in any pipeline until the mix step is built.
 - Action SFX: `sfx_door_open.wav` at the start of line 123 (verify it is a single slow creak, no reverb, no theatrical spookiness)
 
 ### Street scene — Herman watches Lisaveta at the window
-- Base ambience: `amb_pirita_night.wav` (distant dogs, traffic, quiet residential)
+- Base ambience: `amb_pirita_night.flac` (distant dogs, traffic, quiet residential)
 - No action SFX
+
+## Added, scene not assigned yet
+- `amb_room_tone.wav` — quiet apartment room tone (klankbeeld), 90 s. Candidate base for indoor scenes.
+
+## Files
+
+| File | Length | Format |
+|---|---|---|
+| amb_pirita_night.flac | 5:35 | 48 kHz stereo |
+| amb_room_tone.wav | 1:30 | 48 kHz stereo, 24-bit |
+| sfx_cards.aif | 1:06 | 44.1 kHz mono, 24-bit |
+| sfx_deal.wav | 0:23 | 44.1 kHz stereo |
+| sfx_chips.wav | 1:09 | 44.1 kHz stereo, 24-bit |
+| sfx_men_murmur.wav | 0:59 | 48 kHz mono, 24-bit |
+| sfx_door_open.wav | 0:08.5 | 48 kHz stereo |
+| sfx_pistol_cock.wav | 0:00.6 | 48 kHz stereo, 32-bit |
+
+Not uploaded yet: `amb_winter_quiet.wav`, `amb_snow_city.wav`, `amb_horror_cellar.wav`, `amb_city_cold.flac`, `amb_berlin_wind.wav`.
 
 ## Not used in this book
 

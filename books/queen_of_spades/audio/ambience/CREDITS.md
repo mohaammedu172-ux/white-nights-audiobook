@@ -13,6 +13,11 @@ Covers both `ambience/` and `../sfx/`.
   File: ambience/amb_city_cold.flac
   Note: this is the sound Mohammed supplied for amb_city_cold, instead of "Cold CityNight 1040PM".
 
+- "horror ambiance 4430 150329_01 track 110" by klankbeeld
+  https://freesound.org/people/klankbeeld/sounds/784344/
+  License: CC BY 4.0 (as noted earlier; confirm on this page)
+  File: ambience/amb_horror_cellar.flac (FLAC of the original 24-bit WAV, 3:18)
+
 ### Public Domain (no credit required)
 
 - "playing_cards.aif" by KevinHilt
@@ -46,12 +51,6 @@ Covers both `ambience/` and `../sfx/`.
   https://freesound.org/people/TSP-Talk/sounds/845502/
   File: ambience/amb_winter_quiet.flac (converted from 32-bit float WAV to 24-bit FLAC to fit GitHub's 100 MB limit)
   License: [check Freesound page]
-
-- "horror cinematic dark horror room tone 20" by saha213131
-  https://freesound.org/people/saha213131/sounds/677359/
-  File: ambience/amb_horror_cellar.wav
-  License: [check Freesound page]
-  Note: supplied by Mohammed for amb_horror_cellar instead of klankbeeld's "horror ambiance 4430". Only 12 s long.
 
 ## Pending upload (by Mohammed)
 

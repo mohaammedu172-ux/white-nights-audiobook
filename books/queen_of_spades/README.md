@@ -1,5 +1,7 @@
 # Experiment: The Queen of Spades (Pushkin)
 
+**Agents: read `HANDOFF.md` first.**
+
 Text: H. Twitchell translation, Project Gutenberg #23058 (public domain).
 Purpose: a second book run by another agent, to compare results with White Nights.
 The White Nights settings (`/config.json`) are **not** changed by this experiment.
@@ -10,9 +12,9 @@ The White Nights settings (`/config.json`) are **not** changed by this experimen
 |---|---|---|---|---|
 | 1 | Narrator (third person) | `am_michael` | 250 | 0.95 |
 | 2 | Herman | `am_fenrir` | 250 | 1.0 |
-| 3 | Tomsky | `am_puck` | 60 | 1.0 |
+| 3 | Tomsky | `am_puck` | 60 | 0.92 |
 | 4 | Lisaveta | `af_bella` | 250 | 1.0 |
-| 5 | Countess (and her ghost) | `af_nicole` | 250 | 0.88 |
+| 5 | Countess (and her ghost) | `af_nicole` | 250 | 0.92 |
 | 6 | Tchekalinsky | `bm_lewis` | 250 | 0.95 |
 | 7 | Naroumov | `am_santa` | 250 | 1.0 |
 | 8 | Sourine | `am_onyx` | 250 | 1.0 |

@@ -143,6 +143,92 @@ Covers both `ambience/` and `../sfx/`.
   License: [check Freesound page]
   Note: Restored from git history for the gambling club.
 
+### Added 2026-10-22, second batch (licences to be confirmed)
+
+- "Place Cutlery by trp.wav" by tomroryparsons
+  https://freesound.org/people/tomroryparsons/sounds/699636/
+  File: sfx/sfx_cutlery.wav
+  License: [check Freesound page]
+  Note: Line 2 (0:14) breakfast plates pushed back.
+
+- "Victoria Boche- Mus 152-Foley.Setting plates.wav" by bochevictoria007
+  https://freesound.org/people/bochevictoria007/sounds/539297/
+  File: sfx/sfx_plates.wav
+  License: [check Freesound page]
+  Note: Line 2 (0:14).
+
+- "Small group of people leaving a room" by pfranzen
+  https://freesound.org/people/pfranzen/sounds/659703/
+  File: sfx/sfx_people_leaving.ogg
+  License: [check Freesound page]
+  Note: Line 37 (3:38) party breaks up: chair scrape, steps, door.
+
+- "chairscrape11.wav" by sinatra314
+  https://freesound.org/people/sinatra314/sounds/58449/
+  File: sfx/sfx_chair_scrape.wav
+  License: [check Freesound page]
+  Note: Lines 2 / 37.
+
+- "Glass Bowl Set" by amholma
+  https://freesound.org/people/amholma/sounds/344362/
+  File: sfx/sfx_glass_set.wav
+  License: [check Freesound page]
+  Note: Line 37 (3:38) glasses set down. (Sent twice; identical.)
+
+- "Clothes rustling.wav" by Jandre160108
+  https://freesound.org/people/Jandre160108/sounds/365855/
+  File: sfx/sfx_clothes_rustle.wav
+  License: [check Freesound page]
+  Note: Line 38 (3:46) Countess dressed at her mirror.
+
+- "opening_note" by dalexgray
+  https://freesound.org/people/dalexgray/sounds/711853/
+  File: sfx/sfx_paper_unfold.mp3
+  License: [check Freesound page]
+  Note: Line 58 (6:15) note read. Uploader: free to use for any purpose without credit.
+
+- "writing - pen - wide 01.wav" by Anthousai
+  https://freesound.org/people/Anthousai/sounds/337087/
+  File: sfx/sfx_pen_writing.wav
+  License: [check Freesound page]
+  Note: Line 60 (6:40) she wrote a few lines. Modern pen, not a quill — listen check.
+
+- "sh_shop_door_bell_openclose.wav" by shall555
+  https://freesound.org/people/shall555/sounds/72197/
+  File: sfx/sfx_shop_door_bell.wav
+  License: [check Freesound page]
+  Note: Line 61 (6:55) entered a shop.
+
+- "Footsteps Boots - Wood stairs, walk & run" by Vrymaa
+  https://freesound.org/people/Vrymaa/sounds/735343/
+  File: sfx/sfx_stairs_boots.wav
+  License: [check Freesound page]
+  Note: Line 66 (7:57) Herman climbs to the bedchamber. Use the first 29 s (walking).
+
+- "Three People Walking on Concrete - Group Footsteps" by ZackSoundLab
+  https://freesound.org/people/ZackSoundLab/sounds/789609/
+  File: sfx/sfx_footsteps_group.mp3
+  License: [check Freesound page]
+  Note: Outdoor concrete; servants (line 68) or leaving guests — listen check. (Sent twice; identical.)
+
+- "Front door opening and closing (with chime)" by AceOfSpadesProduc100
+  https://freesound.org/people/AceOfSpadesProduc100/sounds/332914/
+  File: sfx/sfx_front_door_chime.wav
+  License: [check Freesound page]
+  Note: Line 113 (13:27) street door. WARNING: has a modern alarm-system 'beep beep beep' — cut it out or don't use.
+
+- "CHAIR, WOODEN SQUEAKS2.wav" by rightpurdy
+  https://freesound.org/people/rightpurdy/sounds/159645/
+  File: sfx/sfx_chair_creak.wav
+  License: [check Freesound page]
+  Note: Line 71 (8:55) the Countess sat swaying.
+
+- "WOODFric-Samsung Galaxy Smartphone, CU_Floorboard, Creak_Nicholas Judy_TDC" by designerschoice
+  https://freesound.org/people/designerschoice/sounds/811535/
+  File: sfx/sfx_floorboard_creak.wav
+  License: [check Freesound page]
+  Note: Line 72 (9:12) 'At the slight noise'.
+
 ## Pending upload (by Mohammed)
 
 - "Snowfall Ambience, City" by Kinoton

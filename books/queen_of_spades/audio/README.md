@@ -39,13 +39,13 @@ Music is deliberately omitted. The story's silences are part of its tension.
 | 3:38 | 37 | "draining his glass and taking his leave" | `sfx/sfx_glass_set.wav`, `sfx/sfx_people_leaving.ogg` |
 | 3:46 | 38 | Countess at her mirror, women dressing her | `sfx/sfx_clothes_rustle.wav` |
 | 6:15 | 58 | Lisaveta reads the note | `sfx/sfx_paper_unfold.mp3` |
-| 6:40 | 60 | "She therefore wrote a few lines" | `sfx/sfx_pen_writing.wav` (modern pen — listen check) |
+| 6:40 | 60 | "She therefore wrote a few lines" | `sfx/sfx_quill_writing.wav` (quill; `sfx/sfx_pen_writing.wav` is a modern-pen backup) |
 | 6:55 | 61 | "entered a shop" | `sfx/sfx_shop_door_bell.wav` |
 | 7:57 | 66 | Herman climbs to the bedchamber | `sfx/sfx_stairs_boots.wav` (first 29 s = walking) |
 | 8:19 | 68 | "servants began moving about" | `sfx/sfx_footsteps_group.mp3` (outdoor concrete — listen check) |
 | 8:55 | 71 | "the old lady sat swaying" | `sfx/sfx_chair_creak.wav` |
 | 9:12 | 72 | "At the slight noise" | `sfx/sfx_floorboard_creak.wav` |
-| 13:27 | 113 | key to the street door | `sfx/sfx_front_door_chime.wav` (cut the modern alarm beeps first) |
+| 13:27 | 113 | key to the street door | `sfx/sfx_front_door_chime.wav` (cut the modern alarm beeps first; an old front door by adrianornhagen is a candidate replacement, not uploaded yet) |
 | 6:00 | 57 | Lisaveta enters the carriage | `ambience/amb_street_havana.flac` (listen check), `sfx/sfx_horse_snort.wav` |
 | 6:40–6:55 | 60–61 | letter dropped from the window, picked up | `sfx/sfx_paper_flutter.wav` |
 | 8:19 | 68 | "The hours dragged slowly by" | `sfx/sfx_clock_tick.mp3` (looped, soft) |

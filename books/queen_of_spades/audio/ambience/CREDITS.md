@@ -229,6 +229,12 @@ Covers both `ambience/` and `../sfx/`.
   License: [check Freesound page]
   Note: Line 72 (9:12) 'At the slight noise'.
 
+- "OBJWrite-Blue Snowball Microphone, MCU_Quill, Pen, Writing_Nicholas Judy_TDC" by designerschoice
+  https://freesound.org/people/designerschoice/sounds/829662/
+  File: sfx/sfx_quill_writing.wav
+  License: [check Freesound page]
+  Note: Line 60 (6:40). A real quill — preferred over sfx_pen_writing.wav (modern pen).
+
 ## Pending upload (by Mohammed)
 
 - "Snowfall Ambience, City" by Kinoton

@@ -6,7 +6,12 @@ Covers both `ambience/` and `../sfx/`.
 ## Present
 
 ### CC BY (credit required)
-(none present yet — see Pending upload)
+
+- "snowcity ambience 823PM NL 210209_0248" by klankbeeld
+  https://freesound.org/people/klankbeeld/sounds/625076/
+  License: CC BY 4.0 (as noted for klankbeeld's "Cold CityNight" from the same night; confirm on this page)
+  File: ambience/amb_city_cold.flac
+  Note: this is the sound Mohammed supplied for amb_city_cold, instead of "Cold CityNight 1040PM".
 
 ### Public Domain (no credit required)
 
@@ -43,11 +48,6 @@ Covers both `ambience/` and `../sfx/`.
   License: [check Freesound page]
 
 ## Pending upload (by Mohammed)
-
-- "Cold CityNight 1040PM 210209_0248" by klankbeeld
-  https://freesound.org/people/klankbeeld/
-  License: CC BY 4.0
-  File: ambience/amb_city_cold.flac
 
 - "horror ambiance 4430 150329_01" by klankbeeld
   https://freesound.org/people/klankbeeld/

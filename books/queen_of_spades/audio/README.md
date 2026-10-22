@@ -33,10 +33,10 @@ Music is deliberately omitted. The story's silences are part of its tension.
 
 ## Files
 
-Present: `ambience/amb_pirita_night.flac`, `ambience/amb_winter_quiet.flac`, `sfx/sfx_cards.aif`, `sfx/sfx_men_murmur.wav`, `sfx/sfx_door_open.wav`, `sfx/sfx_pistol_cock.wav`.
+Present: `ambience/amb_city_cold.flac`, `ambience/amb_pirita_night.flac`, `ambience/amb_winter_quiet.flac`, `sfx/sfx_cards.aif`, `sfx/sfx_men_murmur.wav`, `sfx/sfx_door_open.wav`, `sfx/sfx_pistol_cock.wav`.
 
 Pending upload by Mohammed: `ambience/amb_snow_city.wav`, `ambience/amb_horror_cellar.wav`,
-`ambience/amb_city_cold.flac`, `ambience/amb_berlin_wind.wav`.
+`ambience/amb_berlin_wind.wav`.
 
 Line numbers above refer to `script/queen_of_spades_lines.json` (v4, same numbering as v3).
 

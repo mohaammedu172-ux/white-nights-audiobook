@@ -37,6 +37,11 @@ Covers both `ambience/` and `../sfx/`.
   File: sfx/sfx_door_open.wav
   License: [check Freesound page]
 
+- "Quiet Winter Night with Light Snow & Wind – Altenthann Ambience" by TSP-Talk
+  https://freesound.org/people/TSP-Talk/sounds/845502/
+  File: ambience/amb_winter_quiet.flac (converted from 32-bit float WAV to 24-bit FLAC to fit GitHub's 100 MB limit)
+  License: [check Freesound page]
+
 ## Pending upload (by Mohammed)
 
 - "Cold CityNight 1040PM 210209_0248" by klankbeeld
@@ -48,10 +53,6 @@ Covers both `ambience/` and `../sfx/`.
   https://freesound.org/people/klankbeeld/
   License: CC BY 4.0
   File: ambience/amb_horror_cellar.wav
-
-- "Quiet Winter Night with Light Snow & Wind – Altenthann Ambience" by TSP-Talk
-  File: ambience/amb_winter_quiet.wav
-  License: [check Freesound page]
 
 - "Snowfall Ambience, City" by Kinoton
   File: ambience/amb_snow_city.wav

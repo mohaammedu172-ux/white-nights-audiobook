@@ -31,9 +31,25 @@ Do not reference these files in any pipeline until the mix step is built.
 
 Music is deliberately omitted. The story's silences are part of its tension.
 
+## Additional sounds (added 2026-10-22, proposed placements — times in the current full MP3)
+
+| Time | Line | Moment | Sound |
+|---|---|---|---|
+| 6:00 | 57 | Lisaveta enters the carriage | `ambience/amb_street_havana.flac` (listen check), `sfx/sfx_horse_snort.wav` |
+| 6:40–6:55 | 60–61 | letter dropped from the window, picked up | `sfx/sfx_paper_flutter.wav` |
+| 8:19 | 68 | "The hours dragged slowly by" | `sfx/sfx_clock_tick.mp3` (looped, soft) |
+| 8:19 | 68 | "at last he heard the sound of wheels" | `sfx/sfx_carriage_path.wav` or `sfx/sfx_carriage_wedding.wav` |
+| 12:06 | 100 | "the door of her apartment suddenly opened" | `sfx/sfx_door_squeaky.wav` or `sfx/sfx_door_sliding.wav` |
+| 14:04–14:19 | 116–117 | funeral; Herman falls | `ambience/amb_hall_crowd.wav` (low), `sfx/sfx_body_fall.mp3` (one of three) |
+| 15:08 | 121 | "the shuffling sound of loose slippers" | `sfx/sfx_slippers.mp3` |
+| 15:21 | 122 | "The door of his room opened" | `sfx/sfx_door_open.wav` (tested and approved; moved from line 123) |
+| 15:56 | 125 | "Herman heard the outside door close" | `sfx/sfx_door_close_distant.wav` |
+| 18:00–21:40 | 130–166 | gambling club | `ambience/amb_hall_crowd.wav` or `sfx/sfx_men_murmur.wav`; `sfx/sfx_cards.aif`, `sfx/sfx_deal.wav`, `sfx/sfx_chips.wav` |
+| 19:49 | 154 | "A murmur ran through the crowd" | `sfx/sfx_men_murmur.wav` |
+
 ## Files
 
-Present: `ambience/amb_city_cold.flac`, `ambience/amb_horror_cellar.flac`, `ambience/amb_pirita_night.flac`, `ambience/amb_winter_quiet.flac`, `sfx/sfx_cards.aif`, `sfx/sfx_men_murmur.wav`, `sfx/sfx_door_open.wav`, `sfx/sfx_pistol_cock.wav`.
+Present: see the folders; every file is listed in `ambience/CREDITS.md`.
 
 Pending upload by Mohammed: `ambience/amb_snow_city.wav`, `ambience/amb_berlin_wind.wav`.
 

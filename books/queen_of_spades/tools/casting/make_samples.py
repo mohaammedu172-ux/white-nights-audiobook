@@ -1,8 +1,8 @@
-"""Every English Kokoro voice for every role: python tools/casting/make_samples.py <out_dir> <config.json> <audition_lines.json>
-Then the listening page: python tools/casting/make_page.py <out_dir> <page.html>"""
+"""Every English Kokoro voice for every role: python books/queen_of_spades/tools/casting/make_samples.py <out_dir> <config.json> <audition_lines.json>
+Then the listening page: python books/queen_of_spades/tools/casting/make_page.py <out_dir> <page.html>"""
 import json, os, sys, subprocess, base64
 import numpy as np, soundfile as sf
-sys.path.insert(0, "/home/claude/white-nights-audiobook")
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..")))   # repo root
 from wn import kokoro_ctx as K
 S = sys.argv[1]
 cfg = json.load(open(sys.argv[2]))

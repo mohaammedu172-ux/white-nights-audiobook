@@ -1,7 +1,7 @@
 # Queen of Spades: voice samples
 
 Every English Kokoro voice reading each character's line (fixed style row: Puck 60, others 250; hidden lead-in; the role's speed).
-Open `../casting_page.html` in a browser to listen and pick. Rebuild: `python tools/casting/make_samples.py books/queen_of_spades/samples books/queen_of_spades/config.json books/queen_of_spades/audition_lines.json`.
+Open `casting_page.html` (this folder) in a browser to listen and pick. Rebuild: `python books/queen_of_spades/tools/casting/make_samples.py books/queen_of_spades/samples books/queen_of_spades/config.json books/queen_of_spades/samples/audition_lines.json`, then `python books/queen_of_spades/tools/casting/make_page.py books/queen_of_spades/samples books/queen_of_spades/samples/casting_page.html`.
 
 
 ## Narrator (speed 0.95)

@@ -9,3 +9,4 @@ __pycache__/
 !books/*/audio/**/*.flac
 !books/*/audio/**/*.aif
 !books/*/audio/**/*.mp3
+/script/queen_of_spades_lines.json

@@ -1,45 +1,79 @@
-# Experiment: The Queen of Spades (Pushkin)
+# The Queen of Spades (Pushkin)
 
-**Agents: read `HANDOFF.md` first.**
+H. Twitchell translation, Project Gutenberg #23058 (public domain). A dramatized audiobook made with the same method as White Nights.
 
-Text: H. Twitchell translation, Project Gutenberg #23058 (public domain).
-Purpose: a second book run by another agent, to compare results with White Nights.
-The White Nights settings (`/config.json`) are **not** changed by this experiment.
+**Each book follows this layout. Copy this structure for any new book.**
 
-## Voice map (picked by ear by Mohammed, 2026-10-21, from `samples/`)
-
-| ID | Character | Voice | Style row | Speed |
-|---|---|---|---|---|
-| 1 | Narrator (third person) | `am_michael` | 250 | 0.95 |
-| 2 | Herman | `am_fenrir` | 250 | 1.0 |
-| 3 | Tomsky | `am_puck` | 60 | 0.92 |
-| 4 | Lisaveta | `af_bella` | 250 | 1.0 |
-| 5 | Countess (and her ghost) | `af_nicole` | 250 | 0.92 |
-| 6 | Tchekalinsky | `bm_lewis` | 250 | 0.95 |
-| 7 | Naroumov | `am_santa` | 250 | 1.0 |
-| 8 | Sourine | `am_onyx` | 250 | 1.0 |
-| 9 | Saint-Germain (inside Tomsky's story) | `bm_fable` | 250 | 0.92 |
-
-Claude's first suggestions were the same except Countess `bf_emma`, Tchekalinsky `bm_george`, Naroumov `am_echo`, Sourine `bm_lewis`.
-
-Style rows other than Puck's 60 are the default and haven't been tuned by ear. If a voice sounds too deep or too fast,
-try rows 60–150 before changing the voice (see `RECIPE.md`).
-
-## Audition
+## Build and run
 ```bash
-python tools/audition_voices.py books/queen_of_spades/config.json books/queen_of_spades/audition_lines.json out/qos_voices.mp3
-```
-Lines 1–6 are from the book. Lines 7–10 (Tchekalinsky, Naroumov, Sourine, Saint-Germain) are **test lines, not book text**.
-
-## Running the book with this config
-`wn/text2.py` is written for White Nights (its chapter headings and speech-tag names). A Queen of Spades script builder
-must write `script/queen_of_spades_lines.json` in the same format (`id, p, speaker, kind, text, pause_before`), with
-speaker IDs from the table above and narration as speaker 1. Then:
-```bash
+python books/queen_of_spades/text.py                       # or: python -m books.queen_of_spades.text
 WN_CONFIG=books/queen_of_spades/config.json WN_OUT=$PWD/out python -m wn.run chapter
 ```
+`text.py` must run first on every fresh checkout. It writes the script here and a copy at `<repo>/script/queen_of_spades_lines.json`,
+which is where `wn/run.py` reads it. That copy is git-ignored. For a short test, point `WN_CONFIG` at a copy of `config.json`
+with `"paragraphs": [a, b]`.
 
-## All voice options
-`samples/` has 121 short MP3s: every English Kokoro voice reading each character's line (13 male voices per male role,
-15 female voices per female role), listed in `samples/README.md`. `casting_page.html` is a self-contained listening and
-picking page (open it in a browser). Rebuild both with `tools/casting/`.
+## Folders
+
+### `config.json`
+Voices, style rows, speeds and mix settings, picked by Mohammed by ear.
+
+| Role | Voice | Style row | Speed |
+|---|---|---|---|
+| 1 Narrator | am_michael | 250 | 0.95 |
+| 2 Herman | am_fenrir | 250 | 1.0 |
+| 3 Tomsky | am_puck | 60 | 0.92 |
+| 4 Lisaveta | af_bella | 250 | 1.0 |
+| 5 Countess (and ghost) | af_nicole | 250 | 0.92 |
+| 6 Tchekalinsky | bm_lewis | 250 | 0.95 |
+| 7 Naroumov | am_santa | 250 | 1.0 |
+| 8 Sourine | am_onyx | 250 | 1.0 |
+| 9 Saint-Germain | bm_fable | 250 | 0.92 |
+
+### `source/`
+`gutenberg_23058.txt` is the raw book text, so the build needs no network. `text.py` reads it, or downloads it here from
+`https://www.gutenberg.org/cache/epub/23058/pg23058.txt` if it is missing.
+
+### `script/`: the source of truth
+- `queen_of_spades_fixes.json`: manual corrections (`roles`: line id → role; `replace`: line id → text). Edit this, never the generated files.
+- `queen_of_spades_lines.json`: generated. One entry per spoken line: `id` (string), `speaker` (role number as a string),
+  `p`, `kind` (`narr`/`say`), `pause_before` (s), `interrupts`, `text`, `guessed`, `role`, `speaker_name`.
+- `queen_of_spades_script.md`: generated human review view, with the field notes in a footer.
+
+Pauses: 0.6 s for the same speaker continuing, 0.75 s for a reply, 1.0 s for a new paragraph by the same speaker, 1.4 s before lines 82, 84 and 85.
+
+### `audio/`
+Only sounds Mohammed downloaded and approved. `ambience/` holds beds, `sfx/` holds effects, `music/` is intentionally empty.
+`audio/README.md` lists which scene each sound is for. Credits and licences are in `audio/ambience/CREDITS.md`.
+
+### `mixing/`
+Placeholder for the mix stage. No code until Mohammed asks.
+
+### `video/`
+Placeholder for the YouTube video. No code until Mohammed asks.
+
+### `samples/`
+Voice auditioning: 121 MP3s (every English Kokoro voice per role), `README.md` (picks marked), `casting_page.html`
+(listen and pick in a browser), and `audition_lines.json` (the lines used).
+
+### `tools/`
+Setup helpers, not part of the build. Only rerun them if voices change.
+- `audition_voices.py`: renders the current cast reading `samples/audition_lines.json`.
+- `casting/`: `make_samples.py` (all voices × roles) and `make_page.py` + `template.html` (the casting page).
+
+### `text.py`
+The script builder for this book (v4).
+
+## Current status
+- Script: 168 lines, 0 guessed, fixes applied ✓
+- Voices: picked by Mohammed, encoded in config.json ✓
+- Audio generation: works via `WN_CONFIG=books/queen_of_spades/config.json python -m wn.run chapter` ✓
+- Mix stage: not started
+- Video stage: not started
+
+## Known issues
+- Several sound assets need licence verification (see `audio/ambience/CREDITS.md`).
+- `sfx/sfx_door_open.wav` needs a listen check before use.
+- `sfx/sfx_men_murmur.wav` is a 1930s optical transfer; verify the noise level before use.
+- `sfx/sfx_pistol_cock.wav` is a modern semi-auto slide; a period-appropriate alternative is pending.
+- `wn/run.py` names the output `white_nights_queen_of_spades.mp3` (its file-name prefix is fixed). Rename after generating if needed.

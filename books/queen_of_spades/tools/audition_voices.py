@@ -1,12 +1,12 @@
 """Short voice audition: each character says one line with the full method (fixed style row + hidden lead-in cut).
 
-    python tools/audition_voices.py books/queen_of_spades/config.json books/queen_of_spades/audition_lines.json out/audition.mp3
+    python books/queen_of_spades/tools/audition_voices.py books/queen_of_spades/config.json books/queen_of_spades/samples/audition_lines.json out/audition.mp3
 
 audition_lines.json = [[speaker_id, "text"], ...]. Each line is announced by nothing; 1.0 s of silence between lines.
 """
 import json, os, sys
 import numpy as np
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))   # repo root
 from wn import kokoro_ctx as K, assemble
 
 cfg, lines, dst = json.load(open(sys.argv[1])), json.load(open(sys.argv[2])), sys.argv[3]

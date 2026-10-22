@@ -1,6 +1,11 @@
 """
 Build the spoken script for The Queen of Spades (Pushkin, Twitchell tr., Gutenberg #23058).
 v3 — fixes apostrophes, unmatched quotes, nested anecdote, adds conversation-state inference.
+v4 — writes the format wn/run.py reads (id, speaker, p, kind, pause_before, interrupts, text) to
+     script/queen_of_spades_lines.json (source of truth) and a copy at <repo>/script/ (transient, git-ignored).
+     Reads the book from source/gutenberg_23058.txt (downloads it there if missing).
+
+    python books/queen_of_spades/text.py        or        python -m books.queen_of_spades.text
 """
 from __future__ import annotations
 
@@ -11,7 +16,11 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SCRIPT_DIR = HERE / "script"
-CACHE_DIR = HERE / ".cache"
+SOURCE = HERE / "source" / "gutenberg_23058.txt"
+REPO_SCRIPT_DIR = HERE.parent.parent / "script"            # where wn/run.py reads <chapter>_lines.json
+CHAPTER = "queen_of_spades"
+DRAMATIC = {82, 84, 85}                                     # line ids that get a 1.4 s pause before them
+PAUSE = {"same": 0.6, "reply": 0.75, "new_paragraph": 1.0, "dramatic": 1.4}
 GUTENBERG_URL = "https://www.gutenberg.org/cache/epub/23058/pg23058.txt"
 
 NARRATOR = 1
@@ -47,15 +56,12 @@ SPEECH_VERBS = r"(?:said|asked|replied|answered|cried|exclaimed|observed|remarke
 
 
 def fetch_book() -> str:
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache = CACHE_DIR / "queen_of_spades_gutenberg.txt"
-    if cache.exists():
-        return cache.read_text(encoding="utf-8", errors="replace")
-    print(f"Downloading {GUTENBERG_URL} ...")
-    data = urllib.request.urlopen(GUTENBERG_URL, timeout=60).read()
-    text = data.decode("utf-8", errors="replace")
-    cache.write_text(text, encoding="utf-8")
-    return text
+    if not SOURCE.exists():
+        SOURCE.parent.mkdir(parents=True, exist_ok=True)
+        print(f"Downloading {GUTENBERG_URL} -> {SOURCE}")
+        req = urllib.request.Request(GUTENBERG_URL, headers={"User-Agent": "Mozilla/5.0"})
+        SOURCE.write_bytes(urllib.request.urlopen(req, timeout=60).read())
+    return SOURCE.read_bytes().decode("utf-8-sig", errors="replace").replace("\r\n", "\n").replace("\r", "\n")
 
 
 def strip_gutenberg(text: str) -> str:
@@ -73,6 +79,7 @@ def strip_gutenberg(text: str) -> str:
         m = re.search(r"(End of (the )?Project Gutenberg|\*\*\*\s*END)", text, re.I)
         if m:
             text = text[:m.start()]
+    text = re.sub(r"\n\s*End of (the )?Project Gutenberg.*\Z", "", text, flags=re.I | re.S)   # old-style footer line
     text = re.sub(r"^Copyright,?\s+\d{4}.*$", "", text, flags=re.M)
     text = re.sub(r"^\s*Transcriber'?s? Note.*$", "", text, flags=re.M)
     return text.strip()
@@ -228,7 +235,8 @@ def parse_paragraph(para: str, state: dict) -> list[dict]:
                 speaker = state.get("expected_next") or state.get("last_speaker") or NARRATOR
                 guessed = True
             lines.append({"role": speaker, "text": clean_quotes(quote),
-                          "guessed": guessed, "is_letter": False})
+                          "guessed": guessed, "is_letter": False,
+                          "interrupts": bool(re.match(r"\W*(\w+\s+){0,3}(interrupted|broke in)", after, re.I))})
             state["last_speaker"] = speaker
 
         # update expected_next: person addressed in the "after" text
@@ -282,42 +290,71 @@ def apply_fixes(lines: list[dict]) -> list[dict]:
     return lines
 
 
-def build() -> None:
+def pause_for(line: dict, prev: dict | None) -> float:
+    if prev is None:
+        return 0.0
+    if line["n"] in DRAMATIC:
+        return PAUSE["dramatic"]
+    if line["role"] != prev["role"]:
+        return PAUSE["reply"]
+    if line["p"] != prev["p"]:
+        return PAUSE["new_paragraph"]
+    return PAUSE["same"]
+
+
+def build() -> list[dict]:
     raw = fetch_book()
     body = strip_gutenberg(raw)
     paras = split_paragraphs(body)
     state = {"last_speaker": None, "expected_next": None}
-    all_lines: list[dict] = []
+    work: list[dict] = []
     for i, para in enumerate(paras):
         for line in parse_paragraph(para, state):
-            for chunk in chunk_line(line["text"]):
-                all_lines.append({
-                    "id": len(all_lines) + 1,
-                    "paragraph": i + 1,
-                    "role": line["role"],
-                    "speaker": ROLE_NAMES[line["role"]],
-                    "text": chunk,
-                    "guessed": line["guessed"],
-                    "is_letter": line["is_letter"],
-                })
+            for k, chunk in enumerate(chunk_line(line["text"])):
+                work.append({"id": len(work) + 1, "paragraph": i + 1, "role": line["role"],
+                             "speaker": ROLE_NAMES[line["role"]], "text": chunk, "guessed": line["guessed"],
+                             "interrupts": bool(line.get("interrupts")) and k == 0})
 
-    all_lines = apply_fixes(all_lines)
+    work = apply_fixes(work)                       # fixes are keyed by the numeric line id (v3 numbering)
+
+    lines, prev = [], None
+    for w in work:
+        line = {"n": w["id"], "p": w["paragraph"], "role": w["role"]}
+        out = {
+            "id": str(w["id"]),
+            "speaker": str(w["role"]),
+            "p": w["paragraph"],
+            "kind": "narr" if w["role"] == NARRATOR else "say",
+            "pause_before": pause_for(line, prev),
+            "interrupts": w["interrupts"],
+            "text": w["text"],
+            "guessed": w["guessed"],
+            "role": w["role"],
+            "speaker_name": ROLE_NAMES[w["role"]],
+        }
+        lines.append(out); prev = line
 
     SCRIPT_DIR.mkdir(parents=True, exist_ok=True)
-    (SCRIPT_DIR / "queen_of_spades_lines.json").write_text(
-        json.dumps(all_lines, indent=2, ensure_ascii=False), encoding="utf-8")
+    payload = json.dumps(lines, indent=2, ensure_ascii=False)
+    (SCRIPT_DIR / f"{CHAPTER}_lines.json").write_text(payload, encoding="utf-8")
+    REPO_SCRIPT_DIR.mkdir(parents=True, exist_ok=True)
+    (REPO_SCRIPT_DIR / f"{CHAPTER}_lines.json").write_text(payload, encoding="utf-8")   # copy for wn/run.py
 
-    md = ["# The Queen of Spades — script review (v3)\n",
-          "Guessed speakers are marked **(guessed)**. Plan A: inferred from conversation, needs review.\n"]
-    for line in all_lines:
-        tag = " **(guessed)**" if line["guessed"] else ""
-        letter = " [letter]" if line["is_letter"] else ""
-        md.append(f"**{line['id']}. {line['speaker']}**{tag}{letter}  \n> {line['text']}\n")
-    (SCRIPT_DIR / "queen_of_spades_script.md").write_text("\n".join(md), encoding="utf-8")
+    md = ["# The Queen of Spades — script review (v4)\n",
+          "Guessed speakers are marked **(guessed)**. `⏸` = silence before the line in seconds.\n"]
+    for l in lines:
+        tag = " **(guessed)**" if l["guessed"] else ""
+        cut = " [interrupts]" if l["interrupts"] else ""
+        md.append(f"**{l['id']}. {l['speaker_name']}**{tag}{cut} `⏸ {l['pause_before']:.2f}s`  \n> {l['text']}\n")
+    md.append("\n---\nFields in `queen_of_spades_lines.json`: `id` (string), `speaker` (role number as a string, the key in "
+              "config.json `voices`), `p` (paragraph), `kind` (`narr` for the Narrator, `say` for everyone else), "
+              "`pause_before` (s: 0.6 same speaker, 0.75 reply, 1.0 new paragraph by the same speaker, 1.4 lines "
+              + ", ".join(map(str, sorted(DRAMATIC))) + "), `interrupts`, `text`, `guessed`, `role` (int), `speaker_name`.\n")
+    (SCRIPT_DIR / f"{CHAPTER}_script.md").write_text("\n".join(md), encoding="utf-8")
 
-    print(f"Wrote {len(all_lines)} lines to {SCRIPT_DIR}")
-    guessed = sum(1 for l in all_lines if l["guessed"])
-    print(f"Guessed speakers: {guessed} / {len(all_lines)}")
+    print(f"Wrote {len(lines)} lines to {SCRIPT_DIR} (copy: {REPO_SCRIPT_DIR / (CHAPTER + '_lines.json')})")
+    print(f"Guessed speakers: {sum(1 for l in lines if l['guessed'])} / {len(lines)}")
+    return lines
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
- "_about": "Cue sheet for The Queen of Spades mix. Every sound is placed by line id + a phrase from that line (+ offset in s), so cues survive re-timing. Phrase time = line start + line duration x (characters before the phrase / total characters); phrase null = line start. Levels are LU (perceived loudness, LUFS) below the voice in the same span. Sounds inside one event may overlap. Loops use an equal-power crossfade. status: approved = Mohammed approved by ear; tested = rendered in a test; proposed; listen-check = check the file first. Beds start lead_s (default 1.0) before from_line and end tail_s (default 0.5) after to_line.",
+ "_about": "Cue sheet for The Queen of Spades mix. Every sound is placed by line id + a phrase from that line (+ offset in s), so cues survive re-timing. Phrase time = line start + line duration x (characters before the phrase / total characters); phrase null = line start. Levels are LU (perceived loudness, LUFS) below the voice in the same span. Sounds inside one event may overlap. Loops use an equal-power crossfade. status: approved = Mohammed approved by ear; tested = rendered in a test; proposed; listen-check = check the file first. Beds start lead_s (default 1.0) before from_line and end tail_s (default 0.5) after to_line. 'layer': true marks a supporting sound added under an event's main sound.",
  "line_ids": "script/queen_of_spades_lines.json (v4, 168 lines)",
  "beds": [
   {
@@ -250,9 +250,22 @@
      "len_s": 6,
      "fade_in_s": 0.5,
      "fade_out_s": 1.5
+    },
+    {
+     "file": "sfx/sfx_chair_creak.wav",
+     "at": {
+      "line": "38",
+      "phrase": "seated before her mirror",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 21,
+     "layer": true,
+     "len_s": 2.5,
+     "fade_out_s": 1.0
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E05",
@@ -295,9 +308,22 @@
       "offset_s": 0.0
      },
      "lu_under_voice": 14
+    },
+    {
+     "file": "sfx/sfx_paper_flutter.wav",
+     "at": {
+      "line": "58",
+      "phrase": "to read the missive",
+      "offset_s": 0.8
+     },
+     "lu_under_voice": 17,
+     "layer": true,
+     "len_s": 1.0,
+     "fade_out_s": 0.3
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E07",
@@ -314,12 +340,23 @@
      "len_s": 5,
      "fade_in_s": 0.3,
      "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_paper_unfold.mp3",
+     "at": {
+      "line": "60",
+      "phrase": "She therefore wrote a few lines",
+      "offset_s": -0.8
+     },
+     "lu_under_voice": 19,
+     "layer": true
     }
    ],
    "backup": [
     "sfx/sfx_pen_writing.wav"
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E08",
@@ -374,10 +411,33 @@
      "len_s": 6,
      "fade_in_s": 0.5,
      "fade_out_s": 1.5
+    },
+    {
+     "file": "sfx/sfx_floorboard_creak.wav",
+     "at": {
+      "line": "66",
+      "phrase": "he reached the old lady",
+      "offset_s": 2.0
+     },
+     "lu_under_voice": 17,
+     "layer": true
+    },
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "66",
+      "phrase": "he reached the old lady",
+      "offset_s": -4.5
+     },
+     "lu_under_voice": 18,
+     "layer": true,
+     "len_s": 5,
+     "fade_in_s": 0.5,
+     "fade_out_s": 1.5
     }
    ],
    "status": "tested",
-   "note": "Bedchamber test 7:50-9:20."
+   "note": "Bedchamber test 7:50-9:20. Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E11",
@@ -418,13 +478,38 @@
      "len_s": 11,
      "fade_in_s": 1.5,
      "fade_out_s": 3.0
+    },
+    {
+     "file": "sfx/sfx_carriage_wedding.wav",
+     "at": {
+      "line": "68",
+      "phrase": "at last he heard",
+      "offset_s": 0.8
+     },
+     "lu_under_voice": 13,
+     "layer": true,
+     "len_s": 9,
+     "fade_in_s": 1.5,
+     "fade_out_s": 3.0
+    },
+    {
+     "file": "sfx/sfx_horse_snort.wav",
+     "at": {
+      "line": "68",
+      "phrase": "at last he heard",
+      "offset_s": 3.0
+     },
+     "lu_under_voice": 13,
+     "layer": true,
+     "len_s": 4,
+     "fade_out_s": 1.0
     }
    ],
    "backup": [
     "sfx/sfx_carriage_wedding.wav"
    ],
    "status": "approved",
-   "note": "Both carriages approved; path is the default."
+   "note": "Both carriages approved; path is the default. Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E13",
@@ -461,9 +546,23 @@
      "len_s": 4,
      "fade_in_s": 0.3,
      "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "71",
+      "phrase": "As the old lady sat swaying",
+      "offset_s": 0.3
+     },
+     "lu_under_voice": 19,
+     "layer": true,
+     "len_s": 4,
+     "fade_in_s": 0.5,
+     "fade_out_s": 1.0
     }
    ],
-   "status": "tested"
+   "status": "tested",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E15",
@@ -477,9 +576,23 @@
       "offset_s": -0.6
      },
      "lu_under_voice": 10
+    },
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "72",
+      "phrase": null,
+      "offset_s": -0.4
+     },
+     "lu_under_voice": 13,
+     "layer": true,
+     "len_s": 2,
+     "fade_in_s": 0.2,
+     "fade_out_s": 0.8
     }
    ],
-   "status": "tested"
+   "status": "tested",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E16",
@@ -512,12 +625,36 @@
      "lu_under_voice": 10,
      "len_s": 4,
      "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_floorboard_creak.wav",
+     "at": {
+      "line": "100",
+      "phrase": "the door of her apartment suddenly opened",
+      "offset_s": 1.0
+     },
+     "lu_under_voice": 13,
+     "layer": true
+    },
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "100",
+      "phrase": "She drew back",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 14,
+     "layer": true,
+     "len_s": 2,
+     "fade_in_s": 0.2,
+     "fade_out_s": 0.8
     }
    ],
    "backup": [
     "sfx/sfx_door_sliding.wav"
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E18",
@@ -587,9 +724,33 @@
      "len_s": 7.5,
      "fade_in_s": 0.6,
      "fade_out_s": 1.5
+    },
+    {
+     "file": "sfx/sfx_floorboard_creak.wav",
+     "at": {
+      "line": "121",
+      "phrase": "The step was",
+      "offset_s": 2.5
+     },
+     "lu_under_voice": 15,
+     "layer": true
+    },
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "121",
+      "phrase": "The step was",
+      "offset_s": 0.5
+     },
+     "lu_under_voice": 16,
+     "layer": true,
+     "len_s": 5,
+     "fade_in_s": 0.8,
+     "fade_out_s": 1.5
     }
    ],
-   "status": "approved"
+   "status": "approved",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E21",
@@ -603,10 +764,33 @@
       "offset_s": -1.2
      },
      "lu_under_voice": 8
+    },
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "122",
+      "phrase": "She came close to the bed",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 11,
+     "layer": true,
+     "len_s": 4,
+     "fade_in_s": 0.8,
+     "fade_out_s": 1.5
+    },
+    {
+     "file": "sfx/sfx_floorboard_creak.wav",
+     "at": {
+      "line": "122",
+      "phrase": "She came close to the bed",
+      "offset_s": 1.0
+     },
+     "lu_under_voice": 12,
+     "layer": true
     }
    ],
    "status": "approved",
-   "note": "Align on the creak's onset (file has ~3.2 s lead-in)."
+   "note": "Align on the creak's onset (file has ~3.2 s lead-in). Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E22",
@@ -620,9 +804,23 @@
       "offset_s": 1.2
      },
      "lu_under_voice": 10
+    },
+    {
+     "file": "sfx/sfx_slippers.mp3",
+     "at": {
+      "line": "125",
+      "phrase": "The fantom then turned",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 13,
+     "layer": true,
+     "len_s": 4,
+     "fade_in_s": 0.5,
+     "fade_out_s": 2.0
     }
    ],
-   "status": "approved"
+   "status": "approved",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E23",
@@ -678,9 +876,33 @@
      "lu_under_voice": 16,
      "len_s": 4,
      "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "134",
+      "phrase": "returned, to his dealing",
+      "offset_s": 0.5
+     },
+     "lu_under_voice": 19,
+     "layer": true,
+     "len_s": 3,
+     "fade_out_s": 1.0
+    },
+    {
+     "file": "sfx/sfx_glass_set.wav",
+     "at": {
+      "line": "134",
+      "phrase": "More than thirty cards",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 20,
+     "layer": true,
+     "len_s": 2
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E25",
@@ -696,9 +918,22 @@
      "lu_under_voice": 14,
      "len_s": 3,
      "fade_out_s": 0.8
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "136",
+      "phrase": "the cards were shuffled",
+      "offset_s": 0.5
+     },
+     "lu_under_voice": 17,
+     "layer": true,
+     "len_s": 3,
+     "fade_out_s": 1.0
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E26",
@@ -714,9 +949,22 @@
      "lu_under_voice": 14,
      "len_s": 3,
      "fade_out_s": 0.8
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "151",
+      "phrase": "He began dealing",
+      "offset_s": 0.6
+     },
+     "lu_under_voice": 17,
+     "layer": true,
+     "len_s": 2,
+     "fade_out_s": 0.8
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E27",
@@ -763,9 +1011,22 @@
      "lu_under_voice": 14,
      "len_s": 3,
      "fade_out_s": 0.8
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "156",
+      "phrase": "placed upon it his fresh stake",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 17,
+     "layer": true,
+     "len_s": 2,
+     "fade_out_s": 0.8
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E29",
@@ -782,9 +1043,34 @@
      "len_s": 4,
      "fade_in_s": 0.2,
      "fade_out_s": 2.0
+    },
+    {
+     "file": "sfx/sfx_paper_flutter.wav",
+     "at": {
+      "line": "157",
+      "phrase": "He counted out ninety-four-thousand rubles",
+      "offset_s": 0.0
+     },
+     "lu_under_voice": 15,
+     "layer": true,
+     "len_s": 2,
+     "fade_out_s": 0.5
+    },
+    {
+     "file": "sfx/sfx_chips.wav",
+     "at": {
+      "line": "157",
+      "phrase": "He counted out ninety-four-thousand rubles",
+      "offset_s": 0.3
+     },
+     "lu_under_voice": 16,
+     "layer": true,
+     "len_s": 2.5,
+     "fade_out_s": 1.0
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
    "id": "E30",

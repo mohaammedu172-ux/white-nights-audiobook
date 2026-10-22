@@ -114,7 +114,7 @@ def main():
 
     for b in ev["beds"]:
         if not b.get("file") or b["id"] in a.skip: continue
-        t0, t1 = T.line_start(b["from_line"]) - 1.0, T.line_end(b["to_line"]) + 0.5
+        t0, t1 = T.line_start(b["from_line"]) - b.get("lead_s", 1.0), T.line_end(b["to_line"]) + b.get("tail_s", 0.5)
         if t1 <= start or t0 >= end: continue
         y = load(os.path.join(a.audio, b["file"]))
         if b.get("highpass_hz"): y = sosfiltfilt(butter(2, b["highpass_hz"], "hp", fs=SR, output="sos"), y, axis=0)

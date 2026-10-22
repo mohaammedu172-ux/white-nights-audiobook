@@ -8,6 +8,8 @@ H. Twitchell translation, Project Gutenberg #23058 (public domain). A dramatized
 ```bash
 python books/queen_of_spades/text.py                       # or: python -m books.queen_of_spades.text
 WN_CONFIG=books/queen_of_spades/config.json WN_OUT=$PWD/out python -m wn.run chapter
+python books/queen_of_spades/mixing/mix.py --voice out/queen_of_spades/white_nights_queen_of_spades.mp3 \
+    --qc out/queen_of_spades/qc_report.json --out out/queen_of_spades_mixed.mp3
 ```
 `text.py` must run first on every fresh checkout. It writes the script here and a copy at `<repo>/script/queen_of_spades_lines.json`,
 which is where `wn/run.py` reads it. That copy is git-ignored. For a short test, point `WN_CONFIG` at a copy of `config.json`
@@ -35,7 +37,7 @@ Voices, style rows, speeds and mix settings, picked by Mohammed by ear.
 `https://www.gutenberg.org/cache/epub/23058/pg23058.txt` if it is missing.
 
 ### `script/`: the source of truth
-- `queen_of_spades_fixes.json`: manual corrections (`roles`: line id → role; `replace`: line id → text). Edit this, never the generated files.
+- `queen_of_spades_fixes.json`: manual corrections (`roles`: line id → role; `replace`: line id → text; `drop`: line ids to remove, other ids unchanged). Edit this, never the generated files.
 - `queen_of_spades_lines.json`: generated. One entry per spoken line: `id` (string), `speaker` (role number as a string),
   `p`, `kind` (`narr`/`say`), `pause_before` (s), `interrupts`, `text`, `guessed`, `role`, `speaker_name`.
 - `queen_of_spades_script.md`: generated human review view, with the field notes in a footer.
@@ -47,7 +49,8 @@ Only sounds Mohammed downloaded and approved. `ambience/` holds beds, `sfx/` hol
 `audio/README.md` lists which scene each sound is for. Credits and licences are in `audio/ambience/CREDITS.md`.
 
 ### `mixing/`
-Placeholder for the mix stage. No code until Mohammed asks.
+`mix.py` renders the voice track with every bed and sound effect from `audio/events.json`, either for the whole
+story or for a stretch (`--start`/`--end` in seconds). This is the method behind every approved test. It writes the MP3 plus a `_cues.txt` list.
 
 ### `video/`
 Placeholder for the YouTube video. No code until Mohammed asks.
@@ -65,15 +68,16 @@ Setup helpers, not part of the build. Only rerun them if voices change.
 The script builder for this book (v4).
 
 ## Current status
-- Script: 168 lines, 0 guessed, fixes applied ✓
+- Script: 167 lines (line 21 dropped), 0 guessed, fixes applied, no speech tags read aloud ✓
 - Voices: picked by Mohammed, encoded in config.json ✓
 - Audio generation: works via `WN_CONFIG=books/queen_of_spades/config.json python -m wn.run chapter` ✓
-- Mix stage: not started
+- Mix stage: first full mix rendered (51 cues); scene tests approved by Mohammed ✓
+- Licences: still to be confirmed for most sounds
 - Video stage: not started
 
 ## Known issues
 - Several sound assets need licence verification (see `audio/ambience/CREDITS.md`).
-- `sfx/sfx_door_open.wav` needs a listen check before use.
 - `sfx/sfx_men_murmur.wav` is a 1930s optical transfer; verify the noise level before use.
 - `sfx/sfx_pistol_cock.wav` is a modern semi-auto slide; a period-appropriate alternative is pending.
+- Mix loudness is about −25 LUFS (voice-led, like White Nights). YouTube plays at −14 LUFS, so consider a final master stage.
 - `wn/run.py` names the output `white_nights_queen_of_spades.mp3` (its file-name prefix is fixed). Rename after generating if needed.

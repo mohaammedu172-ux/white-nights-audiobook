@@ -1,5 +1,5 @@
 {
- "_about": "Cue sheet for The Queen of Spades mix. Every sound is placed by line id + a phrase from that line (+ offset in s), so cues survive re-timing. Phrase time = line start + line duration x (characters before the phrase / total characters); phrase null = line start. Levels are LU (perceived loudness, LUFS) below the voice in the same span. Sounds inside one event may overlap. Loops use an equal-power crossfade. status: approved = Mohammed approved by ear; tested = rendered in a test; proposed; listen-check = check the file first.",
+ "_about": "Cue sheet for The Queen of Spades mix. Every sound is placed by line id + a phrase from that line (+ offset in s), so cues survive re-timing. Phrase time = line start + line duration x (characters before the phrase / total characters); phrase null = line start. Levels are LU (perceived loudness, LUFS) below the voice in the same span. Sounds inside one event may overlap. Loops use an equal-power crossfade. status: approved = Mohammed approved by ear; tested = rendered in a test; proposed; listen-check = check the file first. Beds start lead_s (default 1.0) before from_line and end tail_s (default 0.5) after to_line.",
  "line_ids": "script/queen_of_spades_lines.json (v4, 168 lines)",
  "beds": [
   {
@@ -116,7 +116,9 @@
      "ramp_s": 2.0,
      "note": "the room comes back"
     }
-   ]
+   ],
+   "tail_s": 5.0,
+   "note": "Club falls silent at line 158 and comes back at the end of line 166; 5 s tail so the game is heard resuming before the ending's silence."
   },
   {
    "id": "B10",

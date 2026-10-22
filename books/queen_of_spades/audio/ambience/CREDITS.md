@@ -47,12 +47,13 @@ Covers both `ambience/` and `../sfx/`.
   File: ambience/amb_winter_quiet.flac (converted from 32-bit float WAV to 24-bit FLAC to fit GitHub's 100 MB limit)
   License: [check Freesound page]
 
-## Pending upload (by Mohammed)
-
-- "horror ambiance 4430 150329_01" by klankbeeld
-  https://freesound.org/people/klankbeeld/
-  License: CC BY 4.0
+- "horror cinematic dark horror room tone 20" by saha213131
+  https://freesound.org/people/saha213131/sounds/677359/
   File: ambience/amb_horror_cellar.wav
+  License: [check Freesound page]
+  Note: supplied by Mohammed for amb_horror_cellar instead of klankbeeld's "horror ambiance 4430". Only 12 s long.
+
+## Pending upload (by Mohammed)
 
 - "Snowfall Ambience, City" by Kinoton
   File: ambience/amb_snow_city.wav

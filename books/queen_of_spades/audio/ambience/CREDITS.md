@@ -3,19 +3,25 @@
 All sounds from Freesound.org. Used under the licenses listed below.
 Covers both `ambience/` and `../sfx/`.
 
+## klankbeeld's terms (from his Freesound pages, checked by Mohammed 2026-10-22)
+- Always credit "klankbeeld" and freesound.org, ideally as: https://freesound.org/people/klankbeeld/
+- Not allowed in (royalty-free) stock material, and the raw files must not be put on YouTube or elsewhere as they are.
+  Using them as one layer inside a creative work (this audiobook) is allowed.
+- So this repo must not be presented as a sound library: the files are here only as working assets for the mix.
+
 ## Present
 
 ### CC BY (credit required)
 
 - "snowcity ambience 823PM NL 210209_0248" by klankbeeld
   https://freesound.org/people/klankbeeld/sounds/625076/
-  License: CC BY 4.0 (as noted for klankbeeld's "Cold CityNight" from the same night; confirm on this page)
+  License: credit required (page text: "YOU ALWAYS HAVE TO CREDIT/ATTRIBUTE me (klankbeeld) and freesound.org"); licence badge not yet copied
   File: ambience/amb_city_cold.flac
   Note: this is the sound Mohammed supplied for amb_city_cold, instead of "Cold CityNight 1040PM".
 
 - "horror ambiance 4430 150329_01 track 110" by klankbeeld
   https://freesound.org/people/klankbeeld/sounds/784344/
-  License: CC BY 4.0 (as noted earlier; confirm on this page)
+  License: credit required (same klankbeeld terms); licence badge not yet copied
   File: ambience/amb_horror_cellar.flac (FLAC of the original 24-bit WAV, 3:18)
 
 ### Public Domain (no credit required)

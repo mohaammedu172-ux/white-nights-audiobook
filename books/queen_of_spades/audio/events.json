@@ -230,10 +230,17 @@
       "phrase": "taking his leave",
       "offset_s": 0.6
      },
-     "lu_under_voice": 14
+     "lu_under_voice": 14,
+     "end_at": {
+      "line": "38",
+      "phrase": null,
+      "offset_s": 0.0
+     },
+     "fade_out_s": 1.5
     }
    ],
-   "status": "proposed"
+   "status": "proposed",
+   "note": "2026-10-25: crowd fades out before the Countess's room (end_at)."
   },
   {
    "id": "E04",
@@ -477,7 +484,12 @@
      "lu_under_voice": 10,
      "len_s": 11,
      "fade_in_s": 1.5,
-     "fade_out_s": 3.0
+     "fade_out_s": 1.2,
+     "end_at": {
+      "line": "68",
+      "phrase": "servants began",
+      "offset_s": 0.5
+     }
     },
     {
      "file": "sfx/sfx_carriage_wedding.wav",
@@ -490,26 +502,36 @@
      "layer": true,
      "len_s": 9,
      "fade_in_s": 1.5,
-     "fade_out_s": 3.0
+     "fade_out_s": 1.2,
+     "end_at": {
+      "line": "68",
+      "phrase": "servants began",
+      "offset_s": 0.5
+     }
     },
     {
      "file": "sfx/sfx_horse_snort.wav",
      "at": {
       "line": "68",
       "phrase": "at last he heard",
-      "offset_s": 3.0
+      "offset_s": 1.5
      },
      "lu_under_voice": 13,
      "layer": true,
      "len_s": 4,
-     "fade_out_s": 1.0
+     "fade_out_s": 0.6,
+     "end_at": {
+      "line": "68",
+      "phrase": "servants began",
+      "offset_s": 0.5
+     }
     }
    ],
    "backup": [
     "sfx/sfx_carriage_wedding.wav"
    ],
    "status": "approved",
-   "note": "Both carriages approved; path is the default. Layered 2026-10-22: added sounds are 2–4 LU below the main one."
+   "note": "Both carriages approved; path is the default. Layered 2026-10-22: added sounds are 2–4 LU below the main one. 2026-10-25: scene is fast, so the carriage now fades out by 'servants began' (end_at)."
   },
   {
    "id": "E13",
@@ -525,11 +547,16 @@
      "lu_under_voice": 16,
      "len_s": 6,
      "fade_in_s": 1.0,
-     "fade_out_s": 2.0
+     "fade_out_s": 1.0,
+     "end_at": {
+      "line": "68",
+      "phrase": "tottered into the room",
+      "offset_s": 0.6
+     }
     }
    ],
    "status": "listen-check",
-   "note": "Outdoor concrete recording."
+   "note": "Outdoor concrete recording. 2026-10-25: footsteps end as she enters (end_at)."
   },
   {
    "id": "E14",
@@ -723,7 +750,12 @@
      "lu_under_voice": 12,
      "len_s": 7.5,
      "fade_in_s": 0.6,
-     "fade_out_s": 1.5
+     "fade_out_s": 1.0,
+     "end_at": {
+      "line": "122",
+      "phrase": null,
+      "offset_s": -1.2
+     }
     },
     {
      "file": "sfx/sfx_floorboard_creak.wav",
@@ -746,11 +778,16 @@
      "layer": true,
      "len_s": 5,
      "fade_in_s": 0.8,
-     "fade_out_s": 1.5
+     "fade_out_s": 1.0,
+     "end_at": {
+      "line": "122",
+      "phrase": null,
+      "offset_s": -1.2
+     }
     }
    ],
    "status": "approved",
-   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
+   "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one. 2026-10-25: slippers stop when the door opens (end_at)."
   },
   {
    "id": "E21",

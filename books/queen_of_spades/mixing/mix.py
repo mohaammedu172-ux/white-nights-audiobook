@@ -110,7 +110,7 @@ def main():
     start, end = a.start, (a.end or len(voice) / SR)
     n = int((end - start) * SR)
     out = np.repeat(voice[int(start * SR):int(start * SR) + n, None], 2, 1).copy()
-    log = []
+    log, spans = [], []
 
     for b in ev["beds"]:
         if not b.get("file") or b["id"] in a.skip: continue
@@ -139,6 +139,9 @@ def main():
             y = load(os.path.join(a.audio, x["file"]))
             if x.get("trim_s"): y = y[int(x["trim_s"][0] * SR):int(x["trim_s"][1] * SR)]
             L = (T.time(x["loop_until"]) - t) if x.get("loop_until") else x.get("len_s")
+            if x.get("end_at"):                            # fast scenes: the sound must be gone (fade done) by then
+                cap = T.time(x["end_at"]) - t + onset(y)
+                L = min(L, cap) if L else cap
             if L: y = loop(y, int(L * SR), x.get("loop_crossfade_s", 0.2)) if len(y) < L * SR else y[:int(L * SR)]
             y = fades(y.copy(), x.get("fade_in_s", 0.0), x.get("fade_out_s", 0.3))
             y *= 10 ** ((T.voice_lufs(t - 15, t + 15) - x["lu_under_voice"] - (lufs(y) or -70)) / 20)
@@ -146,7 +149,15 @@ def main():
             if k < 0: y = y[-k:]; k = 0
             m = min(len(y), n - k)
             if m > 0: out[k:k + m] += y[:m]
+            spans.append((t - onset(y), t - onset(y) + len(y) / SR, e["id"], x["file"], bool(x.get("layer"))))
             log.append(f"{t:8.1f}s  {e['id']:4s} {x['file']}  ({x['lu_under_voice']} LU)")
+
+    firsts = sorted({e: min(a for a, _, i, _, _ in spans if i == e) for e in {s[2] for s in spans}}.items(), key=lambda kv: kv[1])
+    late = []
+    for a0, a1, eid, f, layer in spans:                 # a sound still playing when the next event starts
+        nxt = next(((i, t) for i, t in firsts if t > a0 + 0.05 and i != eid), None)
+        if nxt and a1 > nxt[1] + 0.5: late.append(f"{a0:8.1f}s  {eid} {os.path.basename(f)} runs {a1 - nxt[1]:.1f}s into {nxt[0]}")
+    if late: print("Sounds that run into the next event (consider end_at):\n" + "\n".join(late))
 
     out *= min(1.0, 10 ** (-3 / 20) / max(1e-9, np.abs(out).max()))
     sf.write(f"{tmp}/m.wav", out.astype(np.float32), SR)

@@ -239,7 +239,7 @@
      "fade_out_s": 1.5
     }
    ],
-   "status": "proposed",
+   "status": "approved",
    "note": "2026-10-25: crowd fades out before the Countess's room (end_at)."
   },
   {
@@ -271,7 +271,7 @@
      "fade_out_s": 1.0
     }
    ],
-   "status": "proposed",
+   "status": "approved",
    "note": "Layered 2026-10-22: added sounds are 2–4 LU below the main one."
   },
   {
@@ -556,7 +556,7 @@
      }
     }
    ],
-   "status": "listen-check",
+   "status": "approved",
    "note": "Outdoor concrete recording. 2026-10-25: footsteps end as she enters (end_at)."
   },
   {
@@ -576,7 +576,7 @@
      "fade_out_s": 1.2
     }
    ],
-   "status": "tested",
+   "status": "approved",
    "note": "2026-10-25: added at Mohammed's request (fabric as the wraps come off)."
   },
   {
@@ -773,7 +773,7 @@
      "fade_out_s": 1.0
     }
    ],
-   "status": "tested",
+   "status": "approved",
    "note": "2026-10-25: added at Mohammed's request. Distant (14 LU under); heard just before the narrator names it."
   },
   {

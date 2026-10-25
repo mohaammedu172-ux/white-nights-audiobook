@@ -454,10 +454,10 @@
      "file": "sfx/sfx_clock_tick.mp3",
      "at": {
       "line": "67",
-      "phrase": "he concealed himself",
-      "offset_s": 0.0
+      "phrase": null,
+      "offset_s": 1.0
      },
-     "lu_under_voice": 18,
+     "lu_under_voice": 13,
      "loop_until": {
       "line": "68",
       "phrase": "at last he heard",
@@ -468,7 +468,8 @@
      "fade_out_s": 3.0
     }
    ],
-   "status": "approved"
+   "status": "approved",
+   "note": "2026-10-25: louder (18→13 LU) and earlier (start of line 67) so the ticking is clearly heard."
   },
   {
    "id": "E12",
@@ -478,12 +479,12 @@
      "file": "sfx/sfx_carriage_path.wav",
      "at": {
       "line": "68",
-      "phrase": "at last he heard",
-      "offset_s": 0.4
+      "phrase": null,
+      "offset_s": 0.0
      },
      "lu_under_voice": 10,
      "len_s": 11,
-     "fade_in_s": 1.5,
+     "fade_in_s": 1.0,
      "fade_out_s": 1.2,
      "end_at": {
       "line": "68",
@@ -495,13 +496,13 @@
      "file": "sfx/sfx_carriage_wedding.wav",
      "at": {
       "line": "68",
-      "phrase": "at last he heard",
-      "offset_s": 0.8
+      "phrase": null,
+      "offset_s": 0.4
      },
      "lu_under_voice": 13,
      "layer": true,
      "len_s": 9,
-     "fade_in_s": 1.5,
+     "fade_in_s": 1.0,
      "fade_out_s": 1.2,
      "end_at": {
       "line": "68",
@@ -513,7 +514,7 @@
      "file": "sfx/sfx_horse_snort.wav",
      "at": {
       "line": "68",
-      "phrase": "at last he heard",
+      "phrase": null,
       "offset_s": 1.5
      },
      "lu_under_voice": 13,
@@ -531,7 +532,7 @@
     "sfx/sfx_carriage_wedding.wav"
    ],
    "status": "approved",
-   "note": "Both carriages approved; path is the default. Layered 2026-10-22: added sounds are 2–4 LU below the main one. 2026-10-25: scene is fast, so the carriage now fades out by 'servants began' (end_at)."
+   "note": "Both carriages approved; path is the default. Layered 2026-10-22: added sounds are 2–4 LU below the main one. 2026-10-25: scene is fast, so the carriage now fades out by 'servants began' (end_at). Wheels now start with line 68, so they are heard before the narrator says so."
   },
   {
    "id": "E13",

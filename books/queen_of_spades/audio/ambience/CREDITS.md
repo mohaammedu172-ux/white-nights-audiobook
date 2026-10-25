@@ -47,6 +47,12 @@ Covers both `ambience/` and `../sfx/`.
   https://freesound.org/people/Pancakebees/sounds/841325/
   File: sfx/sfx_pistol_cock.wav
   License: [check Freesound page]
+  (Backup only since 2026-10-25; replaced by the flintlock below.)
+
+- "old flintlock primer gun clicking" by N3pomuk
+  https://freesound.org/people/N3pomuk/sounds/656397/
+  File: sfx/sfx_pistol_flintlock.flac (used: 12.6–15.0 s)
+  License: CC0 (checked 2026-10-25)
 
 - "The Door Creaks: You're Not Alone" by LilMati
   https://freesound.org/people/LilMati/sounds/704612/

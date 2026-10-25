@@ -657,12 +657,12 @@
       12.6,
       15.0
      ],
-     "lu_under_voice": 10,
+     "lu_under_voice": 5,
      "fade_out_s": 0.4
     }
    ],
    "status": "tested",
-   "note": "2026-10-25: period flintlock hammer (N3pomuk, CC0) replaces the modern slide: half-cock, then full cock.",
+   "note": "2026-10-25: period flintlock hammer (N3pomuk, CC0) replaces the modern slide: half-cock, then full cock. Louder (10→5 LU) at Mohammed's request.",
    "backup": [
     "sfx/sfx_pistol_cock.wav"
    ]

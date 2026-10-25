@@ -37,7 +37,7 @@
   },
   "kokoro_speed": {
     "am_michael": 0.95,
-    "am_fenrir": 1.0,
+    "am_fenrir": 0.87,
     "am_puck": 0.92,
     "af_bella": 1.0,
     "af_nicole": 0.92,

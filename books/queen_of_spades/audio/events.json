@@ -457,7 +457,7 @@
       "phrase": null,
       "offset_s": 1.0
      },
-     "lu_under_voice": 13,
+     "lu_under_voice": 8,
      "loop_until": {
       "line": "68",
       "phrase": "at last he heard",
@@ -469,7 +469,7 @@
     }
    ],
    "status": "approved",
-   "note": "2026-10-25: louder (18→13 LU) and earlier (start of line 67) so the ticking is clearly heard."
+   "note": "2026-10-25: louder (18→13 LU) and earlier (start of line 67) so the ticking is clearly heard. Then 13→8 LU: still not heard at 13."
   },
   {
    "id": "E12",
@@ -558,6 +558,26 @@
    ],
    "status": "listen-check",
    "note": "Outdoor concrete recording. 2026-10-25: footsteps end as she enters (end_at)."
+  },
+  {
+   "id": "E13a",
+   "scene": "Her women remove her wraps",
+   "sounds": [
+    {
+     "file": "sfx/sfx_clothes_rustle.wav",
+     "at": {
+      "line": "69",
+      "phrase": null,
+      "offset_s": -0.4
+     },
+     "lu_under_voice": 12,
+     "len_s": 4,
+     "fade_in_s": 0.3,
+     "fade_out_s": 1.2
+    }
+   ],
+   "status": "tested",
+   "note": "2026-10-25: added at Mohammed's request (fabric as the wraps come off)."
   },
   {
    "id": "E14",
@@ -736,6 +756,25 @@
    ],
    "status": "proposed",
    "note": "Use one of the three falls; the murmur is the crowd reacting."
+  },
+  {
+   "id": "E19a",
+   "scene": "The vestibule door opens (night)",
+   "sounds": [
+    {
+     "file": "sfx/sfx_front_door_nobeep.wav",
+     "at": {
+      "line": "120",
+      "phrase": "he heard the vestibule door open",
+      "offset_s": -1.2
+     },
+     "lu_under_voice": 14,
+     "len_s": 4,
+     "fade_out_s": 1.0
+    }
+   ],
+   "status": "tested",
+   "note": "2026-10-25: added at Mohammed's request. Distant (14 LU under); heard just before the narrator names it."
   },
   {
    "id": "E20",

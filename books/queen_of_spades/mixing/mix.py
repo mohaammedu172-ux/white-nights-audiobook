@@ -149,12 +149,12 @@ def main():
             if k < 0: y = y[-k:]; k = 0
             m = min(len(y), n - k)
             if m > 0: out[k:k + m] += y[:m]
-            spans.append((t - onset(y), t - onset(y) + len(y) / SR, e["id"], x["file"], bool(x.get("layer"))))
+            spans.append((t, t - onset(y) + len(y) / SR, e["id"], x["file"], bool(x.get("layer"))))
             log.append(f"{t:8.1f}s  {e['id']:4s} {x['file']}  ({x['lu_under_voice']} LU)")
 
     firsts = sorted({e: min(a for a, _, i, _, _ in spans if i == e) for e in {s[2] for s in spans}}.items(), key=lambda kv: kv[1])
     late = []
-    for a0, a1, eid, f, layer in spans:                 # a sound still playing when the next event starts
+    for a0, a1, eid, f, layer in spans:                 # a sound still playing when the next event is heard
         nxt = next(((i, t) for i, t in firsts if t > a0 + 0.05 and i != eid), None)
         if nxt and a1 > nxt[1] + 0.5: late.append(f"{a0:8.1f}s  {eid} {os.path.basename(f)} runs {a1 - nxt[1]:.1f}s into {nxt[0]}")
     if late: print("Sounds that run into the next event (consider end_at):\n" + "\n".join(late))

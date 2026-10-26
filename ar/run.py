@@ -5,7 +5,7 @@ assemble the tracks, mix the music, and write a QA report.
 
 Safe to re-run: finished clips and judge results are kept in <out>/state.json and skipped.
 """
-import argparse, csv, glob, json, os, time
+import argparse, csv, glob, json, os, shutil, time
 from . import text_rules as tr
 from .assemble import build_voice, to_mp3, mix_music
 
@@ -40,6 +40,7 @@ def main():
     ap.add_argument('--out', default=None)
     ap.add_argument('--music', action='append', default=None, help='folder or mp3 (repeatable)')
     ap.add_argument('--no-judge', action='store_true')
+    ap.add_argument('--merge', nargs='*', default=[], help='output folders of earlier runs (e.g. parallel shards) to merge in first')
     args = ap.parse_args()
 
     job = json.load(open(args.job, encoding='utf8'))
@@ -50,6 +51,20 @@ def main():
     state_path = os.path.join(out, 'state.json')
     state = json.load(open(state_path, encoding='utf8')) if os.path.exists(state_path) else {}
     save = lambda: json.dump(state, open(state_path, 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+    wav_path = lambda name: os.path.join(clips_dir, name)  # takes store file names; old runs stored full paths
+    for d in args.merge:
+        sp = os.path.join(d, 'state.json')
+        if not os.path.exists(sp):
+            print('merge: no state in', d, flush=True); continue
+        for k, v in json.load(open(sp, encoding='utf8')).items():
+            for tk in v['takes']:
+                src = os.path.join(d, 'clips', os.path.basename(tk['wav']))
+                tk['wav'] = os.path.basename(tk['wav'])
+                if os.path.exists(src) and not os.path.exists(wav_path(tk['wav'])):
+                    shutil.copy(src, wav_path(tk['wav']))
+            state[k] = v
+        print('merged', d, flush=True)
+    save()
     problem_rows = tr.load_problem_words(os.path.join(base, job.get('problem_words', '../problem_words.csv')))
     pass_acc = job.get('pass_word_acc', 0.75)
 
@@ -75,9 +90,9 @@ def main():
         t = tr.apply_problem_words(text, problem_rows, part['name']) if a['problem_words'] else text
         if a.get('breath'):
             t = tr.add_breath(t)
-        wav = os.path.join(clips_dir, f"{key}_try{attempt_no}.wav")
+        wav = f"{key}_try{attempt_no}.wav"
         t0 = time.time()
-        info = voice.say(tr.for_model(t), wav, exaggeration=a['exaggeration'], max_new_tokens=a['max_new_tokens'])
+        info = voice.say(tr.for_model(t), wav_path(wav), exaggeration=a['exaggeration'], max_new_tokens=a['max_new_tokens'])
         info.update(wav=wav, text=t, attempt=attempt_no, gen_seconds=round(time.time() - t0, 1))
         return info
 
@@ -92,7 +107,7 @@ def main():
             if not todo:
                 continue
             print(f"judge {jn}: {len(todo)} clips", flush=True)
-            heard = JUDGES[jn]([tk['wav'] for _, tk in todo])
+            heard = JUDGES[jn]([wav_path(tk['wav']) for _, tk in todo])
             for (k, tk), h in zip(todo, heard):
                 tk.setdefault('judges', {})[jn] = {'heard': h, **tr.compare(state[k]['script'], h)}
             save()
@@ -108,9 +123,9 @@ def main():
             tried = {tk['attempt'] for tk in s['takes']}
             if rnd in tried:
                 continue
-            best = max((score_of(tk, s['judges_wanted']) for tk in s['takes']), default=-1)
-            runaway = any(not tk['hit_stop'] for tk in s['takes'])
-            if rnd == 0 or (not args.no_judge and (best < pass_acc or runaway) and best < 0.999):
+            good = [score_of(tk, s['judges_wanted']) for tk in s['takes'] if tk['hit_stop']]
+            best = max(good, default=-1)
+            if rnd == 0 or (not args.no_judge and best < pass_acc):
                 todo.append((key, part, text))
         if not todo:
             if rnd == 0:
@@ -145,7 +160,7 @@ def main():
         files, pads = [], []
         for pi, pn in enumerate(names):
             for i, (key, h) in enumerate(keys_by_part[pn]):
-                files.append(state[key]['chosen'])
+                files.append(wav_path(state[key]['chosen']))
                 pads.append(P['half'] if h == 'a' else P['verse'])
             if section_gap and pi < len(names) - 1:
                 pads[-1] = P['section']

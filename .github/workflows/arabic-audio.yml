@@ -1,0 +1,67 @@
+# Makes the Mu'allaqat audio on GitHub's own machines (free for public repos, nothing to install).
+# Starts when the branch "make-audio" is pushed, or by hand: Actions tab -> Arabic audio -> Run workflow.
+# Results are saved to the branch "audio-results".
+name: Arabic audio
+on:
+  push:
+    branches: [make-audio]
+  workflow_dispatch:
+    inputs:
+      job:
+        description: job file
+        default: books/muallaqat/imru_al_qays/job.json
+permissions:
+  contents: write
+env:
+  JOB: ${{ github.event.inputs.job || 'books/muallaqat/imru_al_qays/job.json' }}
+  HF_HUB_DISABLE_PROGRESS_BARS: "1"
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        verses: ["1-9", "10-18", "19-27", "28-36", "37-45", "46-54", "55-63", "64-72", "73-81"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          pip -q install torch --index-url https://download.pytorch.org/whl/cpu
+          pip -q install onnxruntime "transformers>=5.20" "huggingface_hub>=1.0" librosa soundfile
+      - name: Generate, judge, retry
+        run: python -m ar.run "$JOB" --verses ${{ matrix.verses }} --out out/shard
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shard-${{ strategy.job-index }}
+          path: out/shard
+          retention-days: 7
+  assemble:
+    needs: shard
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          pip -q install torch --index-url https://download.pytorch.org/whl/cpu
+          pip -q install onnxruntime "transformers>=5.20" "huggingface_hub>=1.0" librosa soundfile
+      - uses: actions/download-artifact@v4
+        with: {path: shards}
+      - name: Merge and assemble (redoes any clip a shard missed)
+        run: python -m ar.run "$JOB" --out out/all --merge shards/*
+      - name: Save results to branch audio-results
+        run: |
+          id=$(python -c "import json,os;print(json.load(open(os.environ['JOB']))['id'])")
+          mkdir -p /tmp/res/$id && cp out/all/*.mp3 out/all/QA_REPORT.md out/all/qa.json out/all/problem_words_found.csv out/all/state.json /tmp/res/$id/
+          cd /tmp/res && git init -q -b audio-results && git add . \
+            && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Audio: $id (run ${{ github.run_id }})" \
+            && git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" audio-results

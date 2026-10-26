@@ -84,8 +84,13 @@ def main():
     def generate(key, text, part, attempt_no):
         nonlocal voice
         if voice is None:
-            from .tts import Voice
-            voice = Voice(os.path.join(repo, job['voice']))
+            if job.get('engine') == 'torch':  # PyTorch Chatterbox, optionally with our retrained adapter
+                from .tts_torch import VoiceTorch
+                ad = job.get('adapter')
+                voice = VoiceTorch(os.path.join(repo, job['voice']), adapter=os.path.join(repo, ad) if ad else None)
+            else:
+                from .tts import Voice
+                voice = Voice(os.path.join(repo, job['voice']))
         a = ATTEMPTS[attempt_no]
         tag, t = tr.split_tag(text)
         st = job.get('styles', {}).get(tag, {}) if tag else {}
@@ -94,13 +99,16 @@ def main():
         exag = st.get('exaggeration', a['exaggeration'])
         voice.use(os.path.join(repo, st.get('ref', job['voice'])))
         t = tr.apply_problem_words(t, problem_rows, part['name']) if a['problem_words'] else t
+        t = tr.tajweed(t, job.get('tajweed'))
         if a.get('breath'):
             t = tr.add_breath(t)
         if a.get('lead') and not t.startswith('،'):
             t = '، ' + t
         wav = f"{key}_try{attempt_no}.wav"
         t0 = time.time()
-        info = voice.say(tr.for_model(t), wav_path(wav), exaggeration=exag, max_new_tokens=a['max_new_tokens'])
+        model_text = t if job.get('engine') == 'torch' else tr.for_model(t, job.get('text_prep', 'hamza_split'))
+        info = voice.say(model_text, wav_path(wav), exaggeration=exag, max_new_tokens=a['max_new_tokens'],
+                         seed=attempt_no * 7919 + sum(map(ord, key)))
         shape(wav_path(wav), st.get('speed', 1.0), st.get('semitones', 0.0), st.get('gain_db', 0.0))
         info.update(wav=wav, text=t, style=tag, exaggeration=exag, attempt=attempt_no, gen_seconds=round(time.time() - t0, 1))
         return info

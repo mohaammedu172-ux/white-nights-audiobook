@@ -21,7 +21,13 @@ def split_tag(text):
     return (m.group(1), text[m.end():]) if m else (None, text)
 
 
-def for_model(text: str) -> str:
+def for_model(text: str, mode: str = 'hamza_split') -> str:
+    """Text as the ONNX voice receives it.
+    'nfkd': the official Chatterbox preparation (Unicode NFKD: vowel marks first, then hamza), what the model was trained on.
+    'hamza_split': our first workaround (hamza before the vowel); kept for comparison."""
+    if mode == 'nfkd':
+        import unicodedata
+        return unicodedata.normalize('NFKD', text)
     return ''.join(HAMZA_FIX.get(c, c) for c in text)
 
 
@@ -73,6 +79,55 @@ def add_breath(text):
     i = min(c for c in cands if c[1] < len(body) * 0.3 or c[0] == 1)[2]
     words[i] += '،'
     return text[:len(text) - len(body)] + ' '.join(words)
+
+
+# ---------- tajweed spelling layer (applied to the model's input only; scripts stay readable) ----------
+_L = 'ء-ي'
+_M = 'ً-ْٰ'
+TANWIN_TO_VOWEL = {'ً': 'َ', 'ٌ': 'ُ', 'ٍ': 'ِ'}
+
+
+def _tanwin_word(w, next_word):
+    m = re.match(rf'^(.*?)([{_L}])([{_M}]*)([اى]?)([{_M}]*)([^{_L}{_M}]*)$', w)
+    if not m:
+        return w
+    head, last, marks1, seat, marks2, tail = m.groups()
+    marks = marks1 + marks2
+    tw = [c for c in marks if c in TANWIN_TO_VOWEL]
+    if not tw:
+        return w
+    if seat and last == 'ا' and not marks1:  # tanwin written on the alif itself (ـاً)
+        pass
+    vowel = TANWIN_TO_VOWEL[tw[0]]
+    rest = ''.join(c for c in marks if c not in TANWIN_TO_VOWEL)
+    if last == 'ة':
+        last = 'ت'
+    noon = 'مْ' if next_word and next_word.lstrip('،,.!؟…"«').startswith('ب') else 'نْ'
+    return head + last + rest + vowel + noon + tail
+
+
+def tajweed(text, opts=None):
+    """Spell some recitation rules out so the voice says them:
+    tanwin  - the hidden noon written out (مَعًا → مَعَنْ, وَلَيْلٍ → وَلَيْلِنْ), and م before ب (إقلاب)
+    wasl    - يَا + a word starting with همزة الوصل joins as it is said (يَا امْرَأَ → يَمْرَأَ)
+    shadda_y - ي/و with shadda spelled as held + released: 'split' (عَلَيْ يَ) or 'double' (عَلَيْيَّ)
+    opts: dict like {"tanwin": true, "wasl": false, "shadda_y": null}."""
+    if not opts:
+        return text
+    tag, body = split_tag(text)
+    if opts.get('wasl'):
+        body = re.sub(rf'يَا ا([{_L}])ْ', r'يَ\1ْ', body)
+    sy = opts.get('shadda_y')
+    if sy:
+        def fix(m):
+            c, a, b = m.group(1), m.group(2), m.group(3)
+            v = (a + b).replace('ّ', '')
+            return f'{c}ْ {c}{v}' if sy == 'split' else f'{c}ْ{c}{v}ّ'
+        body = re.sub(r'([يو])(ّ?)([َُِ]ّ?)', lambda m: fix(m) if 'ّ' in m.group(0) else m.group(0), body)
+    if opts.get('tanwin'):
+        ws = body.split(' ')
+        body = ' '.join(_tanwin_word(w, ws[i + 1] if i + 1 < len(ws) else '') for i, w in enumerate(ws))
+    return (f'{{{tag}}} ' if tag else '') + body
 
 
 # ---------- comparison ----------

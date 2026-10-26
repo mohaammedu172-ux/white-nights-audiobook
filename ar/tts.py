@@ -49,7 +49,7 @@ class Voice:
             self._refs[ref_wav] = self.enc.run(None, {"audio_values": ref[None, :].astype(np.float32)})
         self.cond = self._refs[ref_wav]
 
-    def say(self, text, out_wav, exaggeration=0.35, max_new_tokens=300, penalty=1.2):
+    def say(self, text, out_wav, exaggeration=0.35, max_new_tokens=300, penalty=1.2, **_):
         ids = self.tok(f"[ar]{text}", return_tensors="np")["input_ids"].astype(np.int64)
         pos = np.where(ids >= START, 0, np.arange(ids.shape[1])[None, :] - 1).astype(np.int64)
         feed = {"input_ids": ids, "position_ids": pos, "exaggeration": np.array([exaggeration], np.float32)}

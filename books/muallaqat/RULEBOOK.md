@@ -24,7 +24,9 @@ These rules decide how the scripts are written so the voice model (Chatterbox, m
 ## Fixes learned by ear
 10. **The very first word needs a lead-in**: verse 1 starts with `، ` so قِفَا is said with its kasra (without it the model said قَفَا).
 11. **A comma separates short words that run together** and get misheard: لَمْ يَعْفُ، رَسْمُهَا (was heard as "yaʿthur ismuhā").
-12. Long sentences run away or get cut off. One half-verse per generation solves this. If a half is still very long, add a comma at a natural breath.
+12. **Don't open a half with one word cut off by a colon or comma** (اُنْظُرْ: … / نَشِيطٌ، …). The voice says that word and then babbles until it's cut off. Join the word to what follows, or give it a subject (هُوَ نَشِيطٌ). Found in the first full run: modern 3a, 55a.
+13. **A leading "، " rescues a half that keeps running on**, the same trick as verse 1 (original 39b, modern 31a). The automatic last retry now adds it.
+14. Long sentences run away or get cut off. One half-verse per generation solves this. If a half is still very long, add a comma at a natural breath.
 
 ## Audio settings (approved)
 - Speed 80% (`tempo 0.8`). 1 second of silence before the voice.

@@ -14,7 +14,7 @@ ATTEMPTS = [
     dict(exaggeration=0.35, max_new_tokens=300, problem_words=False),
     dict(exaggeration=0.35, max_new_tokens=300, problem_words=True, breath=True),
     dict(exaggeration=0.5, max_new_tokens=350, problem_words=True),
-    dict(exaggeration=0.25, max_new_tokens=400, problem_words=True),
+    dict(exaggeration=0.35, max_new_tokens=300, problem_words=True, breath=True, lead=True),
 ]
 
 
@@ -90,6 +90,8 @@ def main():
         t = tr.apply_problem_words(text, problem_rows, part['name']) if a['problem_words'] else text
         if a.get('breath'):
             t = tr.add_breath(t)
+        if a.get('lead') and not t.startswith('،'):
+            t = '، ' + t
         wav = f"{key}_try{attempt_no}.wav"
         t0 = time.time()
         info = voice.say(tr.for_model(t), wav_path(wav), exaggeration=a['exaggeration'], max_new_tokens=a['max_new_tokens'])

@@ -1,0 +1,47 @@
+# Redo only the lines whose script changed, reusing every other clip from an earlier run.
+# Starts when the branch "fix-audio" is pushed. The earlier run's id is read from books/muallaqat/last_run.txt.
+name: Arabic audio fix
+on:
+  push:
+    branches: [fix-audio]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+env:
+  JOB: books/muallaqat/imru_al_qays/job.json
+  HF_HUB_DISABLE_PROGRESS_BARS: "1"
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - id: prev
+        run: echo "run=$(tr -d ' \n' < books/muallaqat/last_run.txt)" >> "$GITHUB_OUTPUT"
+      - name: Install
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          pip -q install torch --index-url https://download.pytorch.org/whl/cpu
+          pip -q install onnxruntime "transformers>=5.20" "huggingface_hub>=1.0" librosa soundfile
+      - uses: actions/download-artifact@v4
+        with:
+          path: prev
+          run-id: ${{ steps.prev.outputs.run }}
+          github-token: ${{ github.token }}
+      - name: Merge earlier clips, redo changed lines, assemble
+        run: python -m ar.run "$JOB" --out out/all --merge prev/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: zz-all
+          path: out/all
+          retention-days: 30
+      - name: Save results to branch audio-results
+        run: |
+          id=$(python -c "import json,os;print(json.load(open(os.environ['JOB']))['id'])")
+          mkdir -p /tmp/res/$id && cp out/all/*.mp3 out/all/QA_REPORT.md out/all/qa.json out/all/problem_words_found.csv out/all/state.json /tmp/res/$id/
+          cd /tmp/res && git init -q -b audio-results && git add . \
+            && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Audio fix: $id (run ${{ github.run_id }})" \
+            && git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" audio-results

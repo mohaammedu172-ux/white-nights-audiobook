@@ -4,7 +4,7 @@
   "voice": "voices/clartts_male_ref.wav",
   "parts": [
     {"name": "original", "script": "original.txt", "judges": ["cohere", "clartts"]},
-    {"name": "modern",   "script": "modern.txt",   "judges": ["cohere"]}
+    {"name": "modern",   "script": "modern.txt",   "judges": ["cohere", "clartts"]}
   ],
   "verses": "all",
   "problem_words": "../problem_words.csv",

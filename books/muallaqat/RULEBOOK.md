@@ -47,6 +47,17 @@ The written text doesn't carry the melody of the sentence; reciters add it. Our 
 21. The listening models often drop stretched words, so the comparison counts a doubled vowel as one. Your ear is the final check on these lines.
 Style tags go at the very start of a half: `{sad} وَلَيْلٍ كَمَوْجِ الْبَحْرِ...`. The calm and lively reference voices are joined from the same ClArTTS reader's calmest and liveliest clips, picked by measuring pitch movement, speed and loudness range (voices/CREDITS.md).
 
+## Recitation rules from تجويد (pronunciation)
+22. **Text preparation:** Chatterbox was trained on NFKD-normalized text (vowel mark before hamza: ـَٔ). Our first workaround put the hamza before the vowel, which the model may not recognize. Set `"text_prep": "nfkd"` in job.json for the ONNX voice. The torch voice always does this itself. The score improved on 2 of 4 hamza lines and tied on the rest (pending Mohammed's ear).
+23. **Tanwin is a real noon.** Spelled out it's said reliably: مَعًا → مَعَنْ, وَلَيْلٍ → وَلَيْلِنْ, and م before ب (إقلاب). Approved by ear. Automatic with `"tajweed": {"tanwin": true}`.
+24. **Shadda on ي/و** = a held glide, then release (عَ-لَيْ-يَ). The spelling options are `"shadda_y": "split"` (عَلَيْ يَ) or `"double"` (عَلَيْيَّ). The old عَلَيْيَ was rejected. Waiting for Mohammed's pick from the al-Ḥuṣarī comparison.
+25. **همزة الوصل** drops in joined speech: يَا امْرَأَ → يَمْرَأَ (`"wasl": true`). Waiting for Mohammed's pick.
+26. **Heavy letters, heavy ر, ع and قلقلة can't be fixed by spelling.** That's the job of retraining the voice (kaggle/train_voice.ipynb).
+Reference for listening: al-Ḥuṣarī's murattal (Tarteel EveryAyah dataset), on verses with the same sounds: إِيَّاكَ (1:5), عَلَيَّ (15:41), امْرَأَتُ (28:9), حَرِيصٌ / رَءُوفٌ رَحِيمٌ (9:128).
+
+## Pronunciation score
+`python -m ar.score clips.json`. Every QA report now includes it. It listens with the classical-Arabic listening model and checks each tanwin, shadda, hamza and heavy letter. It catches clear misses (مَعًا heard مَعَ, ع heard as ا), but it's lenient on subtle hamza and can't read slow تجويد recitation. Your ear stays the final judge.
+
 ## Audio settings (approved)
 - Speed 80% (`tempo 0.8`). 1 second of silence before the voice.
 - Pauses (before the speed change): 0.3 s between halves, 0.75 s between verses, 1.3 s between the original and the modern version.

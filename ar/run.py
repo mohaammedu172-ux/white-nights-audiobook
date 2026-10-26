@@ -231,14 +231,33 @@ def write_report(job, state, clips, out, pass_acc, music):
         for (p, e, h), c in sorted(words.items(), key=lambda x: -x[1]):
             w.writerow([p, e, h, c])
     avg = sum(r['score'] for r in rows) / max(1, len(rows))
+    from .score import score_pair, summarize
+    pron = []
+    for key, *_ in clips:
+        s_ = state[key]
+        best = next(tk for tk in s_['takes'] if tk['wav'] == s_['chosen'])
+        h = best.get('judges', {}).get('clartts', {}).get('heard')
+        if h:
+            f, miss = score_pair(s_['script'], h)
+            pron.append({'id': key, 'features': f, 'misses': miss})
+    ppct, _ = summarize(pron) if pron else ({}, None)
     md = [f"# QA report — {job['title']}", '',
           f"- Clips: {len(rows)} · average judge word accuracy: {avg:.0%} · pass mark {pass_acc:.0%}",
           f"- Flagged for your ear: {len(flagged)}",
-          f"- Music beds: {', '.join(os.path.basename(m) for m in music) or 'none'}", '',
+          f"- Music beds: {', '.join(os.path.basename(m) for m in music) or 'none'}",
+          ('- Pronunciation score (%d clips): ' % len(pron) + ' · '.join(
+              f"{n} {'–' if ppct.get(k) is None else str(ppct[k]) + '%'}" for k, n in
+              (('overall', 'overall'), ('tanwin', 'tanwin'), ('shadda', 'shadda'), ('hamza', 'hamza'), ('heavy', 'heavy letters')))) if pron
+          else '- Pronunciation score: n/a',
+          '',
           '## Flagged clips', '']
     for r in flagged:
         md += [f"### {r['clip']} — {r['score']:.0%} (try {r['chosen_try']} of {r['tries']})",
                f"- script: {r['script']}"] + [f"- {j} heard: {r.get(j)}" for j in ('cohere', 'clartts') if r.get(j)] + ['']
+    if pron:
+        md += ['## Pronunciation misses (tanwin, shadda, hamza, heavy letters)', '']
+        md += [f"- {p['id']}: " + '; '.join(f"{m['word']} ({m['feature']}) heard {m['heard']}" for m in p['misses'])
+               for p in pron if p['misses']] + ['']
     md += ['## All clips', '', '| clip | score | tries |', '|---|---|---|']
     md += [f"| {r['clip']} | {r['score']:.0%} | {r['tries']} |" for r in rows]
     open(os.path.join(out, 'QA_REPORT.md'), 'w', encoding='utf8').write('\n'.join(md))

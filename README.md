@@ -22,3 +22,12 @@ On Kaggle: import `kaggle/runner.ipynb` by its raw GitHub link, set `JOB`, Save 
 Text: Project Gutenberg (public domain). Voices: Kokoro TTS (Apache-2.0).
 Music: Tchaikovsky, *The Seasons* — June, Wikimedia Commons recording (CC BY-SA).
 Images: 19th-century public-domain paintings (list in `docs/REPLICATE.md`).
+
+## Arabic poetry pipeline (Mu'allaqat)
+`ar/` makes recited audio of the Seven Mu'allaqat, original verses and modern poem-style version, in a male classical voice:
+Chatterbox Multilingual (ONNX) → two speech-recognition judges → automatic retries → assembly at 80% speed → background music → QA report.
+- Scripts: `books/muallaqat/<poem>/original.txt`, `modern.txt` (`N|half1|half2`) and `job.json`
+- Rules for writing the scripts: `books/muallaqat/RULEBOOK.md`; learned word fixes: `books/muallaqat/problem_words.csv`
+- Run on Kaggle: `kaggle/arabic_runner.ipynb` (GPU T4, Internet on; add your music as a dataset)
+- Run locally: `python -m ar.run books/muallaqat/imru_al_qays/job.json --verses 1-3 --music path/to/music.mp3`
+- Voice credits: `voices/CREDITS.md`

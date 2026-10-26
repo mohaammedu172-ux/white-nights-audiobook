@@ -1,0 +1,16 @@
+{
+  "id": "imru_al_qays",
+  "title": "معلقة امرئ القيس — Imru' al-Qays",
+  "voice": "voices/clartts_male_ref.wav",
+  "parts": [
+    {"name": "original", "script": "original.txt", "judges": ["cohere", "clartts"]},
+    {"name": "modern",   "script": "modern.txt",   "judges": ["cohere"]}
+  ],
+  "verses": "all",
+  "problem_words": "../problem_words.csv",
+  "pass_word_acc": 0.75,
+  "tempo": 0.8,
+  "lead": 0.8,
+  "pauses": {"half": 0.3, "verse": 0.75, "section": 1.3},
+  "music": []
+}

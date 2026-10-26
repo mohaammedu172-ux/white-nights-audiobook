@@ -28,6 +28,15 @@ These rules decide how the scripts are written so the voice model (Chatterbox, m
 13. **A leading "، " rescues a half that keeps running on**, the same trick as verse 1 (original 39b, modern 31a). The automatic last retry now adds it.
 14. Long sentences run away or get cut off. One half-verse per generation solves this. If a half is still very long, add a comma at a natural breath.
 
+## Emotion and emphasis (التنغيم)
+The written text doesn't carry the melody of the sentence; reciters add it. Our voice model only reacts to spelling and punctuation, so we mark the key word:
+15. **Command (أمر), call (نداء), wonder (تعجّب):** write the key long vowel twice and put "!" after the word or phrase: قِفَاا!، أَفَااطِمَ مَهْلًا!، أَلَاا انْجَلِي!، فَيَاا لَكَ مِنْ لَيْلٍ!. Approved by ear on verse 1 (قِفَاا! took over from قِفَا, and the 4-alif version قِفَاااا was rejected).
+16. **Question (استفهام):** end the half with "؟".
+17. When the marked word opens a half, keep the leading "، " (rule 10/13).
+18. **Don't raise the expressiveness setting** to get emotion. At 0.6 the voice babbled every time; keep 0.35.
+19. The listening models often drop stretched words, so the comparison counts a doubled vowel as one. Your ear is the final check on these lines.
+Marked so far (Imru' al-Qays): v1, 5, 6, 11, 13, 14, 15, 19, 20, 46, 47, 70.
+
 ## Audio settings (approved)
 - Speed 80% (`tempo 0.8`). 1 second of silence before the voice.
 - Pauses (before the speed change): 0.3 s between halves, 0.75 s between verses, 1.3 s between the original and the modern version.

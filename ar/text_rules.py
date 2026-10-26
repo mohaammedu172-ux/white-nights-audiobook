@@ -71,6 +71,7 @@ def normalize_letters(t):
     """Bare letters only: no vowels, no punctuation, unified alif/ya/ta-marbuta forms."""
     t = DIAC.sub('', t)
     t = PUNCT.sub(' ', t)
+    t = re.sub(r'([اوي])\1+', r'\1', t)  # stretched vowels written twice (قِفَاا) count as one
     for a, b in (('أ', 'ا'), ('إ', 'ا'), ('آ', 'ا'), ('ٱ', 'ا'), ('ى', 'ي'), ('ة', 'ه'), ('ؤ', 'و'), ('ئ', 'ي')):
         t = t.replace(a, b)
     return ' '.join(t.split())

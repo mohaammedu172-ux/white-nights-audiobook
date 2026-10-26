@@ -5,6 +5,8 @@
 ClArTTS is released under **CC BY 4.0**. The recordings come from a LibriVox audiobook read by **Youssef Safiljil**.
 The transcript of the reference clip is in `clartts_male_ref.txt`.
 
+`clartts_male_calm.wav` (ClArTTS ch_14 521, 278, 31) and `clartts_male_lively.wav` (ch_19 98, ch_16 535, ch_08 442, ch_19 200) come from the same corpus and reader. They're his calmest and liveliest readings, chosen by measured pitch movement, speech rate and loudness range.
+
 Please credit "Voice reference: ClArTTS corpus (CC BY 4.0), reader Youssef Safiljil (LibriVox)" in video descriptions.
 
 Models used to make the audio:

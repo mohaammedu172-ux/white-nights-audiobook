@@ -19,6 +19,26 @@ def load_clean(path, sr=44100, pre=0.12, post=0.18, thr_db=-50):
     return a
 
 
+def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
+    """Change one clip's speed, pitch and loudness in place (used by the mood styles). Safe: the voice is already made."""
+    if speed == 1.0 and not semitones and not gain_db:
+        return
+    sr = sf.info(wav).samplerate
+    r = 2 ** (semitones / 12)
+    f = [f'asetrate={int(sr * r)}', f'aresample={sr}'] if semitones else []
+    tempo = speed / r
+    while tempo < 0.5 or tempo > 2.0:  # atempo limits
+        step = 0.5 if tempo < 0.5 else 2.0
+        f.append(f'atempo={step}'); tempo /= step
+    if abs(tempo - 1) > 1e-3:
+        f.append(f'atempo={tempo:.4f}')
+    if gain_db:
+        f.append(f'volume={gain_db}dB')
+    tmp = wav + '.shape.wav'
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', wav, '-af', ','.join(f), tmp], check=True)
+    os.replace(tmp, wav)
+
+
 def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100):
     """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change)."""
     parts = [np.zeros(int(lead * sr), np.float32)]

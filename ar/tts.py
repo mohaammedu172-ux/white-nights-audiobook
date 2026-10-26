@@ -39,8 +39,15 @@ class Voice:
         self.lm = mk(paths["language_model"])
         self.dec = mk(paths["conditional_decoder"])
         self.tok = AutoTokenizer.from_pretrained(MODEL_ID)
-        ref, _ = librosa.load(ref_wav, sr=SR)
-        self.cond = self.enc.run(None, {"audio_values": ref[None, :].astype(np.float32)})
+        self._refs = {}
+        self.use(ref_wav)
+
+    def use(self, ref_wav):
+        """Switch the reference voice (cached). The voice copies the delivery style of the reference."""
+        if ref_wav not in self._refs:
+            ref, _ = librosa.load(ref_wav, sr=SR)
+            self._refs[ref_wav] = self.enc.run(None, {"audio_values": ref[None, :].astype(np.float32)})
+        self.cond = self._refs[ref_wav]
 
     def say(self, text, out_wav, exaggeration=0.35, max_new_tokens=300, penalty=1.2):
         ids = self.tok(f"[ar]{text}", return_tensors="np")["input_ids"].astype(np.int64)

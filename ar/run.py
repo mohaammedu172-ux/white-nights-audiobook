@@ -7,7 +7,7 @@ Safe to re-run: finished clips and judge results are kept in <out>/state.json an
 """
 import argparse, csv, glob, json, os, shutil, time
 from . import text_rules as tr
-from .assemble import build_voice, to_mp3, mix_music
+from .assemble import build_voice, to_mp3, mix_music, shape
 
 # Retry ladder. Greedy decoding is deterministic, so each attempt changes the settings or the text.
 ATTEMPTS = [
@@ -88,7 +88,11 @@ def main():
             voice = Voice(os.path.join(repo, job['voice']))
         a = ATTEMPTS[attempt_no]
         tag, t = tr.split_tag(text)
-        exag = job.get('styles', {}).get(tag, a['exaggeration']) if tag else a['exaggeration']
+        st = job.get('styles', {}).get(tag, {}) if tag else {}
+        if not isinstance(st, dict):
+            st = {'exaggeration': st}
+        exag = st.get('exaggeration', a['exaggeration'])
+        voice.use(os.path.join(repo, st.get('ref', job['voice'])))
         t = tr.apply_problem_words(t, problem_rows, part['name']) if a['problem_words'] else t
         if a.get('breath'):
             t = tr.add_breath(t)
@@ -97,6 +101,7 @@ def main():
         wav = f"{key}_try{attempt_no}.wav"
         t0 = time.time()
         info = voice.say(tr.for_model(t), wav_path(wav), exaggeration=exag, max_new_tokens=a['max_new_tokens'])
+        shape(wav_path(wav), st.get('speed', 1.0), st.get('semitones', 0.0), st.get('gain_db', 0.0))
         info.update(wav=wav, text=t, style=tag, exaggeration=exag, attempt=attempt_no, gen_seconds=round(time.time() - t0, 1))
         return info
 

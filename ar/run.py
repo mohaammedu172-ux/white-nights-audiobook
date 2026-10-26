@@ -87,15 +87,17 @@ def main():
             from .tts import Voice
             voice = Voice(os.path.join(repo, job['voice']))
         a = ATTEMPTS[attempt_no]
-        t = tr.apply_problem_words(text, problem_rows, part['name']) if a['problem_words'] else text
+        tag, t = tr.split_tag(text)
+        exag = job.get('styles', {}).get(tag, a['exaggeration']) if tag else a['exaggeration']
+        t = tr.apply_problem_words(t, problem_rows, part['name']) if a['problem_words'] else t
         if a.get('breath'):
             t = tr.add_breath(t)
         if a.get('lead') and not t.startswith('،'):
             t = '، ' + t
         wav = f"{key}_try{attempt_no}.wav"
         t0 = time.time()
-        info = voice.say(tr.for_model(t), wav_path(wav), exaggeration=a['exaggeration'], max_new_tokens=a['max_new_tokens'])
-        info.update(wav=wav, text=t, attempt=attempt_no, gen_seconds=round(time.time() - t0, 1))
+        info = voice.say(tr.for_model(t), wav_path(wav), exaggeration=exag, max_new_tokens=a['max_new_tokens'])
+        info.update(wav=wav, text=t, style=tag, exaggeration=exag, attempt=attempt_no, gen_seconds=round(time.time() - t0, 1))
         return info
 
     def judge_pending():

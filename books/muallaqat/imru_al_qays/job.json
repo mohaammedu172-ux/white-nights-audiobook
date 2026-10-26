@@ -12,5 +12,6 @@
   "tempo": 0.8,
   "lead": 0.8,
   "pauses": {"half": 0.3, "verse": 0.75, "section": 1.3},
+  "styles": {"sad": 0.25, "proud": 0.45},
   "music": []
 }

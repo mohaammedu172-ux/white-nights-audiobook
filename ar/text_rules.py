@@ -12,6 +12,15 @@ DIAC = re.compile('[ً-ْٓ-ٰٕـ]')
 PUNCT = re.compile(r'[،,.؛;:!?؟"«»()\-–—]')
 
 
+TAG = re.compile(r'^\{(\w+)\}\s*')
+
+
+def split_tag(text):
+    """'{sad} text' -> ('sad', 'text'). Tags set the voice style for that half-verse (see job.json "styles")."""
+    m = TAG.match(text)
+    return (m.group(1), text[m.end():]) if m else (None, text)
+
+
 def for_model(text: str) -> str:
     return ''.join(HAMZA_FIX.get(c, c) for c in text)
 
@@ -69,6 +78,7 @@ def add_breath(text):
 # ---------- comparison ----------
 def normalize_letters(t):
     """Bare letters only: no vowels, no punctuation, unified alif/ya/ta-marbuta forms."""
+    t = re.sub(r'\{\w+\}', ' ', t)
     t = DIAC.sub('', t)
     t = PUNCT.sub(' ', t)
     t = re.sub(r'([اوي])\1+', r'\1', t)  # stretched vowels written twice (قِفَاا) count as one
@@ -83,6 +93,7 @@ def strip_stretch(w):
 
 
 def normalize_marks(t):
+    t = re.sub(r'\{\w+\}', ' ', t)
     t = PUNCT.sub(' ', t)
     t = t.replace('ٱ', 'ا')
     return ' '.join(t.split())

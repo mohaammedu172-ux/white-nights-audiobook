@@ -30,12 +30,14 @@ These rules decide how the scripts are written so the voice model (Chatterbox, m
 
 ## Emotion and emphasis (التنغيم)
 The written text doesn't carry the melody of the sentence; reciters add it. Our voice model only reacts to spelling and punctuation, so we mark the key word:
-15. **Command (أمر), call (نداء), wonder (تعجّب):** write the key long vowel twice and put "!" after the word or phrase: قِفَاا!، أَفَااطِمَ مَهْلًا!، أَلَاا انْجَلِي!، فَيَاا لَكَ مِنْ لَيْلٍ!. Approved by ear on verse 1 (قِفَاا! took over from قِفَا, and the 4-alif version قِفَاااا was rejected).
-16. **Question (استفهام):** end the half with "؟".
-17. When the marked word opens a half, keep the leading "، " (rule 10/13).
-18. **Don't raise the expressiveness setting** to get emotion. At 0.6 the voice babbled every time; keep 0.35.
-19. The listening models often drop stretched words, so the comparison counts a doubled vowel as one. Your ear is the final check on these lines.
-Marked so far (Imru' al-Qays): v1, 5, 6, 11, 13, 14, 15, 19, 20, 46, 47, 70.
+15. **Command (أمر), call (نداء), plea (التماس):** write the key long vowel twice and put "!" after it: قِفَاا!، أَفَااطِمَ مَهْلًا!، أَلَاا انْجَلِي!. Chosen by ear (call 1B, plea 2B). The 4-alif version قِفَاااا was rejected.
+16. **Wonder (تعجّب):** stretch the vowel and trail off with "..." instead of "!": فَيَاا لَكَ مِنْ لَيْلٍ... (chosen 3C).
+17. **Sorrow (حزن):** tag both halves `{sad}`, which sets a calmer voice (0.25), and end the first half with "...". Chosen 5C. Used on v4, 6, 9, 44, 45.
+18. **Pride / energy (فخر):** tag both halves `{proud}`, which sets a more expressive voice (0.45). Chosen 6C. Used on the horse verses, v52–62. "!" after every word broke the voice.
+19. **Question (استفهام):** undecided, so questions stay plain for now. "..." straight after هَلْ broke the voice.
+20. When the marked word opens a half, keep the leading "، " (rules 10 and 13). Don't go above 0.45 expressiveness: at 0.6 it babbled every time.
+21. The listening models often drop stretched words, so the comparison counts a doubled vowel as one. Your ear is the final check on these lines.
+Style tags go at the very start of a half: `{sad} وَلَيْلٍ كَمَوْجِ الْبَحْرِ...`. Their voice settings are in job.json under "styles".
 
 ## Audio settings (approved)
 - Speed 80% (`tempo 0.8`). 1 second of silence before the voice.

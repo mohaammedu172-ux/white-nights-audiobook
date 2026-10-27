@@ -77,13 +77,21 @@ def step_loss(t3, batch, text_weight=0.1):
     return ls, lt, ls + text_weight * lt
 
 
-def batches(items, batch, husary_weight, rng):
-    """Length-bucketed random batches; husary_weight scales how often Quran clips are drawn."""
+def batches(items, batch, husary_weight, rng, max_tokens=2400):
+    """Length-bucketed random batches capped by total speech tokens (25 per second), so long clips come in
+    smaller batches and the GPU doesn't run out of memory. husary_weight scales how often Quran clips are drawn."""
     w = [husary_weight if x['spk'] == 'husary' else 1.0 for x in items]
     while True:
         pick = rng.choices(range(len(items)), weights=w, k=batch * 50)
         pick.sort(key=lambda i: len(items[i]['st']))
-        groups = [pick[i:i + batch] for i in range(0, len(pick), batch)]
+        groups, cur = [], []
+        for i in pick:
+            L = len(items[i]['st']) + 2
+            if cur and (len(cur) >= batch or (len(cur) + 1) * max(L, max(len(items[j]['st']) + 2 for j in cur)) > max_tokens):
+                groups.append(cur); cur = []
+            cur.append(i)
+        if cur:
+            groups.append(cur)
         rng.shuffle(groups)
         for g in groups:
             yield [items[i] for i in g]
@@ -102,7 +110,10 @@ def main():
     ap.add_argument('--eval-every', type=int, default=250)
     ap.add_argument('--save-every', type=int, default=500)
     ap.add_argument('--resume', default=None, help='adapter file to continue from')
+    ap.add_argument('--max-tokens', type=int, default=2400, help='speech tokens per batch (padded); lower if out of GPU memory')
+    ap.add_argument('--no-checkpointing', action='store_true')
     args = ap.parse_args()
+    os.environ.setdefault('PYTORCH_CUDA_ALLOC_CONF', 'expandable_segments:True')  # read at the first GPU allocation
     os.makedirs(args.out, exist_ok=True)
     dev = 'cuda' if torch.cuda.is_available() else 'cpu'
     torch.manual_seed(0)
@@ -121,6 +132,8 @@ def main():
     else:
         add_lora(t3, r=args.rank, alpha=2 * args.rank)
     t3.tfmr.print_trainable_parameters()
+    if not args.no_checkpointing:  # recompute activations in the backward pass: far less GPU memory, ~30% slower
+        t3.tfmr.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant': False})
     t3.train()
     params = [p for p in t3.parameters() if p.requires_grad]
     opt = torch.optim.AdamW(params, lr=args.lr, weight_decay=0.0)
@@ -129,17 +142,18 @@ def main():
         opt, lambda s: min(1.0, (s + 1) / warm) * 0.5 * (1 + math.cos(math.pi * min(1.0, s / args.steps))))
     use_amp = dev == 'cuda'
     scaler = torch.amp.GradScaler('cuda', enabled=use_amp)
-    gen = batches(data['train'], args.batch, args.husary_weight, rng)
+    gen = batches(data['train'], args.batch, args.husary_weight, rng, args.max_tokens)
     log = open(os.path.join(args.out, 'train_log.txt'), 'a')
 
     def evaluate():
         t3.eval()
         tot, n = 0.0, 0
         with torch.no_grad(), torch.autocast(dev, dtype=torch.float16, enabled=use_amp):
-            ev = data['eval']
-            for i in range(0, len(ev), args.batch):
-                ls, _, _ = step_loss(t3, make_batch(ev[i:i + args.batch], data, t3.hp, dev))
-                tot += ls.item() * len(ev[i:i + args.batch]); n += len(ev[i:i + args.batch])
+            ev = sorted(data['eval'], key=lambda x: len(x['st']))
+            eb = max(1, args.batch // 2)
+            for i in range(0, len(ev), eb):
+                ls, _, _ = step_loss(t3, make_batch(ev[i:i + eb], data, t3.hp, dev))
+                tot += ls.item() * len(ev[i:i + eb]); n += len(ev[i:i + eb])
         t3.train()
         return tot / max(1, n)
 

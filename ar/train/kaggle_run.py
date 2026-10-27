@@ -2,14 +2,14 @@
 
     python -m ar.train.kaggle_run
 
-Run 2 ("recipe B"):
-1) training set: ClArTTS only, no Quran recitation (skipped if it exists)
-2) train a bigger add-on (rank 64) for 2000 steps (run 1 stopped improving around 2000)
-3) bake-off on 40 half-verses: original voice without / with tajweed spellings, run-1 adapter (if attached as input),
-   recipe B at 1000 and 2000 steps, and every "best take per line" combination (ar/train/bakeoff.py)
-4) if GITHUB_TOKEN is set (Kaggle Secrets), save adapters + report + mp3s to the branch voice-adapter
+Run 2: a fair test of one thing only, how much Quran recitation to mix in. Same settings as run 1 (rank 32, lr 1e-4),
+2000 steps (run 1 stopped improving there).
+1) training set: ClArTTS + 6 h al-Husary (skipped if it exists)
+2) adapter "clartts": al-Husary weight 0 (never drawn)   adapter "mix": al-Husary weight 0.15 (a small share)
+3) blind listening test (ar/train/abtest.py): 12 hard lines, original voice vs the two adapters, 3 seeds each
+4) if GITHUB_TOKEN is set (Kaggle Secrets), save adapters + test to the branch voice-adapter
 """
-import argparse, datetime, glob, os, shutil, subprocess, sys
+import argparse, datetime, os, shutil, subprocess, sys
 
 W = '/kaggle/working'
 
@@ -37,39 +37,35 @@ def push(files, repo_url, label):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--husary-hours', type=float, default=0)
     ap.add_argument('--steps', type=int, default=2000)
-    ap.add_argument('--rank', type=int, default=64)
-    ap.add_argument('--batch', type=int, default=8)
-    ap.add_argument('--keep', default='1000,2000')
     ap.add_argument('--repo', default='github.com/mohaammedu172-ux/white-nights-audiobook.git')
     a = ap.parse_args()
     py = sys.executable
-    data, ad = f'{W}/data_b', f'{W}/adapter_b'
+    data = f'{W}/data'
     if not os.path.exists(f'{data}/dataset.pt'):
-        run(f'{py} -m ar.train.prep --out {data} --husary-hours {a.husary_hours} --husary-index ar/train/tarteel_index.json')
-    if not os.path.exists(f'{ad}/adapter_{a.steps}.pt'):
-        run(f'{py} -m ar.train.finetune --data {data}/dataset.pt --out {ad} --steps {a.steps} --batch {a.batch} '
-            f'--rank {a.rank} --husary-weight 0 --save-every 500')
-    keep = [int(x) for x in a.keep.split(',') if x]
-    var = ['--variant base=none']
-    old = sorted(glob.glob('/kaggle/input/**/adapter_3000.pt', recursive=True))  # run 1, if its output is attached
-    if old:
-        var.append(f'--variant run1_step3000={old[0]}')
-    var += [f'--variant b{k}={ad}/adapter_{k}.pt' for k in keep]
-    run(f'{py} -m ar.train.bakeoff --plain {" ".join(var)} --out {W}/bakeoff --verses 1-20')
-    # the notebook cell plays samples/before_after.mp3 at the end
-    os.makedirs(f'{W}/samples', exist_ok=True)
-    best = f'{W}/bakeoff/best_takes_5_verses.mp3'
-    if os.path.exists(best):
-        shutil.copy(best, f'{W}/samples/before_after.mp3')
+        run(f'{py} -m ar.train.prep --out {data} --husary-hours 6 --husary-index ar/train/tarteel_index.json')
+    arms = {'clartts': 0.0, 'mix': 0.15}
+    for name, w in arms.items():
+        out = f'{W}/adapter_{name}'
+        if not os.path.exists(f'{out}/adapter_{a.steps}.pt'):
+            run(f'{py} -m ar.train.finetune --data {data}/dataset.pt --out {out} --steps {a.steps} --batch 8 '
+                f'--rank 32 --husary-weight {w} --save-every 1000')
+    var = ' '.join(['--variant base=none'] + [f'--variant {n}={W}/adapter_{n}/adapter_{a.steps}.pt' for n in arms])
+    run(f'{py} -m ar.train.abtest {var} --out {W}/abtest')
+    os.makedirs(f'{W}/samples', exist_ok=True)  # the notebook cell plays samples/before_after.mp3 at the end
+    shutil.copy(f'{W}/abtest/blind_test.mp3', f'{W}/samples/before_after.mp3')
     tok = os.environ.get('GITHUB_TOKEN', '')
-    files = [f'{ad}/adapter_{k}.pt' for k in keep] + [f'{ad}/train_log.txt'] + \
-        [f'{W}/bakeoff/{f}' for f in ('report.md', 'takes.json', 'best_takes_5_verses.mp3', 'original_voice_5_verses.mp3')]
+    files = [f'{W}/adapter_{n}/adapter_{a.steps}.pt' for n in arms] + [f'{W}/adapter_{n}/train_log.txt' for n in arms]
+    files += [f'{W}/abtest/blind_test.mp3', f'{W}/abtest/key.json']
+    for n in arms:  # keep the two logs apart
+        p = f'{W}/adapter_{n}/train_log.txt'
+        if os.path.exists(p):
+            shutil.copy(p, f'{W}/adapter_{n}/train_log_{n}.txt')
+    files = [f.replace('train_log.txt', f'train_log_{f.split("adapter_")[1].split("/")[0]}.txt') for f in files]
     if tok:
-        push(files, f'https://x-access-token:{tok}@{a.repo}', 'recipeB')
+        push(files, f'https://x-access-token:{tok}@{a.repo}', 'run2')
     else:
-        print('No GITHUB_TOKEN secret: download the files from the Output tab instead.', flush=True)
+        print('No GITHUB_TOKEN secret: download blind_test.mp3 and key.json from the Output tab.', flush=True)
     print('ALL DONE', flush=True)
 
 

@@ -53,6 +53,7 @@ Style tags go at the very start of a half: `{sad} وَلَيْلٍ كَمَوْ�
 24. **Shadda on ي/و** = a held glide, then release (عَ-لَيْ-يَ). The spelling options are `"shadda_y": "split"` (عَلَيْ يَ) or `"double"` (عَلَيْيَّ). The old عَلَيْيَ was rejected. Waiting for Mohammed's pick from the al-Ḥuṣarī comparison.
 25. **همزة الوصل** drops in joined speech: يَا امْرَأَ → يَمْرَأَ (`"wasl": true`). Waiting for Mohammed's pick.
 26. **Heavy letters, heavy ر, ع and قلقلة can't be fixed by spelling.** That's the job of retraining the voice (kaggle/train_voice.ipynb).
+27. **Retraining, run 1** (ClArTTS + 6 h al-Ḥuṣarī, rank 32, 3000 steps): improvement stopped at about 2000 steps. Step 3000 roughly tied the original voice. It was better on tanwin and words and worse on shadda and hamza, and its lines came out faster. **Run 2 (recipe B)** uses ClArTTS only, rank 64 and 2000 steps, and is judged by a 40-line bake-off (`ar/train/bakeoff.py`) that also scores "best take per line" across voices.
 Reference for listening: al-Ḥuṣarī's murattal (Tarteel EveryAyah dataset), on verses with the same sounds: إِيَّاكَ (1:5), عَلَيَّ (15:41), امْرَأَتُ (28:9), حَرِيصٌ / رَءُوفٌ رَحِيمٌ (9:128).
 
 ## Pronunciation score

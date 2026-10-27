@@ -55,13 +55,12 @@ def main():
     os.makedirs(f'{W}/samples', exist_ok=True)  # the notebook cell plays samples/before_after.mp3 at the end
     shutil.copy(f'{W}/abtest/blind_test.mp3', f'{W}/samples/before_after.mp3')
     tok = os.environ.get('GITHUB_TOKEN', '')
-    files = [f'{W}/adapter_{n}/adapter_{a.steps}.pt' for n in arms] + [f'{W}/adapter_{n}/train_log.txt' for n in arms]
-    files += [f'{W}/abtest/blind_test.mp3', f'{W}/abtest/key.json']
-    for n in arms:  # keep the two logs apart
+    for n in arms:  # keep the two training logs apart
         p = f'{W}/adapter_{n}/train_log.txt'
         if os.path.exists(p):
             shutil.copy(p, f'{W}/adapter_{n}/train_log_{n}.txt')
-    files = [f.replace('train_log.txt', f'train_log_{f.split("adapter_")[1].split("/")[0]}.txt') for f in files]
+    files = [f'{W}/adapter_{n}/adapter_{a.steps}.pt' for n in arms] + [f'{W}/adapter_{n}/train_log_{n}.txt' for n in arms]
+    files += [f'{W}/abtest/blind_test.mp3', f'{W}/abtest/key.json']
     if tok:
         push(files, f'https://x-access-token:{tok}@{a.repo}', 'run2')
     else:

@@ -1,0 +1,962 @@
+[
+ {
+  "round": 2,
+  "line": "1",
+  "take": "1",
+  "file": "/root/tts/takes/v1a_s4.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "No dtress",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "1",
+  "take": "2",
+  "file": "/root/tts/takes/v1a_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "Almost good. More purity for the sounds ",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "1",
+  "take": "3",
+  "file": "/root/tts/takes/v1a_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "Same the grammar comes out but the sounds of letters need to to be more clear or pure",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "1",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v1a_s3.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "Some words said twice ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "1",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v1a_s2.wav",
+  "exists": true,
+  "rating": null,
+  "comment": "Words said twice ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "1",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v1a_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "Almost good stress is there spacing is there to give grace. Put some purity needed. ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "2",
+  "take": "1",
+  "file": "/root/tts/silma/takes_slow/v3a_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "First half got the stress second fast",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "2",
+  "take": "2",
+  "file": "/root/tts/takes/v3a_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "Needs the grace and the stress",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "2",
+  "take": "3",
+  "file": "/root/tts/takes/v3a_s4.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "Same as above ",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "2",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v3a_s1.wav",
+  "exists": true,
+  "rating": 1,
+  "comment": "Gebrish ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "2",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v3a_s2.wav",
+  "exists": true,
+  "rating": 1,
+  "comment": "Bad pronounce ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "2",
+  "take": "6",
+  "file": "/root/tts/takes/v3a_s2.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "T sound needs to come out clearly no stress no grace",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "3",
+  "take": "1",
+  "file": "/root/tts/takes/v13b_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "انك تحتاج ضغط على الشده. مرجلي صوت ر مو واضح",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "3",
+  "take": "2",
+  "file": "/root/tts/silma/takes_slow/v13b_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "Same as above ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "3",
+  "take": "3",
+  "file": "/root/tts/silma/takes_slow/v13b_s3.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "3",
+  "take": "4",
+  "file": "/root/tts/takes/v13b_s4.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "ت needs to come out clearly ",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "3",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v13b_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "انك تحتاج شده واضحه",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "3",
+  "take": "6",
+  "file": "/root/tts/takes/v13b_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "Stress on shadda",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "4",
+  "take": "1",
+  "file": "/root/tts/takes/v14a_s5.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "صوت ق يحتاج يقول اوضح",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "4",
+  "take": "2",
+  "file": "/root/tts/silma/takes_slow/v14a_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "4",
+  "take": "3",
+  "file": "/root/tts/takes/v14a_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "4",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v14a_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "4",
+  "take": "5",
+  "file": "/root/tts/takes/v14a_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "4",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v14a_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "5",
+  "take": "1",
+  "file": "/root/tts/takes/v14b_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "صوت ق",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "5",
+  "take": "2",
+  "file": "/root/tts/takes/v14b_s6.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "5",
+  "take": "3",
+  "file": "/root/tts/silma/takes_slow/v14b_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "5",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v14b_s3.wav",
+  "exists": true,
+  "rating": 1,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "5",
+  "take": "5",
+  "file": "/root/tts/takes/v14b_s1.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "5",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v14b_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "6",
+  "take": "1",
+  "file": "/root/tts/silma/takes_slow/v24b_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "6",
+  "take": "2",
+  "file": "/root/tts/takes/v24b_s1.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "6",
+  "take": "3",
+  "file": "/root/tts/silma/takes_slow/v24b_s2.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "6",
+  "take": "4",
+  "file": "/root/tts/takes/v24b_s5.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "6",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v24b_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "6",
+  "take": "6",
+  "file": "/root/tts/takes/v24b_s6.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "7",
+  "take": "1",
+  "file": "/root/tts/silma/takes_slow/v36a_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "7",
+  "take": "2",
+  "file": "/root/tts/takes/v36a_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "7",
+  "take": "3",
+  "file": "/root/tts/takes/v36a_s4.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "7",
+  "take": "4",
+  "file": "/root/tts/takes/v36a_s1.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "7",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v36a_s2.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "7",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v36a_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "8",
+  "take": "1",
+  "file": "/root/tts/takes/v44a_s4.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "8",
+  "take": "2",
+  "file": "/root/tts/silma/takes_slow/v44a_s2.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "8",
+  "take": "3",
+  "file": "/root/tts/takes/v44a_s2.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "8",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v44a_s1.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "8",
+  "take": "5",
+  "file": "/root/tts/takes/v44a_s6.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "8",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v44a_s3.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "9",
+  "take": "1",
+  "file": "/root/tts/takes/v44b_s4.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "9",
+  "take": "2",
+  "file": "/root/tts/takes/v44b_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "9",
+  "take": "3",
+  "file": "/root/tts/silma/takes_slow/v44b_s2.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "9",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v44b_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "9",
+  "take": "5",
+  "file": "/root/tts/takes/v44b_s5.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "9",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v44b_s1.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "10",
+  "take": "1",
+  "file": "/root/tts/silma/takes_slow/v53a_s1.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "10",
+  "take": "2",
+  "file": "/root/tts/takes/v53a_s5.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "10",
+  "take": "3",
+  "file": "/root/tts/takes/v53a_s3.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "10",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v53a_s2.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "10",
+  "take": "5",
+  "file": "/root/tts/takes/v53a_s1.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "10",
+  "take": "6",
+  "file": "/root/tts/silma/takes_slow/v53a_s3.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "11",
+  "take": "1",
+  "file": "/root/tts/takes/v59a_s6.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "11",
+  "take": "2",
+  "file": "/root/tts/silma/takes_slow/v59a_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "نعامةٍ the shadda at the end not pronounced",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "11",
+  "take": "3",
+  "file": "/root/tts/takes/v59a_s4.wav",
+  "exists": true,
+  "rating": 2,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "11",
+  "take": "4",
+  "file": "/root/tts/silma/takes_slow/v59a_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "No shadda",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "11",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v59a_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "No shadda ",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "11",
+  "take": "6",
+  "file": "/root/tts/takes/v59a_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "12",
+  "take": "1",
+  "file": "/root/tts/takes/v77a_s5.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "12",
+  "take": "2",
+  "file": "/root/tts/silma/takes_slow/v77a_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "12",
+  "take": "3",
+  "file": "/root/tts/silma/takes_slow/v77a_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "12",
+  "take": "4",
+  "file": "/root/tts/takes/v77a_s4.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 2,
+  "line": "12",
+  "take": "5",
+  "file": "/root/tts/silma/takes_slow/v77a_s1.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "silma"
+ },
+ {
+  "round": 2,
+  "line": "12",
+  "take": "6",
+  "file": "/root/tts/takes/v77a_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "original"
+ },
+ {
+  "round": 3,
+  "line": "1",
+  "take": "1",
+  "file": "/root/tts/r3/v13b_exag45_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "exag45"
+ },
+ {
+  "round": 3,
+  "line": "1",
+  "take": "2",
+  "file": "/root/tts/r3/v13b_now_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "now"
+ },
+ {
+  "round": 3,
+  "line": "1",
+  "take": "3",
+  "file": "/root/tts/r3/v13b_stressref_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "stressref"
+ },
+ {
+  "round": 3,
+  "line": "2",
+  "take": "1",
+  "file": "/root/tts/r3/v24b_exag45_s2.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "exag45"
+ },
+ {
+  "round": 3,
+  "line": "2",
+  "take": "2",
+  "file": "/root/tts/r3/v24b_stressref_s2.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "stressref"
+ },
+ {
+  "round": 3,
+  "line": "2",
+  "take": "3",
+  "file": "/root/tts/r3/v24b_now_s1.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "now"
+ },
+ {
+  "round": 3,
+  "line": "3",
+  "take": "1",
+  "file": "/root/tts/r3/v53a_now_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "now"
+ },
+ {
+  "round": 3,
+  "line": "3",
+  "take": "2",
+  "file": "/root/tts/r3/v53a_exag45_s1.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "exag45"
+ },
+ {
+  "round": 3,
+  "line": "3",
+  "take": "3",
+  "file": "/root/tts/r3/v53a_stressref_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "stressref"
+ },
+ {
+  "round": 3,
+  "line": "4",
+  "take": "1",
+  "file": "/root/tts/r3/v77a_now_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "now"
+ },
+ {
+  "round": 3,
+  "line": "4",
+  "take": "2",
+  "file": "/root/tts/r3/v77a_stressref_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "stressref"
+ },
+ {
+  "round": 3,
+  "line": "4",
+  "take": "3",
+  "file": "/root/tts/r3/v77a_exag45_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "exag45"
+ },
+ {
+  "round": 4,
+  "line": "1",
+  "take": "1",
+  "file": "/root/tts/r5/v13b_split_s2.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "split"
+ },
+ {
+  "round": 4,
+  "line": "1",
+  "take": "2",
+  "file": "/root/tts/r5/v13b_now_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "now"
+ },
+ {
+  "round": 4,
+  "line": "1",
+  "take": "3",
+  "file": "/root/tts/r5/v13b_splitkeep_s2.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "",
+  "version": "splitkeep"
+ },
+ {
+  "round": 4,
+  "line": "2",
+  "take": "1",
+  "file": "/root/tts/r5/v24b_now_s1.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "More stress",
+  "version": "now"
+ },
+ {
+  "round": 4,
+  "line": "2",
+  "take": "2",
+  "file": "/root/tts/r5/v24b_splitkeep_s2.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "More",
+  "version": "splitkeep"
+ },
+ {
+  "round": 4,
+  "line": "2",
+  "take": "3",
+  "file": "/root/tts/r5/v24b_split_s3.wav",
+  "exists": true,
+  "rating": 3,
+  "comment": "",
+  "version": "split"
+ },
+ {
+  "round": 4,
+  "line": "3",
+  "take": "1",
+  "file": "/root/tts/r5/v53a_splitkeep_s2.wav",
+  "exists": true,
+  "rating": 5,
+  "comment": "Perfect ",
+  "version": "splitkeep"
+ },
+ {
+  "round": 4,
+  "line": "3",
+  "take": "2",
+  "file": "/root/tts/r5/v53a_split_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "split"
+ },
+ {
+  "round": 4,
+  "line": "3",
+  "take": "3",
+  "file": "/root/tts/r5/v53a_now_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "",
+  "version": "now"
+ },
+ {
+  "round": 4,
+  "line": "4",
+  "take": "1",
+  "file": "/root/tts/r5/v77a_now_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "More stress ",
+  "version": "now"
+ },
+ {
+  "round": 4,
+  "line": "4",
+  "take": "2",
+  "file": "/root/tts/r5/v77a_splitkeep_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "More stress ",
+  "version": "splitkeep"
+ },
+ {
+  "round": 4,
+  "line": "4",
+  "take": "3",
+  "file": "/root/tts/r5/v77a_split_s3.wav",
+  "exists": true,
+  "rating": 4,
+  "comment": "More stress",
+  "version": "split"
+ }
+]

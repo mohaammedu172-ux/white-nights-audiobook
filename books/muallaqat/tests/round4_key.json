@@ -1,0 +1,70 @@
+{
+ "1": {
+  "1": {
+   "version": "split",
+   "file": "/root/tts/r5/v13b_split_s2.wav",
+   "acc": 1.0
+  },
+  "2": {
+   "version": "now",
+   "file": "/root/tts/r5/v13b_now_s3.wav",
+   "acc": 1.0
+  },
+  "3": {
+   "version": "splitkeep",
+   "file": "/root/tts/r5/v13b_splitkeep_s2.wav",
+   "acc": 1.0
+  }
+ },
+ "2": {
+  "1": {
+   "version": "now",
+   "file": "/root/tts/r5/v24b_now_s1.wav",
+   "acc": 0.8
+  },
+  "2": {
+   "version": "splitkeep",
+   "file": "/root/tts/r5/v24b_splitkeep_s2.wav",
+   "acc": 1.0
+  },
+  "3": {
+   "version": "split",
+   "file": "/root/tts/r5/v24b_split_s3.wav",
+   "acc": 1.0
+  }
+ },
+ "3": {
+  "1": {
+   "version": "splitkeep",
+   "file": "/root/tts/r5/v53a_splitkeep_s2.wav",
+   "acc": 0.6
+  },
+  "2": {
+   "version": "split",
+   "file": "/root/tts/r5/v53a_split_s3.wav",
+   "acc": 1.0
+  },
+  "3": {
+   "version": "now",
+   "file": "/root/tts/r5/v53a_now_s3.wav",
+   "acc": 0.6
+  }
+ },
+ "4": {
+  "1": {
+   "version": "now",
+   "file": "/root/tts/r5/v77a_now_s3.wav",
+   "acc": 0.6
+  },
+  "2": {
+   "version": "splitkeep",
+   "file": "/root/tts/r5/v77a_splitkeep_s3.wav",
+   "acc": 1.0
+  },
+  "3": {
+   "version": "split",
+   "file": "/root/tts/r5/v77a_split_s3.wav",
+   "acc": 0.8
+  }
+ }
+}

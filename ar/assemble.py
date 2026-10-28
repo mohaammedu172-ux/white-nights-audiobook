@@ -28,11 +28,20 @@ def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fa
     """Like load_clean, but for joins you don't hear (RULEBOOK rule 31): light denoise of the clip first, so the hiss
     doesn't switch on and off with every clip; then soft (raised-cosine) fades that start before the first sound and
     end after the last. A clip the voice cut off mid-sound still gets the full fade, ending at the clip's end."""
-    tmp = path + '.dn.wav'
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', path, '-af',
-                    'highpass=f=70,afftdn=nr=12:nf=-50:tn=1', '-ar', str(sr), '-ac', '1', tmp], check=True)
-    a, _ = sf.read(tmp, dtype='float32')
-    os.remove(tmp)
+    import noisereduce as nr
+    from scipy.signal import butter, iirnotch, sosfiltfilt, filtfilt
+    a, _ = librosa.load(path, sr=sr, mono=True)
+    # the main reference recording has a 50 Hz mains hum and the voice copies it (louder): cut below 75 Hz
+    # steeply, and notch the hum's 100 and 150 Hz overtones narrowly so the voice itself is untouched
+    a = sosfiltfilt(butter(6, 75 / (sr / 2), 'highpass', output='sos'), a)
+    for f0 in (100, 150):
+        b, c = iirnotch(f0, 30, sr)
+        a = filtfilt(b, c, a)
+    a = a.astype(np.float32)
+    # the hiss is steady, so learn it from the clip's quietest quarter and remove it everywhere
+    fr = librosa.util.frame(np.pad(a, (0, 1024)), frame_length=1024, hop_length=512)
+    quiet = fr[:, np.argsort((fr ** 2).mean(0))[:max(4, fr.shape[1] // 4)]].T.reshape(-1)
+    a = nr.reduce_noise(y=a, sr=sr, y_noise=quiet, stationary=True, prop_decrease=0.95, n_fft=2048).astype(np.float32)
     env = librosa.feature.rms(y=a, frame_length=1024, hop_length=256)[0]
     db = 20 * np.log10(env / (env.max() + 1e-9) + 1e-9)
     idx = np.where(db > thr_db)[0]
@@ -67,7 +76,7 @@ def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
     os.replace(tmp, wav)
 
 
-def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=-72):
+def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=None):
     """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change).
     smooth=True: denoised clips with soft fades, and a faint steady room tone under the whole track instead of
     dead digital silence between clips (room_db is relative to full scale, before loudness normalising)."""
@@ -92,7 +101,15 @@ def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=Fals
 
 
 def to_mp3(in_wav, out_mp3):
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', in_wav, '-af', 'loudnorm=I=-16:TP=-1.5',
+    # two passes so loudnorm applies one steady gain; single-pass loudnorm acts like an automatic volume knob
+    # and turns up the hiss in every pause
+    import json, re
+    r = subprocess.run(['ffmpeg', '-hide_banner', '-i', in_wav, '-af', 'loudnorm=I=-16:TP=-1.5:print_format=json',
+                        '-f', 'null', '-'], capture_output=True, text=True)
+    m = json.loads(re.findall(r'\{[^{}]*\}', r.stderr)[-1])
+    af = (f"loudnorm=I=-16:TP=-1.5:linear=true:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+          f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}")
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', in_wav, '-af', af,
                     '-ar', '44100', '-b:a', '160k', out_mp3], check=True)
 
 

@@ -57,6 +57,11 @@ Style tags go at the very start of a half: `{sad} وَلَيْلٍ كَمَوْ�
 28. **Run 2 blind result (Mohammed's ear, 12 lines, 1–5):** the original voice averaged 3.7 and won 6 lines outright. The ClArTTS-only adapter averaged 3.1, and the mix adapter 3.0 with one gibberish take (v36a). Retraining T3 with LoRA on this data does not help, so it's paused. What's still missing is stress/نبر: a held shadda and ي, ringing ل, ق that doesn't drift toward ك, stronger ر and ع. The best takes show the voice can do it (v59a ظَبْيٍ).
 29. **Round 2 blind result (original voice vs SILMA TTS, 3 takes each per line):** the original voice averaged 3.9, and 4.3 when the best of its 3 takes per line is kept. It won 4 lines, tied 7 and lost 1. SILMA averaged 3.3 and had 8 bad takes (gibberish, repeated words, missing shadda). Decision: keep the original Chatterbox voice and make several takes per half-verse. Still asked for: a held shadda, clearer ق ت ر, and purer letters.
 30. **Checked against al-Zawzanī and the metre.** Fixes: v9 دَمْعِيَ; v72 بَعْدَ. The pronoun is stretched (هُو / هِي) wherever the ṭawīl needs it: v3, 34, 36, 43, 45, 50, 55, 57, 58, 59, 60, 69, 72, 73. Recension choices follow al-Zawzanī (v32 غَيْرُ, v65 تُزَيَّلِ, v66 يَنْضَحْ), except v57, where the metre requires عَنْ. Run `python ar/metre.py <script>` after any edit; only v10 (kaff) and v27 (hidden alif in اللّه) are known false alarms.
+31. **Clean clips and joins (on by default; `"smooth_joins": false` turns it off).** Mohammed heard noise and ticks in the full run, and three causes were found and fixed by ear (verses 1–3, "no noise"):
+    - **Junk after the last word.** The voice often keeps going for 0.7–1.9 s after the line ends (buzz, hiss, clicks). The ClArTTS letter judge marks the last letter, and the clip is cut there, keeping a stretched final vowel.
+    - **50 Hz hum.** The main reference recording has mains hum, and the voice copies it louder. It's cut with a steep filter below 75 Hz plus narrow notches at 100 and 150 Hz. The stationary hiss is removed per clip (noisereduce).
+    - **Clicks from slowing down and from the volume step.** ffmpeg's atempo clicks where sound meets silence, so each clip is slowed on its own with rubberband before joining. Single-pass loudnorm turned up the hiss in every pause, so it now runs in two passes with one steady gain. Short pops at clip edges are turned down (declick), and fades are soft (raised cosine).
+    - A faint room tone between clips was tried and rejected: it only added noise.
 Reference for listening: al-Ḥuṣarī's murattal (Tarteel EveryAyah dataset), on verses with the same sounds: إِيَّاكَ (1:5), عَلَيَّ (15:41), امْرَأَتُ (28:9), حَرِيصٌ / رَءُوفٌ رَحِيمٌ (9:128).
 
 ## Pronunciation score
@@ -65,7 +70,7 @@ Reference for listening: al-Ḥuṣarī's murattal (Tarteel EveryAyah dataset), 
 ## Audio settings (approved)
 - Speed 80% (`tempo 0.8`). 1 second of silence before the voice.
 - Pauses (before the speed change): 0.3 s between halves, 0.75 s between verses, 1.3 s between the original and the modern version.
-- Gentle trimming: -50 dB threshold, 0.12 s kept before and 0.18 s after, short fades. Aggressive trimming caused ticks and swallowed word starts.
+- Trimming: rule 31 (cut at the last letter, 0.08 s kept before the first sound, soft 70 ms / 160 ms fades).
 - Music: -10 dB under the voice, ducked lightly while he speaks (threshold 0.05, ratio 2), 2 s fade-in, 3.5 s fade-out, voice starts about 3 s in. Loudness -16 LUFS.
 
 ## The judges

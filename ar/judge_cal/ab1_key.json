@@ -1,0 +1,202 @@
+{
+ "1": {
+  "line": "v44a",
+  "A": "/root/tts/takes/v44a_s5.wav",
+  "B": "/root/tts/takes/v44a_s6.wav"
+ },
+ "2": {
+  "line": "v59a",
+  "A": "/root/tts/takes/v59a_s1.wav",
+  "B": "/root/tts/takes/v59a_s2.wav"
+ },
+ "3": {
+  "line": "v53a",
+  "A": "/root/tts/takes/v53a_s6.wav",
+  "B": "/root/tts/takes/v53a_s5.wav"
+ },
+ "4": {
+  "line": "v44a",
+  "A": "/root/tts/takes/v44a_s2.wav",
+  "B": "/root/tts/takes/v44a_s1.wav"
+ },
+ "5": {
+  "line": "v44b",
+  "A": "/root/tts/takes/v44b_s2.wav",
+  "B": "/root/tts/takes/v44b_s1.wav"
+ },
+ "6": {
+  "line": "v24b",
+  "A": "/root/tts/r5/v24b_now_s2.wav",
+  "B": "/root/tts/r5/v24b_splitkeep_s1.wav"
+ },
+ "7": {
+  "line": "v13b",
+  "A": "/root/tts/r5/v13b_splitkeep_s3.wav",
+  "B": "/root/tts/r5/v13b_now_s1.wav"
+ },
+ "8": {
+  "line": "v53a",
+  "A": "/root/tts/r5/v53a_split_s1.wav",
+  "B": "/root/tts/r5/v53a_splitkeep_s1.wav"
+ },
+ "9": {
+  "line": "v13b",
+  "A": "/root/tts/takes/v13b_s5.wav",
+  "B": "/root/tts/takes/v13b_s6.wav"
+ },
+ "10": {
+  "line": "v14a",
+  "A": "/root/tts/takes/v14a_s1.wav",
+  "B": "/root/tts/takes/v14a_s2.wav"
+ },
+ "11": {
+  "line": "v77a",
+  "A": "/root/tts/takes/v77a_s3.wav",
+  "B": "/root/tts/takes/v77a_s4.wav"
+ },
+ "12": {
+  "line": "v14b",
+  "A": "/root/tts/takes/v14b_s1.wav",
+  "B": "/root/tts/takes/v14b_s2.wav"
+ },
+ "13": {
+  "line": "v24b",
+  "A": "/root/tts/takes/v24b_s3.wav",
+  "B": "/root/tts/takes/v24b_s4.wav"
+ },
+ "14": {
+  "line": "v53a",
+  "A": "/root/tts/takes/v53a_s3.wav",
+  "B": "/root/tts/takes/v53a_s4.wav"
+ },
+ "15": {
+  "line": "v77a",
+  "A": "/root/tts/takes/v77a_s2.wav",
+  "B": "/root/tts/takes/v77a_s1.wav"
+ },
+ "16": {
+  "line": "v59a",
+  "A": "/root/tts/takes/v59a_s3.wav",
+  "B": "/root/tts/takes/v59a_s4.wav"
+ },
+ "17": {
+  "line": "v13b",
+  "A": "/root/tts/takes/v13b_s1.wav",
+  "B": "/root/tts/takes/v13b_s2.wav"
+ },
+ "18": {
+  "line": "v14b",
+  "A": "/root/tts/takes/v14b_s3.wav",
+  "B": "/root/tts/takes/v14b_s4.wav"
+ },
+ "19": {
+  "line": "v24b",
+  "A": "/root/tts/takes/v24b_s6.wav",
+  "B": "/root/tts/takes/v24b_s5.wav"
+ },
+ "20": {
+  "line": "v36a",
+  "A": "/root/tts/takes/v36a_s3.wav",
+  "B": "/root/tts/takes/v36a_s4.wav"
+ },
+ "21": {
+  "line": "v14a",
+  "A": "/root/tts/takes/v14a_s4.wav",
+  "B": "/root/tts/takes/v14a_s3.wav"
+ },
+ "22": {
+  "line": "v24b",
+  "A": "/root/tts/takes/v24b_s2.wav",
+  "B": "/root/tts/takes/v24b_s1.wav"
+ },
+ "23": {
+  "line": "v1a",
+  "A": "/root/tts/takes/v1a_s5.wav",
+  "B": "/root/tts/takes/v1a_s6.wav"
+ },
+ "24": {
+  "line": "v14a",
+  "A": "/root/tts/takes/v14a_s6.wav",
+  "B": "/root/tts/takes/v14a_s5.wav"
+ },
+ "25": {
+  "line": "v13b",
+  "A": "/root/tts/takes/v13b_s3.wav",
+  "B": "/root/tts/takes/v13b_s4.wav"
+ },
+ "26": {
+  "line": "v36a",
+  "A": "/root/tts/takes/v36a_s5.wav",
+  "B": "/root/tts/takes/v36a_s6.wav"
+ },
+ "27": {
+  "line": "v14b",
+  "A": "/root/tts/takes/v14b_s5.wav",
+  "B": "/root/tts/takes/v14b_s6.wav"
+ },
+ "28": {
+  "line": "v53a",
+  "A": "/root/tts/takes/v53a_s1.wav",
+  "B": "/root/tts/takes/v53a_s2.wav"
+ },
+ "29": {
+  "line": "v3a",
+  "A": "/root/tts/takes/v3a_s1.wav",
+  "B": "/root/tts/takes/v3a_s2.wav"
+ },
+ "30": {
+  "line": "v1a",
+  "A": "/root/tts/takes/v1a_s3.wav",
+  "B": "/root/tts/takes/v1a_s4.wav"
+ },
+ "31": {
+  "line": "v1a",
+  "A": "/root/tts/takes/v1a_s1.wav",
+  "B": "/root/tts/takes/v1a_s2.wav"
+ },
+ "32": {
+  "line": "v44b",
+  "A": "/root/tts/takes/v44b_s6.wav",
+  "B": "/root/tts/takes/v44b_s5.wav"
+ },
+ "33": {
+  "line": "v44b",
+  "A": "/root/tts/takes/v44b_s3.wav",
+  "B": "/root/tts/takes/v44b_s4.wav"
+ },
+ "34": {
+  "line": "v77a",
+  "A": "/root/tts/r5/v77a_split_s1.wav",
+  "B": "/root/tts/r5/v77a_splitkeep_s1.wav"
+ },
+ "35": {
+  "line": "v59a",
+  "A": "/root/tts/takes/v59a_s6.wav",
+  "B": "/root/tts/takes/v59a_s5.wav"
+ },
+ "36": {
+  "line": "v3a",
+  "A": "/root/tts/takes/v3a_s5.wav",
+  "B": "/root/tts/takes/v3a_s6.wav"
+ },
+ "37": {
+  "line": "v36a",
+  "A": "/root/tts/takes/v36a_s2.wav",
+  "B": "/root/tts/takes/v36a_s1.wav"
+ },
+ "38": {
+  "line": "v44a",
+  "A": "/root/tts/takes/v44a_s4.wav",
+  "B": "/root/tts/takes/v44a_s3.wav"
+ },
+ "39": {
+  "line": "v3a",
+  "A": "/root/tts/takes/v3a_s4.wav",
+  "B": "/root/tts/takes/v3a_s3.wav"
+ },
+ "40": {
+  "line": "v77a",
+  "A": "/root/tts/takes/v77a_s5.wav",
+  "B": "/root/tts/takes/v77a_s6.wav"
+ }
+}

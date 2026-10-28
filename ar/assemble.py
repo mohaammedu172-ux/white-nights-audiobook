@@ -49,11 +49,55 @@ def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fa
         return a
     st = max(0, idx[0] * 256 - int(pre * sr))
     en = min(len(a), (idx[-1] + 4) * 256 + int(post * sr))
-    a = a[st:en].copy()
+    a = declick(a[st:en].copy(), sr)
     fi, fo = min(int(fade_in * sr), len(a) // 4), min(int(fade_out * sr), len(a) // 4)
     a[:fi] *= _cos_fade(fi)
     a[-fo:] *= _cos_fade(fo, up=False)
     return a
+
+
+def declick(a, sr, frame=0.005, jump_db=8, quiet_db=-25):
+    """The voice sometimes pops when it starts or stops (a 5-10 ms burst next to near-silence). Find bursts much
+    louder than everything around them, in quiet surroundings, and turn them down to the surrounding level."""
+    w = int(frame * sr)
+    n = len(a) // w
+    if n < 8:
+        return a
+    lv = 20 * np.log10(np.sqrt((a[:n * w].reshape(n, w) ** 2).mean(1)) + 1e-9)
+    peak = lv.max()
+    gain = np.ones(n)
+    for i in range(n):
+        around = np.r_[lv[max(0, i - 4):max(0, i - 1)], lv[i + 2:i + 5]]
+        if len(around) == 0:
+            continue
+        if lv[i] > around.max() + jump_db and around.max() < peak + quiet_db:
+            g = 10 ** ((around.max() - lv[max(i - 1, 0):i + 2].max()) / 20)
+            gain[max(i - 1, 0):i + 2] = np.minimum(gain[max(i - 1, 0):i + 2], g)
+    if (gain < 1).any():
+        g = np.repeat(gain, w)
+        g = np.convolve(g, np.hanning(w) / np.hanning(w).sum(), 'same')  # no hard gain steps
+        a = a.copy()
+        a[:n * w] *= g.astype(a.dtype)
+    return a
+
+
+def stretch(a, sr, tempo):
+    """Slow one clip down. rubberband stays clean at the edges; ffmpeg's atempo clicks wherever sound meets
+    silence, so it is only the fallback (with silence padding so its edge artefacts land outside the clip)."""
+    if abs(tempo - 1) < 1e-3:
+        return a
+    pad = int(0.25 * sr)
+    tmp_in, tmp_out = f'/tmp/_st_{os.getpid()}_in.wav', f'/tmp/_st_{os.getpid()}_out.wav'
+    sf.write(tmp_in, np.r_[np.zeros(pad), a, np.zeros(pad)].astype(np.float32), sr)
+    r = subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', tmp_in, '-af', f'rubberband=tempo={tempo}',
+                        tmp_out], capture_output=True)
+    if r.returncode != 0:
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', tmp_in, '-af', f'atempo={tempo}', tmp_out], check=True)
+    b, _ = sf.read(tmp_out, dtype='float32')
+    os.remove(tmp_in); os.remove(tmp_out)
+    p = int(pad / tempo)
+    b = b[p:len(b) - p] if len(b) > 2 * p else b
+    return b
 
 
 def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
@@ -80,10 +124,15 @@ def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=Fals
     """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change).
     smooth=True: denoised clips with soft fades, and a faint steady room tone under the whole track instead of
     dead digital silence between clips (room_db is relative to full scale, before loudness normalising)."""
-    load = load_smooth if smooth else load_clean
+    if smooth:  # slow each clip on its own, then join with silence: no slowing-down step ever meets a silence edge
+        parts = [np.zeros(int(lead / tempo * sr), np.float32)]
+        for f, p in zip(files, pads):
+            parts += [stretch(load_smooth(f, sr), sr, tempo), np.zeros(int(p / tempo * sr), np.float32)]
+        sf.write(out_wav, np.concatenate(parts), sr)
+        return
     parts = [np.zeros(int(lead * sr), np.float32)]
     for f, p in zip(files, pads):
-        parts += [load(f, sr), np.zeros(int(p * sr), np.float32)]
+        parts += [load_clean(f, sr), np.zeros(int(p * sr), np.float32)]
     voice = np.concatenate(parts)
     if smooth and room_db is not None:
         rng = np.random.default_rng(0)

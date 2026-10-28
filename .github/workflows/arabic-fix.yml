@@ -26,6 +26,7 @@ jobs:
           sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
           pip -q install torch --index-url https://download.pytorch.org/whl/cpu
           pip -q install onnxruntime "transformers>=5.20" "huggingface_hub>=1.0" librosa soundfile
+          pip -q install chatterbox-tts==0.1.7 --no-deps && pip -q install s3tokenizer conformer==0.3.2 omegaconf pyloudnorm resemble-perth peft diffusers safetensors
       - uses: actions/download-artifact@v4
         with:
           path: prev

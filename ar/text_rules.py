@@ -111,6 +111,7 @@ def tajweed(text, opts=None):
     tanwin  - the hidden noon written out (مَعًا → مَعَنْ, وَلَيْلٍ → وَلَيْلِنْ), and م before ب (إقلاب)
     wasl    - يَا + a word starting with همزة الوصل joins as it is said (يَا امْرَأَ → يَمْرَأَ)
     shadda_y - ي/و with shadda spelled as held + released: 'split' (عَلَيْ يَ) or 'double' (عَلَيْيَّ)
+    shadda  - 'double': every shadda written as letter+sukun then the letter with shadda (إِنْنَّكَ)
     opts: dict like {"tanwin": true, "wasl": false, "shadda_y": null}."""
     if not opts:
         return text
@@ -124,6 +125,14 @@ def tajweed(text, opts=None):
             v = (a + b).replace('ّ', '')
             return f'{c}ْ {c}{v}' if sy == 'split' else f'{c}ْ{c}{v}ّ'
         body = re.sub(r'([يو])(ّ?)([َُِ]ّ?)', lambda m: fix(m) if 'ّ' in m.group(0) else m.group(0), body)
+    if opts.get('shadda') == 'double':  # إِنَّكَ → إِنْنَّكَ: the held first half written out, shadda kept (round 4 blind test: 4.5 vs 4.0)
+        ws = body.split(' ')
+        def dbl(w):
+            if re.match(r'^(?:[وفبكل]?َ?|[وفبكل]ِ?)ال', w):  # sun-letter shadda after ال stays as written
+                pre = re.match(r'^(.*?ال.)', w).group(1)
+                return pre + dbl(w[len(pre):]) if len(w) > len(pre) else w
+            return re.sub('([ء-ي])(?:ّ([ً-ِ])|([ً-ِ])ّ)', lambda m: f'{m.group(1)}ْ{m.group(1)}ّ{m.group(2) or m.group(3)}', w)
+        body = ' '.join(dbl(w) for w in ws)
     if opts.get('tanwin'):
         ws = body.split(' ')
         body = ' '.join(_tanwin_word(w, ws[i + 1] if i + 1 < len(ws) else '') for i, w in enumerate(ws))

@@ -67,6 +67,8 @@ def main():
     save()
     problem_rows = tr.load_problem_words(os.path.join(base, job.get('problem_words', '../problem_words.csv')))
     pass_acc = job.get('pass_word_acc', 0.75)
+    n_takes = max(1, int(job.get('takes', 1)))  # always make this many takes (different seeds); the best is kept
+    ladder = [ATTEMPTS[0]] * n_takes + ATTEMPTS[1:]
 
     # ---- clip list ----
     clips = []  # (key, part, verse, half, text)
@@ -91,7 +93,7 @@ def main():
             else:
                 from .tts import Voice
                 voice = Voice(os.path.join(repo, job['voice']))
-        a = ATTEMPTS[attempt_no]
+        a = ladder[attempt_no]
         tag, t = tr.split_tag(text)
         st = job.get('styles', {}).get(tag, {}) if tag else {}
         if not isinstance(st, dict):
@@ -130,7 +132,7 @@ def main():
             save()
 
     # ---- round 0 + retries ----
-    for rnd in range(len(ATTEMPTS)):
+    for rnd in range(len(ladder)):
         todo = []
         for key, part, n, h, text in clips:
             s = state.setdefault(key, {'part': part['name'], 'verse': n, 'half': h, 'script': text,
@@ -142,7 +144,7 @@ def main():
                 continue
             good = [score_of(tk, s['judges_wanted']) for tk in s['takes'] if tk['hit_stop']]
             best = max(good, default=-1)
-            if rnd == 0 or (not args.no_judge and best < pass_acc):
+            if rnd < n_takes or (not args.no_judge and best < pass_acc):
                 todo.append((key, part, text))
         if not todo:
             if rnd == 0:

@@ -14,7 +14,10 @@ does the measure prefer the same take? 50% is chance; trust a measure only well 
 | noise | 50% | 109 |
 | letters | 49% | 81 |
 | shimmer | 45% | 109 |
+| stress_peak | 43% | 109 |
 | tail | 42% | 108 |
 | jitter | 40% | 109 |
+| stress_shape | 40% | 109 |
 | hnr | 36% | 109 |
 | confusions | 33% | 18 |
+| shadda_hold | 22% | 40 |

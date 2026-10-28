@@ -13,6 +13,9 @@
   "pauses": 1,
   "tail": 1.34,
   "noise": -66.4,
+  "stress_peak": 12.05,
+  "stress_shape": 5.39,
+  "shadda_hold": null,
   "rate": 8.61
  },
  "/root/tts/takes/v1a_s1.wav": {
@@ -29,6 +32,9 @@
   "pauses": 1,
   "tail": 1.06,
   "noise": -50.6,
+  "stress_peak": 1.77,
+  "stress_shape": 1.52,
+  "shadda_hold": null,
   "rate": 8.12
  },
  "/root/tts/takes/v1a_s3.wav": {
@@ -45,6 +51,9 @@
   "pauses": 1,
   "tail": 0.33,
   "noise": -58.3,
+  "stress_peak": 7.37,
+  "stress_shape": 5.2,
+  "shadda_hold": null,
   "rate": 8.79
  },
  "/root/tts/silma/takes_slow/v1a_s3.wav": {
@@ -61,6 +70,9 @@
   "pauses": 2,
   "tail": 0.0,
   "noise": -75.8,
+  "stress_peak": 7.25,
+  "stress_shape": 2.76,
+  "shadda_hold": null,
   "rate": 4.82
  },
  "/root/tts/silma/takes_slow/v1a_s1.wav": {
@@ -77,6 +89,9 @@
   "pauses": 1,
   "tail": 0.96,
   "noise": -61.7,
+  "stress_peak": 10.71,
+  "stress_shape": 5.14,
+  "shadda_hold": null,
   "rate": 6.9
  },
  "/root/tts/silma/takes_slow/v3a_s3.wav": {
@@ -93,6 +108,9 @@
   "pauses": 0,
   "tail": 1.23,
   "noise": -63.1,
+  "stress_peak": 10.8,
+  "stress_shape": 5.35,
+  "shadda_hold": null,
   "rate": 8.79
  },
  "/root/tts/takes/v3a_s3.wav": {
@@ -109,6 +127,9 @@
   "pauses": 0,
   "tail": 0.9,
   "noise": -76.7,
+  "stress_peak": 5.32,
+  "stress_shape": 3.85,
+  "shadda_hold": null,
   "rate": 10.76
  },
  "/root/tts/takes/v3a_s4.wav": {
@@ -125,6 +146,9 @@
   "pauses": 0,
   "tail": 2.1,
   "noise": -53.0,
+  "stress_peak": 3.44,
+  "stress_shape": 1.74,
+  "shadda_hold": null,
   "rate": 10.15
  },
  "/root/tts/silma/takes_slow/v3a_s1.wav": {
@@ -141,6 +165,9 @@
   "pauses": 1,
   "tail": 0.0,
   "noise": -57.7,
+  "stress_peak": 11.45,
+  "stress_shape": 6.31,
+  "shadda_hold": null,
   "rate": 5.67
  },
  "/root/tts/silma/takes_slow/v3a_s2.wav": {
@@ -157,6 +184,9 @@
   "pauses": 2,
   "tail": 0.0,
   "noise": -62.1,
+  "stress_peak": 5.56,
+  "stress_shape": 5.08,
+  "shadda_hold": null,
   "rate": 5.16
  },
  "/root/tts/takes/v3a_s2.wav": {
@@ -173,6 +203,9 @@
   "pauses": 0,
   "tail": 1.34,
   "noise": -76.1,
+  "stress_peak": 3.94,
+  "stress_shape": 2.28,
+  "shadda_hold": null,
   "rate": 10.34
  },
  "/root/tts/takes/v13b_s3.wav": {
@@ -189,6 +222,9 @@
   "pauses": 0,
   "tail": 0.23,
   "noise": -61.2,
+  "stress_peak": 3.65,
+  "stress_shape": 4.45,
+  "shadda_hold": 1.17,
   "rate": 8.1
  },
  "/root/tts/silma/takes_slow/v13b_s2.wav": {
@@ -205,6 +241,9 @@
   "pauses": 3,
   "tail": 0.51,
   "noise": -77.5,
+  "stress_peak": 5.88,
+  "stress_shape": 4.41,
+  "shadda_hold": 1.33,
   "rate": 4.92
  },
  "/root/tts/silma/takes_slow/v13b_s3.wav": {
@@ -221,6 +260,9 @@
   "pauses": 1,
   "tail": 0.81,
   "noise": -77.0,
+  "stress_peak": 1.57,
+  "stress_shape": 3.15,
+  "shadda_hold": 1.4,
   "rate": 7.78
  },
  "/root/tts/takes/v13b_s4.wav": {
@@ -237,6 +279,9 @@
   "pauses": 0,
   "tail": 1.08,
   "noise": -65.1,
+  "stress_peak": 6.15,
+  "stress_shape": 3.76,
+  "shadda_hold": 1.17,
   "rate": 8.9
  },
  "/root/tts/silma/takes_slow/v13b_s1.wav": {
@@ -253,6 +298,9 @@
   "pauses": 2,
   "tail": 0.51,
   "noise": -76.2,
+  "stress_peak": 2.6,
+  "stress_shape": 3.8,
+  "shadda_hold": 1.33,
   "rate": 6.03
  },
  "/root/tts/takes/v13b_s1.wav": {
@@ -269,6 +317,9 @@
   "pauses": 0,
   "tail": 1.92,
   "noise": -44.4,
+  "stress_peak": 3.76,
+  "stress_shape": 3.89,
+  "shadda_hold": 1.17,
   "rate": 7.31
  },
  "/root/tts/takes/v14a_s5.wav": {
@@ -285,6 +336,9 @@
   "pauses": 0,
   "tail": 0.64,
   "noise": -76.0,
+  "stress_peak": 2.83,
+  "stress_shape": 3.15,
+  "shadda_hold": null,
   "rate": 9.76
  },
  "/root/tts/silma/takes_slow/v14a_s3.wav": {
@@ -301,6 +355,9 @@
   "pauses": 0,
   "tail": 0.55,
   "noise": -59.6,
+  "stress_peak": 4.0,
+  "stress_shape": 2.92,
+  "shadda_hold": null,
   "rate": 9.06
  },
  "/root/tts/takes/v14a_s3.wav": {
@@ -317,6 +374,9 @@
   "pauses": 0,
   "tail": 1.16,
   "noise": -46.9,
+  "stress_peak": 5.52,
+  "stress_shape": 4.61,
+  "shadda_hold": null,
   "rate": 9.68
  },
  "/root/tts/silma/takes_slow/v14a_s1.wav": {
@@ -333,6 +393,9 @@
   "pauses": 0,
   "tail": 0.51,
   "noise": -57.1,
+  "stress_peak": 4.4,
+  "stress_shape": 3.1,
+  "shadda_hold": null,
   "rate": 8.92
  },
  "/root/tts/takes/v14a_s2.wav": {
@@ -349,6 +412,9 @@
   "pauses": 0,
   "tail": 0.0,
   "noise": -48.4,
+  "stress_peak": 22.08,
+  "stress_shape": 7.78,
+  "shadda_hold": null,
   "rate": 2.04
  },
  "/root/tts/silma/takes_slow/v14a_s2.wav": {
@@ -365,6 +431,9 @@
   "pauses": 0,
   "tail": 0.37,
   "noise": -59.7,
+  "stress_peak": 5.91,
+  "stress_shape": 5.23,
+  "shadda_hold": null,
   "rate": 8.81
  },
  "/root/tts/takes/v14b_s2.wav": {
@@ -381,6 +450,9 @@
   "pauses": 0,
   "tail": 0.72,
   "noise": -49.5,
+  "stress_peak": 5.35,
+  "stress_shape": 3.11,
+  "shadda_hold": null,
   "rate": 10.77
  },
  "/root/tts/takes/v14b_s6.wav": {
@@ -397,6 +469,9 @@
   "pauses": 0,
   "tail": 1.3,
   "noise": -51.7,
+  "stress_peak": 8.39,
+  "stress_shape": 3.51,
+  "shadda_hold": null,
   "rate": 9.45
  },
  "/root/tts/silma/takes_slow/v14b_s1.wav": {
@@ -413,6 +488,9 @@
   "pauses": 2,
   "tail": 0.09,
   "noise": -61.4,
+  "stress_peak": 5.34,
+  "stress_shape": 4.8,
+  "shadda_hold": null,
   "rate": 5.22
  },
  "/root/tts/silma/takes_slow/v14b_s3.wav": {
@@ -429,6 +507,9 @@
   "pauses": 1,
   "tail": 0.73,
   "noise": -62.5,
+  "stress_peak": 3.22,
+  "stress_shape": 2.88,
+  "shadda_hold": null,
   "rate": 6.45
  },
  "/root/tts/takes/v14b_s1.wav": {
@@ -445,6 +526,9 @@
   "pauses": 0,
   "tail": 1.36,
   "noise": -52.2,
+  "stress_peak": 5.77,
+  "stress_shape": 4.4,
+  "shadda_hold": null,
   "rate": 10.52
  },
  "/root/tts/silma/takes_slow/v14b_s2.wav": {
@@ -461,6 +545,9 @@
   "pauses": 1,
   "tail": 0.51,
   "noise": -63.8,
+  "stress_peak": 13.58,
+  "stress_shape": 6.67,
+  "shadda_hold": null,
   "rate": 5.7
  },
  "/root/tts/silma/takes_slow/v24b_s1.wav": {
@@ -477,6 +564,9 @@
   "pauses": 1,
   "tail": 0.55,
   "noise": -61.8,
+  "stress_peak": 5.61,
+  "stress_shape": 4.67,
+  "shadda_hold": 1.29,
   "rate": 6.46
  },
  "/root/tts/takes/v24b_s1.wav": {
@@ -493,6 +583,9 @@
   "pauses": 0,
   "tail": 1.84,
   "noise": -50.1,
+  "stress_peak": 4.43,
+  "stress_shape": 4.4,
+  "shadda_hold": 1.4,
   "rate": 9.3
  },
  "/root/tts/silma/takes_slow/v24b_s2.wav": {
@@ -509,6 +602,9 @@
   "pauses": 1,
   "tail": 0.0,
   "noise": -77.3,
+  "stress_peak": 4.97,
+  "stress_shape": 5.58,
+  "shadda_hold": 1.14,
   "rate": 5.59
  },
  "/root/tts/takes/v24b_s5.wav": {
@@ -525,6 +621,9 @@
   "pauses": 0,
   "tail": 1.96,
   "noise": -56.6,
+  "stress_peak": 7.29,
+  "stress_shape": 4.08,
+  "shadda_hold": 1.08,
   "rate": 8.73
  },
  "/root/tts/silma/takes_slow/v24b_s3.wav": {
@@ -541,6 +640,9 @@
   "pauses": 2,
   "tail": 0.0,
   "noise": -78.6,
+  "stress_peak": 5.29,
+  "stress_shape": 6.89,
+  "shadda_hold": 1.85,
   "rate": 4.67
  },
  "/root/tts/takes/v24b_s6.wav": {
@@ -557,6 +659,9 @@
   "pauses": 0,
   "tail": 1.58,
   "noise": -61.2,
+  "stress_peak": 8.79,
+  "stress_shape": 5.48,
+  "shadda_hold": 1.17,
   "rate": 8.66
  },
  "/root/tts/silma/takes_slow/v36a_s3.wav": {
@@ -573,6 +678,9 @@
   "pauses": 1,
   "tail": 0.59,
   "noise": -61.7,
+  "stress_peak": 6.25,
+  "stress_shape": 5.6,
+  "shadda_hold": null,
   "rate": 6.53
  },
  "/root/tts/takes/v36a_s3.wav": {
@@ -589,6 +697,9 @@
   "pauses": 0,
   "tail": 5.38,
   "noise": -53.0,
+  "stress_peak": 6.34,
+  "stress_shape": 3.46,
+  "shadda_hold": null,
   "rate": 10.24
  },
  "/root/tts/takes/v36a_s4.wav": {
@@ -605,6 +716,9 @@
   "pauses": 0,
   "tail": 2.18,
   "noise": -66.3,
+  "stress_peak": 2.15,
+  "stress_shape": 2.44,
+  "shadda_hold": null,
   "rate": 9.55
  },
  "/root/tts/takes/v36a_s1.wav": {
@@ -621,6 +735,9 @@
   "pauses": 0,
   "tail": 0.0,
   "noise": -49.5,
+  "stress_peak": 3.33,
+  "stress_shape": 5.66,
+  "shadda_hold": null,
   "rate": 2.79
  },
  "/root/tts/silma/takes_slow/v36a_s2.wav": {
@@ -637,6 +754,9 @@
   "pauses": 1,
   "tail": 0.0,
   "noise": -55.1,
+  "stress_peak": 12.82,
+  "stress_shape": 7.6,
+  "shadda_hold": null,
   "rate": 8.76
  },
  "/root/tts/silma/takes_slow/v36a_s1.wav": {
@@ -653,6 +773,9 @@
   "pauses": 1,
   "tail": 0.55,
   "noise": -77.6,
+  "stress_peak": 5.66,
+  "stress_shape": 3.25,
+  "shadda_hold": null,
   "rate": 6.67
  },
  "/root/tts/takes/v44a_s4.wav": {
@@ -669,6 +792,9 @@
   "pauses": 0,
   "tail": 1.34,
   "noise": -54.4,
+  "stress_peak": 8.04,
+  "stress_shape": 5.52,
+  "shadda_hold": null,
   "rate": 9.6
  },
  "/root/tts/silma/takes_slow/v44a_s2.wav": {
@@ -685,6 +811,9 @@
   "pauses": 2,
   "tail": 0.43,
   "noise": -62.0,
+  "stress_peak": 8.9,
+  "stress_shape": 5.85,
+  "shadda_hold": null,
   "rate": 5.96
  },
  "/root/tts/takes/v44a_s2.wav": {
@@ -701,6 +830,9 @@
   "pauses": 0,
   "tail": 1.08,
   "noise": -66.3,
+  "stress_peak": 4.96,
+  "stress_shape": 3.37,
+  "shadda_hold": null,
   "rate": 10.04
  },
  "/root/tts/silma/takes_slow/v44a_s1.wav": {
@@ -717,6 +849,9 @@
   "pauses": 1,
   "tail": 0.33,
   "noise": -63.6,
+  "stress_peak": 8.01,
+  "stress_shape": 4.48,
+  "shadda_hold": null,
   "rate": 5.51
  },
  "/root/tts/takes/v44a_s6.wav": {
@@ -733,6 +868,9 @@
   "pauses": 0,
   "tail": 1.38,
   "noise": -49.0,
+  "stress_peak": 7.85,
+  "stress_shape": 4.74,
+  "shadda_hold": null,
   "rate": 8.9
  },
  "/root/tts/silma/takes_slow/v44a_s3.wav": {
@@ -749,6 +887,9 @@
   "pauses": 2,
   "tail": 0.0,
   "noise": -78.4,
+  "stress_peak": 7.71,
+  "stress_shape": 5.32,
+  "shadda_hold": null,
   "rate": 4.81
  },
  "/root/tts/takes/v44b_s4.wav": {
@@ -765,6 +906,9 @@
   "pauses": 0,
   "tail": 1.46,
   "noise": -48.8,
+  "stress_peak": 3.41,
+  "stress_shape": 1.99,
+  "shadda_hold": 1.4,
   "rate": 10.14
  },
  "/root/tts/takes/v44b_s3.wav": {
@@ -781,6 +925,9 @@
   "pauses": 0,
   "tail": 1.36,
   "noise": -52.7,
+  "stress_peak": 2.2,
+  "stress_shape": 1.21,
+  "shadda_hold": 1.8,
   "rate": 9.58
  },
  "/root/tts/silma/takes_slow/v44b_s2.wav": {
@@ -797,6 +944,9 @@
   "pauses": 1,
   "tail": 0.84,
   "noise": -60.4,
+  "stress_peak": 6.48,
+  "stress_shape": 3.92,
+  "shadda_hold": 4.0,
   "rate": 6.45
  },
  "/root/tts/silma/takes_slow/v44b_s3.wav": {
@@ -813,6 +963,9 @@
   "pauses": 1,
   "tail": 1.56,
   "noise": -64.7,
+  "stress_peak": 9.3,
+  "stress_shape": 5.34,
+  "shadda_hold": 5.4,
   "rate": 8.11
  },
  "/root/tts/takes/v44b_s5.wav": {
@@ -829,6 +982,9 @@
   "pauses": 0,
   "tail": 1.48,
   "noise": -51.3,
+  "stress_peak": 4.19,
+  "stress_shape": 3.57,
+  "shadda_hold": 1.6,
   "rate": 10.14
  },
  "/root/tts/silma/takes_slow/v44b_s1.wav": {
@@ -845,6 +1001,9 @@
   "pauses": 2,
   "tail": 0.0,
   "noise": -77.7,
+  "stress_peak": 5.26,
+  "stress_shape": 5.46,
+  "shadda_hold": null,
   "rate": 5.01
  },
  "/root/tts/silma/takes_slow/v53a_s1.wav": {
@@ -861,6 +1020,9 @@
   "pauses": 0,
   "tail": 0.45,
   "noise": -60.6,
+  "stress_peak": 12.34,
+  "stress_shape": 7.09,
+  "shadda_hold": 2.86,
   "rate": 5.74
  },
  "/root/tts/takes/v53a_s5.wav": {
@@ -877,6 +1039,9 @@
   "pauses": 0,
   "tail": 0.77,
   "noise": -73.8,
+  "stress_peak": 2.13,
+  "stress_shape": 3.85,
+  "shadda_hold": null,
   "rate": 5.6
  },
  "/root/tts/takes/v53a_s3.wav": {
@@ -893,6 +1058,9 @@
   "pauses": 0,
   "tail": 1.38,
   "noise": -49.9,
+  "stress_peak": 5.19,
+  "stress_shape": 2.63,
+  "shadda_hold": null,
   "rate": 6.51
  },
  "/root/tts/silma/takes_slow/v53a_s2.wav": {
@@ -909,6 +1077,9 @@
   "pauses": 1,
   "tail": 0.31,
   "noise": -59.3,
+  "stress_peak": 3.94,
+  "stress_shape": 3.51,
+  "shadda_hold": null,
   "rate": 5.75
  },
  "/root/tts/takes/v53a_s1.wav": {
@@ -925,6 +1096,9 @@
   "pauses": 0,
   "tail": 1.04,
   "noise": -52.2,
+  "stress_peak": 5.84,
+  "stress_shape": 4.96,
+  "shadda_hold": null,
   "rate": 6.04
  },
  "/root/tts/silma/takes_slow/v53a_s3.wav": {
@@ -941,6 +1115,9 @@
   "pauses": 0,
   "tail": 0.7,
   "noise": -76.4,
+  "stress_peak": 7.69,
+  "stress_shape": 4.72,
+  "shadda_hold": null,
   "rate": 5.75
  },
  "/root/tts/takes/v59a_s6.wav": {
@@ -957,6 +1134,9 @@
   "pauses": 0,
   "tail": 1.3,
   "noise": -48.2,
+  "stress_peak": 3.71,
+  "stress_shape": 2.79,
+  "shadda_hold": null,
   "rate": 9.95
  },
  "/root/tts/silma/takes_slow/v59a_s1.wav": {
@@ -973,6 +1153,9 @@
   "pauses": 1,
   "tail": 0.51,
   "noise": -64.6,
+  "stress_peak": 6.28,
+  "stress_shape": 4.39,
+  "shadda_hold": null,
   "rate": 6.43
  },
  "/root/tts/takes/v59a_s4.wav": {
@@ -989,6 +1172,9 @@
   "pauses": 0,
   "tail": 1.38,
   "noise": -48.6,
+  "stress_peak": 4.04,
+  "stress_shape": 3.47,
+  "shadda_hold": 1.33,
   "rate": 9.41
  },
  "/root/tts/silma/takes_slow/v59a_s2.wav": {
@@ -1005,6 +1191,9 @@
   "pauses": 1,
   "tail": 0.51,
   "noise": -61.4,
+  "stress_peak": 3.59,
+  "stress_shape": 4.47,
+  "shadda_hold": 2.44,
   "rate": 6.74
  },
  "/root/tts/silma/takes_slow/v59a_s3.wav": {
@@ -1021,6 +1210,9 @@
   "pauses": 0,
   "tail": 1.04,
   "noise": -63.1,
+  "stress_peak": 5.39,
+  "stress_shape": 5.81,
+  "shadda_hold": null,
   "rate": 7.25
  },
  "/root/tts/takes/v59a_s3.wav": {
@@ -1037,6 +1229,9 @@
   "pauses": 0,
   "tail": 0.29,
   "noise": -60.0,
+  "stress_peak": 3.75,
+  "stress_shape": 2.42,
+  "shadda_hold": null,
   "rate": 8.41
  },
  "/root/tts/takes/v77a_s5.wav": {
@@ -1053,6 +1248,9 @@
   "pauses": 0,
   "tail": 1.0,
   "noise": -50.3,
+  "stress_peak": 5.61,
+  "stress_shape": 2.54,
+  "shadda_hold": 1.33,
   "rate": 9.56
  },
  "/root/tts/silma/takes_slow/v77a_s3.wav": {
@@ -1069,6 +1267,9 @@
   "pauses": 0,
   "tail": 1.36,
   "noise": -63.0,
+  "stress_peak": 9.55,
+  "stress_shape": 5.63,
+  "shadda_hold": 1.25,
   "rate": 7.67
  },
  "/root/tts/silma/takes_slow/v77a_s2.wav": {
@@ -1085,6 +1286,9 @@
   "pauses": 0,
   "tail": 1.22,
   "noise": -74.6,
+  "stress_peak": 2.85,
+  "stress_shape": 2.92,
+  "shadda_hold": 1.5,
   "rate": 8.09
  },
  "/root/tts/takes/v77a_s4.wav": {
@@ -1101,6 +1305,9 @@
   "pauses": 0,
   "tail": 0.19,
   "noise": -76.9,
+  "stress_peak": 2.45,
+  "stress_shape": 2.38,
+  "shadda_hold": 1.33,
   "rate": 9.54
  },
  "/root/tts/silma/takes_slow/v77a_s1.wav": {
@@ -1117,6 +1324,9 @@
   "pauses": 0,
   "tail": 1.54,
   "noise": -62.8,
+  "stress_peak": 8.94,
+  "stress_shape": 5.73,
+  "shadda_hold": 1.83,
   "rate": 9.05
  },
  "/root/tts/takes/v77a_s1.wav": {
@@ -1133,6 +1343,9 @@
   "pauses": 0,
   "tail": 0.11,
   "noise": -75.2,
+  "stress_peak": 4.44,
+  "stress_shape": 3.43,
+  "shadda_hold": 1.6,
   "rate": 9.63
  },
  "/root/tts/r3/v13b_exag45_s3.wav": {
@@ -1149,6 +1362,9 @@
   "pauses": 0,
   "tail": 0.0,
   "noise": -55.1,
+  "stress_peak": 7.31,
+  "stress_shape": 3.6,
+  "shadda_hold": 1.4,
   "rate": 4.26
  },
  "/root/tts/r3/v13b_now_s3.wav": {
@@ -1165,6 +1381,9 @@
   "pauses": 0,
   "tail": 0.23,
   "noise": -61.2,
+  "stress_peak": 3.65,
+  "stress_shape": 4.45,
+  "shadda_hold": 1.17,
   "rate": 8.1
  },
  "/root/tts/r3/v13b_stressref_s3.wav": {
@@ -1181,6 +1400,9 @@
   "pauses": 1,
   "tail": 1.38,
   "noise": -61.2,
+  "stress_peak": 9.97,
+  "stress_shape": 5.77,
+  "shadda_hold": 1.33,
   "rate": 7.88
  },
  "/root/tts/r3/v24b_exag45_s2.wav": {
@@ -1197,6 +1419,9 @@
   "pauses": 0,
   "tail": 1.42,
   "noise": -54.4,
+  "stress_peak": 4.18,
+  "stress_shape": 2.72,
+  "shadda_hold": 1.08,
   "rate": 8.73
  },
  "/root/tts/r3/v24b_stressref_s2.wav": {
@@ -1213,6 +1438,9 @@
   "pauses": 0,
   "tail": 0.19,
   "noise": -60.3,
+  "stress_peak": 7.78,
+  "stress_shape": 5.5,
+  "shadda_hold": 1.17,
   "rate": 8.35
  },
  "/root/tts/r3/v24b_now_s1.wav": {
@@ -1229,6 +1457,9 @@
   "pauses": 0,
   "tail": 1.84,
   "noise": -50.1,
+  "stress_peak": 4.43,
+  "stress_shape": 4.4,
+  "shadda_hold": 1.4,
   "rate": 9.3
  },
  "/root/tts/r3/v53a_now_s3.wav": {
@@ -1245,6 +1476,9 @@
   "pauses": 0,
   "tail": 1.38,
   "noise": -49.9,
+  "stress_peak": 5.19,
+  "stress_shape": 2.63,
+  "shadda_hold": null,
   "rate": 6.51
  },
  "/root/tts/r3/v53a_exag45_s1.wav": {
@@ -1261,6 +1495,9 @@
   "pauses": 0,
   "tail": 1.16,
   "noise": -52.7,
+  "stress_peak": 7.82,
+  "stress_shape": 4.09,
+  "shadda_hold": 2.33,
   "rate": 6.82
  },
  "/root/tts/r3/v53a_stressref_s1.wav": {
@@ -1277,6 +1514,9 @@
   "pauses": 0,
   "tail": 1.08,
   "noise": -54.6,
+  "stress_peak": 2.05,
+  "stress_shape": 2.83,
+  "shadda_hold": 1.9,
   "rate": 6.09
  },
  "/root/tts/r3/v77a_now_s3.wav": {
@@ -1293,6 +1533,9 @@
   "pauses": 0,
   "tail": 1.18,
   "noise": -48.7,
+  "stress_peak": 4.02,
+  "stress_shape": 2.22,
+  "shadda_hold": 1.45,
   "rate": 9.12
  },
  "/root/tts/r3/v77a_stressref_s3.wav": {
@@ -1309,6 +1552,9 @@
   "pauses": 0,
   "tail": 0.17,
   "noise": -49.5,
+  "stress_peak": 1.27,
+  "stress_shape": 1.52,
+  "shadda_hold": 1.33,
   "rate": 9.45
  },
  "/root/tts/r3/v77a_exag45_s3.wav": {
@@ -1325,6 +1571,9 @@
   "pauses": 0,
   "tail": 0.51,
   "noise": -75.6,
+  "stress_peak": 4.81,
+  "stress_shape": 2.16,
+  "shadda_hold": 1.33,
   "rate": 9.03
  },
  "/root/tts/r5/v13b_split_s2.wav": {
@@ -1341,6 +1590,9 @@
   "pauses": 1,
   "tail": 1.84,
   "noise": -57.0,
+  "stress_peak": 9.52,
+  "stress_shape": 5.23,
+  "shadda_hold": 1.5,
   "rate": 7.45
  },
  "/root/tts/r5/v13b_now_s3.wav": {
@@ -1357,6 +1609,9 @@
   "pauses": 0,
   "tail": 0.23,
   "noise": -61.2,
+  "stress_peak": 3.65,
+  "stress_shape": 4.45,
+  "shadda_hold": 1.17,
   "rate": 8.1
  },
  "/root/tts/r5/v13b_splitkeep_s2.wav": {
@@ -1373,6 +1628,9 @@
   "pauses": 0,
   "tail": 1.2,
   "noise": -52.6,
+  "stress_peak": 6.94,
+  "stress_shape": 2.86,
+  "shadda_hold": 1.33,
   "rate": 9.52
  },
  "/root/tts/r5/v24b_now_s1.wav": {
@@ -1389,6 +1647,9 @@
   "pauses": 0,
   "tail": 1.84,
   "noise": -50.1,
+  "stress_peak": 4.43,
+  "stress_shape": 4.4,
+  "shadda_hold": 1.4,
   "rate": 9.3
  },
  "/root/tts/r5/v24b_splitkeep_s2.wav": {
@@ -1405,6 +1666,9 @@
   "pauses": 0,
   "tail": 1.16,
   "noise": -78.8,
+  "stress_peak": 5.39,
+  "stress_shape": 3.69,
+  "shadda_hold": 1.08,
   "rate": 9.3
  },
  "/root/tts/r5/v24b_split_s3.wav": {
@@ -1421,6 +1685,9 @@
   "pauses": 0,
   "tail": 1.28,
   "noise": -48.8,
+  "stress_peak": 3.67,
+  "stress_shape": 3.13,
+  "shadda_hold": 1.33,
   "rate": 8.5
  },
  "/root/tts/r5/v53a_splitkeep_s2.wav": {
@@ -1437,6 +1704,9 @@
   "pauses": 0,
   "tail": 0.9,
   "noise": -49.6,
+  "stress_peak": 0.7,
+  "stress_shape": 2.06,
+  "shadda_hold": null,
   "rate": 5.46
  },
  "/root/tts/r5/v53a_split_s3.wav": {
@@ -1453,6 +1723,9 @@
   "pauses": 0,
   "tail": 1.04,
   "noise": -50.0,
+  "stress_peak": 1.41,
+  "stress_shape": 1.6,
+  "shadda_hold": 2.14,
   "rate": 6.71
  },
  "/root/tts/r5/v53a_now_s3.wav": {
@@ -1469,6 +1742,9 @@
   "pauses": 0,
   "tail": 1.38,
   "noise": -49.9,
+  "stress_peak": 5.19,
+  "stress_shape": 2.63,
+  "shadda_hold": null,
   "rate": 6.51
  },
  "/root/tts/r5/v77a_now_s3.wav": {
@@ -1485,6 +1761,9 @@
   "pauses": 0,
   "tail": 1.18,
   "noise": -48.7,
+  "stress_peak": 4.02,
+  "stress_shape": 2.22,
+  "shadda_hold": 1.45,
   "rate": 9.12
  },
  "/root/tts/r5/v77a_splitkeep_s3.wav": {
@@ -1501,6 +1780,9 @@
   "pauses": 0,
   "tail": 0.9,
   "noise": -46.3,
+  "stress_peak": 4.41,
+  "stress_shape": 3.11,
+  "shadda_hold": 1.33,
   "rate": 9.47
  },
  "/root/tts/r5/v77a_split_s3.wav": {
@@ -1517,6 +1799,9 @@
   "pauses": 0,
   "tail": 0.54,
   "noise": -74.9,
+  "stress_peak": 4.47,
+  "stress_shape": 2.75,
+  "shadda_hold": 1.33,
   "rate": 8.95
  }
 }

@@ -17,6 +17,9 @@ Measures (higher is better unless marked "lower"):
   pauses       lower: silences longer than 0.18 s inside the line
   tail         lower: seconds of sound after the last letter (junk the voice adds)
   noise        lower: noise floor in the quietest parts, dB
+  stress_peak  how far the most prominent word stands out (loudness dB + pitch semitones): flat = low
+  stress_shape spread of word prominence: every word the same weight = low
+  shadda_hold  a doubled letter held relative to an ordinary letter (> 1 = held)
 """
 import argparse, difflib, json, re
 import numpy as np, librosa
@@ -51,8 +54,9 @@ def letters_of(t):
     return re.sub(f'[{MARKS} ]', '', t)
 
 
-def hear(path):
-    """Letter recogniser: text heard, plus time of first and last letter."""
+def hear(path, timings=False):
+    """Letter recogniser: text heard, plus time of first and last letter (and, with timings=True, each emitted
+    symbol with its time)."""
     p, m, torch = _ctc()
     a, _ = librosa.load(path, sr=16000)
     x = p.feature_extractor(a, sampling_rate=16000, return_tensors='pt').input_values
@@ -61,7 +65,74 @@ def hear(path):
     toks = p.tokenizer.convert_ids_to_tokens(ids.tolist())
     fps = len(ids) / (len(a) / 16000)
     let = [i for i, t in enumerate(toks) if ids[i] != p.tokenizer.pad_token_id and t not in ('|', ' ')]
-    return p.tokenizer.decode(ids.tolist()), (let[0] / fps if let else 0.0), (let[-1] / fps if let else len(a) / 16000)
+    res = (p.tokenizer.decode(ids.tolist()), (let[0] / fps if let else 0.0), (let[-1] / fps if let else len(a) / 16000))
+    if timings:
+        seq, prev = [], None
+        for i, t in enumerate(toks):
+            if ids[i] != prev and ids[i] != p.tokenizer.pad_token_id:
+                seq.append((t, i / fps))
+            prev = ids[i]
+        return res + (seq,)
+    return res
+
+
+def _is_mark(t):
+    return all(ch in MARKS for ch in t)
+
+
+def stress_scores(path, seq, t0, t1):
+    """Stress (نبر): how much the line's peaks stand out, and how long doubled letters are held.
+    words: split the heard symbols at word breaks; each word's prominence = loudness + pitch above the line's median.
+      stress_peak  the most prominent word's lead over the median word (dB + semitones): low = flat, no stress
+      stress_shape spread of word prominence: low = every word the same weight
+      shadda_hold  doubled letter's time to the next letter, relative to the median letter: > 1 = held
+    """
+    a, sr = librosa.load(path, sr=16000)
+    hop = 160
+    rms = librosa.feature.rms(y=a, frame_length=640, hop_length=hop)[0]
+    db = 20 * np.log10(rms + 1e-9)
+    f0, vf, _ = librosa.pyin(a, fmin=70, fmax=350, sr=sr, frame_length=1024, hop_length=hop)
+    st = 12 * np.log2(np.where(vf, f0, np.nan) / 100)
+    words, cur = [], []
+    for t, tm in seq:
+        if t in ('|', ' '):
+            if cur:
+                words.append(cur); cur = []
+        else:
+            cur.append((t, tm))
+    if cur:
+        words.append(cur)
+    prom = []
+    for k, w in enumerate(words):
+        s = w[0][1]
+        e = words[k + 1][0][1] if k + 1 < len(words) else t1 + 0.1
+        i0, i1 = int(s * 100), max(int(s * 100) + 1, int(e * 100))
+        d = np.percentile(db[i0:i1], 90)
+        p_ = np.nanmax(st[i0:i1]) if np.any(~np.isnan(st[i0:i1])) else np.nan
+        prom.append((d, p_))
+    out = {'stress_peak': None, 'stress_shape': None, 'shadda_hold': None}
+    if len(prom) >= 3:
+        d = np.array([x[0] for x in prom]); p_ = np.array([x[1] for x in prom])
+        z = (d - np.median(d)) + np.nan_to_num(p_ - np.nanmedian(p_))
+        out['stress_peak'] = round(float(np.max(z)), 2)
+        out['stress_shape'] = round(float(np.std(z)), 2)
+    letters = [(t, tm) for t, tm in seq if t not in ('|', ' ') and not _is_mark(t)]
+    durs = [letters[i + 1][1] - letters[i][1] for i in range(len(letters) - 1)]
+    if durs:
+        med = np.median(durs)
+        held = []
+        sym = [(t, tm) for t, tm in seq if t not in ('|', ' ')]
+        for i, (t, tm) in enumerate(sym):
+            if '\u0651' in t:  # shadda (often joined with its vowel): the letter before it and how long it lasts
+                prev = [k for k in range(i) if not _is_mark(sym[k][0])]
+                j = prev[-1] if prev else None
+                if j is not None:
+                    nxt = next((sym[k][1] for k in range(i + 1, len(sym)) if not _is_mark(sym[k][0])), None)
+                    if nxt:
+                        held.append((nxt - sym[j][1]) / med)
+        if held:
+            out['shadda_hold'] = round(float(np.mean(held)), 2)
+    return out
 
 
 def text_scores(ref, heard):
@@ -133,8 +204,8 @@ def voice_scores(path, t0, t1):
 
 
 def judge(path, ref):
-    heard, t0, t1 = hear(path)
-    out = {'heard': heard, **text_scores(ref, heard), **voice_scores(path, t0, t1)}
+    heard, t0, t1, seq = hear(path, timings=True)
+    out = {'heard': heard, **text_scores(ref, heard), **voice_scores(path, t0, t1), **stress_scores(path, seq, t0, t1)}
     n_letters = len(letters_of(norm(ref)))
     out['rate'] = round(n_letters / max(0.3, t1 - t0), 2)
     return out

@@ -19,6 +19,34 @@ def load_clean(path, sr=44100, pre=0.12, post=0.18, thr_db=-50):
     return a
 
 
+def _cos_fade(n, up=True):
+    f = 0.5 - 0.5 * np.cos(np.linspace(0, np.pi, n))
+    return f if up else f[::-1]
+
+
+def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fade_out=0.16):
+    """Like load_clean, but for joins you don't hear (RULEBOOK rule 31): light denoise of the clip first, so the hiss
+    doesn't switch on and off with every clip; then soft (raised-cosine) fades that start before the first sound and
+    end after the last. A clip the voice cut off mid-sound still gets the full fade, ending at the clip's end."""
+    tmp = path + '.dn.wav'
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', path, '-af',
+                    'highpass=f=70,afftdn=nr=12:nf=-50:tn=1', '-ar', str(sr), '-ac', '1', tmp], check=True)
+    a, _ = sf.read(tmp, dtype='float32')
+    os.remove(tmp)
+    env = librosa.feature.rms(y=a, frame_length=1024, hop_length=256)[0]
+    db = 20 * np.log10(env / (env.max() + 1e-9) + 1e-9)
+    idx = np.where(db > thr_db)[0]
+    if len(idx) == 0:
+        return a
+    st = max(0, idx[0] * 256 - int(pre * sr))
+    en = min(len(a), (idx[-1] + 4) * 256 + int(post * sr))
+    a = a[st:en].copy()
+    fi, fo = min(int(fade_in * sr), len(a) // 4), min(int(fade_out * sr), len(a) // 4)
+    a[:fi] *= _cos_fade(fi)
+    a[-fo:] *= _cos_fade(fo, up=False)
+    return a
+
+
 def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
     """Change one clip's speed, pitch and loudness in place (used by the mood styles). Safe: the voice is already made."""
     if speed == 1.0 and not semitones and not gain_db:
@@ -39,13 +67,26 @@ def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
     os.replace(tmp, wav)
 
 
-def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100):
-    """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change)."""
+def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=-72):
+    """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change).
+    smooth=True: denoised clips with soft fades, and a faint steady room tone under the whole track instead of
+    dead digital silence between clips (room_db is relative to full scale, before loudness normalising)."""
+    load = load_smooth if smooth else load_clean
     parts = [np.zeros(int(lead * sr), np.float32)]
     for f, p in zip(files, pads):
-        parts += [load_clean(f, sr), np.zeros(int(p * sr), np.float32)]
+        parts += [load(f, sr), np.zeros(int(p * sr), np.float32)]
+    voice = np.concatenate(parts)
+    if smooth and room_db is not None:
+        rng = np.random.default_rng(0)
+        spec = np.fft.rfft(rng.standard_normal(len(voice)))
+        freqs = np.fft.rfftfreq(len(voice), 1 / sr)
+        spec /= np.sqrt(np.maximum(freqs, 50))  # pink-ish: soft, not hissy
+        spec[freqs > 8000] *= 0.3
+        tone = np.fft.irfft(spec, len(voice)).astype(np.float32)
+        tone *= 10 ** (room_db / 20) / (np.sqrt(np.mean(tone ** 2)) + 1e-12)
+        voice = voice + tone
     tmp = out_wav + '.raw.wav'
-    sf.write(tmp, np.concatenate(parts), sr)
+    sf.write(tmp, voice, sr)
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', tmp, '-af', f'atempo={tempo}', '-ar', str(sr), out_wav], check=True)
     os.remove(tmp)
 

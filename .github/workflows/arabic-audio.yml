@@ -33,6 +33,7 @@ jobs:
           pip -q install torch --index-url https://download.pytorch.org/whl/cpu
           pip -q install onnxruntime "transformers>=5.20" "huggingface_hub>=1.0" librosa soundfile
           pip -q install chatterbox-tts==0.1.7 --no-deps && pip -q install s3tokenizer conformer==0.3.2 omegaconf pyloudnorm resemble-perth peft diffusers safetensors
+          pip -q install --force-reinstall --no-deps torch torchaudio --index-url https://download.pytorch.org/whl/cpu  # PyPI torchaudio pulled in above breaks the CPU torch
       - name: Generate, judge, retry
         run: python -m ar.run "$JOB" --verses ${{ matrix.verses }} --out out/shard
       - uses: actions/upload-artifact@v4
@@ -56,6 +57,7 @@ jobs:
           pip -q install torch --index-url https://download.pytorch.org/whl/cpu
           pip -q install onnxruntime "transformers>=5.20" "huggingface_hub>=1.0" librosa soundfile
           pip -q install chatterbox-tts==0.1.7 --no-deps && pip -q install s3tokenizer conformer==0.3.2 omegaconf pyloudnorm resemble-perth peft diffusers safetensors
+          pip -q install --force-reinstall --no-deps torch torchaudio --index-url https://download.pytorch.org/whl/cpu  # PyPI torchaudio pulled in above breaks the CPU torch
       - uses: actions/download-artifact@v4
         with: {path: shards}
       - name: Merge and assemble (redoes any clip a shard missed)

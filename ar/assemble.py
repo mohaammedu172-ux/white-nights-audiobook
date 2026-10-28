@@ -24,13 +24,52 @@ def _cos_fade(n, up=True):
     return f if up else f[::-1]
 
 
-def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fade_out=0.16):
+_CTC = {}
+
+
+def speech_end(path):
+    """Where the words really stop. After the last word the voice often keeps going for 0.7-1.9 s of junk
+    (buzz, hiss, clicks) loud enough to pass any level-based trim. The ClArTTS judge (a letter recogniser) marks
+    the last letter; from there we follow the sound while it stays near speech level (a stretched final vowel), and
+    stop at its first clear drop."""
+    import torch
+    from transformers import AutoProcessor, Wav2Vec2ForCTC
+    if not _CTC:
+        repo = "rufaelfekadu/diactc-wav2vec2-clartts"
+        _CTC['p'] = AutoProcessor.from_pretrained(repo)
+        _CTC['m'] = Wav2Vec2ForCTC.from_pretrained(repo).eval()
+    p, m = _CTC['p'], _CTC['m']
+    a, _ = librosa.load(path, sr=16000)
+    x = p.feature_extractor(a, sampling_rate=16000, return_tensors='pt').input_values
+    with torch.no_grad():
+        ids = m(x).logits.argmax(-1)[0].numpy()
+    toks = p.tokenizer.convert_ids_to_tokens(ids.tolist())
+    letters = [i for i, t in enumerate(toks) if ids[i] != p.tokenizer.pad_token_id and t not in ('|', ' ')]
+    if not letters:
+        return None
+    fps = len(ids) / (len(a) / 16000)
+    t_last = letters[-1] / fps
+    hop = 160
+    db = 20 * np.log10(librosa.feature.rms(y=a, frame_length=640, hop_length=hop)[0] + 1e-9)
+    speech = db[int(letters[0] / fps * 100):int(t_last * 100) + 1]
+    floor = np.median(speech) - 15 if len(speech) else db.max() - 30
+    i = int(t_last * 100)
+    while i < len(db) and db[i] > floor:
+        i += 1
+    return min(len(a) / 16000, i / 100 + 0.08)
+
+
+def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fade_out=0.16, cut_tail=True):
     """Like load_clean, but for joins you don't hear (RULEBOOK rule 31): light denoise of the clip first, so the hiss
     doesn't switch on and off with every clip; then soft (raised-cosine) fades that start before the first sound and
     end after the last. A clip the voice cut off mid-sound still gets the full fade, ending at the clip's end."""
     import noisereduce as nr
     from scipy.signal import butter, iirnotch, sosfiltfilt, filtfilt
     a, _ = librosa.load(path, sr=sr, mono=True)
+    if cut_tail:
+        end = speech_end(path)
+        if end:
+            a = a[:int(end * sr)]
     # the main reference recording has a 50 Hz mains hum and the voice copies it (louder): cut below 75 Hz
     # steeply, and notch the hum's 100 and 150 Hz overtones narrowly so the voice itself is untouched
     a = sosfiltfilt(butter(6, 75 / (sr / 2), 'highpass', output='sos'), a)

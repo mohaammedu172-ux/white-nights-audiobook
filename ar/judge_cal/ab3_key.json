@@ -1,0 +1,42 @@
+{
+ "1": {
+  "line": "v17b",
+  "A": "all",
+  "B": "sonorant"
+ },
+ "2": {
+  "line": "v74a",
+  "A": "sonorant",
+  "B": "all"
+ },
+ "3": {
+  "line": "v53a",
+  "A": "plain",
+  "B": "sonorant"
+ },
+ "4": {
+  "line": "v58b",
+  "A": "all",
+  "B": "sonorant"
+ },
+ "5": {
+  "line": "v13b",
+  "A": "plain",
+  "B": "sonorant"
+ },
+ "6": {
+  "line": "v45a",
+  "A": "all",
+  "B": "sonorant"
+ },
+ "7": {
+  "line": "v53b",
+  "A": "all",
+  "B": "sonorant"
+ },
+ "8": {
+  "line": "v24b",
+  "A": "sonorant",
+  "B": "plain"
+ }
+}

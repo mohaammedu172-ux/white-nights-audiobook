@@ -43,8 +43,12 @@ def pick_score(res, judges, script):
     from .autojudge import text_scores
     t = text_scores(tr.split_tag(script)[1], heard)
     doubled = bool(re.search(r'ي[\u064B-\u0652]*\u0651[\u064B-\u0652]*\s*$|ي\u064E?ا\s*$', heard.strip()))
+    twice = 0  # a consonant heard twice in a row inside a word (shadda said as two hits), article's ل excepted
+    for w in heard.split():
+        L = re.sub(r'^(و|ف|ب|ك)?ال', '', re.sub(r'[\u064B-\u0652]', '', w))
+        twice += sum(1 for i in range(len(L) - 1) if L[i] == L[i + 1] and L[i] not in 'اوي')
     return (0.5 * words + 0.3 * t['letters'] + 0.2 * (t['marks'] or 0)
-            - 0.2 * doubled)  # swap alarms dropped: the ear found all 14 checked alarms correct (30 Oct)
+            - 0.2 * doubled - 0.1 * twice)  # swap alarms dropped: the ear found all 14 checked alarms correct (30 Oct)
 
 
 def main():

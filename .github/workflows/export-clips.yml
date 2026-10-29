@@ -1,0 +1,49 @@
+# Copies the kept clip of every half-verse from a finished "Arabic audio" run to the branch "run-clips" (FLAC, small),
+# so the section tests can be run on them elsewhere. Starts when the branch "export-clips" is pushed; the run id is
+# read from export/RUN_ID.
+name: Export clips
+on:
+  push:
+    branches: [export-clips]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run id
+        id: rid
+        run: echo "id=$(cat export/RUN_ID)" >> "$GITHUB_OUTPUT"
+      - uses: actions/download-artifact@v4
+        with:
+          path: shards
+          run-id: ${{ steps.rid.outputs.id }}
+          github-token: ${{ github.token }}
+      - name: Keep the chosen takes, as FLAC
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg >/dev/null
+          mkdir -p /tmp/out/clips
+          python - <<'EOF'
+          import glob, json, os, subprocess
+          state = {}
+          for p in glob.glob('shards/*/state.json'):
+              d = os.path.dirname(p)
+              for k, v in json.load(open(p)).items():
+                  if v.get('chosen') and os.path.exists(os.path.join(d, v['chosen'])):
+                      state[k] = dict(v, _dir=d)
+          for k, v in state.items():
+              src = os.path.join(v.pop('_dir'), v['chosen'])
+              v['chosen'] = k + '.flac'
+              subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', src, '-ac', '1', '/tmp/out/clips/' + k + '.flac'], check=True)
+          json.dump(state, open('/tmp/out/clips/state.json', 'w'), ensure_ascii=False, indent=1)
+          print(len(state), 'clips')
+          EOF
+          echo "${{ steps.rid.outputs.id }}" > /tmp/out/RUN_ID
+      - name: Save to branch run-clips
+        run: |
+          cd /tmp/out && git init -q -b run-clips && git add . \
+            && git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -qm "Clips of run $(cat RUN_ID)" \
+            && git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" run-clips

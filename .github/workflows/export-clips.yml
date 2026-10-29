@@ -40,6 +40,9 @@ jobs:
               subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', src, '-ac', '1', '/tmp/out/clips/' + k + '.flac'], check=True)
           json.dump(state, open('/tmp/out/clips/state.json', 'w'), ensure_ascii=False, indent=1)
           print(len(state), 'clips')
+          n_shards = len(glob.glob('shards/*/state.json'))
+          if len(state) == 0 or n_shards == 0:
+              raise SystemExit(f'No clips exported (shards with state.json: {n_shards}). Check the shard layout.')
           EOF
           echo "${{ steps.rid.outputs.id }}" > /tmp/out/RUN_ID
       - name: Save to branch run-clips

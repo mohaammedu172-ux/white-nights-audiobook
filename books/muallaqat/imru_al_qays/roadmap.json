@@ -8,18 +8,75 @@
   "An issue that fails 3 attempts is parked with what was tried, and the round moves on."
  ],
  "sections": [
-  {"id": 1, "name": "Grammar and text", "criteria": ["C1", "C2", "C3", "C10", "C11", "E1", "E2", "E3", "E4", "E5", "E6"],
-   "exit": "All case endings and vowels match the i'rab map; endings, tanwin and inner vowels at least the reciters' level by the judge (about 90 / 85 / 95%)", "status": "met (round 0)"},
-  {"id": 2, "name": "Letters", "criteria": ["A1-A16"],
-   "exit": "No letter swap in the kept takes (judge); Mohammed's flag pass finds no letter problem in a full listen", "status": "next"},
-  {"id": 3, "name": "Tajwīd rules", "criteria": ["B1-B11", "A5"],
-   "exit": "Shadda, tanwin, long vowels and qalqala pass the rebuilt checks; no ear flags on them", "status": "waiting"},
-  {"id": 4, "name": "Metre, pauses and delivery", "criteria": ["C4-C9", "F1"],
-   "exit": "No pauses inside a half; rhyme and half-ends held within the reciters' range without doubling; tone matches sentence type", "status": "in progress (round 1 timing approved)"},
-  {"id": 5, "name": "Sound and flow", "criteria": ["D1-D6", "F2"],
-   "exit": "No noise or ticks flagged; pace, loudness and pitch steady line to line; Mohammed hears one connected piece", "status": "partly (noise fixed)"},
-  {"id": 6, "name": "Art and melody", "criteria": ["F3", "F4", "G1-G4"],
-   "exit": "Decided by ear at the melodic stage", "status": "later"}
+  {
+   "id": 1,
+   "name": "Grammar and text",
+   "criteria": [
+    "C1",
+    "C2",
+    "C3",
+    "C10",
+    "C11",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6"
+   ],
+   "exit": "All case endings and vowels match the i'rab map; endings, tanwin and inner vowels at least the reciters' level by the judge (about 90 / 85 / 95%)",
+   "status": "met (round 0)"
+  },
+  {
+   "id": 2,
+   "name": "Letters",
+   "criteria": [
+    "A1-A16"
+   ],
+   "exit": "No letter swap in the kept takes (judge); Mohammed's flag pass finds no letter problem in a full listen",
+   "status": "next"
+  },
+  {
+   "id": 3,
+   "name": "Tajwīd rules",
+   "criteria": [
+    "B1-B11",
+    "A5"
+   ],
+   "exit": "Shadda, tanwin, long vowels and qalqala pass the rebuilt checks; no ear flags on them",
+   "status": "waiting"
+  },
+  {
+   "id": 4,
+   "name": "Metre, pauses and delivery",
+   "criteria": [
+    "C4-C9",
+    "F1"
+   ],
+   "exit": "No pauses inside a half; rhyme and half-ends held within the reciters' range without doubling; tone matches sentence type",
+   "status": "in progress (round 1 timing approved)"
+  },
+  {
+   "id": 5,
+   "name": "Sound and flow",
+   "criteria": [
+    "D1-D6",
+    "F2"
+   ],
+   "exit": "No noise or ticks flagged; pace, loudness and pitch steady line to line; Mohammed hears one connected piece",
+   "status": "partly (noise fixed)"
+  },
+  {
+   "id": 6,
+   "name": "Art and melody",
+   "criteria": [
+    "F3",
+    "F4",
+    "G1-G4"
+   ],
+   "exit": "Decided by ear at the melodic stage",
+   "status": "later"
+  }
  ],
  "regression_checks": [
   "noise and hum: noise floor after cleanup below -55 dB",
@@ -27,6 +84,14 @@
   "no pause inside a half-verse",
   "rhyme not said twice (letter judge must not hear يّ / يا at the end)",
   "no dropped or repeated words",
-  "endings and tanwin no lower than the last kept round"
+  "endings and tanwin no lower than the last kept round",
+  "cloud run complete: every clip kept and on disk, a track made, under 20% of clips flagged (else the run fails)",
+  "clip export not empty (else the export fails)"
+ ],
+ "run_history": [
+  "28 Oct: run failed in 1.5 min (torchaudio from PyPI did not match the CPU torch); fixed by reinstalling both from the CPU index",
+  "26 Oct: one fix run cancelled by hand",
+  "29 Oct: clip export reported success but saved 0 clips (wrong folder); now fails when empty",
+  "Typical full run: 2.5 h for the slowest part of 9 (limit 5.7 h), 4-5% of clips flagged, no runaway takes"
  ]
 }

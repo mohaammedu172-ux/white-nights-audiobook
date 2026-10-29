@@ -138,6 +138,60 @@ def timing(ref, seq, acc):
             acc['all_letters'].append(d)
 
 
+def clip_measures(path, ref, seq, key, s):
+    """Per-clip delivery and sound measures (sections 4 and 5)."""
+    from ar.autojudge import voice_scores, stress_scores, letters_of
+    letters = [(t, tm) for t, tm in seq if t not in ('|', ' ') and not all(c in MARKS for c in t)]
+    t0, t1 = (letters[0][1], letters[-1][1]) if letters else (0.0, 1.0)
+    v = voice_scores(path, t0, t1)
+    st = stress_scores(path, seq, t0, t1)
+    import librosa, numpy as np
+    a, sr = librosa.load(path, sr=16000)
+    seg = a[int(t0 * sr):int((t1 + 0.2) * sr)]
+    rms = librosa.feature.rms(y=seg, frame_length=640, hop_length=160)[0] if len(seg) > 640 else np.zeros(1)
+    loud = float(np.median(20 * np.log10(rms[rms > rms.max() * 0.1] + 1e-9))) if rms.max() > 0 else -80.0
+    f0, vf, _ = librosa.pyin(seg, fmin=70, fmax=350, sr=sr, frame_length=1024, hop_length=160) if len(seg) > 2048 else (np.array([np.nan]), None, None)
+    pitch = float(np.nanmedian(12 * np.log2(f0 / 100))) if np.any(~np.isnan(f0)) else None
+    # ishbāʿ: length of the last syllable of a first half vs the clip's median letter
+    durs = [letters[i + 1][1] - letters[i][1] for i in range(len(letters) - 1)]
+    from ar.assemble import speech_end, load_smooth
+    end = speech_end(path)
+    last = (end - letters[-1][1]) if letters and end else None
+    clean = load_smooth(path, 16000)  # what goes into the track (rule 31)
+    cr = librosa.feature.rms(y=clean, frame_length=640, hop_length=160)[0]
+    cdb = 20 * np.log10(cr + 1e-9)
+    noise_clean = float(np.percentile(cdb, 5) - cdb.max())
+    return {'key': key, 'half': s['half'], 'verse': s['verse'], 'loud': loud, 'pitch': pitch,
+            'rate': len(letters_of(norm(ref))) / max(0.3, t1 - t0), 'pauses': v['pauses'],
+            'pitch_move': v['pitch_move'], 'stress_peak': st['stress_peak'], 'noise': noise_clean, 'tail': v['tail'],
+            'end_hold': (last / float(np.median(durs))) if durs and last else None}
+
+
+def flow_report(rows):
+    import numpy as np
+    if not rows:
+        return {}
+    rows = sorted(rows, key=lambda r: (r['verse'], r['half']))
+    nb = lambda f: [abs(rows[i + 1][f] - rows[i][f]) for i in range(len(rows) - 1)
+                    if rows[i][f] is not None and rows[i + 1][f] is not None]
+    m = lambda x: round(float(np.median(x)), 2) if x else None
+    a_end = [r['end_hold'] for r in rows if r['half'] == 'a' and r['end_hold']]
+    b_end = [r['end_hold'] for r in rows if r['half'] == 'b' and r['end_hold']]
+    return {
+        'C6 pauses inside a half (should be 0): halves with one or more': sum(r['pauses'] > 0 for r in rows),
+        'C5/ishbāʿ first-half end held (x median letter)': m(a_end),
+        'C5 rhyme end held (x median letter)': m(b_end),
+        'C9/C8 pitch movement per line, semitones (flat < 1.5)': m([r['pitch_move'] for r in rows]),
+        'C8 flat lines (movement < 1.5 st)': sum((r['pitch_move'] or 0) < 1.5 for r in rows),
+        'C7 stress peak (dB+st over median word)': m([r['stress_peak'] for r in rows if r['stress_peak'] is not None]),
+        'D1 pace, letters/s (median; spread)': f"{m([r['rate'] for r in rows])}; ±{round(float(np.std([r['rate'] for r in rows])), 2)}",
+        'D3/F2 loudness jump between neighbouring halves, dB (median; worst)': f"{m(nb('loud'))}; {round(max(nb('loud')), 1) if nb('loud') else None}",
+        'D3/F2 pitch jump between neighbouring halves, semitones (median; worst)': f"{m(nb('pitch'))}; {round(max(nb('pitch')), 1) if nb('pitch') else None}",
+        'D5 noise floor after cleanup, dB below peak (median)': m([r['noise'] for r in rows]),
+        'D5 raw clips with junk after the last letter (> 0.5 s; cut by the cleanup)': sum(r['tail'] > 0.5 for r in rows),
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('run_dir')
@@ -149,6 +203,7 @@ def main():
     acc['letters'] = collections.defaultdict(lambda: [0, 0])
     acc['swaps'] = collections.Counter()
     tim = collections.defaultdict(list)
+    clip_rows = []
     n = 0
     for key, s in sorted(state.items()):
         if s['part'] != a.part or s.get('chosen') not in wav_of:
@@ -157,6 +212,7 @@ def main():
         from ar import text_rules as tr
         analyse(tr.split_tag(s['script'])[1], heard, acc)
         timing(tr.split_tag(s['script'])[1], seq, tim)
+        clip_rows.append(clip_measures(wav_of[s['chosen']], tr.split_tag(s['script'])[1], seq, key, s))
         n += 1
     pct = lambda ok, tot: round(100 * acc[ok] / acc[tot]) if acc[tot] else None
     sec1 = {
@@ -179,7 +235,8 @@ def main():
         'B4 doubled ن/م (ghunna) hold vs ordinary letter (few cases; unreliable)': round(med(tim['hold_nasal']) / ml, 2) if tim['hold_nasal'] and ml else None,
         'counts': {k: len(v) for k, v in tim.items()},
     }
-    out = {'clips': n, 'section1': sec1, 'section3': sec3, 'section2_letters': dict(sorted(letters.items(), key=lambda kv: kv[1]['ok%'])),
+    sec45 = flow_report(clip_rows)
+    out = {'clips': n, 'section1': sec1, 'section3': sec3, 'section4_5': sec45, 'section2_letters': dict(sorted(letters.items(), key=lambda kv: kv[1]['ok%'])),
            'section2_swaps': dict(acc['swaps'].most_common(25))}
     json.dump(out, open(os.path.join(a.run_dir, 'sections.json'), 'w'), ensure_ascii=False, indent=1)
     md = [f'# Sections 1 and 2 ({a.part}, {n} half-verses)', '', '## Section 1: grammar and text', '',
@@ -187,6 +244,8 @@ def main():
     md += [f'| {k} | {v} |' for k, v in sec1.items()]
     md += ['', '## Section 3: tajwid timing', '', '| Check | Result |', '|---|---|']
     md += [f'| {k} | {v} |' for k, v in sec3.items()]
+    md += ['', '## Sections 4 and 5: delivery, sound and flow', '', '| Check | Result |', '|---|---|']
+    md += [f'| {k} | {v} |' for k, v in sec45.items()]
     md += ['', '## Section 2: letters (weakest first)', '', '| Letter | Heard right | Occurrences |', '|---|---|---|']
     md += [f'| {l} | {v["ok%"]}% | {v["n"]} |' for l, v in out['section2_letters'].items()]
     md += ['', 'Most common swaps: ' + ', '.join(f'{k} ×{v}' for k, v in out['section2_swaps'].items())]

@@ -32,10 +32,10 @@ jobs:
           for p in glob.glob('shards/*/state.json'):
               d = os.path.dirname(p)
               for k, v in json.load(open(p)).items():
-                  if v.get('chosen') and os.path.exists(os.path.join(d, v['chosen'])):
+                  if v.get('chosen') and os.path.exists(os.path.join(d, 'clips', os.path.basename(v['chosen']))):
                       state[k] = dict(v, _dir=d)
           for k, v in state.items():
-              src = os.path.join(v.pop('_dir'), v['chosen'])
+              src = os.path.join(v.pop('_dir'), 'clips', os.path.basename(v['chosen']))
               v['chosen'] = k + '.flac'
               subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', src, '-ac', '1', '/tmp/out/clips/' + k + '.flac'], check=True)
           json.dump(state, open('/tmp/out/clips/state.json', 'w'), ensure_ascii=False, indent=1)

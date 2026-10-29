@@ -21,6 +21,37 @@ def split_tag(text):
     return (m.group(1), text[m.end():]) if m else (None, text)
 
 
+def recite(text, half, opts=None):
+    """Pause and waqf rules for metrical recitation (RULEBOOK rule 32).
+    inner_pauses=False: no pause inside a half-verse. A reciter never stops on a vowelled letter mid-phrase, and a
+      pause there breaks the grammar (لَمْ يَعْفُ، رَسْمُهَا) and the metre. Commas, colons, '!' and '...' inside the
+      half are removed; the lead-in '، ' (rule 10) and a trailing '...' (sad style) stay.
+    ishba_half=True: the end of the first half (al-ʿarūḍ) is lengthened, never given a sukun (Arabs don't stop on a
+      vowelled letter; the metre needs the syllable): زِمَامَهُ -> زِمَامَهُو, التَّدَلُّلِ -> التَّدَلُّلِي.
+      Tanwin and sukun endings stay as written."""
+    opts = opts or {}
+    if not opts:
+        return text
+    tag, body = split_tag(text)
+    lead = ''
+    m = re.match(r'^\s*،\s*', body)
+    if m:
+        lead, body = '، ', body[m.end():]
+    tail = ''
+    m = re.search(r'\s*(\.\.\.|…|!)\s*$', body)
+    if m:
+        tail, body = m.group(1), body[:m.start()]
+    if opts.get('inner_pauses') is False:
+        body = re.sub(r'\s*(\.\.\.|…|[،:؛!])\s*', ' ', body).strip()
+    if opts.get('ishba_half') and half == 'a':
+        long_of = {'ُ': 'و', 'ِ': 'ي', 'َ': 'ا'}
+        if body and body[-1] in long_of:
+            body += long_of[body[-1]]
+    if tail == '!' and opts.get('inner_pauses') is False:
+        tail = ''
+    return (('{%s} ' % tag) if tag else '') + lead + body + tail
+
+
 def for_model(text: str, mode: str = 'hamza_split') -> str:
     """Text as the ONNX voice receives it.
     'nfkd': the official Chatterbox preparation (Unicode NFKD: vowel marks first, then hamza), what the model was trained on.

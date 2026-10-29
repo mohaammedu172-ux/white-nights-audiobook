@@ -9,7 +9,11 @@
       "judges": [
         "cohere",
         "clartts"
-      ]
+      ],
+      "recite": {
+        "inner_pauses": false,
+        "ishba_half": true
+      }
     },
     {
       "name": "modern",

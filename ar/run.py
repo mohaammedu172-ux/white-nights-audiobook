@@ -78,6 +78,7 @@ def main():
         for n, a, b in verses:
             if n in keep:
                 for h, t in (('a', a), ('b', b)):
+                    t = tr.recite(t, h, part.get('recite'))  # pause and waqf rules (RULEBOOK rule 32)
                     clips.append((f"{part['name']}_{n:03d}{h}", part, n, h, t))
     print(f"{len(clips)} half-verse clips", flush=True)
 

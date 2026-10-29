@@ -62,6 +62,10 @@ Style tags go at the very start of a half: `{sad} وَلَيْلٍ كَمَوْ�
     - **50 Hz hum.** The main reference recording has mains hum, and the voice copies it louder. It's cut with a steep filter below 75 Hz plus narrow notches at 100 and 150 Hz. The stationary hiss is removed per clip (noisereduce).
     - **Clicks from slowing down and from the volume step.** ffmpeg's atempo clicks where sound meets silence, so each clip is slowed on its own with rubberband before joining. Single-pass loudnorm turned up the hiss in every pause, so it now runs in two passes with one steady gain. Short pops at clip edges are turned down (declick), and fades are soft (raised cosine).
     - A faint room tone between clips was tried and rejected: it only added noise.
+32. **Pauses and waqf (original verses; `"recite"` in job.json).** Mohammed heard the voice stop where the grammar doesn't allow it, without the waqf form (round 5, 29 Oct). Rules:
+    - **No pause inside a half-verse.** A reciter never stops on a vowelled letter mid-phrase, and a pause there breaks the grammar (لَمْ يَعْفُ، رَسْمُهَا: verb cut from its subject) and the metre. Commas, colons, "!" and "..." inside a half are removed; the stretched vowel of a command or call stays (قِفَاا). This replaces rule 11's comma for the original verses.
+    - **The end of the first half gets ishbāʿ, never a sukun.** The vowelled letter at the end of the ʿarūḍ and the ḍarb is lengthened (المرشد الوافي; العروض وموسيقا الشعر; المنجد; quoted in Yamama Literary Forum, 2021), and al-Akhfash's Kitāb al-Qawāfī says chanters lengthen line ends. So زِمَامَهُ → زِمَامَهُو, التَّدَلُّلِ → التَّدَلُّلِي. Tanwin and sukun endings stay as written (the metre counts tanwin as ن).
+    - Pauses fall only between the halves and between verses. The modern version keeps its punctuation for now (it isn't metrical).
 Reference for listening: al-Ḥuṣarī's murattal (Tarteel EveryAyah dataset), on verses with the same sounds: إِيَّاكَ (1:5), عَلَيَّ (15:41), امْرَأَتُ (28:9), حَرِيصٌ / رَءُوفٌ رَحِيمٌ (9:128).
 
 ## Pronunciation score

@@ -1,0 +1,20 @@
+[
+ {"id": 1, "where": "v5b وَتَجَمَّلِي", "section": 2, "criterion": "A7", "source": "ear (29 Oct)", "what": "Slight catch on ل in تَجَمَّلِي; may come from the voice sample or the generation", "status": "open"},
+ {"id": 2, "where": "whole poem", "section": 2, "criterion": "A9", "source": "machine (round 0)", "what": "ظ heard as ض (6 times); ث heard as س or ت", "status": "open"},
+ {"id": 3, "where": "whole poem", "section": 2, "criterion": "A2, A3", "source": "machine (round 0) + ear (rounds 2-4)", "what": "ط/ت and ق/ك swaps; غ weak", "status": "open"},
+ {"id": 4, "where": "whole poem", "section": 2, "criterion": "A6", "source": "ear (rounds 2-3)", "what": "ر not heavy enough where it should be (غَدَائِرُهُ, مُرْجِلِي)", "status": "open"},
+ {"id": 5, "where": "whole poem", "section": 3, "criterion": "B1", "source": "machine (round 0)", "what": "The shadda-hold measure reads 1.0 for human reciters, so it does not capture what the ear hears; rebuild it", "status": "open"},
+ {"id": 6, "where": "كَأَنَّ and key words", "section": 4, "criterion": "C7", "source": "ear (round 4)", "what": "More stress wanted on كَأَنَّ and the key word", "status": "open"},
+ {"id": 7, "where": "whole poem", "section": 4, "criterion": "C5", "source": "ear + machine (29 Oct)", "what": "Long smooth hold of the rhyme not reachable by spelling (ـلِيي doubles the ي, madd adds a syllable); plain ـلِي kept (0.19 s, al-Manṣūr level). A longer hold needs timing control in the voice", "status": "parked (3 attempts)"},
+ {"id": 8, "where": "whole poem", "section": 4, "criterion": "C6", "source": "machine (round 0)", "what": "11 halves still had a pause inside; the gap-closing step did not catch them. Check with the new settings first", "status": "open"},
+ {"id": 9, "where": "whole poem", "section": 4, "criterion": "C8", "source": "machine (round 0)", "what": "11 flat halves (pitch movement under 1.5 semitones)", "status": "open"},
+ {"id": 10, "where": "whole poem", "section": 5, "criterion": "D1", "source": "machine (round 1)", "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used", "status": "parked"},
+ {"id": 11, "where": "v44-47 and other sections", "section": 4, "criterion": "C9", "source": "poem map", "what": "Section moods and current style tags disagree in places (night: only 44-45 tagged sad)", "status": "open"},
+ {"id": 12, "where": "commands (قِفَا، سِيرِي…)", "section": 4, "criterion": "C8", "source": "research", "what": "No source gives the intonation of a command; set to falling, provisional", "status": "open"},
+ {"id": 13, "where": "v51 يهزل", "section": 1, "criterion": "C1", "source": "i'rab check", "what": "يهزِل or يهزُل: needs a dictionary check", "status": "open"},
+ {"id": 14, "where": "v21, 38, 42, 52, 73, 75, 77", "section": 1, "criterion": "C1", "source": "i'rab map", "what": "No i'rab found in the scanned book for these verses", "status": "open"},
+ {"id": 15, "where": "phrase boundaries (بِسِقْطِ اللِّوَى | بَيْنَ)", "section": 4, "criterion": "C6", "source": "reference (Āl Rashī)", "what": "Short pause at a phrase boundary inside a half may be allowed; test by A/B", "status": "open"},
+ {"id": 16, "where": "whole poem", "section": 5, "criterion": "D3, F2", "source": "ear (28 Oct)", "what": "Feels like separate blocks; whole-verse takes vs half-verse takes still to be judged", "status": "open"},
+ {"id": 17, "where": "noise, ticks, junk tails", "section": 5, "criterion": "D5", "source": "ear (28 Oct)", "what": "Fixed by the cleanup (rule 31); kept as a regression check", "status": "fixed"},
+ {"id": 18, "where": "rhyme ending", "section": 4, "criterion": "C5", "source": "ear (29 Oct)", "what": "ـلِيي heard as ي ي; fixed by writing ـلِي once", "status": "fixed"}
+]

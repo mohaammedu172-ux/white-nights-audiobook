@@ -198,7 +198,7 @@ def main():
     ap.add_argument('--part', default='original')
     a = ap.parse_args()
     state = json.load(open(os.path.join(a.run_dir, 'state.json')))
-    wav_of = {os.path.basename(p): p for p in glob.glob(os.path.join(a.run_dir, '**', '*.wav'), recursive=True)}
+    wav_of = {os.path.basename(p): p for p in glob.glob(os.path.join(a.run_dir, '**', '*.wav'), recursive=True) + glob.glob(os.path.join(a.run_dir, '**', '*.flac'), recursive=True)}
     acc = collections.defaultdict(int)
     acc['letters'] = collections.defaultdict(lambda: [0, 0])
     acc['swaps'] = collections.Counter()
@@ -236,7 +236,7 @@ def main():
         'counts': {k: len(v) for k, v in tim.items()},
     }
     sec45 = flow_report(clip_rows)
-    out = {'clips': n, 'section1': sec1, 'section3': sec3, 'section4_5': sec45, 'section2_letters': dict(sorted(letters.items(), key=lambda kv: kv[1]['ok%'])),
+    out = {'clips': n, 'per_clip': clip_rows, 'section1': sec1, 'section3': sec3, 'section4_5': sec45, 'section2_letters': dict(sorted(letters.items(), key=lambda kv: kv[1]['ok%'])),
            'section2_swaps': dict(acc['swaps'].most_common(25))}
     json.dump(out, open(os.path.join(a.run_dir, 'sections.json'), 'w'), ensure_ascii=False, indent=1)
     md = [f'# Sections 1 and 2 ({a.part}, {n} half-verses)', '', '## Section 1: grammar and text', '',

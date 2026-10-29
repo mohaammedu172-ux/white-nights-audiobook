@@ -194,7 +194,7 @@ def main():
         f, p = files_pads(parts, section_gap=True)
         wav = os.path.join(out, f"{job['id']}_{tname}.wav")
         build_voice(f, p, wav, tempo=job.get('tempo', 0.8), lead=job.get('lead', 0.8),
-                    smooth=job.get('smooth_joins', True))
+                    smooth=job.get('smooth_joins', True), recital=job.get('recital'))
         to_mp3(wav, wav[:-4] + '.mp3')
         tracks[tname] = wav
 

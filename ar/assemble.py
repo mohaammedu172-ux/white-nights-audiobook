@@ -95,6 +95,54 @@ def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fa
     return a
 
 
+def _xfade_join(x, y, sr, ms=15):
+    n = min(int(ms / 1000 * sr), len(x), len(y))
+    if n < 2:
+        return np.concatenate([x, y])
+    f = _cos_fade(n)
+    mid = x[-n:] * f[::-1] + y[:n] * f
+    return np.concatenate([x[:-n], mid, y[n:]]).astype(np.float32)
+
+
+def shape_recital(a, sr, close_gaps=True, end_hold=1.0, gap_max=0.16, gap_keep=0.07, hold_len=0.2):
+    """Recitation timing on one cleaned clip (RULEBOOK rule 33, targets from the two reference reciters):
+    close_gaps: silences inside the half-verse longer than gap_max are shortened to gap_keep (no stop mid-line).
+    end_hold:   the last hold_len seconds of sound (the final vowel) are stretched by this factor, so the end of each
+                half is held the way reciters hold it (al-Manṣūr 1.3x, Āl Rashī 2.6x an ordinary letter)."""
+    hop = int(0.01 * sr)
+    db = 20 * np.log10(librosa.feature.rms(y=a, frame_length=hop * 4, hop_length=hop)[0] + 1e-9)
+    loud = np.where(db > db.max() - 30)[0]
+    if len(loud) < 10:
+        return a
+    first, last = loud[0], loud[-1]
+    if close_gaps:
+        quiet = db < db.max() - 35
+        cuts, i = [], first
+        while i < last:
+            if quiet[i]:
+                j = i
+                while j < last and quiet[j]:
+                    j += 1
+                if (j - i) * hop / sr > gap_max:
+                    cuts.append((i * hop, j * hop))
+                i = j
+            else:
+                i += 1
+        keep = int(gap_keep * sr)
+        for s, e in reversed(cuts):
+            mid = (s + e) // 2
+            a = _xfade_join(a[:mid - keep // 2], a[mid + keep // 2:], sr)
+        if cuts:  # positions moved: find the last sound again
+            db = 20 * np.log10(librosa.feature.rms(y=a, frame_length=hop * 4, hop_length=hop)[0] + 1e-9)
+            last = np.where(db > db.max() - 30)[0][-1]
+    if end_hold and end_hold > 1.01:
+        e = min(len(a), (last + 2) * hop)
+        s = max(0, e - int(hold_len * sr))
+        held = stretch(a[s:e], sr, 1 / end_hold)
+        a = _xfade_join(_xfade_join(a[:s], held, sr), a[e:], sr)
+    return a.astype(np.float32)
+
+
 def declick(a, sr, frame=0.005, jump_db=8, quiet_db=-25):
     """The voice sometimes pops when it starts or stops (a 5-10 ms burst next to near-silence). Find bursts much
     louder than everything around them, in quiet surroundings, and turn them down to the surrounding level."""
@@ -159,14 +207,17 @@ def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
     os.replace(tmp, wav)
 
 
-def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=None):
+def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=None, recital=None):
     """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change).
     smooth=True: denoised clips with soft fades, and a faint steady room tone under the whole track instead of
     dead digital silence between clips (room_db is relative to full scale, before loudness normalising)."""
     if smooth:  # slow each clip on its own, then join with silence: no slowing-down step ever meets a silence edge
         parts = [np.zeros(int(lead / tempo * sr), np.float32)]
         for f, p in zip(files, pads):
-            parts += [stretch(load_smooth(f, sr), sr, tempo), np.zeros(int(p / tempo * sr), np.float32)]
+            clip = load_smooth(f, sr)
+            if recital:
+                clip = shape_recital(clip, sr, **recital)
+            parts += [stretch(clip, sr, tempo), np.zeros(int(p / tempo * sr), np.float32)]
         sf.write(out_wav, np.concatenate(parts), sr)
         return
     parts = [np.zeros(int(lead * sr), np.float32)]

@@ -25,6 +25,8 @@ jobs:
         verses: ["1-9", "10-18", "19-27", "28-36", "37-45", "46-54", "55-63", "64-72", "73-81"]
     steps:
       - uses: actions/checkout@v4
+      - name: Job file override (export/JOB)
+        run: if [ -f export/JOB ]; then echo "JOB=$(cat export/JOB)" >> "$GITHUB_ENV"; fi
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - name: Install
@@ -49,6 +51,8 @@ jobs:
     timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
+      - name: Job file override (export/JOB)
+        run: if [ -f export/JOB ]; then echo "JOB=$(cat export/JOB)" >> "$GITHUB_ENV"; fi
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - name: Install

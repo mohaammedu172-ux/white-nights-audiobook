@@ -5,7 +5,7 @@ assemble the tracks, mix the music, and write a QA report.
 
 Safe to re-run: finished clips and judge results are kept in <out>/state.json and skipped.
 """
-import argparse, csv, glob, json, os, shutil, time
+import argparse, csv, re, glob, json, os, shutil, time
 from . import text_rules as tr
 from .assemble import build_voice, to_mp3, mix_music, shape
 
@@ -31,6 +31,20 @@ def parse_range(s, all_nums):
 def score_of(res, judges):
     accs = [res['judges'][j]['word_acc'] for j in judges if j in res.get('judges', {})]
     return sum(accs) / len(accs) if accs else 0.0
+
+
+def pick_score(res, judges, script):
+    """Choosing between good takes (RULEBOOK rule 34): words heard, then letters and vowel marks heard by the
+    ClArTTS letter judge, minus near-letter swaps (ت/ط, ق/ك, ظ/ض ...) and a rhyme said twice (heard يّ or يا at the end)."""
+    words = score_of(res, judges)
+    heard = res.get('judges', {}).get('clartts', {}).get('heard')
+    if not heard:
+        return words
+    from .autojudge import text_scores
+    t = text_scores(tr.split_tag(script)[1], heard)
+    doubled = bool(re.search(r'ي[\u064B-\u0652]*\u0651[\u064B-\u0652]*\s*$|ي\u064E?ا\s*$', heard.strip()))
+    return (0.5 * words + 0.3 * t['letters'] + 0.2 * (t['marks'] or 0)
+            - 0.1 * t['confusions'] - 0.2 * doubled)
 
 
 def main():
@@ -164,7 +178,7 @@ def main():
     # ---- choose best take per clip ----
     for key, s in state.items():
         ok = [tk for tk in s['takes'] if tk['hit_stop']] or s['takes']
-        best = max(ok, key=lambda tk: (score_of(tk, s['judges_wanted']), -tk['attempt']))
+        best = max(ok, key=lambda tk: (pick_score(tk, s['judges_wanted'], s['script']), -tk['attempt']))
         s['chosen'] = best['wav']
         s['score'] = round(score_of(best, s['judges_wanted']), 3)
         s['flag'] = (not args.no_judge) and (s['score'] < pass_acc or not best['hit_stop'])

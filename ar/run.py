@@ -44,7 +44,7 @@ def pick_score(res, judges, script):
     t = text_scores(tr.split_tag(script)[1], heard)
     doubled = bool(re.search(r'ي[\u064B-\u0652]*\u0651[\u064B-\u0652]*\s*$|ي\u064E?ا\s*$', heard.strip()))
     return (0.5 * words + 0.3 * t['letters'] + 0.2 * (t['marks'] or 0)
-            - 0.1 * t['confusions'] - 0.2 * doubled)
+            - 0.2 * doubled)  # swap alarms dropped: the ear found all 14 checked alarms correct (30 Oct)
 
 
 def main():

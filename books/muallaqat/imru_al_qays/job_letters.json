@@ -59,8 +59,7 @@
   "engine": "torch",
   "takes": 6,
   "tajweed": {
-    "tanwin": true,
-    "shadda": "double"
+    "tanwin": true
   },
   "cfg_weight": 0.3
 }

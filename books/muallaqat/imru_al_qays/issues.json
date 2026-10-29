@@ -14,8 +14,8 @@
   "section": 2,
   "criterion": "A9",
   "source": "machine (round 0)",
-  "what": "ظ heard as ض (6 times); ث heard as س or ت. Round 2: ث 72→84%; ظ unchanged at 33% (ظ→ض ×6): picking alone does not fix it",
-  "status": "open"
+  "what": "ظ heard as ض (6 times); ث heard as س or ت. Round 2: ث 72→84%; ظ unchanged at 33% (ظ→ض ×6): picking alone does not fix it. Ear check (30 Oct): all 6 ظ alarms (ظَبْيٍ، حَنْظَلِي، فَظَلَّ) and the ث alarm sound right: the judge is wrong on these",
+  "status": "closed (judge false alarm)"
  },
  {
   "id": 3,
@@ -23,8 +23,8 @@
   "section": 2,
   "criterion": "A2, A3",
   "source": "machine (round 0) + ear (rounds 2-4)",
-  "what": "ط/ت and ق/ك swaps; غ weak. Round 2 (letter-based picking): ط 81→92%, ت 95→99%, ق 88→89% (ق→ك ×4 remain)",
-  "status": "open"
+  "what": "ط/ت and ق/ك swaps; غ weak. Round 2 (letter-based picking): ط 81→92%, ت 95→99%, ق 88→89% (ق→ك ×4 remain). Ear check (30 Oct): all ق, ط and س alarms sound right (8 of 8)",
+  "status": "closed (judge false alarm)"
  },
  {
   "id": 4,
@@ -185,8 +185,8 @@
   "section": 3,
   "criterion": "B1",
   "source": "ear (flag listen, round 2)",
-  "what": "Shadda said as the letter twice (تمط طى، حط طه، ص ص). The written-out shadda (letter + sukun + letter) splits stop and hiss letters; the letter judge hears it too (حَطَّطَّهُ، تَمَطَّطَا)",
-  "status": "open"
+  "what": "Shadda said as the letter twice (تمط طى، حط طه، ص ص). The written-out shadda (letter + sukun + letter) splits stop and hiss letters; the letter judge hears it too (حَطَّطَّهُ، تَمَطَّطَا). Round 3 A/B: held-letters-only beat the current spelling on 3 lines, tied on the rest; plain shadda tied with it. Plain shadda adopted (fewest doublings by the judge)",
+  "status": "fixed (to confirm in the next full run)"
  },
  {
   "id": 22,
@@ -195,7 +195,7 @@
   "criterion": "B1, B2",
   "source": "ear (flag listen, round 2)",
   "what": "ق with shadda and tanwin: the tanwin is lost and ق heard as ك (judge: بِشَكَّكٍّ)",
-  "status": "open"
+  "status": "improved (held-letters-only won the A/B on 17b)"
  },
  {
   "id": 23,
@@ -205,5 +205,32 @@
   "source": "ear (flag listen, round 2)",
   "what": "Noise flagged",
   "status": "open"
+ },
+ {
+  "id": 24,
+  "where": "v78b فَلْكَةُ",
+  "section": 3,
+  "criterion": "B1",
+  "source": "ear (letters check, 30 Oct)",
+  "what": "A shadda is heard on ك in فَلْكَةُ, which has none",
+  "status": "open"
+ },
+ {
+  "id": 25,
+  "where": "v45a لَمَّا",
+  "section": 3,
+  "criterion": "B1",
+  "source": "ear (shadda A/B, 30 Oct)",
+  "what": "م said twice in لَمَّا in both written-out spellings; plain shadda should fix it, check in the next run",
+  "status": "open"
+ },
+ {
+  "id": 26,
+  "where": "letter judge",
+  "section": 2,
+  "criterion": "A1-A16",
+  "source": "ear vs machine (30 Oct)",
+  "what": "The letter judge raised 14 swap alarms; the ear found all 14 correct. Swap alarms no longer count when choosing takes",
+  "status": "fixed"
  }
 ]

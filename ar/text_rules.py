@@ -143,6 +143,7 @@ def tajweed(text, opts=None):
     wasl    - يَا + a word starting with همزة الوصل joins as it is said (يَا امْرَأَ → يَمْرَأَ)
     shadda_y - ي/و with shadda spelled as held + released: 'split' (عَلَيْ يَ) or 'double' (عَلَيْيَّ)
     shadda  - 'double': every shadda written as letter+sukun then the letter with shadda (إِنْنَّكَ)
+    shadda_letters - with 'double': only these letters are written out (others keep the plain shadda)
     opts: dict like {"tanwin": true, "wasl": false, "shadda_y": null}."""
     if not opts:
         return text
@@ -162,7 +163,10 @@ def tajweed(text, opts=None):
             if re.match(r'^(?:[وفبكل]?َ?|[وفبكل]ِ?)ال', w):  # sun-letter shadda after ال stays as written
                 pre = re.match(r'^(.*?ال.)', w).group(1)
                 return pre + dbl(w[len(pre):]) if len(w) > len(pre) else w
-            return re.sub('([ء-ي])(?:ّ([ً-ِ])|([ً-ِ])ّ)', lambda m: f'{m.group(1)}ْ{m.group(1)}ّ{m.group(2) or m.group(3)}', w)
+            only = opts.get('shadda_letters')  # e.g. 'لمنريو': only these letters get the written-out shadda (rule 35)
+            return re.sub('([ء-ي])(?:ّ([ً-ِ])|([ً-ِ])ّ)',
+                          lambda m: (f'{m.group(1)}ْ{m.group(1)}ّ{m.group(2) or m.group(3)}'
+                                     if not only or m.group(1) in only else m.group(0)), w)
         body = ' '.join(dbl(w) for w in ws)
     if opts.get('tanwin'):
         ws = body.split(' ')

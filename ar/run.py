@@ -90,7 +90,8 @@ def main():
             if job.get('engine') == 'torch':  # PyTorch Chatterbox, optionally with our retrained adapter
                 from .tts_torch import VoiceTorch
                 ad = job.get('adapter')
-                voice = VoiceTorch(os.path.join(repo, job['voice']), adapter=os.path.join(repo, ad) if ad else None)
+                voice = VoiceTorch(os.path.join(repo, job['voice']), adapter=os.path.join(repo, ad) if ad else None,
+                                   cfg_weight=job.get('cfg_weight', 0.5))
             else:
                 from .tts import Voice
                 voice = Voice(os.path.join(repo, job['voice']))

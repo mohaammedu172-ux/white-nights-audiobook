@@ -14,7 +14,7 @@
   "section": 2,
   "criterion": "A9",
   "source": "machine (round 0)",
-  "what": "ظ heard as ض (6 times); ث heard as س or ت. Round 2: ث 72→84%; ظ unchanged at 33% (ظ→ض ×6): picking alone does not fix it",
+  "what": "ظ heard as ض (6 times); ث heard as س or ت. Round 2: ث 72→84%; ظ unchanged at 33% (ظ→ض ×6): picking alone does not fix it. Ear (flag listen): no letter problems flagged",
   "status": "open"
  },
  {
@@ -23,7 +23,7 @@
   "section": 2,
   "criterion": "A2, A3",
   "source": "machine (round 0) + ear (rounds 2-4)",
-  "what": "ط/ت and ق/ك swaps; غ weak. Round 2 (letter-based picking): ط 81→92%, ت 95→99%, ق 88→89% (ق→ك ×4 remain)",
+  "what": "ط/ت and ق/ك swaps; غ weak. Round 2 (letter-based picking): ط 81→92%, ت 95→99%, ق 88→89% (ق→ك ×4 remain). Ear (flag listen): no letter problems flagged",
   "status": "open"
  },
  {
@@ -178,5 +178,32 @@
   "source": "machine (round 2)",
   "what": "Endings 89→95% and tanwin 84→97% after picking takes by letters and marks",
   "status": "fixed"
+ },
+ {
+  "id": 21,
+  "where": "v45a تَمَطَّى, v53b حَطَّهُ, v58b مُوَصَّلِ, v74a يَسُحُّ",
+  "section": 3,
+  "criterion": "B1",
+  "source": "ear (flag listen, round 2)",
+  "what": "Shadda said as the letter twice (تمط طى، حط طه، ص ص). The written-out shadda (letter + sukun + letter) splits stop and hiss letters; the letter judge hears it too (حَطَّطَّهُ، تَمَطَّطَا)",
+  "status": "open"
+ },
+ {
+  "id": 22,
+  "where": "v17b بِشِقٍّ … شِقُّهَا",
+  "section": 3,
+  "criterion": "B1, B2",
+  "source": "ear (flag listen, round 2)",
+  "what": "ق with shadda and tanwin: the tanwin is lost and ق heard as ك (judge: بِشَكَّكٍّ)",
+  "status": "open"
+ },
+ {
+  "id": 23,
+  "where": "v62a كَأَنَّ دِمَاءَ الْهَادِيَاتِ",
+  "section": 5,
+  "criterion": "D5",
+  "source": "ear (flag listen, round 2)",
+  "what": "Noise flagged",
+  "status": "open"
  }
 ]

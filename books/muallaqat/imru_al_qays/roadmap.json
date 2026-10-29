@@ -34,7 +34,7 @@
     "A1-A16"
    ],
    "exit": "No letter swap in the kept takes (judge); Mohammed's flag pass finds no letter problem in a full listen",
-   "status": "next"
+   "status": "met (round 2: no letter flags by ear; ظ still weak for the machine judge only)"
   },
   {
    "id": 3,
@@ -44,7 +44,7 @@
     "A5"
    ],
    "exit": "Shadda, tanwin, long vowels and qalqala pass the rebuilt checks; no ear flags on them",
-   "status": "waiting"
+   "status": "next (round 3: shadda spelling)"
   },
   {
    "id": 4,
@@ -86,7 +86,8 @@
   "no dropped or repeated words",
   "endings and tanwin no lower than the last kept round",
   "cloud run complete: every clip kept and on disk, a track made, under 20% of clips flagged (else the run fails)",
-  "clip export not empty (else the export fails)"
+  "clip export not empty (else the export fails)",
+  "no doubled consonant at a shadda (letter judge must not hear the letter twice, e.g. طّط)"
  ],
  "run_history": [
   "28 Oct: run failed in 1.5 min (torchaudio from PyPI did not match the CPU torch); fixed by reinstalling both from the CPU index",

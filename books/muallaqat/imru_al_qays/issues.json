@@ -185,8 +185,8 @@
   "section": 3,
   "criterion": "B1",
   "source": "ear (flag listen, round 2)",
-  "what": "Shadda said as the letter twice (تمط طى، حط طه، ص ص). The written-out shadda (letter + sukun + letter) splits stop and hiss letters; the letter judge hears it too (حَطَّطَّهُ، تَمَطَّطَا). Round 3 A/B: held-letters-only beat the current spelling on 3 lines, tied on the rest; plain shadda tied with it. Plain shadda adopted (fewest doublings by the judge)",
-  "status": "fixed (to confirm in the next full run)"
+  "what": "Shadda said as the letter twice (تمط طى، حط طه، ص ص). The written-out shadda (letter + sukun + letter) splits stop and hiss letters; the letter judge hears it too (حَطَّطَّهُ، تَمَطَّطَا). Round 3 A/B: held-letters-only beat the current spelling on 3 lines, tied on the rest; plain shadda tied with it. Plain shadda adopted (fewest doublings by the judge). Shadda check (30 Oct, plain shadda): correct by ear",
+  "status": "fixed"
  },
  {
   "id": 22,
@@ -194,8 +194,8 @@
   "section": 3,
   "criterion": "B1, B2",
   "source": "ear (flag listen, round 2)",
-  "what": "ق with shadda and tanwin: the tanwin is lost and ق heard as ك (judge: بِشَكَّكٍّ)",
-  "status": "improved (held-letters-only won the A/B on 17b)"
+  "what": "ق with shadda and tanwin: the tanwin is lost and ق heard as ك (judge: بِشَكَّكٍّ). Shadda check (30 Oct, plain shadda): correct by ear",
+  "status": "fixed"
  },
  {
   "id": 23,
@@ -212,8 +212,8 @@
   "section": 3,
   "criterion": "B1",
   "source": "ear (letters check, 30 Oct)",
-  "what": "A shadda is heard on ك in فَلْكَةُ, which has none",
-  "status": "open"
+  "what": "A shadda is heard on ك in فَلْكَةُ, which has none. Shadda check (30 Oct, plain shadda): correct by ear",
+  "status": "fixed"
  },
  {
   "id": 25,
@@ -221,8 +221,8 @@
   "section": 3,
   "criterion": "B1",
   "source": "ear (shadda A/B, 30 Oct)",
-  "what": "م said twice in لَمَّا in both written-out spellings; plain shadda should fix it, check in the next run",
-  "status": "open"
+  "what": "م said twice in لَمَّا in both written-out spellings; plain shadda should fix it, check in the next run. Shadda check (30 Oct, plain shadda): correct by ear",
+  "status": "fixed"
  },
  {
   "id": 26,
@@ -232,5 +232,50 @@
   "source": "ear vs machine (30 Oct)",
   "what": "The letter judge raised 14 swap alarms; the ear found all 14 correct. Swap alarms no longer count when choosing takes",
   "status": "fixed"
+ },
+ {
+  "id": 27,
+  "where": "v10a رُبَّ",
+  "section": 5,
+  "criterion": "D5",
+  "source": "ear (shadda check, 30 Oct)",
+  "what": "tick heard with رُبَّ",
+  "status": "open"
+ },
+ {
+  "id": 28,
+  "where": "v56b after الْمُرَكَّلِي",
+  "section": 5,
+  "criterion": "D5",
+  "source": "ear (shadda check, 30 Oct)",
+  "what": "annoying sound after the word",
+  "status": "open"
+ },
+ {
+  "id": 29,
+  "where": "v73a عَلَى",
+  "section": 5,
+  "criterion": "D5",
+  "source": "ear (shadda check, 30 Oct)",
+  "what": "annoying sound on عَلَى",
+  "status": "open"
+ },
+ {
+  "id": 30,
+  "where": "v74a before يَسُحُّ",
+  "section": 5,
+  "criterion": "D5",
+  "source": "ear (shadda check, 30 Oct)",
+  "what": "annoying sound before the word",
+  "status": "open"
+ },
+ {
+  "id": 31,
+  "where": "whole poem",
+  "section": 3,
+  "criterion": "B2, C1",
+  "source": "machine (shadda run)",
+  "what": "Endings 95→93% and tanwin 97→92% after dropping the swap alarms from take picking (or the missing verses 19-27); check before the next full run",
+  "status": "open"
  }
 ]

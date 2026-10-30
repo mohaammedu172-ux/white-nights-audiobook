@@ -66,6 +66,14 @@ jobs:
         with: {path: shards}
       - name: Merge and assemble (redoes any clip a shard missed)
         run: python -m ar.run "$JOB" --out out/all --merge shards/*
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: merged
+          path: |
+            out/all/state.json
+            out/all/clips
+          retention-days: 7
       - name: Check the run is complete (fails loudly instead of saving a half-empty result)
         run: |
           python - <<'EOF'

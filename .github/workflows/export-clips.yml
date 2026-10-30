@@ -29,7 +29,9 @@ jobs:
           python - <<'EOF'
           import glob, json, os, subprocess
           state = {}
-          for p in glob.glob('shards/*/state.json'):
+          # the merged result (after the assemble step redid anything a shard missed) wins when present
+          paths = glob.glob('shards/merged/state.json') or glob.glob('shards/*/state.json')
+          for p in paths:
               d = os.path.dirname(p)
               for k, v in json.load(open(p)).items():
                   if v.get('chosen') and os.path.exists(os.path.join(d, 'clips', os.path.basename(v['chosen']))):

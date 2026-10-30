@@ -93,6 +93,7 @@
   "28 Oct: run failed in 1.5 min (torchaudio from PyPI did not match the CPU torch); fixed by reinstalling both from the CPU index",
   "26 Oct: one fix run cancelled by hand",
   "29 Oct: clip export reported success but saved 0 clips (wrong folder); now fails when empty",
-  "Typical full run: 2.5 h for the slowest part of 9 (limit 5.7 h), 4-5% of clips flagged, no runaway takes"
+  "Typical full run: 2.5 h for the slowest part of 9 (limit 5.7 h), 4-5% of clips flagged, no runaway takes",
+  "29-30 Oct: one part (verses 19-27) was cancelled by GitHub after 85 min ('The operation was canceled', no error from our code); the assemble step redoes missing clips. The merged clips are now saved too, so the export includes them"
  ]
 }

@@ -304,5 +304,14 @@
   "source": "ear (qalqala check, 1 Nov)",
   "what": "Qalqala weak or missing in 9 of 10 halves (only 72a قَعَدْتُ clear), heard next to al-Manṣūr and Āl Rashī. Attempt 1: spelling test, current vs sukun dropped (bare) vs a light echo vowel (echo), on 5 halves. Result (1 Nov, blind): sukun dropped won 2 (1a نَبْكِ، 53a مُقْبِلٍ مُدْبِرٍ), current won 1 (28a خَرَجْتُ), echo vowel won none; 14a وَقَدْ and 16a قَدْ: all three bad. Echo rejected; sukun-dropped promising mid-word, word-final قَدْ unsolved. Attempt 2 (1 Nov, blind, 8 new halves): current spelling won 3 (7a, 12b, 33a), sukun dropped won 1 (15b), rest tied or no pick; over both rounds current 4, sukun dropped 3: not adopted. Louder د release on قَدْ (14a, 16a, +6/+10 dB): no difference heard. Ear notes point elsewhere: \"a bit fast\" (7a, 15b, 44b), \"too many pauses\" / \"pause not needed\" (14a, 16a, 59b). Parked: retest qalqala after the pace and pause fixes, since a rushed delivery leaves no time for the release",
   "status": "parked (2 attempts; retest after section 4)"
+ },
+ {
+  "id": 35,
+  "where": "shadda and tanwin checks (30 Oct, 1 Nov)",
+  "section": 3,
+  "criterion": "B1, B2",
+  "source": "Mohammed (1 Nov)",
+  "what": "Those checks passed only because there was nothing to compare against; redo them next to al-Manṣūr and Āl Rashī",
+  "status": "open"
  }
 ]

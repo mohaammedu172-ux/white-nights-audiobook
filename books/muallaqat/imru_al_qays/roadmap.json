@@ -45,7 +45,7 @@
     "A5"
    ],
    "exit": "Shadda, tanwin, long vowels and qalqala pass the rebuilt checks; no ear flags on them",
-   "status": "in progress (shadda, tanwin done by ear; long vowels parked: not audible; left: qalqala)"
+   "status": "done for now (shadda, tanwin fixed by ear; long vowels and qalqala parked: not fixable by spelling or audio edits, retest after section 4)"
   },
   {
    "id": 4,
@@ -55,7 +55,7 @@
     "F1"
    ],
    "exit": "No pauses inside a half; rhyme and half-ends held within the reciters' range without doubling; tone matches sentence type",
-   "status": "in progress (round 1 timing approved)"
+   "status": "next (round 1 timing approved; open: pauses inside halves, pace, flat pitch)"
   },
   {
    "id": 5,

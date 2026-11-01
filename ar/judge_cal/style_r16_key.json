@@ -1,0 +1,16 @@
+{
+ "awe": {
+  "A": "full",
+  "B": "plain",
+  "C": "sample"
+ },
+ "proud": {
+  "A": "full",
+  "B": "plain",
+  "C": "sample"
+ },
+ "playful": {
+  "A": "plain",
+  "B": "sample"
+ }
+}

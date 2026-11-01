@@ -86,7 +86,7 @@
   "section": 5,
   "criterion": "D1",
   "source": "machine (round 1)",
-  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\". Ear (1 Nov, qalqala check): \"a bit fast\" on 7a, 15b, 44b",
+  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\". Ear (1 Nov, qalqala check): \"a bit fast\" on 7a, 15b, 44b. Ear (1 Nov, shadda/tanwin recheck): \"some verses are fast\"",
   "status": "parked"
  },
  {
@@ -311,7 +311,7 @@
   "section": 3,
   "criterion": "B1, B2",
   "source": "Mohammed (1 Nov)",
-  "what": "Those checks passed only because there was nothing to compare against; redo them next to al-Manṣūr and Āl Rashī",
-  "status": "open"
+  "what": "Those checks passed only because there was nothing to compare against; redo them next to al-Manṣūr and Āl Rashī. Recheck (1 Nov, with references): shadda 5 of 5 and tanwin 5 of 5 correct",
+  "status": "closed"
  }
 ]

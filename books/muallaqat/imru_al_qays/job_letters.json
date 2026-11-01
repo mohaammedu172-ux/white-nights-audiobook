@@ -38,20 +38,15 @@
     },
     "awe": {
       "ref": "voices/clartts_male_calm.wav",
-      "exaggeration": 0.35,
-      "speed": 0.92,
-      "semitones": -1
+      "exaggeration": 0.35
     },
     "sad": {
       "ref": "voices/clartts_male_calm.wav",
-      "exaggeration": 0.25,
-      "speed": 0.92,
-      "semitones": -0.5
+      "exaggeration": 0.25
     },
     "proud": {
       "ref": "voices/clartts_male_lively.wav",
       "exaggeration": 0.45,
-      "speed": 1.08,
       "gain_db": 2
     }
   },
@@ -83,5 +78,6 @@
       "verse": 1.2,
       "why": "ear 1 Nov: longer rests chosen for verses 52-55; applied to the horse section, confirm in the full run"
     }
-  ]
+  ],
+  "tone_match": true
 }

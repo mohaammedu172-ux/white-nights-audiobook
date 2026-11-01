@@ -320,8 +320,8 @@
   "section": 4,
   "criterion": "C9, A1",
   "source": "ear (rests check, 1 Nov)",
-  "what": "The voice changes suddenly at كَلَمْعِ الْيَدَيْنِ: the awe style (calm voice sample, 1 semitone lower, 8% slower) makes it deep and hides the letters. Unexpected change, less clear articulation. Style test (1 Nov, blind): awe with the calm sample only (no pitch drop or slowing) best, but still \"muffled\"; playful and proud: muffled or distant in every version, plain voice included",
-  "status": "open"
+  "what": "The voice changes suddenly at كَلَمْعِ الْيَدَيْنِ: the awe style (calm voice sample, 1 semitone lower, 8% slower) makes it deep and hides the letters. Unexpected change, less clear articulation. Style test (1 Nov, blind): awe with the calm sample only (no pitch drop or slowing) best, but still \"muffled\"; playful and proud: muffled or distant in every version, plain voice included. Fixed by rule 38 (no pitch drop or slowing in the styles); confirm in the next full run",
+  "status": "fix adopted (confirm next run)"
  },
  {
   "id": 37,
@@ -329,7 +329,7 @@
   "section": 5,
   "criterion": "D2, D4, F2",
   "source": "ear (style check, 1 Nov) + machine",
-  "what": "\"Muffled or far away\": the cause is take-to-take brightness, not the styles. Energy above 4 kHz varies by ~10 dB between takes (median -27 dB; 32 of 144 below -30), in every style and in the plain voice. A dull take next to a bright one sounds distant and may be part of the separate-blocks feel (issue 16). Test: ar/tone.py brings every clip to one brightness with a gentle high shelf. Ear (1 Nov): matched brightness chosen for verses 1-4; the three passages with a style change \"bad\" either way. Mohammed: the voice itself sounds echoing or suppressed but acceptable; at the switch to the deeper voice that multiplies and hurts the words. Measured: the main voice sample is the dullest of the three (-29 dB above 4 kHz) and has the highest noise floor (-29 dB vs -47 for the calm sample), so the room sound is copied into every line. Test: cleaned main sample, and the calm sample as the one voice for the whole poem, no style switching",
-  "status": "open"
+  "what": "\"Muffled or far away\": the cause is take-to-take brightness, not the styles. Energy above 4 kHz varies by ~10 dB between takes (median -27 dB; 32 of 144 below -30), in every style and in the plain voice. A dull take next to a bright one sounds distant and may be part of the separate-blocks feel (issue 16). Test: ar/tone.py brings every clip to one brightness with a gentle high shelf. Ear (1 Nov): matched brightness chosen for verses 1-4; the three passages with a style change \"bad\" either way. Mohammed: the voice itself sounds echoing or suppressed but acceptable; at the switch to the deeper voice that multiplies and hurts the words. Measured: the main voice sample is the dullest of the three (-29 dB above 4 kHz) and has the highest noise floor (-29 dB vs -47 for the calm sample), so the room sound is copied into every line. Test: cleaned main sample, and the calm sample as the one voice for the whole poem, no style switching. Voice sample check (1 Nov): current sample won on verses 1-2, calm sample on 69-71; cleaned sample lost both. Adopted (rule 38): tone matching on every clip; styles keep their sample without pitch or speed shifts. Confirm in the next full run",
+  "status": "fix adopted (confirm next run)"
  }
 ]

@@ -59,7 +59,7 @@ def speech_end(path):
     return min(len(a) / 16000, i / 100 + 0.08)
 
 
-def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fade_out=0.16, cut_tail=True):
+def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fade_out=0.16, cut_tail=True, tone=False):
     """Like load_clean, but for joins you don't hear (RULEBOOK rule 31): light denoise of the clip first, so the hiss
     doesn't switch on and off with every clip; then soft (raised-cosine) fades that start before the first sound and
     end after the last. A clip the voice cut off mid-sound still gets the full fade, ending at the clip's end."""
@@ -73,6 +73,9 @@ def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fa
     # the main reference recording has a 50 Hz mains hum and the voice copies it (louder): cut below 75 Hz
     # steeply, and notch the hum's 100 and 150 Hz overtones narrowly so the voice itself is untouched
     a = sosfiltfilt(butter(6, 75 / (sr / 2), 'highpass', output='sos'), a)
+    if tone:  # same brightness for every clip (RULEBOOK rule 38): a dull take next to a bright one sounds muffled
+        from .tone import match
+        a, _ = match(a.astype(np.float32), sr)
     for f0 in (100, 150):
         b, c = iirnotch(f0, 30, sr)
         a = filtfilt(b, c, a)
@@ -207,14 +210,14 @@ def shape(wav, speed=1.0, semitones=0.0, gain_db=0.0):
     os.replace(tmp, wav)
 
 
-def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=None, recital=None):
+def build_voice(files, pads, out_wav, tempo=0.8, lead=0.8, sr=44100, smooth=False, room_db=None, recital=None, tone=False):
     """files[i] is followed by pads[i] seconds of silence (pads are before the tempo change).
     smooth=True: denoised clips with soft fades, and a faint steady room tone under the whole track instead of
     dead digital silence between clips (room_db is relative to full scale, before loudness normalising)."""
     if smooth:  # slow each clip on its own, then join with silence: no slowing-down step ever meets a silence edge
         parts = [np.zeros(int(lead / tempo * sr), np.float32)]
         for f, p in zip(files, pads):
-            clip = load_smooth(f, sr)
+            clip = load_smooth(f, sr, tone=tone)
             if recital:
                 clip = shape_recital(clip, sr, **recital)
             parts += [stretch(clip, sr, tempo), np.zeros(int(p / tempo * sr), np.float32)]

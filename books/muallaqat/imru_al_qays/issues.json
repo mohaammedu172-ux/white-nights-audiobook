@@ -275,7 +275,16 @@
   "section": 3,
   "criterion": "B2, C1",
   "source": "machine (shadda run)",
-  "what": "Endings 95→93% and tanwin 97→92% after dropping the swap alarms from take picking (or the missing verses 19-27); check before the next full run",
+  "what": "Endings 95→93% and tanwin 97→92% after dropping the swap alarms from take picking (or the missing verses 19-27); check before the next full run. Ear check (1 Nov): tanwin clear in 10 of 11 halves, including the 9 the judge said got worse: judge noise, picking rule kept",
+  "status": "closed"
+ },
+ {
+  "id": 32,
+  "where": "v6a عَبْرَةٌ مُهَرَاقَةٌ…",
+  "section": 3,
+  "criterion": "B2",
+  "source": "ear (tanwin check, 1 Nov)",
+  "what": "Tanwin heard as عبرتو مهراقتو: the ن is missing, although it is written out (عَبْرَتُنْ مُهَرَاقَتُنْ…). This half uses the sad style (calm voice, trailing …), which may soften it",
   "status": "open"
  }
 ]

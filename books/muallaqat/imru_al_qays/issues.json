@@ -320,7 +320,16 @@
   "section": 4,
   "criterion": "C9, A1",
   "source": "ear (rests check, 1 Nov)",
-  "what": "The voice changes suddenly at كَلَمْعِ الْيَدَيْنِ: the awe style (calm voice sample, 1 semitone lower, 8% slower) makes it deep and hides the letters. Unexpected change, less clear articulation",
+  "what": "The voice changes suddenly at كَلَمْعِ الْيَدَيْنِ: the awe style (calm voice sample, 1 semitone lower, 8% slower) makes it deep and hides the letters. Unexpected change, less clear articulation. Style test (1 Nov, blind): awe with the calm sample only (no pitch drop or slowing) best, but still \"muffled\"; playful and proud: muffled or distant in every version, plain voice included",
+  "status": "open"
+ },
+ {
+  "id": 37,
+  "where": "whole poem (32 of 144 kept clips)",
+  "section": 5,
+  "criterion": "D2, D4, F2",
+  "source": "ear (style check, 1 Nov) + machine",
+  "what": "\"Muffled or far away\": the cause is take-to-take brightness, not the styles. Energy above 4 kHz varies by ~10 dB between takes (median -27 dB; 32 of 144 below -30), in every style and in the plain voice. A dull take next to a bright one sounds distant and may be part of the separate-blocks feel (issue 16). Test: ar/tone.py brings every clip to one brightness with a gentle high shelf",
   "status": "open"
  }
 ]

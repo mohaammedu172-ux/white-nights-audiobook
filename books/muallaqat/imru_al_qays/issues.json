@@ -59,7 +59,7 @@
   "section": 4,
   "criterion": "C5",
   "source": "ear + machine (29 Oct)",
-  "what": "Long smooth hold of the rhyme not reachable by spelling (ـلِيي doubles the ي, madd adds a syllable); plain ـلِي kept (0.19 s, al-Manṣūr level). A longer hold needs timing control in the voice",
+  "what": "Long smooth hold of the rhyme not reachable by spelling (ـلِيي doubles the ي, madd adds a syllable); plain ـلِي kept (0.19 s, al-Manṣūr level). A longer hold needs timing control in the voice. 1 Nov: last word slowed 1.35x in one continuous pass (no ticks) not chosen in either passage",
   "status": "parked (3 attempts)"
  },
  {
@@ -86,8 +86,8 @@
   "section": 5,
   "criterion": "D1",
   "source": "machine (round 1)",
-  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\". Ear (1 Nov, qalqala check): \"a bit fast\" on 7a, 15b, 44b. Ear (1 Nov, shadda/tanwin recheck): \"some verses are fast\". Attempt (1 Nov): slower voice sample (85%, 75% speed) slows speech to ~6.3 letters/s (reciters 5.6-6.4) with no audio stretching; cfg 0.2 barely changes it. Blind ear check, 8 halves: current speed chosen 4 times, 85% sample 2, 75% never, 1 tie, 1 no pick. Slower letters alone are not what the ear wants; ask what \"fast\" means. Mohammed (1 Nov): \"fast\" means short gaps between halves and verses, endings cut short, and the same speed throughout; not the letter rate. Note: our verses 1-4 already last 33 s vs al-Manṣūr 29.7 s, Āl Rashī 45.3 s. Test: longer gaps (1.0/1.5 s) and the last word of each half slowed 1.35x in one continuous pass",
-  "status": "open (attempt 1: slower letters not preferred)"
+  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\". Ear (1 Nov, qalqala check): \"a bit fast\" on 7a, 15b, 44b. Ear (1 Nov, shadda/tanwin recheck): \"some verses are fast\". Attempt (1 Nov): slower voice sample (85%, 75% speed) slows speech to ~6.3 letters/s (reciters 5.6-6.4) with no audio stretching; cfg 0.2 barely changes it. Blind ear check, 8 halves: current speed chosen 4 times, 85% sample 2, 75% never, 1 tie, 1 no pick. Slower letters alone are not what the ear wants; ask what \"fast\" means. Mohammed (1 Nov): \"fast\" means short gaps between halves and verses, endings cut short, and the same speed throughout; not the letter rate. Note: our verses 1-4 already last 33 s vs al-Manṣūr 29.7 s, Āl Rashī 45.3 s. Test: longer gaps (1.0/1.5 s) and the last word of each half slowed 1.35x in one continuous pass. Result (1 Nov, blind): verses 1-4 current rests chosen; night verses 44-47 longer rests (1.0/1.5 s) chosen; held endings chosen in neither. Reading: rests should follow the section (longer in the slow, sad night section), not one value for the whole poem",
+  "status": "open (next: rests by section mood)"
  },
  {
   "id": 11,

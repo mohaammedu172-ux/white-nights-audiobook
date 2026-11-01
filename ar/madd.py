@@ -60,3 +60,37 @@ def lengthen(a, sr, spans, factor=1.4, xf=0.012):
         else:
             res = np.r_[res, piece]
     return res
+
+
+def lengthen_map(a, sr, spans, factor=1.3, block=256):
+    """Attempt 2: the same lengthening in ONE continuous pass of the stretcher (real-time mode, its speed changed
+    while it runs: slower inside each long vowel, normal elsewhere), so there are no splices to tick. Needs pylibrb."""
+    import pylibrb
+    if not spans:
+        return a
+    O = pylibrb.Option
+    st = pylibrb.RubberBandStretcher(sr, 1, O.PROCESS_REALTIME | O.ENGINE_FINER | O.FORMANT_PRESERVED
+                                     | O.SMOOTHING_ON, initial_time_ratio=1.0)
+    pad = st.get_preferred_start_pad()
+    delay = st.get_start_delay()
+    x = np.r_[np.zeros(pad, np.float32), a.astype(np.float32), np.zeros(int(0.3 * sr), np.float32)]
+    inside = np.zeros(len(x), bool)
+    for s, e in spans:
+        inside[pad + int(s * sr):pad + int(e * sr)] = True
+    out, pos = [], 0
+    while pos < len(x):
+        blk = x[pos:pos + block]
+        st.time_ratio = factor if inside[pos:pos + len(blk)].mean() > 0.5 else 1.0
+        st.process(blk[None, :].copy(), final=pos + block >= len(x))
+        pos += block
+        n = st.available()
+        if n > 0:
+            out.append(st.retrieve(n)[0])
+    while True:
+        n = st.available()
+        if n <= 0:
+            break
+        out.append(st.retrieve(n)[0])
+    y = np.concatenate(out)[delay:]
+    want = len(a) + sum(int((e - s) * sr * (factor - 1)) for s, e in spans)
+    return y[:want]

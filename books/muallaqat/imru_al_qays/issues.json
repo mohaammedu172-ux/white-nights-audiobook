@@ -77,7 +77,7 @@
   "section": 4,
   "criterion": "C8",
   "source": "machine (round 0)",
-  "what": "11 flat halves (pitch movement under 1.5 semitones). Round 2: 15",
+  "what": "11 flat halves (pitch movement under 1.5 semitones). Round 2: 15. Ear (1 Nov, next to al-Manṣūr and Āl Rashī): 6 of 6 halves \"flat\"; the clearest gap to the reciters",
   "status": "open"
  },
  {
@@ -167,8 +167,8 @@
   "section": 3,
   "criterion": "B5",
   "source": "machine (round 2)",
-  "what": "Long vs short vowel contrast fell from 1.5× to 1.29× with the slower setting (reciters 1.67-1.75×). Attempt 1 (1 Nov): stretch only the long-vowel sounds after the voice is made (ar/madd.py). Measure 1.29→1.43 (+30%) / 1.57 (+50%), but judge tanwin 92→88/86. Blind ear check, 6 halves: the current version chosen or tied in all 6; the stretched ones have tiny ticks at the splices. Rejected",
-  "status": "open (attempt 1 of 3 failed)"
+  "what": "Long vs short vowel contrast fell from 1.5× to 1.29× with the slower setting (reciters 1.67-1.75×). Attempt 1 (1 Nov): stretch only the long-vowel sounds after the voice is made (ar/madd.py). Measure 1.29→1.43 (+30%) / 1.57 (+50%), but judge tanwin 92→88/86. Blind ear check, 6 halves: the current version chosen or tied in all 6; the stretched ones have tiny ticks at the splices. Rejected. Attempt 2 (1 Nov): one continuous stretcher pass (lengthen_map). Measure 1.43 (+30%) / 1.58 (+50%); endings and inner vowels unchanged, tanwin 92→86/91. Blind ear check with the reciters for comparison: all three versions the same in 6 of 6, no ticks, all \"flat\". Length is not what the ear misses; not adopted (no audible gain). The method is kept in ar/madd.py if needed later",
+  "status": "parked (not audible; ear points to flat pitch, issue 9)"
  },
  {
   "id": 20,

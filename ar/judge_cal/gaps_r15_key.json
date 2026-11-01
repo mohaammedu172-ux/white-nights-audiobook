@@ -1,0 +1,27 @@
+{
+ "p3": {
+  "A": "short",
+  "B": "long",
+  "C": "now"
+ },
+ "p4": {
+  "A": "long",
+  "B": "now",
+  "C": "short"
+ },
+ "p5": {
+  "A": "now",
+  "B": "short",
+  "C": "long"
+ },
+ "p6": {
+  "A": "short",
+  "B": "now",
+  "C": "long"
+ },
+ "p7": {
+  "A": "long",
+  "B": "short",
+  "C": "now"
+ }
+}

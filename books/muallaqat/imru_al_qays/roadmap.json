@@ -5,7 +5,8 @@
   "Each round starts with a charter: the section, the criteria in scope, the exit targets, and a cap of 3 attempts per issue.",
   "Every change passes the gate: it improves its own measure, breaks no regression check, and is not contradicted by Mohammed's ear. Otherwise it is reverted.",
   "Every fixed issue becomes a regression check that runs after every recording, so it cannot come back unnoticed.",
-  "An issue that fails 3 attempts is parked with what was tried, and the round moves on."
+  "An issue that fails 3 attempts is parked with what was tried, and the round moves on.",
+  "Every ear check shows al-Manṣūr's and Āl Rashī's reading of the same half next to ours when they have it, for comparison only (not rated, never used to train or clone)"
  ],
  "sections": [
   {

@@ -86,7 +86,7 @@
   "section": 5,
   "criterion": "D1",
   "source": "machine (round 1)",
-  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used",
+  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\"",
   "status": "parked"
  },
  {
@@ -167,8 +167,8 @@
   "section": 3,
   "criterion": "B5",
   "source": "machine (round 2)",
-  "what": "Long vs short vowel contrast fell from 1.5× to 1.29× with the slower setting (reciters 1.67-1.75×)",
-  "status": "open"
+  "what": "Long vs short vowel contrast fell from 1.5× to 1.29× with the slower setting (reciters 1.67-1.75×). Attempt 1 (1 Nov): stretch only the long-vowel sounds after the voice is made (ar/madd.py). Measure 1.29→1.43 (+30%) / 1.57 (+50%), but judge tanwin 92→88/86. Blind ear check, 6 halves: the current version chosen or tied in all 6; the stretched ones have tiny ticks at the splices. Rejected",
+  "status": "open (attempt 1 of 3 failed)"
  },
  {
   "id": 20,
@@ -286,5 +286,14 @@
   "source": "ear (tanwin check, 1 Nov)",
   "what": "Tanwin heard as عبرتو مهراقتو: the ن is missing, although it is written out (عَبْرَتُنْ مُهَرَاقَتُنْ…). This half uses the sad style (calm voice, trailing …), which may soften it. Blind check (1 Nov, 6 new takes: sad style with and without …, plain voice): the ن clear in all 6, so the spelling is fine; the full-run takes were unlucky. Plain voice rated top in 2 of 2 (sad: 1 of 4). Fix: sad tag removed from 6a; confirm in the next full run",
   "status": "fixed (confirm next run)"
+ },
+ {
+  "id": 33,
+  "where": "v15a زِمَامَهُو",
+  "section": 1,
+  "criterion": "C2",
+  "source": "ear (long-vowel check, 1 Nov)",
+  "what": "ز heard with fatha (زَ) instead of kasra (زِمَامَهُو)",
+  "status": "open"
  }
 ]

@@ -1,0 +1,12 @@
+{
+ "p1": {
+  "A": "gaps",
+  "B": "gaps_hold",
+  "C": "now"
+ },
+ "p2": {
+  "A": "now",
+  "B": "gaps",
+  "C": "gaps_hold"
+ }
+}

@@ -200,7 +200,9 @@ def main():
         for pi, pn in enumerate(names):
             for i, (key, h) in enumerate(keys_by_part[pn]):
                 files.append(wav_path(state[key]['chosen']))
-                pads.append(P['half'] if h == 'a' else P['verse'])
+                v = state[key].get('verse')
+                sp = next((x for x in job.get('section_pauses', []) if v is not None and x['verses'][0] <= v <= x['verses'][1]), P)
+                pads.append(sp['half'] if h == 'a' else sp['verse'])  # rests by section (RULEBOOK rule 37)
             if section_gap and pi < len(names) - 1:
                 pads[-1] = P['section']
         return files, pads

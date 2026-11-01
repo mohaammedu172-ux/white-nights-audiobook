@@ -61,5 +61,17 @@
   "tajweed": {
     "tanwin": true
   },
-  "cfg_weight": 0.3
+  "cfg_weight": 0.3,
+  "section_pauses": [
+    {
+      "verses": [
+        44,
+        47
+      ],
+      "name": "night",
+      "half": 0.8,
+      "verse": 1.2,
+      "why": "ear 1 Nov: longer rests chosen for the night verses (1.0/1.5 s after the 0.8 tempo); current rests kept for verses 1-4"
+    }
+  ]
 }

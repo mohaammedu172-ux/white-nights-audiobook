@@ -85,3 +85,5 @@ Reference for listening: al-Ḥuṣarī's murattal (Tarteel EveryAyah dataset), 
 - **Cohere-Speech-Tashkeel-2B** transcribes every clip with vowels.
 - **diactc-wav2vec2-clartts** (trained on classical recitation) also checks the original verses.
 - A clip passes when the judges hear at least 75% of the words. A clip that fails is redone with a different setting (problem-word fixes, then more and less expressive). The best take is kept, and anything still weak is listed in `QA_REPORT.md` for a human ear. When the judges disagree, trust your ear.
+
+37. Rests follow the section, not one value for the poem (1 Nov). Blind test on two passages: the night verses 44-47 took longer rests (1.0 s after a half, 1.5 s after a verse, as heard), the opening verses 1-4 kept the current 0.7/1.0 s. Set per section in the job file ("section_pauses"); each new section's rests are decided by ear next to the reciters. Holding the last word longer (slowed 1.35x) was chosen in neither passage.

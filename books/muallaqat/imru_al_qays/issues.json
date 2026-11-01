@@ -295,5 +295,14 @@
   "source": "ear (long-vowel check, 1 Nov)",
   "what": "ز heard with fatha (زَ) instead of kasra (زِمَامَهُو)",
   "status": "open"
+ },
+ {
+  "id": 34,
+  "where": "whole poem (ق ط ب ج د with sukun)",
+  "section": 3,
+  "criterion": "B6",
+  "source": "ear (qalqala check, 1 Nov)",
+  "what": "Qalqala weak or missing in 9 of 10 halves (only 72a قَعَدْتُ clear), heard next to al-Manṣūr and Āl Rashī. Attempt 1: spelling test, current vs sukun dropped (bare) vs a light echo vowel (echo), on 5 halves",
+  "status": "open"
  }
 ]

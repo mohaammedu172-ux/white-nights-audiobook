@@ -168,6 +168,12 @@ def tajweed(text, opts=None):
                           lambda m: (f'{m.group(1)}ْ{m.group(1)}ّ{m.group(2) or m.group(3)}'
                                      if not only or m.group(1) in only else m.group(0)), w)
         body = ' '.join(dbl(w) for w in ws)
+    q = opts.get('qalqala')  # ق ط ب ج د with sukun: 'bare' drops the sukun mark, 'echo' adds a light echo of the vowel before
+    if q:
+        def qq(m):
+            prev, c = m.group(1), m.group(2)
+            return prev + c + ('' if q == 'bare' else prev[-1])
+        body = re.sub('([َُِ])([قطبجد])ْ', qq, body)
     if opts.get('tanwin'):
         ws = body.split(' ')
         body = ' '.join(_tanwin_word(w, ws[i + 1] if i + 1 < len(ws) else '') for i, w in enumerate(ws))

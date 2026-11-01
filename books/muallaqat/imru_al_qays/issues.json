@@ -95,7 +95,7 @@
   "section": 4,
   "criterion": "C9",
   "source": "poem map",
-  "what": "Section moods and current style tags disagree in places (night: only 44-45 tagged sad)",
+  "what": "Section moods and current style tags disagree in places (night: only 44-45 tagged sad). 6a lost its sad tag for the tanwin (issue 32); review verse 6 mood in the delivery round",
   "status": "open"
  },
  {
@@ -284,7 +284,7 @@
   "section": 3,
   "criterion": "B2",
   "source": "ear (tanwin check, 1 Nov)",
-  "what": "Tanwin heard as عبرتو مهراقتو: the ن is missing, although it is written out (عَبْرَتُنْ مُهَرَاقَتُنْ…). This half uses the sad style (calm voice, trailing …), which may soften it",
-  "status": "open"
+  "what": "Tanwin heard as عبرتو مهراقتو: the ن is missing, although it is written out (عَبْرَتُنْ مُهَرَاقَتُنْ…). This half uses the sad style (calm voice, trailing …), which may soften it. Blind check (1 Nov, 6 new takes: sad style with and without …, plain voice): the ن clear in all 6, so the spelling is fine; the full-run takes were unlucky. Plain voice rated top in 2 of 2 (sad: 1 of 4). Fix: sad tag removed from 6a; confirm in the next full run",
+  "status": "fixed (confirm next run)"
  }
 ]

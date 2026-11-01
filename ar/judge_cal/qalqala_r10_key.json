@@ -1,0 +1,27 @@
+{
+ "001a": {
+  "A": "bare",
+  "B": "now",
+  "C": "echo"
+ },
+ "014a": {
+  "A": "echo",
+  "B": "now",
+  "C": "bare"
+ },
+ "016a": {
+  "A": "echo",
+  "B": "bare",
+  "C": "now"
+ },
+ "028a": {
+  "A": "now",
+  "B": "echo",
+  "C": "bare"
+ },
+ "053a": {
+  "A": "bare",
+  "B": "now",
+  "C": "echo"
+ }
+}

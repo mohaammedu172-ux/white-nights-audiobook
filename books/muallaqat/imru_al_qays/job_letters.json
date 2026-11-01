@@ -72,6 +72,16 @@
       "half": 0.8,
       "verse": 1.2,
       "why": "ear 1 Nov: longer rests chosen for the night verses (1.0/1.5 s after the 0.8 tempo); current rests kept for verses 1-4"
+    },
+    {
+      "verses": [
+        52,
+        62
+      ],
+      "name": "horse",
+      "half": 0.8,
+      "verse": 1.2,
+      "why": "ear 1 Nov: longer rests chosen for verses 52-55; applied to the horse section, confirm in the full run"
     }
   ]
 }

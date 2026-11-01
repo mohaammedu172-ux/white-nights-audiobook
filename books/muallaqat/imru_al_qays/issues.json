@@ -86,8 +86,8 @@
   "section": 5,
   "criterion": "D1",
   "source": "machine (round 1)",
-  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\". Ear (1 Nov, qalqala check): \"a bit fast\" on 7a, 15b, 44b. Ear (1 Nov, shadda/tanwin recheck): \"some verses are fast\". Attempt (1 Nov): slower voice sample (85%, 75% speed) slows speech to ~6.3 letters/s (reciters 5.6-6.4) with no audio stretching; cfg 0.2 barely changes it. Blind ear check, 8 halves: current speed chosen 4 times, 85% sample 2, 75% never, 1 tie, 1 no pick. Slower letters alone are not what the ear wants; ask what \"fast\" means. Mohammed (1 Nov): \"fast\" means short gaps between halves and verses, endings cut short, and the same speed throughout; not the letter rate. Note: our verses 1-4 already last 33 s vs al-Manṣūr 29.7 s, Āl Rashī 45.3 s. Test: longer gaps (1.0/1.5 s) and the last word of each half slowed 1.35x in one continuous pass. Result (1 Nov, blind): verses 1-4 current rests chosen; night verses 44-47 longer rests (1.0/1.5 s) chosen; held endings chosen in neither. Reading: rests should follow the section (longer in the slow, sad night section), not one value for the whole poem",
-  "status": "open (next: rests by section mood)"
+  "what": "Speech itself still faster than both reciters (about 7.4 vs 5.6-6.4 letters/s); slowing the audio blurs endings, so not used. Ear (1 Nov, long-vowel check): \"it sounds fast\". Ear (1 Nov, qalqala check): \"a bit fast\" on 7a, 15b, 44b. Ear (1 Nov, shadda/tanwin recheck): \"some verses are fast\". Attempt (1 Nov): slower voice sample (85%, 75% speed) slows speech to ~6.3 letters/s (reciters 5.6-6.4) with no audio stretching; cfg 0.2 barely changes it. Blind ear check, 8 halves: current speed chosen 4 times, 85% sample 2, 75% never, 1 tie, 1 no pick. Slower letters alone are not what the ear wants; ask what \"fast\" means. Mohammed (1 Nov): \"fast\" means short gaps between halves and verses, endings cut short, and the same speed throughout; not the letter rate. Note: our verses 1-4 already last 33 s vs al-Manṣūr 29.7 s, Āl Rashī 45.3 s. Test: longer gaps (1.0/1.5 s) and the last word of each half slowed 1.35x in one continuous pass. Result (1 Nov, blind): verses 1-4 current rests chosen; night verses 44-47 longer rests (1.0/1.5 s) chosen; held endings chosen in neither. Reading: rests should follow the section (longer in the slow, sad night section), not one value for the whole poem. Rests by section (1 Nov, blind): memories 28-31 current, hunt 63-66 current, horse 52-55 long, wolf 48-51 and storm 70-73 no preference. Set: long rests for night 44-47 and horse 52-62, current elsewhere",
+  "status": "rests set by section (confirm in full run); variation within a line still open"
  },
  {
   "id": 11,
@@ -313,5 +313,14 @@
   "source": "Mohammed (1 Nov)",
   "what": "Those checks passed only because there was nothing to compare against; redo them next to al-Manṣūr and Āl Rashī. Recheck (1 Nov, with references): shadda 5 of 5 and tanwin 5 of 5 correct",
   "status": "closed"
+ },
+ {
+  "id": 36,
+  "where": "v70b-81 ({awe} style, from كَلَمْعِ الْيَدَيْنِ)",
+  "section": 4,
+  "criterion": "C9, A1",
+  "source": "ear (rests check, 1 Nov)",
+  "what": "The voice changes suddenly at كَلَمْعِ الْيَدَيْنِ: the awe style (calm voice sample, 1 semitone lower, 8% slower) makes it deep and hides the letters. Unexpected change, less clear articulation",
+  "status": "open"
  }
 ]

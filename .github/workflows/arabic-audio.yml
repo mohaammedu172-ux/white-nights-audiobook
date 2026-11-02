@@ -22,7 +22,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        verses: ["1-9", "10-18", "19-27", "28-36", "37-45", "46-54", "55-63", "64-72", "73-81"]
+        # 3 verses per shard: a part-poem job finishes in under an hour, a full one in about 1.5 h (20 run at once)
+        verses: ["1-3", "4-6", "7-9", "10-12", "13-15", "16-18", "19-21", "22-24", "25-27", "28-30", "31-33", "34-36", "37-39", "40-42", "43-45", "46-48", "49-51", "52-54", "55-57", "58-60", "61-63", "64-66", "67-69", "70-72", "73-75", "76-78", "79-81"]
     steps:
       - uses: actions/checkout@v4
       - name: Job file override (export/JOB)

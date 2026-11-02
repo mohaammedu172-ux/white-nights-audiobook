@@ -43,11 +43,19 @@ def recite(text, half, opts=None):
         tail, body = m.group(1), body[:m.start()]
     if opts.get('inner_pauses') is False:
         body = re.sub(r'\s*(\.\.\.|…|[،:؛!])\s*', ' ', body).strip()
+    elif opts.get('inner_pauses') == 'breath':  # modern version (2 Nov): one breath in a long half, at the comma nearest the middle
+        ws = body.split()
+        marks = [i for i, w in enumerate(ws[:-1]) if re.search('[،:؛!]$', w)]
+        keep = min(marks, key=lambda i: abs(i + 1 - len(ws) / 2)) if len(ws) >= opts.get('breath_words', 7) and marks else None
+        ws = [w if i == keep else re.sub('[،:؛!]+$', '', w) for i, w in enumerate(ws)]
+        body = ' '.join(ws)
+        if keep is not None and not ws[keep].endswith('،'):
+            ws[keep] = re.sub('[:؛!]+$', '', ws[keep]) + '،'; body = ' '.join(ws)
     if opts.get('ishba_half') and half == 'a':
         long_of = {'ُ': 'و', 'ِ': 'ي', 'َ': 'ا'}
         if body and body[-1] in long_of:
             body += long_of[body[-1]]
-    if tail == '!' and opts.get('inner_pauses') is False:
+    if tail == '!' and opts.get('inner_pauses') in (False, 'breath'):
         tail = ''
     return (('{%s} ' % tag) if tag else '') + lead + body + tail
 

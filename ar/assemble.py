@@ -84,6 +84,14 @@ def load_smooth(path, sr=44100, pre=0.08, post=0.3, thr_db=-45, fade_in=0.07, fa
     fr = librosa.util.frame(np.pad(a, (0, 1024)), frame_length=1024, hop_length=512)
     quiet = fr[:, np.argsort((fr ** 2).mean(0))[:max(4, fr.shape[1] // 4)]].T.reshape(-1)
     a = nr.reduce_noise(y=a, sr=sr, y_noise=quiet, stationary=True, prop_decrease=0.95, n_fft=2048).astype(np.float32)
+    # soft gate (2 Nov): pauses inside a half (commas, breaths) kept a faint hiss, louder after the tone lift;
+    # quiet stretches more than 45 dB below the clip's peak are turned down by up to 20 dB, with a smooth envelope
+    g_env = librosa.feature.rms(y=a, frame_length=1024, hop_length=256)[0]
+    g_db = 20 * np.log10(g_env / (g_env.max() + 1e-9) + 1e-9)
+    gain_db = np.clip((g_db + 45) * 2, -20, 0)  # 0 dB above -45, down to -20 dB by -55
+    gain_db = np.convolve(gain_db, np.ones(8) / 8, mode='same')  # ~45 ms smoothing, no pumping
+    gain = np.interp(np.arange(len(a)), np.arange(len(gain_db)) * 256, 10 ** (gain_db / 20)).astype(np.float32)
+    a = a * gain
     env = librosa.feature.rms(y=a, frame_length=1024, hop_length=256)[0]
     db = 20 * np.log10(env / (env.max() + 1e-9) + 1e-9)
     idx = np.where(db > thr_db)[0]

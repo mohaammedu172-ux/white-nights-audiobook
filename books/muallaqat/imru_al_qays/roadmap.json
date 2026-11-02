@@ -6,7 +6,8 @@
   "Every change passes the gate: it improves its own measure, breaks no regression check, and is not contradicted by Mohammed's ear. Otherwise it is reverted.",
   "Every fixed issue becomes a regression check that runs after every recording, so it cannot come back unnoticed.",
   "An issue that fails 3 attempts is parked with what was tried, and the round moves on.",
-  "Every ear check shows al-Manṣūr's and Āl Rashī's reading of the same half next to ours when they have it, for comparison only (not rated, never used to train or clone)"
+  "Every ear check shows al-Manṣūr's and Āl Rashī's reading of the same half next to ours when they have it, for comparison only (not rated, never used to train or clone)",
+  "Nothing reaches Mohammed's ear without the automatic gate first (ar/precheck.py: hiss in the pauses below -80 dB, no clipping, not silent). 2 Nov: an A/B went out with audible hiss (-71 and -74 dB) that the gate would have caught"
  ],
  "sections": [
   {
@@ -88,7 +89,8 @@
   "endings and tanwin no lower than the last kept round",
   "cloud run complete: every clip kept and on disk, a track made, under 20% of clips flagged (else the run fails)",
   "clip export not empty (else the export fails)",
-  "no doubled consonant at a shadda (letter judge must not hear the letter twice, e.g. طّط)"
+  "no doubled consonant at a shadda (letter judge must not hear the letter twice, e.g. طّط)",
+  "hiss in the pauses of every file sent for listening below -80 dB (ar/precheck.py)"
  ],
  "run_history": [
   "28 Oct: run failed in 1.5 min (torchaudio from PyPI did not match the CPU torch); fixed by reinstalling both from the CPU index",

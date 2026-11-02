@@ -92,13 +92,17 @@ def main():
     clips = []  # (key, part, verse, half, text)
     for part in job['parts']:
         verses = tr.load_script(os.path.join(base, part['script']))
-        keep = parse_range(args.verses or job.get('verses'), [v[0] for v in verses])
+        nums = [v[0] for v in verses]
+        keep = parse_range(job.get('verses'), nums) & parse_range(args.verses, nums)  # a shard's range within the job's verses
         for n, a, b in verses:
             if n in keep:
                 for h, t in (('a', a), ('b', b)):
                     t = tr.recite(t, h, part.get('recite'))  # pause and waqf rules (RULEBOOK rule 32)
                     clips.append((f"{part['name']}_{n:03d}{h}", part, n, h, t))
     print(f"{len(clips)} half-verse clips", flush=True)
+    if not clips and not args.merge:  # a shard outside a part-poem job: nothing to make
+        save()
+        return
 
     voice = None
 

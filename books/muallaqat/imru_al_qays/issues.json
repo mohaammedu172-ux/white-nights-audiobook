@@ -338,7 +338,7 @@
   "section": 5,
   "criterion": "D1-D6, A, C1",
   "source": "Mohammed + machine (8 Nov)",
-  "what": "Habibi-TTS (MSA): Mohammed hears a better voice sound but early-stage pronunciation. It cannot take vowel marks: with full tashkeel (and the right length) letters fall from 91-98% to 51-53% and marks to 21-46%; its tokenizer treats the marks as unknown. Plain text: it guesses the vowels (marks 61-83%), wrong on rare words and endings (يَعْفَ، رَسْمِهَا، سِمَرَات). Not usable for this poem unless the vowels can be forced another way. Candidate with tashkeel support and the same F5 sound: SILMA TTS (Apache 2.0), install needs Mohammed's go-ahead",
+  "what": "Habibi-TTS (MSA): Mohammed hears a better voice sound but early-stage pronunciation. It cannot take vowel marks: with full tashkeel (and the right length) letters fall from 91-98% to 51-53% and marks to 21-46%; its tokenizer treats the marks as unknown. Plain text: it guesses the vowels (marks 61-83%), wrong on rare words and endings (يَعْفَ، رَسْمِهَا، سِمَرَات). Not usable for this poem unless the vowels can be forced another way. Candidate with tashkeel support and the same F5 sound: SILMA TTS (Apache 2.0), install needs Mohammed's go-ahead. SILMA TTS (8 Nov, installed with Mohammed's go-ahead; text normalizer and auto-tashkeel stubbed since our text is vowelled): follows the vowel marks. Step 1 on 1a, 2a, 4b: marks 100% (same as ours), letters 84-96% (ours 84-96%). It speeds up vowelled text by 1.3x on its own; offset with speed 0.77. Next: best of 6 takes, same processing, fair A/B",
   "status": "open"
  }
 ]

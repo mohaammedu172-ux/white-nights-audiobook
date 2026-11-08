@@ -77,8 +77,8 @@
   "section": 4,
   "criterion": "C8",
   "source": "machine (round 0)",
-  "what": "11 flat halves (pitch movement under 1.5 semitones). Round 2: 15. Ear (1 Nov, next to al-Manṣūr and Āl Rashī): 6 of 6 halves \"flat\"; the clearest gap to the reciters",
-  "status": "open"
+  "what": "11 flat halves (pitch movement under 1.5 semitones). Round 2: 15. Ear (1 Nov, next to al-Manṣūr and Āl Rashī): 6 of 6 halves \"flat\"; the clearest gap to the reciters. Measured (8 Nov, verses 1-4, octave errors folded): our halves move 5-10 semitones, more than al-Manṣūr (1-5) and about as much as Āl Rashī (8-11). The difference is the shape: ours falls steadily to the end of every half like a spoken statement; al-Manṣūr ends level or slightly up; Āl Rashī lifts in the middle and near the end. Test: WORLD pitch edit of the approved takes (ar/contour.py), B = ending held level or lifted, C = Āl Rashī whole-half shape at 70%",
+  "status": "open (attempt 1: pitch shape A/B/C)"
  },
  {
   "id": 10,

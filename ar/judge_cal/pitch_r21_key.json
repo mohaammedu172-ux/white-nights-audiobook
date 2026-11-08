@@ -1,0 +1,41 @@
+{
+ "key": {
+  "001a": {
+   "A": "C",
+   "B": "B",
+   "C": "A"
+  },
+  "001b": {
+   "A": "A",
+   "B": "C",
+   "C": "B"
+  },
+  "002a": {
+   "A": "C",
+   "B": "A",
+   "C": "B"
+  },
+  "002b": {
+   "A": "C",
+   "B": "A",
+   "C": "B"
+  },
+  "003b": {
+   "A": "B",
+   "B": "A",
+   "C": "C"
+  },
+  "004b": {
+   "A": "B",
+   "B": "C",
+   "C": "A"
+  }
+ },
+ "A": "unedited",
+ "B": "ending held level or lifted (al-Mansur shape, last 45%)",
+ "C": "whole-half shape of Al Rashi at 70%",
+ "strength_C": {
+  "001a": 0.5,
+  "002b": 0.5
+ }
+}

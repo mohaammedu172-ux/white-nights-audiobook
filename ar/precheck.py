@@ -37,6 +37,17 @@ def check(path):
     return problems, m
 
 
+def compare(edited, original, max_extra_db=1.5):
+    """An edit of an approved file may not add noise: its quiet-part level must stay within max_extra_db of the original.
+    (A single half-verse has no real pauses, so the absolute hiss limit does not apply to it.)"""
+    def q(p):
+        a, sr = librosa.load(p, sr=16000)
+        db = librosa.amplitude_to_db(librosa.feature.rms(y=a, frame_length=400, hop_length=160)[0], ref=1.0)
+        return float(np.percentile(db[db < db.max() - 30], 50)) if (db < db.max() - 30).sum() > 10 else float(np.percentile(db, 10))
+    e, o = q(edited), q(original)
+    return (['adds noise: %+.1f dB over the original' % (e - o)] if e - o > max_extra_db else []), round(e - o, 1)
+
+
 if __name__ == '__main__':
     bad = 0
     for p in sys.argv[1:]:

@@ -331,5 +331,14 @@
   "source": "ear (style check, 1 Nov) + machine",
   "what": "\"Muffled or far away\": the cause is take-to-take brightness, not the styles. Energy above 4 kHz varies by ~10 dB between takes (median -27 dB; 32 of 144 below -30), in every style and in the plain voice. A dull take next to a bright one sounds distant and may be part of the separate-blocks feel (issue 16). Test: ar/tone.py brings every clip to one brightness with a gentle high shelf. Ear (1 Nov): matched brightness chosen for verses 1-4; the three passages with a style change \"bad\" either way. Mohammed: the voice itself sounds echoing or suppressed but acceptable; at the switch to the deeper voice that multiplies and hurts the words. Measured: the main voice sample is the dullest of the three (-29 dB above 4 kHz) and has the highest noise floor (-29 dB vs -47 for the calm sample), so the room sound is copied into every line. Test: cleaned main sample, and the calm sample as the one voice for the whole poem, no style switching. Voice sample check (1 Nov): current sample won on verses 1-2, calm sample on 69-71; cleaned sample lost both. Adopted (rule 38): tone matching on every clip; styles keep their sample without pitch or speed shifts. Confirm in the next full run",
   "status": "fix adopted (confirm next run)"
+ },
+ {
+  "id": 38,
+  "where": "model benchmark",
+  "section": 5,
+  "criterion": "D1-D6, A, C1",
+  "source": "Mohammed + machine (8 Nov)",
+  "what": "Habibi-TTS (MSA): Mohammed hears a better voice sound but early-stage pronunciation. It cannot take vowel marks: with full tashkeel (and the right length) letters fall from 91-98% to 51-53% and marks to 21-46%; its tokenizer treats the marks as unknown. Plain text: it guesses the vowels (marks 61-83%), wrong on rare words and endings (يَعْفَ، رَسْمِهَا، سِمَرَات). Not usable for this poem unless the vowels can be forced another way. Candidate with tashkeel support and the same F5 sound: SILMA TTS (Apache 2.0), install needs Mohammed's go-ahead",
+  "status": "open"
  }
 ]

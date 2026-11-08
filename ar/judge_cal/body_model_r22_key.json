@@ -1,0 +1,44 @@
+{
+ "key": {
+  "001a": {
+   "A": "D",
+   "B": "C",
+   "C": "A",
+   "D": "B"
+  },
+  "001b": {
+   "A": "B",
+   "B": "C",
+   "C": "A",
+   "D": "D"
+  },
+  "002a": {
+   "A": "B",
+   "B": "D",
+   "C": "A",
+   "D": "C"
+  },
+  "002b": {
+   "A": "D",
+   "B": "B",
+   "C": "A"
+  },
+  "003b": {
+   "A": "A",
+   "B": "D",
+   "C": "C",
+   "D": "B"
+  },
+  "004b": {
+   "A": "B",
+   "B": "C",
+   "C": "A"
+  }
+ },
+ "A": "unedited (approved)",
+ "B": "warmth",
+ "C": "warmth + key word emphasis",
+ "D": "Habibi-TTS MSA",
+ "note_004b": "Habibi take dropped: +14.5 dB noise",
+ "note_002b": "emphasis version dropped: added noise"
+}
